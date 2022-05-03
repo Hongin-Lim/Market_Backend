@@ -1,0 +1,204 @@
+
+$(document).ready(function(){
+
+
+
+ $('.slider').bxSlider({
+	pager: true,
+	auto: true,
+	controls: true,
+	autoControls: true,
+	speed: 600,
+	pause: 5000,
+	//mode:'fade'
+ onSliderLoad: function(){ $("#edd2").css("visibility", "visible").animate({opacity:1}); }
+});
+                        
+
+
+ $('.detail_con').bxSlider({
+	pager: true,
+	auto: true,
+	controls: true,
+	autoControls: true,
+	speed: 600,
+	pause: 5000,
+	//mode:'fade'
+ onSliderLoad: function(){ $("#edd3").css("visibility", "visible").animate({opacity:1}); }
+});
+                        
+
+$('.nsmgr_k ul li').on('click', function(){
+  $('.nsmgr_k ul li').removeClass('on')
+  if(!$(this).hasClass('on')){
+    $(this).addClass('on')
+  }else{
+    $(this).removeClass('on')
+  }
+
+});
+
+
+/* ���޴��� �Ѹ� */
+
+   var infoSlider = $('#flow_wrap ul').carouFredSel( {
+	  
+
+        auto: true,
+        responsive: true,
+       /* prev: '#m_icon > #f_prev',
+        next: '#m_icon > #f_next',*/
+        width: '90%',
+        scroll: 1,
+		duration : 1000, //�Ѹ� �ӵ�
+        items: {
+            //width: 100,
+            height: '30%',	//	optionally resize item-height
+            visible: {
+                min: 2,
+                max: 3
+            }
+        }
+    });
+    infoSlider.on('focusin mouseenter', function(){
+        infoSlider.trigger('pause');
+
+    }).on('focusout mouseleave', function(){
+        infoSlider.trigger('resume');
+
+    });
+	  $("#flow_wrap").css("visibility", "visible").animate({opacity:1});
+
+		
+
+
+
+/* ǰ�� �Ѹ� */
+
+/* var infoSlider = $('.detail_con').carouFredSel( {
+        auto: false,
+        responsive: true,
+		
+        width: '100%',
+        scroll: 1,
+		duration : 1000, 
+        items: {
+            //width: 100,
+            height: '30%',
+            visible: {
+                min: 1,
+                max: 1
+            }
+        }
+    });
+    infoSlider.on('focusin mouseenter', function(){
+        infoSlider.trigger('pause');
+
+    }).on('focusout mouseleave', function(){
+        infoSlider.trigger('resume');
+
+    }); */
+
+
+
+
+
+
+/* ǰ�� show */
+
+	/* mChart2();
+
+	function mChart2(){
+
+		 $(".bx-pager-item").click(function(){
+			
+			 var current = $(".farm_name").children("li").index(this);
+			 var c_no = current + 1;
+			 now_no = current; 
+			 $(".farm_name").children("li").removeClass("on");
+			 $(".farm_name").children("li").eq(current).addClass("on");
+			
+			
+			 return false;
+	   });
+	}*/
+
+
+
+
+	/*mChart();*/
+	
+	function mChart(){
+		 $(".detail_con").children("div").hide();
+		 $(".detail_con").children("div").eq(0).show();
+		 
+		 /*$(".chart_t_tx").children("li").hide();
+		 $(".chart_t_tx").children("li").eq(0).show();*/
+
+		 /*$(".chart_tab").children("li").children("div").children("a").click(function(){
+			 var current = $(".chart_tab").children("li").children("div").index($(this).parent());*/
+		 $(".farm_name").children("li").click(function(){
+			
+			 var current = $(".farm_name").children("li").index(this);
+			 var c_no = current + 1;
+			 now_no = current; 
+			 //console.log("result_: ", now_no);
+			 $(".farm_name").children("li").removeClass("on");
+			 $(".farm_name").children("li").eq(current).addClass("on");
+			 //$(".chart_tab").children("li").children("div").children("a").removeClass("clb_a_on");
+			 //$(".chart_tab").children("li").children("div").children("a").eq(current).addClass("clb_a_on");
+				//$(".chart_list_box").children("li").children("div").children("a").css("color","black");
+				//$(".chart_list_box").children("li").eq(current).children("div").children("a").css("color","white");
+			 $(".detail_con").children("div").hide();
+			 $(".detail_con").children("div").eq(current).show();
+			
+			 /*$(".chart_t_tx").children("li").hide();
+			 $(".chart_t_tx").children("li").eq(current).show();*/
+			 
+			 /*for(i = 1; i <= 5; ++i){
+				 $(".chart_tab").children("li").children("div").removeClass("chart_0"+i+"_on");
+			 }
+			 $(".chart_tab").children("li").children("div").eq(current).addClass("chart_0"+c_no+"_on");*/
+			 return false;
+	   });
+	}
+
+
+
+	/*function mChart_next(chk){
+		$(".chart_tab").children("li").removeClass("on");
+		$(".chart_view").children("li").hide();
+		//$(".chart_t_tx").children("li").hide();
+		//console.log("result: ", now_no);
+		if(chk == "left"){
+			now_no = now_no-1;
+			if(now_no == -1)
+				now_no = 4;
+		}else{
+			now_no = now_no+1;
+			if(now_no == 5)
+				now_no = 0;
+		}
+		
+		$(".farm_name").children("li").eq(this.now_no).addClass("on");
+		$(".detail_info1").children("li").eq(this.now_no).show();
+		//$(".chart_t_tx").children("li").eq(this.now_no).show();
+		return false;
+	}*/
+
+	$('#lnb .depth1 > li').click(function(){
+		if($(this).hasClass('on') == true){
+			$(this).children('.depth2').slideDown('fast');
+		}else{
+			$(this).children('.depth2').slideUp('fast');
+		}
+	});
+	
+
+
+
+
+
+});
+
+

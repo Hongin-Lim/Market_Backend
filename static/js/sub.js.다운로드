@@ -1,0 +1,189 @@
+$(document).ready(function(){
+
+  $('.sub_slider1').bxSlider({
+         auto: false,
+         controls: true,
+         speed: 1500, //(1000=1珥�)
+         pause: 7000,
+         autoControls: false,
+         pager: false,
+         //mode:'fade',
+
+     });
+
+	
+	$('.dt_cnt > li > div.view > a').click(function(){
+
+		var tab_id = $(this).attr('data-tab');
+    
+		if($(this).hasClass('up') !== false){
+      $('.dt_cnt > li > div.view > a').removeClass('up');
+      $(".view_graph").slideUp();
+			$('.view_graph').removeClass('on');
+			
+		}else{
+			$('.dt_cnt > li > div.view > a').removeClass('up');
+      $('.view_graph').removeClass('on');
+      $(".view_graph").slideUp();
+      $(this).addClass('up');
+      $('.view_graph'+'#'+tab_id).slideDown();
+			$('.view_graph'+'#'+tab_id).addClass('on');
+		}
+
+	});
+
+	if($(".sub1_4").html != undefined){
+		 perChange();
+	}
+	
+   
+	
+	$('.map_img .map_svg text').click(function(){
+		var classStr = $(this).attr('class');
+		var onCheck = classStr.length==5;		//	클래스명이  5글자일 경우 true 8글자(on이 붙었을 경우)일 경우 false 
+		var check3_1 = false;
+		var currOnClass;
+
+		if($(".sub3_1").html != undefined){
+			check3_1 = true;
+		}
+
+		if($(".sub2_1").html != undefined){
+			check2_1 = true;
+		}
+
+		if(classStr.split(' ').length>1){
+			classStr = classStr.split(' ')[0];
+		}
+		
+		//	모든 text 요소에서 on 클래스를 삭제한다		
+		for(var i=0; i<$('.sub3_1 .map_img .map_svg text').length; i++){
+			if($('.sub3_1 .map_img .map_svg text').eq(i).attr("class").split(" ").length>1){
+				currOnClass = $('.sub3_1 .map_img .map_svg text').eq(i).attr("class").split(" ")[0];	
+				if(classStr != currOnClass){
+					$('.sub3_1 .map_img .map_svg text').eq(i).attr("class", $('.sub3_1 .map_img .map_svg text').eq(i).attr("class").split(" ")[0]);	
+				}			
+			}
+		}
+		
+		//	 영역 요소 on 클래스 삭제
+		for(var i=0; i<$('.sub3_1 .map_img .map_svg g .do_map g').length; i++){
+			if(classStr != currOnClass){
+				$('.sub3_1 .map_img .map_svg g .do_map g').eq(i).attr("class", $('.sub3_1 .map_img .map_svg g .do_map g').eq(i).attr("class").split(" ")[0]);
+			}			
+		}
+		
+		//	모든 text 요소에서 on 클래스를 삭제한다		
+		for(var i=0; i<$('.sub2_1 .map_img .map_svg text').length; i++){
+			if($('.sub2_1 .map_img .map_svg text').eq(i).attr("class").split(" ").length>1){
+				currOnClass = $('.sub2_1 .map_img .map_svg text').eq(i).attr("class").split(" ")[0];	
+				if(classStr != currOnClass){
+					$('.sub2_1 .map_img .map_svg text').eq(i).attr("class", $('.sub2_1 .map_img .map_svg text').eq(i).attr("class").split(" ")[0]);	
+				}			
+			}
+		}
+		
+		//	 영역 요소 on 클래스 삭제
+		for(var i=0; i<$('.sub2_1 .map_img .map_svg g .do_map g').length; i++){
+			if(classStr != currOnClass){
+				$('.sub2_1 .map_img .map_svg g .do_map g').eq(i).attr("class", $('.sub2_1 .map_img .map_svg g .do_map g').eq(i).attr("class").split(" ")[0]);
+			}			
+		}
+
+
+		
+		//	클래스명이 5글자일 경우 on이 없는 경우이기 때문에 on을 추가하고 반대의 경우 on을 추가한다.
+		if(onCheck){
+			$('.map_img .map_svg g .do_map g.' + classStr).attr('class',  classStr + ' on');
+			$('.map_img .map_svg text.' + classStr).attr('class',  classStr + ' on');
+		}else{
+			if(check3_1 || check2_1){
+				if(classStr != currOnClass){
+					$('.map_img .map_svg g .do_map g.' + classStr).attr('class', classStr);
+					$('.map_img .map_svg text.' + classStr).attr('class',  classStr);
+				}
+			}else{
+				$('.sub3_2 .map_img .map_svg g .do_map g.' + classStr).attr('class', classStr);
+				$('.sub3_2 .map_img .map_svg text.' + classStr).attr('class',  classStr);
+			}
+		}
+		
+		if($(".sub3_1").html() != undefined){
+			byTownWeather(classStr, onCheck);
+		}
+		
+		if($(".sub3_2").html() != undefined){
+			viewWeatherDetail(classStr, onCheck);
+		}
+	});	
+	
+	if($(".sub2_1").html() != undefined || $(".sub3_1").html() != undefined){
+		$('.map_img .map_svg g .do_map g.map07').attr('class',  'map07 on');
+		$('.map_img .map_svg text.map07').attr('class', 'map07 on');
+	}
+	
+	if($(".sub3_2").html() != undefined){
+		var cities = $(".list_cnt .board_view tr")
+		for(var i=0; i<cities.length; i++){
+			cities.eq(i).css("display", "none");
+		}
+		$('.map_img .map_svg g .do_map g.map07').attr('class',  'map07 on');
+		$('.map_img .map_svg text.map07').attr('class', 'map07 on');
+		$(".list_cnt .board_view .changwon").css("display", "");
+	}
+	
+});
+
+function byTownWeather(classStr, onCheck){
+	var city = ['거창 날씨', '합천 날씨', '창녕 날씨', '밀양 날씨', '양산 날씨', '김해 날씨', '창원 날씨', '함안 날씨', '의령 날씨', '진주 날씨'
+	            , '고성 날씨', '거제 날씨', '남해 날씨', '사천 날씨', '하동 날씨', '산청 날씨', '함양 날씨', '통영 날씨'];
+	for(var i=1; i<=18; i++){
+		if(i<10){
+			classNum = '0' + i;
+		}else{
+			classNum = i;
+		}
+		if(classStr == 'map' + classNum){
+			if(onCheck){
+				$(".h3").text(city[i-1]);
+			}
+		}
+	}
+	
+}
+
+function viewWeatherDetail(classStr, onCheck){
+	var classNum;
+	var city = ['geochang', 'hahchun', 'changnoung', 'milyang', 'yangsan', 'gimhae', 'changwon', 'hanan'
+			, 'uiryeong', 'jinju', 'gosung', 'geoje', 'namhae', 'sachun', 'hadong', 'sanchung', 'hamyang', 'toungyeong'];
+	for(var i=1; i<=18; i++){
+		if(i<10){
+			classNum = '0' + i;
+		}else{
+			classNum = i;
+		}
+		if(classStr == 'map' + classNum){
+			if(onCheck){
+				$(".list_cnt .board_view ." + city[i-1]).css("display", "");
+			}else{
+				$(".list_cnt .board_view ." + city[i-1]).css("display", "none");
+			}
+		}
+	}
+	console.log(classStr, onCheck);
+}
+
+
+ function perChange(id){
+	 if($(".sub1_4").html != undefined){
+		 var key = $("#"+id+" #per_cnt").val();
+		  if(key==1){
+			  $("#"+id+" #per90").css("display", "block");
+			  $("#"+id+" #per10").css("display", "none");
+		  }
+		  if(key==2){
+			  $("#"+id+" #per90").css("display", "none");
+			  $("#"+id+" #per10").css("display", "block");
+		  }
+	 }
+ }

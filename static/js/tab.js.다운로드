@@ -1,0 +1,58 @@
+jQuery(function($){
+	set_Tabbox(true);
+	window.onresize = function() {
+		set_Tabbox(false);
+	};
+	
+	function set_Tabbox(set_event) {	
+		var tab = $('.tab_con');
+		var client_width = window.innerWidth;
+		
+		tab.find('> ul > li').removeClass('on');
+		tab.each(function(){
+			var tabBox = $(this);
+			tabBox.removeClass('js_off');
+			
+			if(client_width > 640){
+				tabBox.removeClass('mobile');
+				onSelectTab(tabBox.find('> ul > li.select > a'), tabBox);
+			} else {
+				if(!tabBox.hasClass('mobile')){
+					tabBox.addClass('mobile');
+					tabBox.find('> ul > li.on').removeClass('on')
+				}
+			}
+			
+			if(set_event) {
+				tabBox.find('> ul > li > a').click(function(){
+					onSelectTab(this, tabBox);
+					return false;
+				});
+			}
+		});
+	};
+	
+	// Click Event :: Tab a element = obj
+	function onSelectTab(obj, box){
+		var t = $(obj);
+		var myClass = 'on';
+		
+		if(!box.hasClass('mobile'))	{
+			// PC, Tblete Mode Event
+			t.parents('li').siblings().removeClass(myClass);
+			t.parents('li').addClass(myClass);
+		} else {
+			// Mobile Event
+			if(!t.parents('li').hasClass(myClass)){
+				t.parents('li').addClass(myClass);
+			} else {
+				t.parents('li').removeClass(myClass);
+			}
+			t.parents('li').siblings().removeClass(myClass);
+		}
+		box.css('padding-bottom', t.next('div').height());
+	};
+});
+
+
+
