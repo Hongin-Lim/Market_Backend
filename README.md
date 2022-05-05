@@ -55,7 +55,7 @@
 *
 
 ## :link: ERD 설계
-*
+*![ERD](https://user-images.githubusercontent.com/97941148/166879977-4f215cd5-3dc9-4b57-a97f-1969e5937569.png)
 
 ## :link: WBS
 *
