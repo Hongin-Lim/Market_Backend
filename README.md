@@ -32,6 +32,18 @@
   * Elasticsearch, Logstash, Kibana
 * Spark
 
+## :clipboard: 주요 키워드
+* HTTP 통신
+* REST API
+* 
+
+## :clipboard: 구현 기능
+### 백엔드
+
+### 프론트엔드
+
+### 플랫폼
+
 ## :factory: 시스템 구조
 * 
 
