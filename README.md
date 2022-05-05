@@ -49,13 +49,13 @@
 * 
 
 ## :link: UI 설계도
-* 
+* [-UI.pdf](https://github.com/Hongin-Lim/Bigdata_Project/files/8629439/-UI.pdf)
 
 ## :link: API 설계도
-*
+* [API_.xlsx](https://github.com/Hongin-Lim/Bigdata_Project/files/8629438/API_.xlsx)
 
 ## :link: ERD 설계
 *![ERD](https://user-images.githubusercontent.com/97941148/166879977-4f215cd5-3dc9-4b57-a97f-1969e5937569.png)
 
 ## :link: WBS
-*
+* [WBS.xlsx](https://github.com/Hongin-Lim/Bigdata_Project/files/8629444/WBS.xlsx)
