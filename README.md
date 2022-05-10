@@ -49,7 +49,7 @@
 * 
 
 ## :link: UI 설계도
-* [-UI.pdf](https://github.com/Hongin-Lim/Bigdata_Project/files/8629439/-UI.pdf)
+* [-UI.pdf](https://docs.google.com/viewer?url=https://github.com/Hongin-Lim/Bigdata_Project/tree/main/files/-UI.pdf?raw=True)
 
 ## :link: API 설계도
 * [API_.xlsx](https://github.com/Hongin-Lim/Bigdata_Project/files/8629438/API_.xlsx)
