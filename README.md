@@ -49,10 +49,10 @@
 * 
 
 ## :link: UI 설계도
-* [-UI.pdf](https://docs.google.com/viewer?url=https://github.com/Hongin-Lim/Bigdata_Project/tree/main/files/-UI.pdf?raw=True)
+* [-UI.pdf](https://docs.google.com/viewer?url=https://github.com/Hongin-Lim/Bigdata_Project/blob/main/files/-UI.pdf?raw=True)
 
 ## :link: API 설계도
-* [API_.xlsx](https://docs.google.com/viewer?url=https://github.com/Hongin-Lim/Bigdata_Project/tree/main/files/API_ (1).xlsx?raw=True)
+* [API_.xlsx](https://docs.google.com/viewer?url=https://github.com/Hongin-Lim/Bigdata_Project/blob/main/files/API_(1).xlsx?raw=True)
 
 ## :link: ERD 설계
 *![ERD](https://user-images.githubusercontent.com/97941148/166879977-4f215cd5-3dc9-4b57-a97f-1969e5937569.png)
