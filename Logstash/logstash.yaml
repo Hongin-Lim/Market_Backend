@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: logstash
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      app: logstash
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: logstash
+    spec:
+      containers:
+      - name: logstash
+        image: cycloid87/jj-logstash:2.0     # 재중님 이미지로 로그스태시 설치
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 5044
+          protocol: TCP
+        command: [ "sleep" ]
+        args: [ "infinity" ]
+
+
+kubectl apply -f logstash.yaml   # logstash 디플로이먼트 생성 명령어
+
+kubectl expose deploy logstash --type LoadBalancer --name logstash  # logstash 디플로이먼트 서비스 부여 명령어
+
+kubectl exec -it [ 디플로이먼트 이름 ] /bin/bash # logstash 디플로이먼트 접속 명령어
+ 
+/usr/share/logstash/bin/logstash -f ./logstash-sample.conf  # logstash 실행 
+
