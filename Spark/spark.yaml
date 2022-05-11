@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hadoop-spark-zeppelin
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      app: hadoop-spark-zeppelin
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: hadoop-spark-zeppelin
+    spec:
+      containers:
+      - name: hadoop-spark-zeppelin
+        image: jerry2458/hadoop-spark-zeppelin:1.0
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8082
+          protocol: TCP
+        command: [ "sleep" ]
+        args: [ "infinity" ]
