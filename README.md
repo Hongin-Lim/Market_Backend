@@ -12,7 +12,7 @@
 ### 백엔드
 #### <img src="https://img.shields.io/badge/Django-00C853?style=flat-square&logo=Django&logoColor=white"/>
 * <img src="https://img.shields.io/badge/Python-673AB7?style=flat-square&logo=Python&logoColor=white"/>
-* 
+* Django ORM
 * 
 
 #### <img src="https://img.shields.io/badge/DB-212121?style=flat-square&logo=Database&logoColor=white"/>
