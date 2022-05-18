@@ -60,4 +60,5 @@
 ## :link: WBS
 * [WBS.xlsx](https://docs.google.com/viewer?url=https://github.com/Hongin-Lim/Bigdata_Project/blob/main/files/WBS.xlsx?raw=True)
 
-테스트중입니다.ㅋㅋ^^
+## :link: 서비스 아키텍쳐
+![image](https://user-images.githubusercontent.com/96184680/168993141-646987f3-9e21-426a-ab84-55c6395e5a69.png)
