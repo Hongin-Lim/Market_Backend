@@ -62,5 +62,3 @@
 
 ## :link: 서비스 아키텍쳐
 ![image](https://user-images.githubusercontent.com/96184680/168993141-646987f3-9e21-426a-ab84-55c6395e5a69.png)
-
-cnrkx[tlkswngl
