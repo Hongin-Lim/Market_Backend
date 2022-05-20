@@ -26,6 +26,9 @@ app_name = 'users'
 urlpatterns = [
     path('', cart.views.detail, name='mypage'),
     path('coupon/', users.views.coupon, name='coupon'),
+    path('update/', users.views.update, name='update'),
+    path('deletepage/', users.views.deletepage, name='deletepage'),
+    path('delete/', users.views.delete, name='delete'),
 
 ]
 #
