@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: django-nginx-service
+spec:
+  ports:
+    - name: "django-nginx-service-port"
+      port: 8000
+      targetPort: 8000
+      nodePort: 31000
+  selector:
+    app: django-nginx
+  type: NodePort

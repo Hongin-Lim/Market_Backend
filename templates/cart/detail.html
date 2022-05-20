@@ -1,0 +1,107 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block body %}
+{% if request.user.is_authenticated %}
+<div class="page_aticle aticle_type2">
+    <div id="snb" class="snb_my">
+        <h2 class="tit_snb">마이컬리</h2>
+        <div class="inner_snb">
+            <ul class="list_menu">
+                <li class="on">
+                    <a href="/mypage">장바구니</a>
+                </li>
+                <li>
+                    <a href="#none"
+                       onclick="KurlyTrackerLink('/shop/mypage/mypage_pick.php', 'select_my_kurly_pick_list')">찜한 상품</a>
+                </li>
+                <li>
+                    <a href="/shop/mypage/mypage_review.php">상품 후기</a>
+                </li>
+                <li>
+                    <a href="/shop/mypage/product_inquiry.php">상품 문의</a>
+                </li>
+                <li>
+                    <a href="/mypage/coupon"
+                       onclick="">쿠폰</a>
+                </li>
+                <li>
+                    <a href="/mypage/infochange">개인 정보 수정</a>
+                </li>
+            </ul>
+        </div>
+        <a href="/mypage/inquiry/form" class="link_inquire"><span class="emph">도움이 필요하신가요 ?</span> 1:1 문의하기</a>
+    </div>
+    <div id="viewOrderList" class="page_section section_orderlist">
+        <div class="head_aticle"><h2 class="tit">장바구니 <span class="tit_sub">장바구니 조회가 가능합니다</span></h2></div>
+
+<!--        <h1> 장바구니에 담긴 상품이 없습니다. </h1>-->
+
+        <ul class="list_order">
+            <table class="table table-striped" width="850">
+                <tbody>
+                {% for item in cart %}
+                {% with product=item.product %}
+                <tr>
+                    <th scope="row">
+                        <a href="{{ product.get_absolute_url }}">
+                            <img src="{{ product.image.url }}" class="thumb">
+                        </a>
+                    </th>
+                    <td>{{ product.name }}</td>
+                    <td>
+                        <form action="{% url 'cart:product_add' product.id %}" method="post">
+                            {{ item.quantity_form.quantity }}
+                            {{ item.quantity_form.is_update }}
+                            <input type="submit" class="btn btn-primary" value="수량 수정">
+                            {% csrf_token %}
+                        </form>
+                    </td>
+                    <td><a href="{% url 'cart:product_remove' product.id %}"><img
+                            src="{% static 'image/unknown.png' %}"></a></td>
+                    <td class="num">{{ item.price }}원</td>
+                    <td class="num">{{ item.total_price }}원</td>
+                </tr>
+                {% endwith %}
+                {% endfor %}
+                {% if cart.coupon %}
+                <tr class="subtotal">
+                    <td>Subtotal</td>
+                    <td colspan="4"></td>
+                    <td>${{ cart.get_product_total }}</td>
+                </tr>
+                <tr>
+                    <td>"{{ cart.coupon.code }}" coupon ({{ cart.coupon.amount }}원)</td>
+                    <td colspan="4"></td>
+                    <td>- {{ cart.get_discount_total|floatformat:"2" }}원</td>
+                </tr>
+                {% endif %}
+                <tr class="total">
+                    <td>Total</td>
+                    <td colspan="4"></td>
+                    <td class="num">{{ cart.get_total_price|floatformat:"2" }}원</td>
+                </tr>
+                </tbody>
+            </table>
+            &ensp;
+            &ensp;
+            &ensp;
+            <div>
+                <p>
+                    쿠폰 등록하기:
+                </p>
+                <form action='{% url "coupon:add" %}' method="post">
+                    {{ add_coupon }}
+                    <input type="submit" value="Add">
+                    {% csrf_token %}
+                </form>
+
+                <p class="text-right">
+                    <a href="{% url 'shop:product_all' %}" class="btn btn-secondary">계속 쇼핑하기</a>
+                    <a href="{% url 'order:order_create' %}" class="btn btn-secondary">결제하기</a>
+                </p>
+            </div>
+        </ul>
+    </div>
+
+    {% endif %}
+    {% endblock %}
