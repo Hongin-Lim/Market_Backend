@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p>{{access_token}}</p>
+
+<button class="api-btn" onclick="unlinkApp()">앱 탈퇴하기</button>
+
+<script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+
+<script type="text/javascript">
+  Kakao.init('9ea11d71413355b7299687f967195d92');
+
+  Kakao.isInitialized();
+  console.log(Kakao.isInitialized());
+
+  Kakao.Auth.setAccessToken('{{access_token}}');
+
+
+  function unlinkApp() {
+    Kakao.API.request({
+      url: '/v1/user/unlink',
+      success: function(res) {
+        alert('success: ' + JSON.stringify(res))
+      },
+      fail: function(err) {
+        alert('fail: ' + JSON.stringify(err))
+      },
+    })
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,358 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block body %}
+
+<div id="main">
+    <div id="content">
+        <!--쿠폰 페이지-->
+        <div id="qnb" class="quick-navigation" style="top: 70px;">
+            <style>
+    #qnb{position:absolute;z-index:1;right:20px;top:70px;width:80px;font:normal 12px/16px "Noto Sans";color:#333;letter-spacing:-0.3px;transition:top 0.2s}
+    .goods-goods_view #qnb{top:20px}
+    /* 배너 */
+    #qnb .bnr_qnb{padding-bottom:7px}
+    #qnb .bnr_qnb .thumb{width:80px;height:120px;vertical-align:top}
+    /* 메뉴 */
+    #qnb .side_menu{width:80px;border:1px solid #ddd;border-top:0 none;background-color:#fff}
+    #qnb .link_menu{display:block;height:29px;padding-top:5px;border-top:1px solid #ddd;text-align:center}
+    #qnb .link_menu:hover,
+    #qnb .link_menu.on{color:#5f0080}
+    /* 최근본상품 */
+    #qnb .side_recent{position:relative;margin-top:6px;border:1px solid #ddd;background-color:#fff}
+    #qnb .side_recent .tit{display:block;padding:22px 0 6px;text-align:center}
+    #qnb .side_recent .list_goods{overflow:hidden;position:relative;width:60px;margin:0 auto}
+    #qnb .side_recent .list{position:absolute;left:0;top:0}
+    #qnb .side_recent .link_goods{display:block;overflow:hidden;width:60px;height:80px;padding:1px 0 2px}
+    #qnb .side_recent .btn{display:block;overflow:hidden;width:100%;height:17px;border:0 none;font-size:0;line-height:0;text-indent:-9999px}
+
+    #qnb .side_recent .btn_up{position:absolute;left:0;top:0;background:url(https://res.kurly.com/pc/service/main/2002/ico_quick_up_hover.png) no-repeat 50% 50%}
+    #qnb .side_recent .btn_up.off{background:url(https://res.kurly.com/pc/service/main/2002/ico_quick_up.png) no-repeat 50% 50%}
+    #qnb .side_recent .btn_down{background:url(https://res.kurly.com/pc/service/main/2002/ico_quick_down_hover.png) no-repeat 50% 0}
+    #qnb .side_recent .btn_down.off{background:url(https://res.kurly.com/pc/service/main/2002/ico_quick_down.png) no-repeat 50% 0}
+
+
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (min-device-pixel-ratio: 1.5),
+    only screen and (min-resolution: 1.5dppx) {
+        #qnb .side_recent .btn_up{background-image:url(https://res.kurly.com/pc/service/main/2002/ico_quick_up_hover_x2.png);background-size:12px 18px}
+        #qnb .side_recent .btn_down{background-image:url(https://res.kurly.com/pc/service/main/2002/ico_quick_down_hover_x2.png);background-size:12px 18px}
+        #qnb .side_recent .btn_up.off{background-image:url(https://res.kurly.com/pc/service/main/2002/ico_quick_up_x2.png);background-size:12px 18px}
+        #qnb .side_recent .btn_down.off{background-image:url(https://res.kurly.com/pc/service/main/2002/ico_quick_down_x2.png);background-size:12px 18px}
+    }
+    @media all and (max-width: 1250px){
+        #qnb{display:none}
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+            </style>
+
+            <div class="bnr_qnb" id="brnQuick"><a href="/shop/board/view.php?id=notice&amp;no=64" id="brnQuickObj">
+                <img class="thumb" src="https://res.kurly.com/pc/service/main/1904/bnr_quick_20190403.png"
+                     alt="퀄리티있게 샛별배송">
+            </a>
+                <script>
+    var brnQuickScript = (function(){
+        var $target = $('#brnQuickObj'), $targetThumb = $('#brnQuickObj .thumb');
+        // 시간체크
+        function timeCheck(){
+            var now = brnQuick.nowTime; // 호출 하는 js에서 변수선언되어 가져다 사용
+            if( new Date('2020-12-31T11:00:00+09:00').getTime() <= now && now < new Date('2021-01-15T11:00:00+09:00').getTime() ){
+              $target.attr('href', '/shop/event/kurlyEvent.php?htmid=event/2020/1231/newyearsday');
+              $targetThumb.attr('src', 'https://res.kurly.com/pc/service/main/2012/bnr_quick.png');
+              $targetThumb.attr('alt', '2021 설 선물');
+            }else if(  new Date('2021-01-15T11:00:00+09:00').getTime() <= now && now <= new Date('2021-02-10T23:00:00+09:00').getTime() ){
+              $target.attr('href', '/shop/event/kurlyEvent.php?htmid=event/2021/0115/newyearsday');
+              $targetThumb.attr('src', 'https://res.kurly.com/pc/service/main/2101/bnr_quick.png');
+              $targetThumb.attr('alt', '2021 설 선물');
+            }
+        }
+        return {
+            timeCheck : timeCheck
+        }
+    })();
+    brnQuickScript.timeCheck();
+
+
+
+
+
+
+
+
+
+
+
+
+                </script>
+
+
+            </div>
+            <script>
+    var brnQuick = {
+        nowTime : '1652001748451',
+        update : function(){
+            $.ajax({
+                url : campaginUrl + 'pc/service/bnr_quick.html'
+            }).done(function(result){
+                $('#brnQuick').html(result);
+            });
+        }
+    }
+    brnQuick.update();
+
+
+
+
+
+
+
+
+
+
+
+
+            </script>
+
+            <div class="side_menu">
+                <a href="/shop/main/html.php?htmid=event/kurly.htm&amp;name=lovers" class="link_menu ">등급별 혜택</a>
+                <a href="/shop/board/list.php?id=recipe" class="link_menu ">레시피</a>
+                <a href="/shop/goods/goods_review_best.php" class="link_menu ">베스트 후기</a>
+            </div>
+            <div class="side_recent" style="display:none">
+                <strong class="tit">최근 본 상품</strong>
+                <div class="list_goods" data-height="209" style="height: 0px;">
+                    <ul class="list"></ul>
+                </div>
+                <button type="button" class="btn btn_up off">최근 본 상품 위로 올리기</button>
+                <button type="button" class="btn btn_down off">최근 본 상품 아래로 내리기</button>
+            </div>
+            <script>
+/**
+ * 상품상세일때 현재 보고 있는 상품 담기. 상품URL & 상품이미지
+ * 최종 저장 날짜로 부터 24시가 지날시 localStorage 삭제
+ */
+var getGoodsRecent = (function(){
+    var i, len, getGoodsRecent, item, _nowTime = '1652001748451';
+
+    _goodsRecent();
+    function _goodsRecent(){
+        if(localStorage.getItem('goodsRecent') === null){
+            return false;
+        }
+
+        try{
+            getGoodsRecent = JSON.parse(localStorage.getItem("goodsRecent"));
+            len = getGoodsRecent.length;
+            if(addDays(getGoodsRecent[len - 1].time, 1) < _nowTime){
+                localStorage.removeItem('goodsRecent');
+            }else{
+                for(i = 0; i < len; i++){
+                    item = '<li><a class="link_goods" href="/shop/goods/goods_view.php?goodsno=' + getGoodsRecent[i].no + '"><img src="' + getGoodsRecent[i].thumb + '" alt=""></a></li>';
+                    $('.side_recent .list').append(item);
+                }
+                $('.side_recent').show();
+            }
+        } catch(e){
+            console.log("JSON parse error from the Quick menu goods list!!!", e);
+        }
+    }
+
+    function addDays(date, days){
+        var result = new Date(date);
+        result.setDate(result.getDate() + days);
+        return result.getTime();
+    }
+
+    // return {
+    // }
+})();
+
+
+
+
+
+
+
+
+
+
+
+
+            </script>
+        </div>
+        <div id="myPageTop" class="page_aticle mypage_top"><h2 class="screen_out">마이페이지</h2>
+            <div class="mypagetop_user">
+                <div class="inner_mypagetop">
+                    <div class="grade_user">
+                        <div class="grade_wrap">
+                            <div class="grade_logo class6"> 웰컴</div>
+                            <strong class="name">{{user.username}}님</strong></div>
+
+
+                    </div>
+                    <div class="list_mypage">
+                        <div class="list"><a href="#none"
+                                             onclick="KurlyTrackerLink('/shop/mypage/mypage_emoney.php', 'select_my_kurly_point_history', {selection_type: 'top'})"
+                                             class="link_wrap">
+                            <div class="link_title"> 적립금            <!----> <img
+                                    src="https://res.kurly.com/kurly/ico/2021/arrow_right_gray_56_56.png" alt=""
+                                    class="arrow_right"></div>
+                            <div class="spacer"></div>
+                            <p class="info"> 0 원 <span class="expire">              소멸 예정 0 원            </span></p>
+                        </a>
+                            <a href="#none"
+                               onclick="KurlyTrackerLink('/shop/mypage/mypage_coupon.php', 'select_my_kurly_coupon_list', {selection_type: 'top'})"
+                               class="link_wrap">
+                                <div class="link_title"> 쿠폰            <!----> <img
+                                        src="https://res.kurly.com/kurly/ico/2021/arrow_right_gray_56_56.png" alt=""
+                                        class="arrow_right"></div>
+                                <div class="spacer"></div>
+                                <p class="info">0 개</p>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg_loading" id="bgLoading" style="display: none;">
+            <div class="loading_show"></div>
+        </div>
+        <script src="{% static 'js/moment.min.js' %}"></script>
+        <script src="/common_js/common_filter.js?ver=1.70.3"></script>
+        <script src="{% static 'js/mypage_v1.js' %}"></script>
+        <link rel="stylesheet" type="text/css" href="{% static 'CSS/coupon.bundle.css' %}">
+        <div class="page_aticle aticle_type2">
+            <div id="snb" class="snb_my">
+                <h2 class="tit_snb">마이컬리</h2>
+                <div class="inner_snb">
+                    <ul class="list_menu">
+                        <li>
+                            <a href="/mypage">주문 내역</a>
+                        </li>
+                        <li>
+                            <a href="#none"
+                               onclick="KurlyTrackerLink('/shop/mypage/mypage_pick.php', 'select_my_kurly_pick_list')">찜한
+                                상품</a>
+                        </li>
+                        <li>
+                            <a href="/shop/mypage/mypage_review.php">상품 후기</a>
+                        </li>
+                        <li>
+                            <a href="/shop/mypage/product_inquiry.php">상품 문의</a>
+                        </li>
+                        <li class="on">
+                            <a href="/mypage/coupon"
+                               onclick="">쿠폰</a>
+                        </li>
+                        <li>
+                            <a href="/mypage/infochange">개인 정보 수정</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="/mypage/inquiry/form" class="link_inquire"><span class="emph">도움이 필요하신가요 ?</span> 1:1 문의하기</a>
+            </div>
+            <div class="page_section section_coupon">
+                <div id="lacoupon-area">
+                    <div id="lacoupon">
+                        <div id="lacoupon_pc_page">
+                            <div class="title"><h2>쿠폰</h2></div>
+                            <section class="couponRegister"><input type="text" placeholder="쿠폰을 입력해주세요" value="">
+                                <button type="submit">쿠폰 등록</button>
+                                <span>쿠폰에 하이픈("-")이 포함되어 있을 경우 하이픈("-")을 반드시 입력해주세요.</span></section>
+                            <section class="couponList">
+                                <div id="lacoupon_table_description">
+                                    <div><span class="icon"></span><span class="inform">쿠폰은 적용 가능한 상품이 따로 적용되어 있는 경우 해당 상품 구매 시에만 사용이 가능합니다.</span>
+                                    </div>
+                                    <span class="availableCoupon">사용가능쿠폰: 0장</span></div>
+                                <table id="lacoupon_table">
+                                    <caption>쿠폰 상세 내역</caption>
+                                    <colgroup>
+                                        <col style="width: auto;">
+                                        <col style="width: 70px;">
+                                        <col style="width: 100px;">
+                                        <col style="width: 150px;">
+                                        <col style="width: 100px;">
+                                    </colgroup>
+                                    <thead id="lacoupon_table_header">
+                                    <tr>
+                                        <th class="name">쿠폰명</th>
+                                        <th>기능</th>
+                                        <th>할인/적립</th>
+                                        <th>사용가능기간</th>
+                                        <th>사용여부</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody class="couponList">
+                                    <tr>
+                                        <td class="noCoupon" colspan="5">쿠폰 내역이 존재하지 않습니다.</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+    var encodedCouponNo = '';
+
+
+
+
+
+
+
+
+
+
+
+
+        </script>
+        <script src="{% static 'js/coupon.bundle.js' %}">
+// lacoupon components
+
+
+
+
+
+
+
+
+
+
+
+
+        </script>
+        <script src="/appProxy/appData.php?ver=1.70.3"></script>
+        <script>
+    // KM-1483 Amplitude
+    KurlyTracker.setScreenName('coupon_list')
+
+
+
+
+
+
+
+
+
+
+
+
+        </script>
+    </div>
+</div>
+{% endblock %}

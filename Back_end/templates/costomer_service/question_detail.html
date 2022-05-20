@@ -1,0 +1,51 @@
+
+{% extends 'home/base.html' %}
+
+{% block body %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<!--    &lt;!&ndash; Bootstrap CSS &ndash;&gt;-->
+<!--    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">-->
+    <!-- pybo CSS -->
+<!--    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">-->
+
+
+<body>
+<h1>{{ question.subject }}</h1>
+<div>
+    {{ question.content }}
+</div>
+
+<h5>{{ question.answer_set.count }}개의 답변이 있습니다.</h5>
+<div>
+    <ul>
+        {% for answer in question.answer_set.all %}
+        <li>{{ answer.content }}</li>
+        {% endfor %}
+    </ul>
+</div>
+
+<form action="{% url 'board:answer_create' question.id %}" method="post">
+    {% csrf_token %}
+    {% if form.errors %}
+    <div class="alert alert-danger" role="alert">
+    {% for field in form %}
+        {% if field.errors %}
+        <strong>{{ field.label }}</strong>
+        {{ field.errors }}
+        {% endif %}
+    {% endfor %}
+    </div>
+    {% endif %}
+    <textarea name="content" id="content" rows="15"></textarea>
+    <input type="submit" value="답변 등록">
+</form>
+</body>
+</html>
+{% endblock %}
