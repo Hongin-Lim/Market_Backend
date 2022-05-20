@@ -1,17 +1,14 @@
 import json
-
-from django.contrib import auth
+from django.contrib.auth import update_session_auth_hash
 from django.contrib.auth import login as auth_login
 from django.contrib.auth import logout as auth_logout
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm, SetPasswordForm
-# from django.contrib.auth.models import User
-from users.models import User
-from django.db.models import Q
-from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
 from django.shortcuts import render, redirect, get_object_or_404
-import requests
 from users.forms import signupForm
+from users.forms import PasswordChangeForm
+from django.contrib.auth.hashers import check_password
+
 
 # 마이페이지 (장바구니)
 def mypage(request):
@@ -20,6 +17,8 @@ def mypage(request):
 def coupon(request):
     return render(request, 'mypage/coupon.html')
 
+def info_change(request):
+    return render(request, 'mypage/info_change.html')
 
 # 회원가입
 def signup(request):
@@ -80,3 +79,47 @@ def kakao_logout(request):
     kakao_service_logout_url = "https://kauth.kakao.com/oauth/logout"
     return redirect(f"{kakao_service_logout_url}?client_id={kakao_rest_api_key}&logout_redirect_uri={logout_redirect_uri}&state={state}")
 
+
+#회원정보 변경
+@login_required(login_url='/login')
+def update(request):
+    if request.method == 'GET':
+        password_change_form = PasswordChangeForm(request.user)
+        print("GET 가져오기")
+        return render(request, 'mypage/info_change.html', {'password_change_form': password_change_form},)
+    # if request.method == 'POST':
+    #     # 패스워드 변경
+    #     print("post 통신")
+    #     password_change_form = PasswordChangeForm(request.user,request.POST)
+    #     if password_change_form.is_valid():
+    #         user = password_change_form.save()
+    #         update_session_auth_hash(request, user)
+    #         print("패스워드 변경됨")
+    #         return redirect('/')
+    if request.method == "POST":
+        current_password = request.POST.get("origin_password")
+        user = request.user
+        if check_password(current_password, user.password):
+            new_password = request.POST.get("password1")
+            password_confirm = request.POST.get("password2")
+            if new_password == password_confirm:
+                user.set_password(new_password)
+                user.save()
+                print('비밀번호 변경이 완료되었습니다.')
+                return redirect('/')
+            else:
+                print('비밀번호 변경 안됨')
+
+
+def deletepage(request):
+    return render(request, 'mypage/deletepage.html')
+
+
+# 회원탈퇴
+@login_required(login_url='/login')
+def delete(request):
+    if request.method == 'GET':
+        request.user.delete()
+        print("탈퇴 완료")
+        return redirect('/')
+    return render(request, 'mypage/info_change.html')
