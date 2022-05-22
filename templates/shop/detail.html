@@ -1,30 +1,1634 @@
 {% extends 'home/base.html' %}
-
+{% load static %}
 {% block body %}
-<head>
-    <meta charset="UTF-8">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<!--    {% block extra_style %}-->
-<!--    {% endblock %}-->
-</head>
+<body class="goods-goods_view " oncontextmenu="return false" ondragstart="return false"
+      onselectstart="return !disableSelection" style="">
+<div id="wrap" class="">
+    <div id="pos_scroll"></div>
+    <div id="container">
+        <div id="header">
+            <script type="text/javascript">
+    $(document).ready(function(){
+      $("#top-message-close").on("click",function(){
+        var expires = new Date().setDate(new Date().getDate() + 1);
+        localStorage.setItem('top_banner_hide', String(expires));
+      });
 
-<div class="container">
-    <div class="row">
-        <div class="col-4">
-        <img src="{{product.image.url}}" width="100%">
+      // 띠배너 만료 시간이 지나면 로컬 스토리지에서 삭제하여 띠배너가 보이게 합니다.
+      var isStoredHide = localStorage.getItem('top_banner_hide');
+      var isExpiredBanner = function(date) {
+        return new Date().valueOf() >= date;
+      }
+
+      if(isStoredHide){
+        if(isExpiredBanner(Number(isStoredHide))) {
+          localStorage.removeItem('top_banner_hide');
+          $("#top-message").show();
+          return;
+        }
+        $("#top-message").hide();
+      }else {
+        $("#top-message").show();
+      }
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </script>
+            <style>
+  #headerLogo{position:relative;width:1050px;height:63px;margin:0 auto}
+  #headerLogo .bnr_delivery{position:absolute;left:-1px;top:-28px;margin:auto;height:22px}
+  #headerLogo .logo{position:absolute;left:0;bottom:6px;width:100%;height:79px;text-align:center}
+  #headerLogo .logo .link_main{display:inline-block;height:79px}
+  #headerLogo .logo img{display:block;width:103px;height:79px;margin:0 auto}
+  #headerLogo .logo #gnbLogoContainer {margin:0 auto}
+  #gnb.gnb_stop {height: 56px}
+  #gnb.gnb_stop .fixed_container{position:fixed;z-index:300;left:0;top:0;width:100%}
+  #gnb .gnb_kurly{position:relative;z-index:300;min-width:1050px;background-color:#fff;font-family:'Noto Sans';letter-spacing:-0.3px}
+  #gnb .gnb_kurly:after{content:"";position:absolute;z-index:299;left:0;top:56px;width:100%;height:9px;background:url(https://res.kurly.com/pc/service/common/1902/bg_1x9.png) repeat-x 0 100%}
+  #gnb .inner_gnbkurly{position:relative;width:1050px;height:56px;margin:0 auto}
+  /* 검색창 */
+  #gnb .gnb_search{position:absolute;right:174px;top:10px;width:242px}
+  #gnb .gnb_search .inp_search{width:242px;height:36px;padding:0 60px 0 14px;border:1px solid #f7f7f6;border-radius:18px;background-color:#f7f7f7;font-family: 'Noto Sans';font-weight:400;font-size:12px;color:#666;line-height:16px;outline:none}
+  #gnb .gnb_search .inp_search.focus{background-color:#fff;color:#333}
+  #gnb .gnb_search .btn_search{position:absolute;right:5px;top:3px;width:30px;height:30px}
+  /* 장바구니 */
+  #gnb .cart_count{position:absolute;right:-5px;top:10px}
+  #gnb .cart_count .inner_cartcount{text-align:center;font-weight:400}
+  #gnb .cart_count .btn_cart{display:block;width:36px;height:36px;background:url(https://res.kurly.com/pc/service/common/2011/ico_cart.svg) no-repeat 50% 50%}
+  #gnb .cart_count .btn_cart:hover{background:url(https://res.kurly.com/pc/service/common/2011/ico_cart_on.svg?v=1) no-repeat 50% 50%}
+  #gnb .cart_count .num{display:none;position:absolute;left:19px;top:-1px;min-width:20px;height:20px;padding:0 5px;border:2px solid #fff;border-radius:10px;background-color:#5f0080;font-size:9px;color:#fff;line-height:15px;text-align:center;white-space:nowrap}
+  #gnb .cart_count img{display:block;width:36px;height:36px;margin:0 auto}
+  #gnb .cart_count .msg_cart{display:none;position:absolute;right:-7px;top:61px;width:348px;border:1px solid #ddd;background-color:#fff;/* opacity:0; */}
+  #gnb .cart_count .inner_msgcart{display:block;overflow:hidden;padding:20px 0 20px 20px}
+  #gnb .cart_count .msg_cart .thumb{float:left;width:46px;height:60px}
+  #gnb .cart_count .msg_cart .desc{float:left;width:260px;padding:8px 0 0 20px;font-weight:700;font-size:14px;line-height:21px}
+  #gnb .cart_count .msg_cart .desc.add{padding-top:0;margin-top:-5px;}
+  #gnb .cart_count .msg_cart .tit{display:block;overflow:hidden;width:100%;color:#999;white-space:nowrap;text-overflow:ellipsis}
+  #gnb .cart_count .msg_cart .name{overflow:hidden;float:left;max-width:178px;text-overflow:ellipsis}
+  #gnb .cart_count .msg_cart .txt{display:block;padding-top:3px;color:#333}
+  #gnb .cart_count .msg_cart .point{position:absolute;right:13px;top:-14px;width:20px;height:14px;background:url(https://res.kurly.com/pc/ico/1903/ico_layer_point.png) no-repeat 0 0}
+  #gnb .cart_count .msg_cart .repeat{display:none}
+  #gnb .cart_count .msg_cart .add .repeat{display:block}
+  /* GNB메인 */
+  #gnb .gnb_main{overflow:hidden;width:1050px;margin:0 auto}
+  #gnb .gnb_main .gnb{float:left;width:100%}
+  #gnb .gnb_main .gnb li{float:left}
+  #gnb .gnb_main .gnb .lst{background:none}
+  #gnb .gnb_main .gnb a{overflow:hidden;float:left;width:124px;height:55px;padding:16px 0 0;font-size:16px;color:#333;line-height:20px;text-align:center}
+  #gnb .gnb_main .gnb a .txt{font-weight:700}
+  #gnb .gnb_main .gnb a:hover,
+  #gnb .gnb_main .gnb a.on{font-weight:700;color:#5f0080}
+  #gnb .gnb_main .gnb a:hover .txt{border-bottom:1px solid #5f0080}
+  #gnb .gnb_main .menu1 a{width:148px}
+  #gnb .gnb_main .menu1 .ico{float:left;width:16px;height:14px;margin:5px 14px 0 0;background:url(https://res.kurly.com/pc/service/common/1908/ico_gnb_all_off.png) no-repeat}
+  #gnb .gnb_main .menu1 a.on .ico,
+  #gnb .gnb_main .menu1 a:hover .ico{background:url(https://res.kurly.com/pc/service/common/1908/ico_gnb_all.png) no-repeat 0 0}
+  #gnb .gnb_main .menu1 a.on .txt,
+  #gnb .gnb_main .menu1 a:hover .txt,
+  #gnb .gnb_main .menu1 .txt{float:left;font-weight:700;border-bottom:0}
+  #gnb .gnb_main .menu3 a{width:116px}
+  #gnb .gnb_main .lst a{width:116px}
+  /* GNB서브 */
+  #gnb .gnb_sub{display:none;overflow:hidden;position:absolute;z-index:301;left:0;top:55px;width:213px;padding-top:1px}
+  #gnb .gnb_sub .inner_sub{width:100%;border:1px solid #ddd;background:url(https://res.kurly.com/pc/service/common/1908/bg_gnb_sub_v3.png) repeat-y 0 0}
+  #gnb .size_over{overflow-x:hidden;overflow-y:auto}
+  #gnb .gnb_sub .gnb_menu{width:219px}
+  #gnb .gnb_sub .gnb_menu li{width:100%;text-align:left}
+  #gnb .gnb_sub .gnb_menu li:first-child{padding-top:0}
+  #gnb .gnb_sub .menu{display:block;overflow:hidden;width:100%;height:40px;padding:8px 0 0 14px;cursor:pointer}
+  #gnb .gnb_sub .gnb_menu li:first-child .menu{height:39px;padding-top:7px}
+  #gnb .gnb_sub .current .menu{background:#f7f7f7}
+  #gnb .gnb_sub .current .txt,
+  #gnb .gnb_sub .menu.on.off:hover .txt,
+  #gnb .gnb_sub .menu.on .txt{font-weight:700;color:#5f0080}
+  #gnb .gnb_sub .ico{float:left;width:24px;height:24px}
+  #gnb .gnb_sub .ico img{width:24px;height:24px}
+  #gnb .gnb_sub .ico .ico_off{display:block}
+  #gnb .gnb_sub .ico .ico_on{display:none}
+  #gnb .gnb_sub .current .ico_off,
+  #gnb .gnb_sub .menu.on .ico_off,
+  #gnb .gnb_sub .menu:hover .ico_off{display:none}
+  #gnb .gnb_sub .current .ico_on,
+  #gnb .gnb_sub .menu.on .ico_on,
+  #gnb .gnb_sub .menu:hover .ico_on{display:block}
+  #gnb .gnb_sub .ico_arrow{display:none;float:right;width:16px;height:17px;padding:6px 9px 0 0}
+  #gnb .gnb_sub .ico_arrow img{width:7px;height:11px}
+  #gnb .gnb_sub .current .ico_arrow{display:block}
+  #gnb .gnb_sub .txt{float:left;padding:0 4px 0 10px;font-weight:400;font-size:14px;color:#333;line-height:22px;white-space:nowrap}
+  #gnb .gnb_sub .ico_new{overflow:hidden;float:left;width:14px;height:14px;margin-top:5px;background-position:50% 50%;background-repeat:no-repeat;background-size:14px 14px;font-size:0;line-height:0;text-indent:-9999px;image-rendering:-webkit-optimize-contrast;}
+  #gnb .gnb_sub .sub_menu{position:absolute;z-index:0;left:200px;top:0;width:248px;height:100%;padding:0 0 0 20px;background:url(https://res.kurly.com/images/common/bg_1_1.gif) repeat 0 0;opacity:0;transition:opacity 0.2s}
+  #gnb .gnb_sub .current .sub_menu{z-index:1;opacity:1;transition:opacity 0.5s}
+  #gnb .gnb_sub .sub_menu li:first-child{padding-top:11px}
+  #gnb .gnb_sub .sub_menu .sub{display:block;overflow:hidden;height:40px;padding-left:20px;font-size:14px;color:#333;line-height:18px;cursor:pointer}
+  #gnb .gnb_sub .sub_menu .sub:hover .name{border-bottom:1px solid #5f0080;font-weight:700;color:#5f0080}
+  #gnb .gnb_sub .sub_menu .sub.on{font-weight:700;color:#5f0080}
+  #gnb .gnb_sub .recommend{overflow:hidden;width:529px;padding:21px 0 0 40px}
+  #gnb .gnb_sub .recommend li{float:left;width:120px;height:130px;padding:0 10px 0 0}
+  #gnb .gnb_sub .recommend li:first-child{padding-top:0}
+  #gnb .gnb_sub .recommend .sub{display:block;overflow:hidden;width:120px;height:130px;padding:0;cursor:pointer}
+  #gnb .gnb_sub .recommend .thumb{display:block;width:110px;height:83.4px;margin-bottom:8px;background-position:50% 50%;background-repeat:no-repeat;background-size:cover}
+  #gnb .gnb_sub .recommend .thumb img{width:110px;height:84px}
+  #gnb .gnb_sub .recommend .name{font-size:14px;line-height:18px}
+  #gnb .btn_location{overflow:hidden;position:absolute;right:107px;top:10px;width:36px;height:36px;border:0 none;background:url(https://res.kurly.com/pc/ico/2008/ico_delivery_setting_done.svg) no-repeat 50% 50%;font-size:0;text-indent:-9999px}
+  #gnb .btn_location.on{background-image:url(https://res.kurly.com/pc/ico/2008/ico_delivery_setting.svg?ver=1)}
+  #gnb .layer_location{display:none;position:absolute;z-index:300;right:41px;top:56px;width:315px;padding:18px 18px 19px 20px;border:1px solid #ddd;background-color:#fff}
+  #gnb .layer_location:after{content:"";position:absolute;right:66px;top:-50px;width:36px;height:50px;background:url(https://res.kurly.com/pc/ico/2011/ico_point_up_18x12.svg) no-repeat 50% 100%}
+  #gnb .layer_location *{font-weight:500;font-size:16px;color:#333;line-height:24px;letter-spacing:-0.34px}
+  #gnb .layer_location .delivery{display:inline-block;padding-top:8px;font-size:14px;font-weight:normal;letter-spacing:-0.2px;line-height:normal;}
+  #gnb .layer_location .courierTime{display:inline-block;margin-left:6px;display:inline-block;font-size:14px;font-weight:normal;line-height:normal;color:#666;letter-spacing:-0.2px;}
+  #gnb .layer_location .star{color:#5f0080}
+  #gnb .layer_location .regular{color:#666}
+  #gnb .layer_location .none{color:#999}
+  #gnb .layer_location .btn{display:block;width:100%;height:36px;margin-top:17px;padding-bottom:2px;border-radius:3px;font-size:12px;line-height:32px;letter-spacing:0;text-align:center}
+  #gnb .layer_location a.btn{padding-top:0}
+  #gnb .layer_location .btn.default{border:1px solid #5f0080;background-color:#fff;color:#5f0080}
+  #gnb .layer_location .btn.active{border:1px solid #5f0081;background-color:#5f0080;color:#fff}
+  #gnb .layer_location .btn .ico{display:inline-block;width:20px;height:20px;margin:6px 0 0 -6px;background:url(https://res.kurly.com/pc/ico/2008/ico_search_40x40.png) no-repeat 50% 50%;background-size:20px 20px;vertical-align:top}
+  #gnb .layer_location .group_button{display:block;overflow:hidden}
+  #gnb .layer_location .double .default{float:left;width:110px}
+  #gnb .layer_location .double .active{float:right;width:159px}
+  #gnb .layer_location .double .btn {margin-left: 0; margin-right:0;}
+  #gnb .layer_location .emph{color:#5f0080}
+  #gnb .location_set:hover .btn_location.on{background-image:url(https://res.kurly.com/pc/ico/2010/ico_delivery_setting_on.svg)}
+  #gnb .location_set.show .layer_location,
+  #gnb .location_set:hover .layer_location{display:block}
+  #gnb .location_set .btn_location.off,
+  #gnb .location_set .btn_location.off:hover{background-image:url(https://res.kurly.com/pc/ico/2008/ico_delivery_off.svg?ver=1);cursor:default}
+  #gnb .location_set.off .layer_location,
+  #gnb .location_set.off:hover .layer_location{display:none}
+  #gnb .gnbPick{
+    display: inline-block;
+    position: absolute;
+    right: 51px;
+    top: 10px;
+    width: 36px;
+    height: 36px;
+    font-size: 0px;
+  }
+  #gnb .gnbPick .btn_pick{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border: none;
+    color: transparent;
+    background: url(https://res.kurly.com/pc/service/pick/btn-heart-off.svg) no-repeat 50% 50%;
+    cursor: pointer;
+  }
+  #gnb .gnbPick .btn_pick:hover{
+    background: url(https://res.kurly.com/pc/service/pick/btn-heart-hover.svg) no-repeat 50% 50%;
+  }
+  /* 오류 */
+  #gnb .layer_location .error .txt{display:block;color:#333}
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min-device-pixel-ratio: 1.5),
+  only screen and (min-resolution: 1.5dppx) {
+    #gnb .gnb_sub .ico_new{background:url(https://res.kurly.com/pc/ico/1808/ico_new_gnb_16x16.png) no-repeat 0 0;background-size:14px 14px}
+    #gnb .cart_count .msg_cart .point{background:url(https://res.kurly.com/pc/ico/1903/ico_layer_point_x2.png) no-repeat 0 0;background-size:20px 14px}
+    #gnb .gnb_main .menu1 .ico{background:url(https://res.kurly.com/pc/service/common/1908/ico_gnb_all_off_x2.png) no-repeat 0 0;background-size:16px 14px}
+    #gnb .gnb_main .menu1 a.on .ico,
+    #gnb .gnb_main .menu1 a:hover .ico{background:url(https://res.kurly.com/pc/service/common/1908/ico_gnb_all_x2.png) no-repeat 0 0;background-size:16px 14px}
+  }
+  .gnb_search .init{position:relative}
+  .gnb_search .init .btn_delete{overflow:hidden;position:absolute;left:170px;top:-36px;width:36px;height:36px;border:0 none;background:url(https://res.kurly.com/pc/ico/2010/ico_search_del.svg) no-repeat 50% 50%;background-size:12px 12px;font-size:0;line-height:0;text-indent:-9999px;opacity:0}
+  .gnb_search .init .btn_delete.on{opacity:1}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </style>
+            <style>
+    #content{opacity:0}/* vue사용시 화면 깜빡임방지 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </style>
+
+            <div class="section_view">
+                <div id="sectionView">
+                    <div class="inner_view">
+                        <div class="thumb"
+                             style="background-image: url(&quot;https://img-cf.kurly.com/shop/data/goods/1637921874969y0.jpeg&quot;);">
+                            <img src="{{product.image.url}}"
+                                 alt="상품 대표 이미지" class="bg"></div>
+                        <p class="goods_name"><span class="btn_share"><button id="btnShare"
+                                                                              data-goodsno="6986">공유하기</button></span>
+                            <strong class="name">{{product.name}}</strong> <span
+                                    class="short_desc">{{product.name}}</span></p>
+
+                        <p class="goods_price"><span class="position"><span class="dc"><!----> <span
+                                class="dc_price">{{product.price}}<span class="won">원</span></span>
+                        </span>
+
+                        </span>
+                            </span>
+                        </p> <!----> <!----> <!---->
+                        <div class="goods_info"><!---->
+                            <dl class="list fst">
+                                <dt class="tit">판매단위</dt>
+                                <dd class="desc">1 박스</dd>
+                            </dl>
+                            <dl class="list">
+                                <dt class="tit">배송구분</dt> <!---->
+                                <dd class="desc"> 샛별배송/택배배송</dd>
+                            </dl> <!---->
+                            <dl class="list">
+                                <dt class="tit">포장타입</dt>
+                                <dd class="desc"> 냉장/스티로폼 <strong class="emph"> 택배배송은 에코포장이 스티로폼으로
+                                    대체됩니다. </strong>
+                                </dd>
+                            </dl>
+                            <dl class="list">
+                                <dt class="tit">유통기한</dt>
+                                <dd class="desc">수령일로부터 익일까지</dd>
+                            </dl> <!----> <!---->
+                        </div> <!---->
+                    </div> <!---->
+                </div>
+                <div id="cartPut">
+                    <div class="cart_option cartList cart_type2">
+                        <div class="inner_option"><!----> <!---->
+
+                            <div class="cart_footer off">
+                                <div class="functions">
+                                    <button type="button" class="pick_icon_button"> 찜하기 버튼</button>
+                                    <button disabled="disabled" type="button" class="alarm_button"> 재입고 알림
+                                    </button>
+                                </div>
+                                <div class="button_wrap">
+                                    <form action="{% url 'cart:product_add' product.id %}" method="post">
+                                        {{ add_to_cart }}
+                                        {% csrf_token %}
+                                        <input type="submit" class="base_button full" value="장바구니 넣기">
+                                    </form>
+                                    <!---->
+                                </div>
+                                <!----> <!----></div> <!----> <!----></div>
+                    </div>
+                    <div class="cart_option cartList cart_type1">
+                        <div class="inner_option"><!----> <!---->
+                            <div class="in_option">
+                                <div class="list_goods">
+                                    <div class="bar_open">
+                                        <button type="button" class="btn_close"><span class="ico">상품 선택</span>
+                                        </button>
+                                    </div> <!----> <!----> <!----></div> <!----> <!----> <!----></div>
+                            <div class="cart_footer off">
+                                <div class="functions">
+                                    <button type="button" class="pick_icon_button"> 찜하기 버튼</button>
+                                    <button disabled="disabled" type="button" class="alarm_button"> 재입고 알림
+                                    </button>
+                                </div>
+                                <div class="button_wrap">
+                                    <button type="button" class="base_button full"> 장바구니 담기</button> <!---->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart_option cart_type3 notify_option">
+                        <div class="inner_option"><strong class="tit">재입고 알림 신청</strong>
+                            <p class="name_deal">[콜린스그린] 더 당근 95 350mL</p> <!----> <!----> <p
+                                    class="notice"><span
+                                    class="ico">·</span>상품이 입고되면 앱 푸시 또는 알림톡으로 알려 드립니다.</p>
+                            <div class="group_btn layer_btn2"><span class="btn_type2"><button type="button"
+                                                                                              class="txt_type">취소</button></span>
+                                <span class="btn_type1"><button type="button"
+                                                                class="txt_type">신청하기</button></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart_option cart_result cart_type3">
+                        <div class="inner_option">
+                            <button type="button" class="btn_close1">pc레이어닫기</button>
+                            <p class="success">상품 구매를 위한 <span class="bar"></span>배송지를 설정해주세요</p>
+                            <div class="group_btn layer_btn2"><span class="btn_type2"><button type="button"
+                                                                                              class="txt_type">취소</button></span>
+                                <span class="btn_type1"><button type="button" class="txt_type"><span
+                                        class="ico_search"></span>주소 검색</button></span></div>
+                        </div>
+                    </div>
+                    <form name="frmBuyNow" method="post" action="/shop/order/order.php"><input type="hidden"
+                                                                                               name="mode"
+                                                                                               value="addItem">
+                        <input type="hidden" name="goodsno" value=""></form>
+                    <form name="frmWishlist" method="post"></form>
+                </div>
+            </div>
+
+
+            <div class="layout-wrapper goods-view-area">
+
+
+                <script src="{% static 'js/autoslider.js' %}"></script>
+                <div class="goods-add-product">
+                    <h2 class="goods-add-product-title"> 추천 상품 </h2>
+                    <div class="goods-add-product-wrapper __slide-wrapper" data-slide-item="5">
+                        <button class="goods-add-product-move goods-add-product-move-left __slide-go-left">왼쪽으로
+                            슬라이드
+                            이동
+                        </button>
+                        <button class="goods-add-product-move goods-add-product-move-right __slide-go-right">
+                            오른쪽으로
+                            슬라이드 이동
+                        </button>
+                        <div class="goods-add-product-list-wrapper" style="height:320px">
+                            <ul class="goods-add-product-list __slide-mover">
+                                {% for product in products %}
+                                <li class="goods-add-product-item __slide-item">
+                                    <div class="goods-add-product-item-figure">
+                                        <a href="/">
+                                            <img src="{{product.image.url}}"
+                                                 class="goods-add-product-item-image"
+                                                 onerror="this.src='https://res.kurly.com/mobile/service/common/bg_1x1.png'">
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <div class="goods-add-product-item-content-wrapper">
+                                            <p class="goods-add-product-item-name">{{product.name}}</p>
+                                            <p class="goods-add-product-item-price">{{product.price}}</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="goods-view-infomation detail_wrap_outer" id="goods-view-infomation">
+                    <div class="goods-view-tab">
+                        <ul class="goods-view-infomation-tab-group">
+                            <li class="goods-view-infomation-tab"><a href="#goods-description"
+                                                                     class="goods-view-infomation-tab-anchor __active">상품설명</a>
+                            </li>
+                            <li class="goods-view-infomation-tab"><a href="#goods-infomation"
+                                                                     class="goods-view-infomation-tab-anchor">상세정보</a>
+                            </li>
+                            <li class="goods-view-infomation-tab goods-view-review-tab"><a href="#goods-review"
+                                                                                           class="goods-view-infomation-tab-anchor">후기
+                                <span class="count_review">(2772)</span></a></li>
+
+                            <li class="goods-view-infomation-tab qna-show"><a href="#goods-qna"
+                                                                              class="goods-view-infomation-tab-anchor">문의</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="goods-view-infomation-content __active" id="goods-description">
+
+                        <div id="giftNotice"></div>
+
+
+                        <div class="goods_wrap">
+                            <div class="goods_intro">
+                                <div class="pic">
+                                    <img src="//img-cf.kurly.com/shop/data/goodsview/20170703/gv10000004709_1.jpg">
+                                </div>
+                                <div class="context last">
+                                    <h3>
+                                        <small>당근의 상큼한 반전</small>
+                                        [콜린스그린] 더 당근 95
+                                    </h3>
+                                    <p class="words">은은하고 향긋한 단맛과 밝은색으로 음식에 포인트를 주는 당근. 당근이 몸에 좋다는 사실이야 모두 알고
+                                        있지만,
+                                        싫어하는 채소를 손꼽을 때도 꼭 들어가곤 하죠. 콜린스그린의 더 당근 95는 당근을 싫어하는 분들도 지금까지 느껴 보지 못한
+                                        당근의
+                                        새로운 맛을 발견하는 제품이 될 거예요. 당근에 레몬을 살짝 더해 당근 특유의 흙 내음을 보완하고, 상큼한 맛을
+                                        더했습니다.</p>
+                                </div>
+                            </div>
+                            <div class="goods_point">
+                                <h3><span>Kurly's Check Point</span></h3>
+                                <div class="context last">
+                                    <div class="pic">
+                                        <img src="//img-cf.kurly.com/shop/data/goodsview/20170703/gv20000004710_1.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="goods_desc">
+                                <div class="context">
+                                    <div class="pic">
+                                        <img src="//img-cf.kurly.com/shop/data/goodsview/20201223/gv10000146116_1.jpg">
+                                    </div>
+                                    <p class="words">
+                                    </p>
+                                </div>
+                                <div class="context">
+                                    <div class="pic">
+                                        <img src="//img-cf.kurly.com/shop/data/goodsview/20170703/gv10000004711_1.jpg">
+                                    </div>
+                                    <p class="words">
+                                        <strong class="sub_tit">황금비율로 담아낸 선명한 색, 상쾌한 맛</strong> 당근은 식이섬유 함유량이
+                                        고구마보다
+                                        높을 뿐만 아니라 비타민 A와 카로틴까지 듬뿍 머금고 있습니다. 자연 그대로의 비타민 A를 얻을 수 있는 당근과 상큼한 레몬을
+                                        각각
+                                        95%, 5%의 비율로 꽉 짜내어 담은 선명한 주황색의 더 당근 95를 만나보세요. 콜린스그린이 고민 끝에 찾아낸 최적의 비율로
+                                        당근의
+                                        흙 내음은 누르고, 레몬의 상쾌한 향기를 담았어요.<br>
+                                        <br>
+                                        산화방지제나 합성보존료 등의 첨가물이 들어 있지 않으니 배송받으신 후 2~3일 안에 섭취하시는 것이 좋아요. 제품 특성상 분리나
+                                        침전물이
+                                        있을 수 있으나 이는 이물질이 아니므로 안심하고 흔들어 드시면 됩니다.
+                                    </p>
+
+                                    <p class="words">
+                                        <strong class="sub_tit">갓 짜낸 주스의 순수함</strong> 집에서 신선한 과일을 갓 짜내 주스로 만들어
+                                        즐기는 그
+                                        맛! 콜린스그린 주스는 아무것도 더하지 않고 오직 갓 짜낸 과일의 순수한 과즙만을 담은 100% 착즙 주스랍니다. 세계적으로 많이
+                                        알려진
+                                        상업용 콜드프레스 착즙기와 투기어 방식의 착즙기 등 재료별 특성에 맞는 착즙기를 사용해 주스를 만듭니다. 콜린스그린이 사용하는
+                                        모든
+                                        착즙기는 제조 과정에서 열이나 칼날이 가해지지 않기에 대부분의 영양소가 온전하게 남아있는 주스가 생산되죠. 이 같은 특징 때문에
+                                        콜린스그린은 콜드프레스 주스 브랜드로서는 매우 드물게 HACCP 인증을 받았답니다.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="about_brand"><h3><span>About Brand</span></h3>
+                                <div class="context last">
+                                    <div class="context_about">
+                                        <div class="pic">
+                                            <img src="//img-cf.kurly.com/shop/data/goodsview/20210414/gv10000172784_1.jpg">
+                                        </div>
+                                        <p class="words">
+                                            콜린스그린은 2014년 창업자 정승빈 대표가 '본인이 매일 마셔도 부족함이 없는 품질의 주스'를 전파하고자 시작한
+                                            브랜드입니다.
+                                            독보적인 위치를 지켜온 원동력은 퀄리티에 대한 타협 없이 좋은 제품을 제공하고, 진취적인 팀이 각자의 잠재력을 최대한
+                                            발휘하며,
+                                            올바르고 합리적인 과정을 지키는 마음입니다. 이런 과정 하나하나가 결국 좋은 상품을 만든다는 믿음이 지금의 콜린스그린을
+                                            있게
+                                            했죠.
+                                        </p>
+                                    </div>
+                                    <div class="context_about">
+                                        <div class="pic">
+                                            <img src="//img-cf.kurly.com/shop/data/goodsview/20210414/gv20000172785_1.jpg">
+                                        </div>
+                                        <p class="words">
+                                            <strong class="sub_tit"> 콜린스그린의 시작</strong>
+                                            “컨설팅 펌에서 6년째 낮 밤을 가리지 않고 전투적으로 일해왔어요. 조직 생활이 잘 맞는 성격이었고 똑똑한 동료들과 함께
+                                            치열하게
+                                            고민하며 일하는 것이 즐거웠죠. 하지만 경력이 쌓이고 시니어가 되면서, 좀 더 본질적이고 근원적인 질문과 마주하게 됐어요.
+                                            ‘나는
+                                            지금 무엇을 위해 이렇게 열심히 일하지?’라는 의문을 품게 된 거죠. 회사의 비전과 나의 비전이 일치되려면, 내가 가장
+                                            좋아하는
+                                            분야의 사업을 스스로 이끌어가는 수밖에 없겠다는 생각이 들기 시작했어요.”<br>
+                                            <br>
+                                            “그렇게 막연하게 사업에 대한 생각을 이어가고 있을 때, 저에게 확신을 준 건 바로 ‘주스’였죠. 결혼 후 아내가 매일
+                                            아침 짜
+                                            주던 한 잔의 주스가 당시 매우 지쳐 있던 저의 몸과 마음에 신선한 활력을 주고 있었거든요. 그것이 콜린스그린을 시작하게
+                                            된
+                                            계기가 됐죠. 건강하고 맛있는 음식을 즐기는 ‘foodie’로서, 주스 컴퍼니는 저에게 운명과도 같은 일이에요.”
+                                        </p>
+                                    </div>
+                                    <div class="context_about">
+                                        <div class="pic">
+                                            <img src="//img-cf.kurly.com/shop/data/goodsview/20210414/gv20000172786_1.jpg">
+                                        </div>
+                                        <p class="words">
+                                            <strong class="sub_tit"> 주스에 담긴 고집과 철학</strong>
+                                            직접 주스 한 잔을 내려 가족과 함께 마셔야 한다면, 어떻게 만드시겠어요? 우선 다소 값이 비싸더라도 좋은 재료만을 골라
+                                            꼼꼼하게
+                                            세척해야죠. 다른 첨가물은 전혀 넣지 않고, 그날 마실 주스만을 신선하게 만들 거예요. 지금 말한 이 과정을 콜린스그린은
+                                            매일
+                                            그대로 이어갑니다. '수익보다 좋은 상품이 먼저다'라는 신념 아래, 저렴하게 대량으로 만들어 오래 유통하기 위한 방법은
+                                            철저히
+                                            배제하며 콜린스그린만의 주스를 지켜왔어요. 이는 콜린스그린이 만드는 주스 외의 모든 제품에도 똑같이 적용됩니다. 단 한
+                                            분이
+                                            드시더라도, 좋은 것을 드셨으면 하는 바람으로요.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="goods-view-infomation-content" id="goods-infomation">
+                        <div id="goods-image">
+                            <div id="goods_pi">
+                                <p class="pic">
+                                    <img src="//img-cf.kurly.com/shop/data/goodsview/20210402/gv40000169775_1.jpg">
+                                </p>
+                            </div>
+                        </div>
+                        <table width="100%" border="0" cellpadding="0" cellspacing="1"
+                               class="extra-information">
+                            <tbody>
+                            <tr>
+                                <th scope="row" class="goods-view-form-table-heading">식품의 유형</th>
+                                <td>과채주스(비가열)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="goods-view-form-table-heading">생산자 및 소재지(수입품의 경우 생산자, 수입자
+                                    및
+                                    제조국)
+                                </th>
+                                <td>넥스트키친 / 서울시 영등포구 선유로 13길 25 에이스하이테크시티 2차 B210호</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="goods-view-form-table-heading">제조연월일, 유통기한 또는 품질유지기한</th>
+                                <td>제조일로부터 3일</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="goods-view-form-table-heading">포장단위별 용량(중량), 수량</th>
+                                <td>350ml, 1병</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="goods-view-form-table-heading">원재료명 및 함량(농수산물의 원산지 표시에 관한
+                                    법률에
+                                    따른 원산지 표시 포함)
+                                </th>
+                                <td>당근(국산), 레몬(외국산)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="goods-view-form-table-heading">영양성분(식품위생법에 따른 영양성분 표시대상
+                                    식품에
+                                    한함)
+                                </th>
+                                <td>상세정보 및 상세이미지 참조</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="goods-view-form-table-heading">유전자변형식품에 해당하는 경우의 표시</th>
+                                <td>해당사항 없음</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="goods-view-form-table-heading">영유아식 또는 체중조절식품 등에 해당하는 경우
+                                    표시광고사전심의필 유무 및 부작용 발생 가능성
+                                </th>
+                                <td>해당사항 없음</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="goods-view-form-table-heading">보관방법 및.취급방법</th>
+                                <td>냉장보관 0-10℃</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="goods-view-form-table-heading">소비자상담실 전화번호</th>
+                                <td>마켓컬리 고객행복센터 (1644-1107)</td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="whykurly_area">
+                            <div class="row">
+                                <strong class="tit_whykurly">WHY KURLY</strong>
+                                <div id="why_kurly" class="txt_area">
+                                    <div class="why-kurly">
+                                        <div class="col">
+                                            <div class="icon"><img
+                                                    src="https://res.kurly.com/pc/ico/1910/01_check.svg"></div>
+                                            <div class="info">
+                                                <div class="title">깐깐한 상품위원회</div>
+                                                <div class="desc"><p>나와 내 가족이 먹고 쓸 상품을 고르는<br> 마음으로 매주 상품을 직접
+                                                    먹어보고,<br> 경험해보고 성분, 맛, 안정성 등 다각도의<br> 기준을 통과한 상품만을 판매합니다.
+                                                </p>
+                                                    <!----></div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="icon"><img
+                                                    src="https://res.kurly.com/pc/ico/1910/02_only.svg"></div>
+                                            <div class="info">
+                                                <div class="title">차별화된 Kurly Only 상품</div>
+                                                <div class="desc"><p>전국 각지와 해외의 훌륭한 생산자가<br> 믿고 선택하는 파트너,
+                                                    마켓컬리.<br>
+                                                    3천여 개가 넘는 컬리 단독 브랜드, 스펙의<br> Kurly Only 상품을 믿고 만나보세요.</p>
+                                                    <span
+                                                            class="etc">(온라인 기준 / 자사몰, 직구 제외)</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="icon"><img
+                                                    src="https://res.kurly.com/pc/ico/1910/03_cold.svg"></div>
+                                            <div class="info">
+                                                <div class="title">신선한 풀콜드체인 배송</div>
+                                                <div class="desc"><p>온라인 업계 최초로 산지에서 문 앞까지<br> 상온, 냉장, 냉동 상품을 분리
+                                                    포장
+                                                    후<br> 최적의 온도를 유지하는 냉장 배송 시스템,<br> 풀콜드체인으로 상품을 신선하게 전해드립니다.
+                                                </p>
+                                                    <span class="etc">(샛별배송에 한함)</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="icon"><img
+                                                    src="https://res.kurly.com/pc/ico/1910/04_price.svg"></div>
+                                            <div class="info">
+                                                <div class="title">고객, 생산자를 위한 최선의 가격</div>
+                                                <div class="desc"><p>매주 대형 마트와 주요 온라인 마트의 가격<br> 변동 상황을 확인해
+                                                    신선식품은
+                                                    품질을<br> 타협하지 않는 선에서 최선의 가격으로,<br> 가공식품은 언제나 합리적인 가격으로<br> 정기
+                                                    조정합니다.</p> <!----></div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="icon"><img
+                                                    src="https://res.kurly.com/pc/ico/1910/05_eco.svg"></div>
+                                            <div class="info">
+                                                <div class="title">환경을 생각하는 지속 가능한 유통</div>
+                                                <div class="desc"><p>친환경 포장재부터 생산자가 상품에만<br> 집중할 수 있는 직매입
+                                                    유통구조까지,<br> 지속 가능한 유통을 고민하며 컬리를 있게<br> 하는 모든 환경(생산자, 커뮤니티,
+                                                    직원)이<br> 더 나아질 수 있도록 노력합니다.</p> <!----></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="happy_center fst">
+                            <div class="happy">
+                                <h4 class="tit">고객행복센터</h4>
+                                <p class="sub">
+                                    <span class="emph">궁금하신 점이나 서비스 이용에 불편한 점이 있으신가요?</span><span
+                                        class="bar"></span>
+                                    문제가 되는 부분을 사진으로 찍어<span class="bar"></span>
+                                    아래 중 편하신 방법으로 접수해 주시면<span class="bar"></span>
+                                    빠르게 도와드리겠습니다.
+                                </p>
+                            </div>
+                            <ul class="list">
+                                <li>
+                                    <div class="tit">전화 문의 1644-1107</div>
+                                    <div class="sub">오전 7시~오후 7시 (연중무휴)</div>
+                                </li>
+                                <li>
+                                    <div class="tit">카카오톡 문의</div>
+                                    <div class="sub">오전 7시~오후 7시 (연중무휴)</div>
+                                    <div class="expend">
+                                        카카오톡에서 ’마켓컬리’를 검색 후<br>
+                                        대화창에 문의 및 불편사항을<br>
+                                        남겨주세요.
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="tit">홈페이지 문의</div>
+                                    <div class="sub">
+                                        24시간 접수 가능<br>
+                                        로그인 &gt; 마이컬리 &gt; 1:1 문의
+                                    </div>
+                                    <div class="expend">
+                                        고객센터 운영 시간에 순차적으로 답변해드리겠습니다.
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="happy_center on">
+                            <div class="happy unfold">
+                                <h4 class="tit">교환 및 환불 안내</h4>
+                                <p class="sub">
+                                    교환 및 환불이 필요하신 경우 고객행복센터로 문의해주세요.
+                                </p>
+                                <a data-child-id="refund" href="#none" class="asked">
+                                    <span class="txt" data-open="자세히 보기" data-close="닫기">닫기</span>
+                                    <img src="https://res.kurly.com/pc/ico/2001/pc_arrow_open@2x.png" alt="아이콘"
+                                         class="ico">
+                                </a>
+                            </div>
+                            <div class="happy_faq fst">
+                                <span class="item">01. 상품에 문제가 있는 경우</span>
+                                <div id="refund1" class="questions hide"><p class="desc">받으신 상품이 표시·광고 내용 또는 계약
+                                    내용과
+                                    <span class="bar_m"></span>다른 경우에는 상품을 받은 날부터 3개월 이내, <span
+                                            class="bar_m bar_pc"></span>그 사실을 알게 된 날부터 30일 이내에 <span
+                                            class="bar_m"></span>교환 및 환불을 요청하실 수 있습니다.</p>
+                                    <p class="space"></p>
+                                    <p class="desc">상품의 정확한 상태를 확인할 수 있도록 <span class="bar_m"></span>사진을 함께
+                                        보내주시면 더
+                                        빠른 상담이 가능합니다.</p>
+                                    <p class="noti">※ 상품에 문제가 있는 것으로 확인되면 배송비는 컬리가 부담합니다.</p></div>
+                            </div>
+                            <div class="happy_faq">
+                                <span class="item">02. 단순 변심, 주문 착오의 경우</span>
+                                <div id="refund2" class="questions hide"><strong class="subject no_padding">신선 /
+                                    냉장
+                                    / 냉동 식품</strong>
+                                    <p class="desc">재판매가 불가한 상품의 특성상, <span class="bar_m"></span>단순 변심, 주문 착오 시
+                                        <span class="bar_m"></span>교환 및 반품이 어려운 점 양해 부탁드립니다.</p>
+                                    <p class="space"></p>
+                                    <p class="desc">상품에 따라 조금씩 맛이 다를 수 있으며, <span class="bar_m"></span>개인의 기호에
+                                        따라 같은
+                                        상품도 다르게 <span class="bar_m"></span>느끼실 수 있습니다.</p><strong
+                                            class="subject">유통기한
+                                        30일 이상 식품 <span class="bar_m"></span>(신선 / 냉장 / 냉동 제외) &amp; 기타
+                                        상품</strong>
+                                    <p class="desc">상품을 받은 날부터 7일 이내에 <span class="bar_m"></span>고객행복센터로 문의해주세요.
+                                    </p>
+                                    <p class="noti">※ 단순 변심으로 인한 교환 또는 환불의 경우 <span class="bar_m"></span>고객님께서
+                                        배송비
+                                        6,000원을 부담하셔야 합니다. <span class="bar_m bar_pc"></span>(주문 건 배송비를 결제하셨을 경우
+                                        3,000원)</p></div>
+                            </div>
+                            <div class="happy_faq">
+                                <span class="item">03. 교환·반품이 불가한 경우</span>
+                                <div id="refund3" class="questions hide"><p class="desc">다음에 해당하는 교환·환불 신청은
+                                    <span
+                                            class="bar_m"></span>처리가 어려울 수 있으니 양해 부탁드립니다.</p>
+                                    <ul class="list_questions">
+                                        <li>고객님의 책임 있는 사유로 상품이 멸실되거나 훼손된 경우 <span class="bar_m bar_pc"></span>(단,
+                                            상품의 내용을 확인하기 위해 포장 등을 훼손한 경우는 제외)
+                                        </li>
+                                        <li>고객님의 사용 또는 일부 소비로 상품의 가치가 감소한 경우</li>
+                                        <li>시간이 지나 다시 판매하기 곤란할 정도로 상품의 가치가 감소한 경우</li>
+                                        <li>복제가 가능한 상품의 포장이 훼손된 경우</li>
+                                        <li>고객님의 주문에 따라 개별적으로 생산되는 <span class="bar_m"></span>상품의 제작이 이미 진행된 경우
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="happy_center on">
+                            <div class="happy unfold" style="border-top:none;">
+                                <h4 class="tit">주문 취소 안내</h4>
+                                <ul class="sub">
+                                    <li>
+                                        <strong class="emph">- [배송준비중] 이전까지 주문 취소 가능합니다.</strong>
+                                    </li>
+                                    <li>
+                                        <strong class="emph">- [마이컬리 &gt; 주문내역 상세페이지] 에서 직접 취소하실 수
+                                            있습니다.</strong>
+                                    </li>
+                                    <li>
+                                        <strong class="emph">- [예약일 배송] 주문의 경우 [입금확인] 이후 단계부터는
+                                            고객행복센터로 문의해주세요.</strong>
+                                    </li>
+                                </ul>
+                                <a href="#none" class="asked">
+                                    <span class="txt" data-open="자세히 보기" data-close="닫기">닫기</span>
+                                    <img src="https://res.kurly.com/pc/ico/2001/pc_arrow_open@2x.png" alt="아이콘"
+                                         class="ico">
+                                </a>
+                            </div>
+                            <div class="happy_faq">
+                                <span class="item">주문 취소 관련</span>
+                                <div class="questions hide">
+                                    <p class="desc">- [배송준비중] 부터는 취소가 불가하니, 반품으로 진행해주세요. (상품에 따라 반품이 불가할 수
+                                        있습니다.)</p>
+                                    <p class="desc">- 주문마감 시간에 임박할수록 취소 가능 시간이 짧아질 수 있습니다.</p>
+                                    <p class="desc">- 비회원은 App 또는 모바일 웹사이트에서 [마이컬리 &gt; 비회원 주문조회 페이지] 에서 취소가
+                                        가능합니다.</p>
+                                    <p class="desc">- 일부 예약상품은 배송 3~4일 전에만 취소 가능합니다.</p>
+                                    <p class="desc">- 주문상품의 부분취소는 불가능합니다. 전체 주문 취소 후 다시 구매 해주세요.</p>
+                                </div>
+                            </div>
+                            <div class="happy_faq">
+                                <span class="item">결제 승인 취소 / 환불 관련</span>
+                                <div class="questions hide">
+                                    <p class="desc">- 카드 환불은 카드사 정책에 따르며, 자세한 사항은 카드사에 문의해주세요.</p>
+                                    <p class="desc">- 결제 취소 시, 사용하신 적립금과 쿠폰도 모두 복원됩니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="happy_center lst">
+                            <div class="happy unfold">
+                                <h4 class="tit">배송관련 안내</h4>
+                                <p class="sub">
+                                    배송 과정 중 기상 악화 및 도로교통 상황에 따라 부득이하게 지연 배송이 발생될 수 있습니다.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="goods-view-infomation-content" id="goods-review" data-load="0">
+
+
+                    </div>
+                    <div class="goods-view-infomation-content" id="goods-qna">
+                        <div class="board-container">
+                            <div id="productInquiryBoard" data-productno="6986" data-boardpagesize="10"
+                                 data-boardtype="product" data-devicetype="pc">
+                                <div class="board-header-container"><strong>PRODUCT Q&amp;A</strong>
+                                    <ul class="list-description">
+                                        <li>상품에 대한 문의를 남기는 공간입니다. 해당 게시판의 성격과 다른 글은 사전동의 없이 담당 게시판으로 이동될 수 있습니다.
+                                        </li>
+                                        <li>배송관련, 주문(취소/교환/환불)관련 문의 및 요청사항은 마이컬리 내 <a
+                                                href="/mypage/inquiry/list">1:1
+                                            문의</a>에 남겨주세요.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="board-item-container product">
+                                    <div class="inquiry-board-header">
+                                        <div style="width: 710px;">제목</div>
+                                        <div>작성자</div>
+                                        <div>작성일</div>
+                                        <div>답변상태</div>
+                                    </div>
+                                    <ul class="inquiry-notice-list"></ul>
+                                    <ul class="board-list">
+                                        <li class="inquiry-item loading">
+                                            <div class="product-detail"><strong></strong></div>
+                                            <div class="item-cell"><p class="txt_sub text_medium normal "></p>
+                                            </div>
+                                            <div class="item-cell"><p class="txt_sub text_medium normal "></p>
+                                            </div>
+                                            <div class="item-cell"><p class="txt_sub text_medium normal "></p>
+                                            </div>
+                                        </li>
+                                        <li class="inquiry-item loading">
+                                            <div class="product-detail"><strong></strong></div>
+                                            <div class="item-cell"><p class="txt_sub text_medium normal "></p>
+                                            </div>
+                                            <div class="item-cell"><p class="txt_sub text_medium normal "></p>
+                                            </div>
+                                            <div class="item-cell"><p class="txt_sub text_medium normal "></p>
+                                            </div>
+                                        </li>
+                                        <li class="inquiry-item loading">
+                                            <div class="product-detail"><strong></strong></div>
+                                            <div class="item-cell"><p class="txt_sub text_medium normal "></p>
+                                            </div>
+                                            <div class="item-cell"><p class="txt_sub text_medium normal "></p>
+                                            </div>
+                                            <div class="item-cell"><p class="txt_sub text_medium normal "></p>
+                                            </div>
+                                        </li>
+                                        <li class="inquiry-item loading">
+                                            <div class="product-detail"><strong></strong></div>
+                                            <div class="item-cell"><p class="txt_sub text_medium normal "></p>
+                                            </div>
+                                            <div class="item-cell"><p class="txt_sub text_medium normal "></p>
+                                            </div>
+                                            <div class="item-cell"><p class="txt_sub text_medium normal "></p>
+                                            </div>
+                                        </li>
+                                        <li class="inquiry-item loading">
+                                            <div class="product-detail"><strong></strong></div>
+                                            <div class="item-cell"><p class="txt_sub text_medium normal "></p>
+                                            </div>
+                                            <div class="item-cell"><p class="txt_sub text_medium normal "></p>
+                                            </div>
+                                            <div class="item-cell"><p class="txt_sub text_medium normal "></p>
+                                            </div>
+                                        </li>
+                                        <li class="inquiry-item loading">
+                                            <div class="product-detail"><strong></strong></div>
+                                            <div class="item-cell"><p class="txt_sub text_medium normal "></p>
+                                            </div>
+                                            <div class="item-cell"><p class="txt_sub text_medium normal "></p>
+                                            </div>
+                                            <div class="item-cell"><p class="txt_sub text_medium normal "></p>
+                                            </div>
+                                        </li>
+                                        <li class="inquiry-item loading">
+                                            <div class="product-detail"><strong></strong></div>
+                                            <div class="item-cell"><p class="txt_sub text_medium normal "></p>
+                                            </div>
+                                            <div class="item-cell"><p class="txt_sub text_medium normal "></p>
+                                            </div>
+                                            <div class="item-cell"><p class="txt_sub text_medium normal "></p>
+                                            </div>
+                                        </li>
+                                        <li class="inquiry-item loading">
+                                            <div class="product-detail"><strong></strong></div>
+                                            <div class="item-cell"><p class="txt_sub text_medium normal "></p>
+                                            </div>
+                                            <div class="item-cell"><p class="txt_sub text_medium normal "></p>
+                                            </div>
+                                            <div class="item-cell"><p class="txt_sub text_medium normal "></p>
+                                            </div>
+                                        </li>
+                                        <li class="inquiry-item loading">
+                                            <div class="product-detail"><strong></strong></div>
+                                            <div class="item-cell"><p class="txt_sub text_medium normal "></p>
+                                            </div>
+                                            <div class="item-cell"><p class="txt_sub text_medium normal "></p>
+                                            </div>
+                                            <div class="item-cell"><p class="txt_sub text_medium normal "></p>
+                                            </div>
+                                        </li>
+                                        <li class="inquiry-item loading">
+                                            <div class="product-detail"><strong></strong></div>
+                                            <div class="item-cell"><p class="txt_sub text_medium normal "></p>
+                                            </div>
+                                            <div class="item-cell"><p class="txt_sub text_medium normal "></p>
+                                            </div>
+                                            <div class="item-cell"><p class="txt_sub text_medium normal "></p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="board-inquiry-area">
+                                        <div class="paging-navigation">
+                                            <button type="button" class="paging-prev" disabled="">
+                                                <span>이전</span>
+                                            </button>
+                                            <button type="button" class="paging-next" disabled="">
+                                                <span>다음</span>
+                                            </button>
+                                        </div>
+                                        <button class="btn active"><span>문의하기</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="{% static 'js/pc.bundle.js' %}" defer=""></script>
+                </div>
+            </div>
+            <link rel="stylesheet" href="{% static 'css/pc.bundle.css' %}">
+            <script src="/shop/data/skin/designgj/js/mk_goods.js?ver=1.70.5"></script>
+            <script src="/common_js/common_filter.js?ver=1.70.5"></script>
+            <script src="/common_js/view_v1.js?ver=1.70.5"></script>
+            <script src="/common_js/cartput_v1.js?ver=1.70.5"></script>
+            <script>
+cartPut.pageType = 'view';
+// 상품상세상단호출
+var sectionViewDefault = {
+    'login' : false,
+    'no' : '6986',
+    'type' : 'pc'
+}
+sectionView.userInfoGet(sectionViewDefault);
+
+function cartPutLayerTypeShow(){
+    var winTop = 0, scrollCheckTop = 0;
+    var $target = $('#cartPut .cart_type1');
+    $(window).on('scroll', function(){
+        scrollCheckTop = Number( $('#goods-view-infomation').offset().top ); // 패키지상품치 위치가 바뀌므로 매번 체크
+        winTop = Number( $(this).scrollTop() );
+        if(winTop >=scrollCheckTop){
+            $target.addClass('on');
+        }else{
+            $target.removeClass('on');
+            if($target.find('.btn_close .ico').hasClass('open')){
+                $target.find('.btn_close').trigger('click');
+            }
+        }
+    }).scroll();
+}
+cartPutLayerTypeShow();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </script>
+
+            <script src="https://res.kurly.com/js/lib/jquery.inview.js"></script>
+            <script>
+    // iframe에서 해당 height값가져오는 부분
+    function resizeFrameHeight(onm, height) {
+        document.getElementById(onm).height = height;
+    }
+    function resizeFrameWidth(onm, width) {
+        document.getElementById(onm).width = width;
+    }
+    jQuery(function ($) {
+        $("#goods-review").bind("inview", function(event,visible) {
+            if (visible == true) {
+                if ( $(this).data("load")==0 ) {
+                    $(this).data("load",1);
+                    $(this).html('<iframe id="inreview" src="./goods_review_list.php?goodsno=6986" frameborder="0" class="goods-view-infomation-board"></iframe>');
+                }
+            }
+            $(function(){
+                $('#inreview').load(function () {
+                    var iframe = $('#inreview').contents();
+                    iframe.find(".layout-pagination-button").on('click', function(event) {
+                        $('html,body').animate({
+                            scrollTop: $("#goods-review").offset().top-115
+                        }, 300);
+                    });
+                });
+            });
+        });
+    });
+    // 해당 구역을 경과하면 보여주기 - 2016.01.03 junix
+    $( document ).ready(function() {
+        // $(window).height() 브라우저 내 창 높이
+        // $(document).scrollTop() 현재 스크롤 top 위치
+        if (($("#goods-review").offset().top - $(document).scrollTop()) < $(window).height())
+        {
+            $("#goods-review").data("load", 1);
+            $("#goods-review").html('<iframe id="inreview" src="./goods_review_list.php?goodsno=6986" frameborder="0" class="goods-view-infomation-board"></iframe>');
+        }
+
+        // 170119 ey
+        var slideThumb = $('.goods-add-product-item');
+        var slideThumbCnt = 5;
+
+        if(slideThumb.length <= slideThumbCnt){
+            $('.goods-add-product-move-right').hide();
+            $('.goods-add-product-move-left').hide();
+        }
+    });
+
+    $(window).load(function(){
+        // KM-433 장차석 : 인증서기능추가
+        showCertify.pageMake();
+        showCertify.init();
+    });
+
+    // KMF-771 상품상세 과거 이벤트 페이지 랜더링 이슈
+    $('#goods-description a').on('click', function(){
+      var httpCheck = $(this).attr('href');
+      if(httpCheck.indexOf('http://www.kurly.com') > -1) {
+        $(this).attr('href', httpCheck.replace('http://www.kurly.com', ''));
+      }
+      return true;
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </script>
+
+            <script src="https://res.kurly.com/js/vue/data/goods/whykurly.js?ver=1.70.5"></script>
+            <script src="https://res.kurly.com/js/vue/components/listIconTitleDesc.js?ver=1.70.5"></script>
+
+            <script src="/common_js/goods/exchangeRefundPolicyPC.js?ver=1.70.5"></script>
+            <div class="bg_loading" id="bgLoading" style="display: none;">
+                <div class="loading_show"></div>
+            </div>
+            <script src="/common_js/product/productDetail.js?ver=1.70.5"></script>
+        </div>
     </div>
-    <div class="col">
-        <h1 class="display-6">{{product.name}}</h1>
-        <p><span class="badge badge-secondary">가격</span>{{product.price}}</p>
-        <form action="{% url 'cart:product_add' product.id %}" method="post">
-            {{ add_to_cart }}
-            {% csrf_token %}
-            <input type="submit" class="btn btn-primary btn-sm" value="장바구니 넣기">
-        </form>
-        <h5><span class="badge badge-secondary">상품설명</span>{{product.description|linebreaks}}</h5>
+
+    <div id="layerDSR">
+        <div class="bg_dim"></div>
+        <div class="in_layer">
+            <div class="inner_layer layer_star">
+                <strong class="dsr_result">샛별배송 지역입니다.</strong>
+                <div class="ani">
+                    <img data-src="https://res.kurly.com/mobile/img/1908/img_delivery_kurly.png"
+                         src="https://res.kurly.com/mobile/service/common/bg_1x1.png" alt="샛별배송 이미지">
+                </div>
+                <p class="dsr_desc">
+                    매일 아침, 문 앞까지 신선함을 전해드려요.
+                </p>
+                <div class="direct_courier_operation_notice">
+<span class="courier_message">
+<span class="startAt"></span>시~<span class="endAt"></span>시 주문은 택배로 배송되며<br>
+다음날 밤 12시 이전 도착합니다. (토요일 주문 불가)
+</span>
+                </div>
+            </div>
+            <div class="inner_layer layer_normal">
+                <strong class="dsr_result">택배배송 지역입니다.</strong>
+                <div class="ani">
+                    <img data-src="https://res.kurly.com/mobile/img/1908/img_delivery_car.png"
+                         src="https://res.kurly.com/mobile/service/common/bg_1x1.png" alt="택배배송 이미지">
+                </div>
+                <p class="dsr_desc">
+                    오늘 주문하면 다음 날 바로 도착해요.
+                </p>
+                <p class="dsr_notice">일요일은 배송 휴무로 토요일에는 주문 불가</p>
+            </div>
+            <div class="inner_layer layer_none">
+                <strong class="dsr_result">배송 불가 지역입니다.</strong>
+                <div class="ani">
+                    <img data-src="https://res.kurly.com/mobile/img/1908/img_delivery_none.png"
+                         src="https://res.kurly.com/mobile/service/common/bg_1x1.png" alt="배송불가 이미지">
+                </div>
+                <p class="dsr_desc">
+                    더 많은 곳에 배송될 수 있게<br>
+                    최선을 다하겠습니다.
+                </p>
+            </div>
+            <div class="layer_btn1">
+                <button type="button" class="btn_close"
+                        onclick="$('#layerDSR').hide();$(this).parent().find('.inner_layer').hide();">확인
+                </button>
+            </div>
+            <button type="button" class="layer_close"
+                    onclick="$('#layerDSR').hide();$(this).parent().find('.inner_layer').hide();"></button>
+        </div>
     </div>
+    <div id="footer">
+        <div class="footer-top">
+            <div class="inner_footer">
+                <div class="footer_cc">
+                    <h2 class="tit_cc">고객행복센터</h2>
+                    <div class="cc_view cc_call">
+                        <h3><span class="tit">1644-1107</span></h3>
+                        <dl class="list">
+                            <dt>365고객센터</dt>
+                            <dd>오전 7시 - 오후 7시</dd>
+                        </dl>
+                    </div>
+                    <div class="cc_view cc_kakao">
+                        <h3><a class="tit" href="#none">카카오톡 문의</a></h3>
+                        <script type="text/javascript">
+                $('.cc_kakao .tit').on('click',function(e){
+                  e.preventDefault();
+                  KurlyTracker.setAction('select_bottom_kakao_button').sendData();
+                  $.ajax({
+                    type: "GET",
+                    url: apiDomain+'/v1/mypage/asks/confirm/kakao',
+                    dataType: 'json',
+                    success: function(data) {
+                      if(data.data.ok_button_action_url.indexOf('https://api.happytalk.io/') > -1){
+                        if(confirm('['+data.data.title+'] '+data.data.message)) window.open(data.data.ok_button_action_url,'_blank');
+                      }else{
+                        alert(data.data.title+'\n'+data.data.message);
+                      }
+                    }
+                  })
+                });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </script>
+                        <dl class="list">
+                            <dt>365고객센터</dt>
+                            <dd>오전 7시 - 오후 7시</dd>
+                        </dl>
+                    </div>
+                    <div class="cc_view cc_qna">
+                        <h3><a href="#none"
+                               onclick="KurlyTrackerLink('/mypage/inquiry/form', 'select_bottom_onebyone_button')"
+                               class="tit">1:1 문의</a></h3>
+                        <dl class="list">
+                            <dt>24시간 접수 가능</dt>
+                            <dd>고객센터 운영시간에 순차적으로 답변해드리겠습니다.</dd>
+                        </dl>
+                    </div>
+                    <div class="cc_view cc_bulkorder">
+                        <h3><a href="/shop/main/html.php?htmid=mypage/bulk_order.htm" class="tit">대량주문 문의</a>
+                        </h3>
+                        <p class="txt">비회원의 경우 메일로 문의 바랍니다.</p>
+                    </div>
+                </div>
+                <div class="company">
+                    <ul class="list">
+                        <li><a class="link" href="/shop/introduce/about_kurly.php">컬리소개</a></li>
+                        <li><a class="link"
+                               href="https://www.youtube.com/embed/WEep7BcboMQ?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;enablejsapi=1"
+                               onclick="window.open(this.href, 'pop', 'width=1330,height=660,scrollbars=yes');return false;">컬리소개영상</a>
+                        </li>
+                        <li><a class="link" href="https://marketkurly.recruiter.co.kr/appsite/company/index"
+                               target="_blank">인재채용</a></li>
+                        <li><a class="link" href="/shop/service/agreement.php">이용약관</a></li>
+                        <li><a class="link emph" href="/shop/service/private.php">개인정보처리방침</a></li>
+                        <li><a class="link" href="/shop/service/guide.php">이용안내</a></li>
+                    </ul>
+                    법인명 (상호) : 주식회사 컬리 <span class="bar">I</span> 사업자등록번호 : 261-81-23567 <a
+                        href="http://www.ftc.go.kr/bizCommPop.do?wrkr_no=2618123567&amp;apv_perm_no="
+                        target="_blank" class="link">사업자정보 확인</a>
+                    <br>
+                    통신판매업 : 제 2018-서울강남-01646 호 <span class="bar">I</span> 개인정보보호책임자 : 이원준
+                    <br>
+                    주소 : 서울특별시 강남구 테헤란로 133, 18층(역삼동) <span class="bar">I</span> 대표이사 : 김슬아
+                    <br>
+                    입점문의 : <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLScLB7YkGJwNRzpGpp0gbR1i4C1_uvTEFj43SFfJ_XEadTn3gQ/viewform?usp=sf_link"
+                        target="_blank" class="link">입점문의하기</a> <span class="bar">I</span> 마케팅제휴 : <a
+                        href="mailto:business@kurlycorp.com" class="link">business@kurlycorp.com</a>
+                    <br>
+                    채용문의 : <a href="mailto:recruit@kurlycorp.com" class="link">recruit@kurlycorp.com</a>
+                    <br>
+                    팩스: 070 - 7500 - 6098 <span class="bar">I</span> 이메일 : <a href="mailto:help@kurlycorp.com"
+                                                                              class="link">help@kurlycorp.com</a>
+                    <br>
+                    대량주문 문의 : <a href="mailto:kurlygift@kurlycorp.com" class="link">kurlygift@kurlycorp.com</a>
+                    <br>
+                    <ul class="list_sns">
+                        <li>
+                            <a href="https://instagram.com/marketkurly" class="link_sns" target="_blank"><img
+                                    src="https://res.kurly.com/pc/ico/1810/ico_instagram.png"
+                                    alt="마켓컬리 인스타그램 바로가기"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/marketkurly" class="link_sns" target="_blank"><img
+                                    src="https://res.kurly.com/pc/ico/1810/ico_fb.png" alt="마켓컬리 페이스북 바로가기"></a>
+                        </li>
+                        <li>
+                            <a href="http://blog.naver.com/marketkurly" class="link_sns" target="_blank"><img
+                                    src="https://res.kurly.com/pc/ico/1810/ico_blog.png" alt="마켓컬리 네이버블로그 바로가기"></a>
+                        </li>
+                        <li>
+                            <a href="https://m.post.naver.com/marketkurly" class="link_sns" target="_blank"><img
+                                    src="https://res.kurly.com/pc/ico/1810/ico_naverpost.png"
+                                    alt="마켓컬리 유튜브 바로가기"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCfpdjL5pl-1qKT7Xp4UQzQg"
+                               class="link_sns lst"
+                               target="_blank"><img src="https://res.kurly.com/pc/ico/1810/ico_youtube.png"
+                                                    alt="마켓컬리 유튜브 바로가기"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_link">
+                <div class="authentication">
+                    <a href="#none"
+                       onclick="popup('https://res.kurly.com/kurly/img/2022/isms_220310.png',550,700);return false;"
+                       class="mark" target="_blank">
+                        <img src="https://res.kurly.com/kurly/logo/isms_220310.png" alt="isms 로고" class="logo">
+                        <p class="txt">
+                            [인증범위] 마켓컬리 쇼핑몰 서비스 개발·운영<br>
+                            (심사받지 않은 물리적 인프라 제외)<br>
+                            [유효기간] 2022.01.19 ~ 2025.01.18
+                        </p>
+                    </a>
+                    <a href="#none"
+                       onclick="popup('https://www.eprivacy.or.kr/front/certifiedSiteMark/certifiedSiteMarkPopup.do?certCmd=EP&amp;certNum=2022-EP-R002',527,720);return false;"
+                       class="mark" target="_blank">
+                        <img src="https://res.kurly.com/pc/ico/2001/logo_eprivacyplus.png"
+                             alt="eprivacy plus 로고"
+                             class="logo">
+                        <p class="txt">
+                            개인정보보호 우수 웹사이트 ·<br>
+                            개인정보처리시스템 인증 (ePRIVACY PLUS)
+                        </p>
+                    </a>
+                    <a href="#none"
+                       onclick="popup('http://pgweb.uplus.co.kr/ms/escrow/s_escrowYn.do?mertid=go_thefarmers',460,550);return false;"
+                       class="mark lguplus" target="_blank">
+                        <img src="https://res.kurly.com/pc/service/main/2009/logo_payments.png"
+                             alt="payments 로고"
+                             class="logo">
+                        <p class="txt">
+                            고객님의 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한<br>
+                            토스 페이먼츠 구매안전(에스크로) 서비스를 이용하실 수 있습니다.
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer_indemnification_clause">
+            <p class="txt">마켓컬리에서 판매되는 상품 중에는 마켓컬리에 입점한 개별 판매자가 판매하는 마켓플레이스(오픈마켓) 상품이 포함되어 있습니다.</p>
+            <p class="txt">마켓플레이스(오픈마켓) 상품의 경우 컬리는 통신판매중개자로서 통신판매의 당사자가 아닙니다. 컬리는 해당 상품의 주문, 품질, 교환/환불 등 의무와 책임을
+                부담하지 않습니다.</p>
+            <em class="copy">© KURLY CORP. ALL RIGHTS RESERVED</em>
+        </div>
     </div>
 </div>
+</div>
+<iframe name="xdomain-d36961d3" id="xdomain-d36961d3" src="https://api.kurly.com/xdomain?ver=1"
+        style="display:none;"></iframe>
+
+<a href="#top" id="pageTop">맨 위로가기</a>
+<script>
+	$(document).ready(function(){
+		var pageTop = {
+			$target : $('#pageTop'),
+			$targetDefault : 0,
+			$scrollTop : 0,
+			$window : $(window),
+			$windowHeight : 0,
+			setTime : 500,
+			saveHeight : 0,
+      trackerEventUrl: [
+        '/shop/main/index.php',
+        '/shop/goods/list_all.php',
+      ],
+			init:function(){
+			},
+			action:function(){
+				var $self = this;
+				$self.$windowHeight = parseInt($self.$window.height());
+				$self.$window.on('scroll', function(){
+					$self.$scrollTop = parseInt($self.$window.scrollTop());
+					if($self.$scrollTop >= $self.$windowHeight){
+						if(!$self.$target.hasClass('on')){
+							$self.position();
+							$self.$target.addClass('on');
+							$self.showAction();
+						}
+					}else{
+						if($self.$target.hasClass('on')){
+							$self.position();
+							$self.$target.removeClass('on');
+							$self.hideAction();
+						}
+					}
+				});
+
+				$self.$target.on('click', function(e){
+					e.preventDefault();
+					$self.topAction();
+				});
+			},
+			showAction:function(){
+				var $self = this;
+				$self.$target.stop().animate({
+					opacity:1,
+					bottom:$self.saveHeight
+				}, $self.setTime);
+			},
+			hideAction:function(){
+				var $self = this;
+				$self.$target.stop().animate({
+					opacity:0,
+					bottom:-$self.$target.height()
+				}, $self.setTime);
+			},
+			topAction:function(){
+				var $self = this;
+				$self.hideAction();
+				$('html,body').animate({
+					scrollTop:0
+				}, $self.setTime);
+        if($self.trackerEventUrl.indexOf(location.pathname) > -1) {
+          KurlyTracker.setAction('select_top_button').sendData();
+        }
+			},
+			position:function(){
+				var $self = this;
+				$self.saveHeight = 15;
+				if($('#sectionView').length > 0){
+					$self.saveHeight = 25;
+				}
+				if($('#branch-banner-iframe').length > 0 && parseInt( $('#branch-banner-iframe').css('bottom') ) > 0){
+					$('#footer').addClass('bnr_app');
+					$self.saveHeight += $('#branch-banner-iframe').height();
+				}
+			}
+		}
+		pageTop.action();
+	});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+<script>
+// 클릭인인경우(푸터에 있으나, 아직공용작업은 못함) => bgLoading 이부분 처리필요
+var bodyScroll = {
+	winScrollTop : 0,
+	body : $('body'),
+	gnb : $('#gnb'),
+	bg : $('#bgLoading'),
+	bodyFixed : function(){
+		var $self = this;
+		var gnbCheck = false;
+		$self.gnb = $('#gnb');
+		if($self.gnb.hasClass('gnb_stop')){
+			gnbCheck = true;
+		}
+		$self.body = $('body');
+		$self.bg = $('#bgLoading');
+		$self.winScrollTop = $(window).scrollTop();
+		$self.bg.show();
+		$self.body.addClass('noBody').css({
+			'top' : -$self.winScrollTop
+		});
+	},
+	bodyDefault : function(type){
+		var $self = this;
+		$self.body.removeClass('noBody').removeAttr('style');
+		$self.bg.hide();
+		if(type === undefined){
+			window.scrollTo(0, $self.winScrollTop);
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+<iframe name="ifrmHidden" id="ifrmHidden" src="about:blank" style="display:none;width:100%;height:600px;"></iframe>
+<script>
+(function (theFrame) {
+  theFrame.contentWindow.location.href = theFrame.src;
+}(document.getElementById("ifrmHidden")));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+<script src="https://res.kurly.com/js/polifill/customeEvent.js"></script>
+<script>
+	window.addEventListener('load', function () {
+		!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+		fbq('init', '526625657540055');
+		fbq('track', "PageView");
+		// PixelReady
+		var _eventPixelReady = new CustomEvent("pixelReady", {
+			detail:{ // 전달 할께 있으면 반드시 detail 오브젝트에 넣어야 함
+				val:'1',
+			}
+		});
+		document.dispatchEvent(_eventPixelReady);
+	}, false);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+<noscript><img height="1" width="1" style="display:none"
+               src="https://www.facebook.com/tr?id=526625657540055&ev=PageView&noscript=1"></noscript>
+
+
+</body>
 
 {% endblock %}
