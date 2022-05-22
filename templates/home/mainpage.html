@@ -41,12 +41,12 @@
                             {% for product in products %}
                             <li>
 
-                                <a href="#" class="recommend-product-image image-hover">
+                                <a href="shop/{{product.id}}/{{product.slug}}/" class="recommend-product-image image-hover">
                                     <img class="card-img-top"
                                          src="{{product.image.url}}"
                                          alt="Product Image">
                                 </a>
-                                <a href="#">
+                                <a href="shop/{{product.id}}/{{product.slug}}/">
                                     <h3 class="product-name">{{product.name}}</h3>
                                 </a>
                                 <div class="product-price">

@@ -1,4 +1,3 @@
-
 def DOCKER_IMAGE_NAME = "lhi90/verymarket-main"           // 생성하는 Docker image 이름
 def DOCKER_IMAGE_TAGS = "0.1"  // 생성하는 Docker image 태그
 def NAMESPACE = "default"
