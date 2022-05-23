@@ -1,8 +1,7 @@
-FROM lhi90/verymarket-main:0.1
+FROM python:3.9
 WORKDIR /apps
-RUN apt-get install python3-dev default-libmysqlclient-dev gcc  -y
-COPY requirements.txt ./
+COPY requirements.txt /apps/
 RUN pip install -r requirements.txt
-COPY . .
+COPY . /apps/
 EXPOSE 8000
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "config.wsgi:application"]
+CMD ["python3", "manage.py", "runserver", "0.0.0.0:8000"]
