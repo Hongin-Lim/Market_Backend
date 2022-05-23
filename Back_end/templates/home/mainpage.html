@@ -11,6 +11,10 @@
 </div>
 
 <!-- main -->
+<style>
+img { dispLay:block; margin:auto; }
+
+</style>
 <main class="main">
     <section class="slide">
         <div class="slide-wrap">
@@ -18,14 +22,14 @@
                 <ul class="slide-items">
                     <li class="slide-content">
                         <a href="#" class="slide01"
-                           style="background-image: url(https://verymarket.s3.ap-northeast-2.amazonaws.com/static/assets/very_logo.png
+                           style="background-image: url(https://verymarket2022.s3.ap-northeast-2.amazonaws.com/static/image/베리마켓웹배너가로형.jpg
                            );"></a>
                     </li>
-                    <li class="slide-content">
-                        <a href="#" class="slide02"
-                           style="background-image: url(https://img1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/2Afk/image/FMTKGDV8rDqN6-nJwqwl_gjadFI.jpg
-                           );"></a>
-                    </li>
+<!--                    <li class="slide-content">-->
+<!--                        <a href="#" class="slide02"-->
+<!--                           style="background-image: url(https://img1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/2Afk/image/FMTKGDV8rDqN6-nJwqwl_gjadFI.jpg-->
+<!--                           );"></a>-->
+<!--                    </li>-->
                 </ul>
             </div>
         </div>
@@ -41,12 +45,13 @@
                             {% for product in products %}
                             <li>
 
-                                <a href="#" class="recommend-product-image image-hover">
+                                <a href="shop/{{product.id}}/{{product.slug}}/"
+                                   class="recommend-product-image image-hover">
                                     <img class="card-img-top"
                                          src="{{product.image.url}}"
                                          alt="Product Image">
                                 </a>
-                                <a href="#">
+                                <a href="shop/{{product.id}}/{{product.slug}}/">
                                     <h3 class="product-name">{{product.name}}</h3>
                                 </a>
                                 <div class="product-price">
