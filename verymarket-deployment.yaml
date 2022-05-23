@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: django-nginx
-          image: lhi90/django-nginx:0.1
+          image: lhi90/vermarket-main:0.2
           ports:
             - containerPort: 8000
           imagePullPolicy: Always
