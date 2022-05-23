@@ -1,7 +1,10 @@
 FROM python:3.9
 WORKDIR /apps
-COPY requirements.txt /apps/
+RUN apt-get update
+RUN apt-get install python3-dev default-libmysqlclient-dev gcc  -y
+COPY requirements.txt ./
+RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
-COPY . /apps/
+COPY . .
 EXPOSE 8000
-CMD ["python3", "manage.py", "runserver", "0.0.0.0:8000"]
+CMD ["gunicorn", "--bind", "0.0.0.0:8000", "project_name.wsgi:application"]
