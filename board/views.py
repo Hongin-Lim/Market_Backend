@@ -15,8 +15,6 @@ def home(request):
 
 def home2(request):
     products = Product.objects.filter(available_display=True)
-
-
     return render(request, 'home/mainpage.html', {'products':products})
 
 #
