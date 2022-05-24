@@ -754,7 +754,7 @@
                                             <th scope="col" class="input_txt">번호</th>
                                             <th scope="col" class="input_txt">내용</th>
                                             <th scope="col" class="input_txt">별점</th>
-                                            <th scope="col" class="input_txt" align="left">작성자</th>
+                                            <th scope="col" class="input_txt" align="center">작성자</th>
                                             <th scope="col" class="input_txt">작성일</th>
                                         </tr>
                                         </tbody>
@@ -807,7 +807,7 @@
                                             <tr>
                                                 <th scope="col" class="input_txt">
                                                     <div class="review_write_textarea">
-                                                <textarea name='contents' id="reviewContents" title="구매후기 작성"
+                                                <textarea style="resize: none;" rows="10" cols="120" name='contents' id="reviewContents" title="구매후기 작성"
                                                           maxlength="600"></textarea>
                                                     </div>
                                                 </th>
@@ -906,61 +906,12 @@
                                         <p class="btnArea after">
                                             <button id="submitButton" type="submit" onclick="javascript: form.action='/shop/{{product.id}}/{{product.slug}}/add_comment';"/><span
                                                     class="bhs_button"
-                                                    style="line-height:30px; width:130px;">후기쓰기</span></button>
+                                                    style="line-height:30px; width:130px;" >후기쓰기</span></button>
                                         </p>
                                         </table>
                                     </form>
                                 </div>
                             </div>
-                            <div class="board_pg_area"><a
-                                    href="/shop/goods/goods_review_list.php?goodsno=10907&amp;page=1"
-                                    class="layout-pagination-button layout-pagination-first-page">맨 처음 페이지로 가기</a><a
-                                    href="/shop/goods/goods_review_list.php?goodsno=10907&amp;page=1"
-                                    class="layout-pagination-button layout-pagination-prev-page">이전 페이지로 가기</a><strong
-                                    class="layout-pagination-button layout-pagination-number __active">1</strong><a
-                                    href="/shop/goods/goods_review_list.php?goodsno=10907&amp;page=2"
-                                    class="layout-pagination-button layout-pagination-number">2</a><a
-                                    href="/shop/goods/goods_review_list.php?goodsno=10907&amp;page=3"
-                                    class="layout-pagination-button layout-pagination-number">3</a><a
-                                    href="/shop/goods/goods_review_list.php?goodsno=10907&amp;page=4"
-                                    class="layout-pagination-button layout-pagination-number">4</a><a
-                                    href="/shop/goods/goods_review_list.php?goodsno=10907&amp;page=5"
-                                    class="layout-pagination-button layout-pagination-number">5</a><a
-                                    href="/shop/goods/goods_review_list.php?goodsno=10907&amp;page=6"
-                                    class="layout-pagination-button layout-pagination-number">6</a><a
-                                    href="/shop/goods/goods_review_list.php?goodsno=10907&amp;page=7"
-                                    class="layout-pagination-button layout-pagination-number">7</a><a
-                                    href="/shop/goods/goods_review_list.php?goodsno=10907&amp;page=8"
-                                    class="layout-pagination-button layout-pagination-number">8</a><a
-                                    href="/shop/goods/goods_review_list.php?goodsno=10907&amp;page=9"
-                                    class="layout-pagination-button layout-pagination-number">9</a><a
-                                    href="/shop/goods/goods_review_list.php?goodsno=10907&amp;page=10"
-                                    class="layout-pagination-button layout-pagination-number">10</a><a
-                                    href="/shop/goods/goods_review_list.php?goodsno=10907&amp;page=2"
-                                    class="layout-pagination-button layout-pagination-next-page">다음 페이지로 가기</a><a
-                                    href="/shop/goods/goods_review_list.php?goodsno=10907&amp;page=549"
-                                    class="layout-pagination-button layout-pagination-last-page">맨 끝 페이지로 가기</a></div>
-                        </div>
-                        <script>
-      // KMF-694 상품후기 Best후기내 링크 작동 오류
-      $('.review_view a').on('click', function(e){
-        if( $(this).attr('href').indexOf('http') > -1 ){
-          e.preventDefault();
-          parent.window.open($(this).attr('href'), '_blank');
-          // parent.location.href = $(this).attr('href');
-        }
-      });
-
-
-
-
-
-
-
-
-
-
-                        </script>
 
                         </body>
                     </div>
