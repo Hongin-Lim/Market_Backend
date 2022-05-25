@@ -44,12 +44,11 @@ img { dispLay:block; margin:auto; }
                         <ul class="recommend-items">
                             {% for product in products %}
                             <li>
-
                                 <a href="shop/{{product.id}}/{{product.slug}}/"
                                    class="recommend-product-image image-hover">
                                     <img class="card-img-top"
                                          src="{{product.image.url}}"
-                                         alt="Product Image">
+                                         alt="Product Image" style="width:600px; height:250px;">
                                 </a>
                                 <a href="shop/{{product.id}}/{{product.slug}}/">
                                     <h3 class="product-name">{{product.name}}</h3>
@@ -62,9 +61,9 @@ img { dispLay:block; margin:auto; }
                                     <strong class="final-price">현재가: {{product.price}} 원</strong>
                                 </div>
                                 &ensp;
-                                <div class="product-price">
-                                    <span class="regular-price">할인가격: 27,900원</span>
-                                </div>
+<!--                                <div class="product-price">-->
+<!--                                    <span class="regular-price">할인가격: 27,900원</span>-->
+<!--                                </div>-->
                             </li>
                             {% endfor %}
                         </ul>
@@ -73,8 +72,8 @@ img { dispLay:block; margin:auto; }
             </div>
 
             <div class="product-button-direction">
-                <button type="button" class="recommend-prev-button"></button>
-                <button type="button" class="recommend-next-button"></button>
+                <button type="button" class="recommend-prev-button"><img src="{% static 'image/left.png' %}"></button>
+                <button type="button" class="recommend-next-button"><img src="{% static 'image/right.png' %}"></button>
             </div>
         </div>
     </section>
