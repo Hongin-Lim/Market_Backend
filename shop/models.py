@@ -1,7 +1,6 @@
 from django.db import models
 from django.shortcuts import resolve_url
 from django.urls import reverse
-from users.models import User
 # from django.shortcuts import resolve_url
 # Create your models here.
 # Category - 중첩, 레벨이 있게
@@ -49,11 +48,3 @@ class Product(models.Model):
 
     def get_absolute_url(self):
         return reverse('shop:product_detail', args=[self.id, self.slug])
-
-
-class comment(models.Model):
-    user=models.ForeignKey(User,on_delete=models.CASCADE)
-    contents=models.TextField()
-    star=models.IntegerField()
-    create_date = models.DateTimeField(auto_now_add=True)
-    product=models.ForeignKey(Product,on_delete=models.CASCADE)
