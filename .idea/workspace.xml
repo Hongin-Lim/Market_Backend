@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95973899-a9b1-4430-abea-a22209cae98d" name="Changes" comment="프론트엔드, 로그인 회원가입 , 로그인 후 메인 페이지 수정">
+      <change beforePath="$PROJECT_DIR$/.idea/bigdata_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bigdata_project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/board/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/board/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/shop/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/shop/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0525merge.html" beforeDir="false" afterPath="$PROJECT_DIR$/0525merge.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,15 +18,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="merge0516" />
+        <entry key="$PROJECT_DIR$" value="sms" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -56,11 +52,12 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/teamproject" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/image" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\slinfo\Documents\GitHub\Market_Backend\static\image" />
       <recent name="C:\Users\slinfo\Documents\GitHub\Market_Backend\static\css" />
       <recent name="C:\Users\slinfo\Documents\GitHub\Market_Backend\static\js" />
       <recent name="C:\Users\slinfo\PycharmProjects\merge_first\static\assets" />
