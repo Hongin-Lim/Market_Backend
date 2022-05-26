@@ -1,7 +1,7 @@
 from django import forms
-from shop.models import comment
+from shop.models import review
 
 class ComForm(forms.ModelForm):
     class Meta:
-        model=comment
+        model=review
         fields=('contents','star')

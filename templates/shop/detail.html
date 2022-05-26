@@ -65,6 +65,20 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             </script>
             <style>
   #headerLogo{position:relative;width:1050px;height:63px;margin:0 auto}
@@ -257,9 +271,37 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             </style>
             <style>
     #content{opacity:0}/* vue사용시 화면 깜빡임방지 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -298,7 +340,8 @@
                 <div class="section_view">
                     <div id="sectionView">
                         <div class="inner_view">
-                            <div class="thumb" style="background-image: url(&quot;https://img-cf.kurly.com/shop/data/goods/1637921874969y0.jpeg&quot;);">
+                            <div class="thumb"
+                                 style="background-image: url(&quot;https://img-cf.kurly.com/shop/data/goods/1637921874969y0.jpeg&quot;);">
                                 <img src="{{product.image.url}}" alt="상품 대표 이미지" class="bg">
                             </div>
                             <p class="goods_name">
@@ -341,8 +384,15 @@
                             <div class="inner_option"><!----> <!---->
                                 <div class="cart_footer off">
                                     <div class="functions">
-                                        <button type="button" class="pick_icon_button"> 찜하기 버튼</button>
-                                        <button disabled="disabled" type="button" class="alarm_button"> 재입고 알림
+                                        <!--찜하기-->
+                                        <button onclick="sendLike( {{ product.id }}, this)" class="col-2">
+                                            {% if user in product.like.all %}
+<!--                                            <button type="button" class="pick_icon_button on"> 찜하기 버튼</button>-->
+                                            ♥
+                                            {% else %}
+<!--                                            <button type="button" class="pick_icon_button"> 찜하기 버튼</button>-->
+                                            ♡
+                                            {% endif %}
                                         </button>
                                     </div>
                                     <div class="button_wrap">
@@ -355,6 +405,29 @@
                                 </div>
                             </div>
                         </div>
+                        <!--찜하기 버튼-->
+                        <script>
+                function sendLike(bid, event) {
+                    var httpRequest = new XMLHttpRequest();
+			        httpRequest.onreadystatechange = function() {
+				        if (httpRequest.readyState === XMLHttpRequest.DONE && httpRequest.status === 200 ) {
+				            var json = JSON.parse(httpRequest.responseText);
+
+				            if (json['message'] == 'add' ) {
+                                event.innerText = "♥"
+                                event.nextSibling.nextSibling.innerText = json['like_cnt'];
+				            } else if (json['message'] == 'del' ) {
+                                event.innerText = "♡"
+                                event.nextSibling.nextSibling.innerText = json['like_cnt'];
+				            }
+
+				        }
+			        };
+
+			        httpRequest.open("GET", "/shop/" + bid + "/product.slug/like", true);
+			        httpRequest.send();
+                }
+            </script>
                         <div class="cart_option cartList cart_type1">
                             <div class="inner_option"><!----> <!---->
                                 <div class="in_option">
@@ -366,8 +439,7 @@
                                 <div class="cart_footer off">
                                     <div class="functions">
                                         <button type="button" class="pick_icon_button"> 찜하기 버튼</button>
-                                        <button disabled="disabled" type="button" class="alarm_button"> 재입고 알림
-                                        </button>
+                                        <button disabled="disabled" type="button" class="alarm_button"> 재입고 알림</button>
                                     </div>
                                 </div>
                             </div>
@@ -672,182 +744,214 @@
                                 </div>
                             </div>
                         </div>
+                        <body style="overflow-y: hidden;">
+                        <div id="contents-wrapper" class="goods_board">
+                            <div class="xans-element- xans-product xans-product-additional detail_board  ">
+                                <div class="board">
+                                    <span class="line"></span>
+                                    <div class="title_txt">
+                                        <h2>PRODUCT REVIEW</h2>
+                                        <div class="sort-wrap">
+                                            <ul class="list_type1 old">
+                                                <li><span class="ico"></span>
+                                                    <p class="txt">상품에 대한 문의를 남기는 공간입니다. 해당 게시판의 성격과 다른 글은 사전동의 없이
+                                                        담당 게시판으로 이동될 수 있습니다.</p></li>
+                                                <li><span class="ico"></span>
+                                                    <p class="txt">배송관련, 주문(취소/교환/환불)관련 문의 및 요청사항은 마이컬리 내 <a
+                                                            href="#none"
+                                                            onclick="window.parent.location.href = '/mypage/inquiry/list'"
+                                                            class="emph">1:1 문의</a>에 남겨주세요.</p></li>
+                                            </ul>
+                                            <div class="sort" style="bottom:-9px">
+                                                <select onchange="this.form.sort.value=this.value;this.form.submit()">
+                                                    <option value="1">최근등록순</option>
+                                                    <option value="2">좋아요많은순</option>
+                                                    <option value="3">조회많은순</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <table class="xans-board-listheader" width="100%" border="0" cellpadding="0"
+                                           cellspacing="0">
+                                        <caption style="display:none">구매후기 제목</caption>
+                                        <colgroup>
+                                            <col style="width:70px;">
+                                            <col style="width:auto;">
+                                            <col style="width:77px;">
+                                            <col style="width:77px;">
+                                            <col style="width:100px;">
+                                        </colgroup>
+                                        <tbody>
+                                        <tr>
+                                            <th scope="col" class="input_txt">번호</th>
+                                            <th scope="col" class="input_txt">내용</th>
+                                            <th scope="col" class="input_txt">별점</th>
+                                            <th scope="col" class="input_txt" align="center">작성자</th>
+                                            <th scope="col" class="input_txt">작성일</th>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    {% for cmt in cmts %}
+                                    <div class="tr_line">
+                                        <table class="xans-board-listheaderd tbl_newtype1" width="100%"
+                                               cellpadding="0" cellspacing="0"
+                                               onclick="view_content(this,event,false)">
+                                            <caption style="display:none">구매후기 내용</caption>
+                                            <colgroup>
+                                                <col style="width:70px;">
+                                                <col style="width:auto;">
+                                                <col style="width:77px;">
+                                                <col style="width:77px;">
+                                                <col style="width:100px;">
+                                            </colgroup>
+                                            <tbody>
+                                            <tr>
+                                                <td align="center">
+                                                    {{cmt.id}}
+                                                </td>
+                                                <td class="contents">
+                                                    <div class="fst">{{cmt.contents}}</div>
+                                                </td>
+                                                <td class="user_id">
+                                                    {{cmt.star}}
+                                                </td>
+                                                <td class="user_id">
+                                                    {{cmt.user}}
+                                                </td>
+                                                <td class="time">{{cmt.create_date}}</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    {% endfor %}
+                                    <p class="review_write_title type2"
+                                       style="font-size:15px; font-weight: bolder">리뷰작성</p>
+                                    <form method="post">
+                                        {% csrf_token %}
+                                        <table class="xans-board-listheader" width="100%" border="0" cellpadding="0"
+                                               cellspacing="0">
+                                            <caption style="display:none">구매후기 제목</caption>
+                                            <colgroup>
+                                                <col style="width:auto;">
+                                                <col style="width:77px;">
+                                            </colgroup>
+                                            <tbody>
+                                            <tr>
+                                                <th scope="col" class="input_txt">
+                                                    <div class="review_write_textarea">
+                                                <textarea style="resize: none;" rows="10" cols="120" name='contents'
+                                                          id="reviewContents" title="구매후기 작성"
+                                                          maxlength="600"></textarea>
+                                                    </div>
+                                                </th>
+                                                <th scope="col" class="input_txt">
+                                                    <div>
+                                                        <button type="button" id="b1" value="1"
+                                                                onclick="on(this)">
+                                                            ☆
+                                                        </button>
+                                                        <button type="button" id="b2" value="2"
+                                                                onclick="on(this)">
+                                                            ☆
+                                                        </button>
+                                                        <button type="button" id="b3" value="3"
+                                                                onclick="on(this)">
+                                                            ☆
+                                                        </button>
+                                                        <button type="button" id="b4" value="4"
+                                                                onclick="on(this)">
+                                                            ☆
+                                                        </button>
+                                                        <button type="button" id="b5" value="5"
+                                                                onclick="on(this)">
+                                                            ☆
+                                                        </button>
+                                                        <h4 id='star'>0</h4>
+                                                        <input id='star_input' type="hidden" name="star"
+                                                               value="0">
+                                                    </div>
+                                                </th>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <script>
+        function on(event){
+            if(event.id=="b1"){
+            event.innerText="★";
+            document.getElementById('b2').innerText="☆";
+            document.getElementById('b3').innerText="☆";
+            document.getElementById('b4').innerText="☆";
+            document.getElementById('b5').innerText="☆";
+            document.getElementById('star').innerText="1";
+            document.getElementById('star_input').value="1";
+            }
+            else if(event.id=="b2"){
+            document.getElementById('b1').innerText="★";
+            event.innerText="★";
+            document.getElementById('b3').innerText="☆";
+            document.getElementById('b4').innerText="☆";
+            document.getElementById('b5').innerText="☆";
+            document.getElementById('star').innerText="2";
+            document.getElementById('star_input').value="2";
+            }
+            else if(event.id=="b3"){
+            event.innerText="★";
+            document.getElementById('b1').innerText="★";
+            document.getElementById('b2').innerText="★";
+            document.getElementById('b4').innerText="☆";
+            document.getElementById('b5').innerText="☆";
+            document.getElementById('star').innerText="3";
+            document.getElementById('star_input').value="3";
+            }
+            else if(event.id=="b4"){
+            event.innerText="★";
+            document.getElementById('b1').innerText="★";
+            document.getElementById('b2').innerText="★";
+            document.getElementById('b3').innerText="★";
+            document.getElementById('b5').innerText="☆";
+            document.getElementById('star').innerText="4";
+            document.getElementById('star_input').value="4";
+            }
+            else if(event.id=="b5"){
+            event.innerText="★";
+            document.getElementById('b1').innerText="★";
+            document.getElementById('b2').innerText="★";
+            document.getElementById('b3').innerText="★";
+            document.getElementById('b4').innerText="★";
+            document.getElementById('star').innerText="5";
+            document.getElementById('star_input').value="5";
+            }
+        }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        </script>
+                                        <p class="btnArea after">
+                                            <button id="submitButton" type="submit"
+                                                    onclick="javascript: form.action='/shop/{{product.id}}/{{product.slug}}/add_comment';"/>
+                                            <span
+                                                    class="bhs_button"
+                                                    style="line-height:30px; width:130px;">후기쓰기</span></button>
+                                        </p>
+                                        </table>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </body>
                     </div>
                 </div>
-
-                <script src="/shop/data/skin/designgj/js/mk_goods.js?ver=1.70.5"></script>
-                <script src="/common_js/common_filter.js?ver=1.70.5"></script>
-                <script src="/common_js/view_v1.js?ver=1.70.5"></script>
-                <script src="/common_js/cartput_v1.js?ver=1.70.5"></script>
-                <script>
-cartPut.pageType = 'view';
-// 상품상세상단호출
-var sectionViewDefault = {
-    'login' : false,
-    'no' : '6986',
-    'type' : 'pc'
-}
-sectionView.userInfoGet(sectionViewDefault);
-
-function cartPutLayerTypeShow(){
-    var winTop = 0, scrollCheckTop = 0;
-    var $target = $('#cartPut .cart_type1');
-    $(window).on('scroll', function(){
-        scrollCheckTop = Number( $('#goods-view-infomation').offset().top ); // 패키지상품치 위치가 바뀌므로 매번 체크
-        winTop = Number( $(this).scrollTop() );
-        if(winTop >=scrollCheckTop){
-            $target.addClass('on');
-        }else{
-            $target.removeClass('on');
-            if($target.find('.btn_close .ico').hasClass('open')){
-                $target.find('.btn_close').trigger('click');
-            }
-        }
-    }).scroll();
-}
-cartPutLayerTypeShow();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                </script>
-
-                <script src="https://res.kurly.com/js/lib/jquery.inview.js"></script>
-                <script>
-    // iframe에서 해당 height값가져오는 부분
-    function resizeFrameHeight(onm, height) {
-        document.getElementById(onm).height = height;
-    }
-    function resizeFrameWidth(onm, width) {
-        document.getElementById(onm).width = width;
-    }
-    jQuery(function ($) {
-        $("#goods-review").bind("inview", function(event,visible) {
-            if (visible == true) {
-                if ( $(this).data("load")==0 ) {
-                    $(this).data("load",1);
-                    $(this).html('<iframe id="inreview" src="./goods_review_list.php?goodsno=6986" frameborder="0" class="goods-view-infomation-board"></iframe>');
-                }
-            }
-            $(function(){
-                $('#inreview').load(function () {
-                    var iframe = $('#inreview').contents();
-                    iframe.find(".layout-pagination-button").on('click', function(event) {
-                        $('html,body').animate({
-                            scrollTop: $("#goods-review").offset().top-115
-                        }, 300);
-                    });
-                });
-            });
-        });
-    });
-    // 해당 구역을 경과하면 보여주기 - 2016.01.03 junix
-    $( document ).ready(function() {
-        // $(window).height() 브라우저 내 창 높이
-        // $(document).scrollTop() 현재 스크롤 top 위치
-        if (($("#goods-review").offset().top - $(document).scrollTop()) < $(window).height())
-        {
-            $("#goods-review").data("load", 1);
-            $("#goods-review").html('<iframe id="inreview" src="./goods_review_list.php?goodsno=6986" frameborder="0" class="goods-view-infomation-board"></iframe>');
-        }
-
-        // 170119 ey
-        var slideThumb = $('.goods-add-product-item');
-        var slideThumbCnt = 5;
-
-        if(slideThumb.length <= slideThumbCnt){
-            $('.goods-add-product-move-right').hide();
-            $('.goods-add-product-move-left').hide();
-        }
-    });
-
-    $(window).load(function(){
-        // KM-433 장차석 : 인증서기능추가
-        showCertify.pageMake();
-        showCertify.init();
-    });
-
-    // KMF-771 상품상세 과거 이벤트 페이지 랜더링 이슈
-    $('#goods-description a').on('click', function(){
-      var httpCheck = $(this).attr('href');
-      if(httpCheck.indexOf('http://www.kurly.com') > -1) {
-        $(this).attr('href', httpCheck.replace('http://www.kurly.com', ''));
-      }
-      return true;
-    });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                </script>
-
-                <script src="https://res.kurly.com/js/vue/data/goods/whykurly.js?ver=1.70.5"></script>
-                <script src="https://res.kurly.com/js/vue/components/listIconTitleDesc.js?ver=1.70.5"></script>
-
-                <script src="/common_js/goods/exchangeRefundPolicyPC.js?ver=1.70.5"></script>
-                <div class="bg_loading" id="bgLoading" style="display: none;">
-                    <div class="loading_show"></div>
-                </div>
-                <script src="/common_js/product/productDetail.js?ver=1.70.5"></script>
             </div>
         </div>
     </div>
@@ -901,285 +1005,6 @@ cartPutLayerTypeShow();
                     onclick="$('#layerDSR').hide();$(this).parent().find('.inner_layer').hide();"></button>
         </div>
     </div>
-
-    <iframe name="xdomain-d36961d3" id="xdomain-d36961d3" src="https://api.kurly.com/xdomain?ver=1"
-            style="display:none;"></iframe>
-
-    <a href="#top" id="pageTop">맨 위로가기</a>
-    <script>
-	$(document).ready(function(){
-		var pageTop = {
-			$target : $('#pageTop'),
-			$targetDefault : 0,
-			$scrollTop : 0,
-			$window : $(window),
-			$windowHeight : 0,
-			setTime : 500,
-			saveHeight : 0,
-      trackerEventUrl: [
-        '/shop/main/index.php',
-        '/shop/goods/list_all.php',
-      ],
-			init:function(){
-			},
-			action:function(){
-				var $self = this;
-				$self.$windowHeight = parseInt($self.$window.height());
-				$self.$window.on('scroll', function(){
-					$self.$scrollTop = parseInt($self.$window.scrollTop());
-					if($self.$scrollTop >= $self.$windowHeight){
-						if(!$self.$target.hasClass('on')){
-							$self.position();
-							$self.$target.addClass('on');
-							$self.showAction();
-						}
-					}else{
-						if($self.$target.hasClass('on')){
-							$self.position();
-							$self.$target.removeClass('on');
-							$self.hideAction();
-						}
-					}
-				});
-
-				$self.$target.on('click', function(e){
-					e.preventDefault();
-					$self.topAction();
-				});
-			},
-			showAction:function(){
-				var $self = this;
-				$self.$target.stop().animate({
-					opacity:1,
-					bottom:$self.saveHeight
-				}, $self.setTime);
-			},
-			hideAction:function(){
-				var $self = this;
-				$self.$target.stop().animate({
-					opacity:0,
-					bottom:-$self.$target.height()
-				}, $self.setTime);
-			},
-			topAction:function(){
-				var $self = this;
-				$self.hideAction();
-				$('html,body').animate({
-					scrollTop:0
-				}, $self.setTime);
-        if($self.trackerEventUrl.indexOf(location.pathname) > -1) {
-          KurlyTracker.setAction('select_top_button').sendData();
-        }
-			},
-			position:function(){
-				var $self = this;
-				$self.saveHeight = 15;
-				if($('#sectionView').length > 0){
-					$self.saveHeight = 25;
-				}
-				if($('#branch-banner-iframe').length > 0 && parseInt( $('#branch-banner-iframe').css('bottom') ) > 0){
-					$('#footer').addClass('bnr_app');
-					$self.saveHeight += $('#branch-banner-iframe').height();
-				}
-			}
-		}
-		pageTop.action();
-	});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </script>
-
-    <script>
-// 클릭인인경우(푸터에 있으나, 아직공용작업은 못함) => bgLoading 이부분 처리필요
-var bodyScroll = {
-	winScrollTop : 0,
-	body : $('body'),
-	gnb : $('#gnb'),
-	bg : $('#bgLoading'),
-	bodyFixed : function(){
-		var $self = this;
-		var gnbCheck = false;
-		$self.gnb = $('#gnb');
-		if($self.gnb.hasClass('gnb_stop')){
-			gnbCheck = true;
-		}
-		$self.body = $('body');
-		$self.bg = $('#bgLoading');
-		$self.winScrollTop = $(window).scrollTop();
-		$self.bg.show();
-		$self.body.addClass('noBody').css({
-			'top' : -$self.winScrollTop
-		});
-	},
-	bodyDefault : function(type){
-		var $self = this;
-		$self.body.removeClass('noBody').removeAttr('style');
-		$self.bg.hide();
-		if(type === undefined){
-			window.scrollTo(0, $self.winScrollTop);
-		}
-	}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </script>
-
-    <iframe name="ifrmHidden" id="ifrmHidden" src="about:blank" style="display:none;width:100%;height:600px;"></iframe>
-    <script>
-(function (theFrame) {
-  theFrame.contentWindow.location.href = theFrame.src;
-}(document.getElementById("ifrmHidden")));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </script>
-
-
-    <script src="https://res.kurly.com/js/polifill/customeEvent.js"></script>
-    <script>
-	window.addEventListener('load', function () {
-		!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','//connect.facebook.net/en_US/fbevents.js');
-
-		fbq('init', '526625657540055');
-		fbq('track', "PageView");
-		// PixelReady
-		var _eventPixelReady = new CustomEvent("pixelReady", {
-			detail:{ // 전달 할께 있으면 반드시 detail 오브젝트에 넣어야 함
-				val:'1',
-			}
-		});
-		document.dispatchEvent(_eventPixelReady);
-	}, false);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-                   src="https://www.facebook.com/tr?id=526625657540055&ev=PageView&noscript=1"></noscript>
-
-
 </body>
 
 {% endblock %}

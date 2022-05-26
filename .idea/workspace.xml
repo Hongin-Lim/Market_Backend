@@ -5,13 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95973899-a9b1-4430-abea-a22209cae98d" name="Changes" comment="프론트엔드, 로그인 회원가입 , 로그인 후 메인 페이지 수정">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/cartput_v1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/common_filter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/board/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/board/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/board/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/board/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/costomer_service/notice1.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/costomer_service/notice1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/costomer_service/question_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/costomer_service/question_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/mainpage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/shop/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/shop/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,14 +60,14 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/image" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/js" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\slinfo\Documents\GitHub\Market_Backend\static\js" />
       <recent name="C:\Users\slinfo\Documents\GitHub\Market_Backend\static\image" />
       <recent name="C:\Users\slinfo\Documents\GitHub\Market_Backend\static\css" />
-      <recent name="C:\Users\slinfo\Documents\GitHub\Market_Backend\static\js" />
       <recent name="C:\Users\slinfo\PycharmProjects\merge_first\static\assets" />
       <recent name="C:\Users\slinfo\PycharmProjects\merge_first\static\image" />
     </key>

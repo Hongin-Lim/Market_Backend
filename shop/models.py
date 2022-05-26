@@ -1,6 +1,7 @@
 from django.db import models
 from django.shortcuts import resolve_url
 from django.urls import reverse
+from users.models import User
 # from django.shortcuts import resolve_url
 # Create your models here.
 # Category - 중첩, 레벨이 있게
@@ -38,6 +39,8 @@ class Product(models.Model):
     available_order = models.BooleanField('Order', default=True)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateField(auto_now=True)
+    like = models.ManyToManyField(User,related_name='likes', blank=True)
+
 
     class Meta:
         ordering = ['-created']
@@ -48,3 +51,11 @@ class Product(models.Model):
 
     def get_absolute_url(self):
         return reverse('shop:product_detail', args=[self.id, self.slug])
+
+
+class review(models.Model):
+    user=models.ForeignKey(User,on_delete=models.CASCADE)
+    contents=models.TextField()
+    star=models.IntegerField()
+    create_date = models.DateTimeField(auto_now_add=True)
+    product=models.ForeignKey(Product,on_delete=models.CASCADE)
