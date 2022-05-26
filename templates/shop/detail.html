@@ -78,6 +78,7 @@
 
 
 
+
             </script>
             <style>
   #headerLogo{position:relative;width:1050px;height:63px;margin:0 auto}
@@ -283,9 +284,11 @@
 
 
 
+
             </style>
             <style>
     #content{opacity:0}/* vue사용시 화면 깜빡임방지 */
+
 
 
 
@@ -381,8 +384,15 @@
                             <div class="inner_option"><!----> <!---->
                                 <div class="cart_footer off">
                                     <div class="functions">
-                                        <button type="button" class="pick_icon_button"> 찜하기 버튼</button>
-                                        <button disabled="disabled" type="button" class="alarm_button"> 재입고 알림
+                                        <!--찜하기-->
+                                        <button onclick="sendLike( {{ product.id }}, this)" class="col-2">
+                                            {% if user in product.like.all %}
+<!--                                            <button type="button" class="pick_icon_button on"> 찜하기 버튼</button>-->
+                                            ♥
+                                            {% else %}
+<!--                                            <button type="button" class="pick_icon_button"> 찜하기 버튼</button>-->
+                                            ♡
+                                            {% endif %}
                                         </button>
                                     </div>
                                     <div class="button_wrap">
@@ -395,6 +405,29 @@
                                 </div>
                             </div>
                         </div>
+                        <!--찜하기 버튼-->
+                        <script>
+                function sendLike(bid, event) {
+                    var httpRequest = new XMLHttpRequest();
+			        httpRequest.onreadystatechange = function() {
+				        if (httpRequest.readyState === XMLHttpRequest.DONE && httpRequest.status === 200 ) {
+				            var json = JSON.parse(httpRequest.responseText);
+
+				            if (json['message'] == 'add' ) {
+                                event.innerText = "♥"
+                                event.nextSibling.nextSibling.innerText = json['like_cnt'];
+				            } else if (json['message'] == 'del' ) {
+                                event.innerText = "♡"
+                                event.nextSibling.nextSibling.innerText = json['like_cnt'];
+				            }
+
+				        }
+			        };
+
+			        httpRequest.open("GET", "/shop/" + bid + "/product.slug/like", true);
+			        httpRequest.send();
+                }
+            </script>
                         <div class="cart_option cartList cart_type1">
                             <div class="inner_option"><!----> <!---->
                                 <div class="in_option">
@@ -406,8 +439,7 @@
                                 <div class="cart_footer off">
                                     <div class="functions">
                                         <button type="button" class="pick_icon_button"> 찜하기 버튼</button>
-                                        <button disabled="disabled" type="button" class="alarm_button"> 재입고 알림
-                                        </button>
+                                        <button disabled="disabled" type="button" class="alarm_button"> 재입고 알림</button>
                                     </div>
                                 </div>
                             </div>
@@ -807,7 +839,8 @@
                                             <tr>
                                                 <th scope="col" class="input_txt">
                                                     <div class="review_write_textarea">
-                                                <textarea style="resize: none;" rows="10" cols="120" name='contents' id="reviewContents" title="구매후기 작성"
+                                                <textarea style="resize: none;" rows="10" cols="120" name='contents'
+                                                          id="reviewContents" title="구매후기 작성"
                                                           maxlength="600"></textarea>
                                                     </div>
                                                 </th>
@@ -902,11 +935,14 @@
 
 
 
+
                                         </script>
                                         <p class="btnArea after">
-                                            <button id="submitButton" type="submit" onclick="javascript: form.action='/shop/{{product.id}}/{{product.slug}}/add_comment';"/><span
+                                            <button id="submitButton" type="submit"
+                                                    onclick="javascript: form.action='/shop/{{product.id}}/{{product.slug}}/add_comment';"/>
+                                            <span
                                                     class="bhs_button"
-                                                    style="line-height:30px; width:130px;" >후기쓰기</span></button>
+                                                    style="line-height:30px; width:130px;">후기쓰기</span></button>
                                         </p>
                                         </table>
                                     </form>

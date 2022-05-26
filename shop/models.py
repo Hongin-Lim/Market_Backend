@@ -39,6 +39,8 @@ class Product(models.Model):
     available_order = models.BooleanField('Order', default=True)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateField(auto_now=True)
+    like = models.ManyToManyField(User,related_name='likes', blank=True)
+
 
     class Meta:
         ordering = ['-created']
@@ -51,7 +53,7 @@ class Product(models.Model):
         return reverse('shop:product_detail', args=[self.id, self.slug])
 
 
-class comment(models.Model):
+class review(models.Model):
     user=models.ForeignKey(User,on_delete=models.CASCADE)
     contents=models.TextField()
     star=models.IntegerField()

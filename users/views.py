@@ -123,3 +123,4 @@ def delete(request):
         print("탈퇴 완료")
         return redirect('/')
     return render(request, 'mypage/info_change.html')
+

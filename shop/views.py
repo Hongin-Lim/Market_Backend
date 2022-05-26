@@ -1,4 +1,5 @@
 from django.contrib.auth.decorators import login_required
+from django.http import JsonResponse
 from django.shortcuts import render, get_object_or_404
 from .models import *
 from cart.forms import AddProductForm
@@ -21,7 +22,7 @@ def product_detail(request, id, product_slug=None):
     product = get_object_or_404(Product, id=id, slug=product_slug)
     products = Product.objects.filter(available_display=True)
     add_to_cart = AddProductForm(initial={'quantity':1})
-    cmts = comment.objects.filter(Q(product_id=id))
+    cmts = review.objects.filter(Q(product_id=id))
     return render(request, 'shop/detail.html', {'product':product, 'add_to_cart':add_to_cart,'products':products, 'cmts':cmts})
 
 
@@ -30,7 +31,7 @@ def product_detail(request, id, product_slug=None):
 def add_comment(request, id,product_slug=None):
     product = get_object_or_404(Product, id=id, slug=product_slug)
     products = Product.objects.filter(available_display=True)
-    cmts = comment.objects.filter(Q(product_id=id))
+    cmts = review.objects.filter(Q(product_id=id))
     add_to_cart = AddProductForm(initial={'quantity': 1})
     if request.method == 'GET':
         print("GET")
@@ -47,3 +48,22 @@ def add_comment(request, id,product_slug=None):
             cmt.product_id = id
             cmt.save()
         return render(request, 'shop/detail.html', {'product':product, 'add_to_cart':add_to_cart,'products':products, 'cmts':cmts})
+
+
+@login_required(login_url='/login')
+def like(request, bid):
+    # products = get_object_or_404(Product, id=bid, slug=product_slug)
+    product = Product.objects.filter(Q(id=bid))
+    user = request.user
+    if product.like.filter(id=user.id).exists() :  # 게시글 좋아요 눌렀음
+        product.like.remove(user)
+        message = 'del'
+    else :                                      # 게시글 좋아요 아직 안눌었음
+        product.like.add(user)
+        message = 'add'
+    return JsonResponse(
+        {
+            'message':message,
+            'like_cnt': product.like.count()
+        }
+    )
