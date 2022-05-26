@@ -11,7 +11,8 @@
         <tr class="text-center thead-dark">
             <th>번호</th>
             <th style="width:50%">제목</th>
-            <th>작성일시</th>
+            <th>글쓴이</th>
+            <th>작성일시sssss</th>
         </tr>
         </thead>
         <tbody>
@@ -23,6 +24,7 @@
                 <a href="{% url 'board:detail' question.id %}">
                    {{ question.subject }}
                 </a>
+            <td>{{ question.author.id }}</td>
             <td>{{ question.create_date }}</td>
         </tr>
         {% endfor %}

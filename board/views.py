@@ -61,7 +61,7 @@ from .forms import QuestionForm, AnswerForm, NoticeForm, AnswerForm2
 
 def q_index(request):
     # 질문목록출력
-    question_list = Question.objects.order_by('-create_date')
+    question_list = Question.objects.all
     context = {'question_list' : question_list}
     return render(request, 'costomer_service/notice.html', context)
 
@@ -110,7 +110,7 @@ def question_create(request):
 
 def n_index(request):
     # 질문목록출력
-    notice_list = Notice.objects.order_by('-create_date')
+    notice_list = Notice.objects.all
     context = {'notice_list' : notice_list}
     return render(request, 'costomer_service/notice1.html', context)
 

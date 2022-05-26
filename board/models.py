@@ -27,7 +27,7 @@ from users.models import User
 
 
 class Question(models.Model):
-    # author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='author_question')
+    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='author_question',null=True,default='')
     subject = models.CharField(max_length=200)
     content = models.TextField()
     create_date = models.DateTimeField(auto_now_add=True)
@@ -38,7 +38,7 @@ class Question(models.Model):
         return self.subject
 
 class Notice(models.Model):
-    # author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='author_notice')
+    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='author_notice', null=True,default='')
     subject = models.CharField(max_length=200)
     content = models.TextField()
     create_date = models.DateTimeField(auto_now_add=True)
@@ -49,7 +49,7 @@ class Notice(models.Model):
         return self.subject
 
 class Answer(models.Model):
-    # author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='author_answer')
+    author = models.ForeignKey(User, on_delete=models.CASCADE, null=True,default='')
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
     content = models.TextField()
     create_date = models.DateTimeField()
@@ -57,7 +57,7 @@ class Answer(models.Model):
     voter = models.ManyToManyField(User, related_name='voter_answer')
 
 class Answer2(models.Model):
-    # author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='author_answer')
+    author = models.ForeignKey(User, on_delete=models.CASCADE, null=True,default='')
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
     content = models.TextField()
     create_date = models.DateTimeField()
@@ -66,7 +66,7 @@ class Answer2(models.Model):
 
 
 class Comment(models.Model):
-    # author = models.ForeignKey(User, on_delete=models.CASCADE)
+    author = models.ForeignKey(User, on_delete=models.CASCADE, null=True,default='')
     content = models.TextField()
     create_date = models.DateTimeField()
     modify_date = models.DateTimeField(null=True, blank=True)
