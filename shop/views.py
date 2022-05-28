@@ -1,6 +1,8 @@
 from django.contrib.auth.decorators import login_required
 from django.http import JsonResponse
 from django.shortcuts import render, get_object_or_404
+from django.views.decorators.csrf import csrf_exempt
+
 from .models import *
 from cart.forms import AddProductForm
 from shop.forms import ComForm
@@ -50,10 +52,12 @@ def add_comment(request, id,product_slug=None):
         return render(request, 'shop/detail.html', {'product':product, 'add_to_cart':add_to_cart,'products':products, 'cmts':cmts})
 
 
+
+@csrf_exempt
 @login_required(login_url='/login')
 def like(request, bid):
-    # products = get_object_or_404(Product, id=bid, slug=product_slug)
-    product = Product.objects.filter(Q(id=bid))
+    # product = get_object_or_404(Product, id=bid)
+    product = Product.objects.get(Q(id=bid))
     user = request.user
     if product.like.filter(id=user.id).exists() :  # 게시글 좋아요 눌렀음
         product.like.remove(user)

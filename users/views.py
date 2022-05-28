@@ -63,6 +63,7 @@ def userlogin(request):
 
 @login_required
 def userlogout(request):
+    print("로그아웃 완료")
     auth_logout(request)
     return redirect('/')
 
@@ -73,10 +74,10 @@ def kakao_logout(request):
     카카오톡과 함께 로그아웃 처리
     """
     kakao_rest_api_key = '9f3d88106a97581bcd1a61ba5942473b'
-    print(kakao_rest_api_key)
     logout_redirect_uri = "http://172.30.1.222:31000/logout/"
     state = "none"
     kakao_service_logout_url = "https://kauth.kakao.com/oauth/logout"
+    print("카카오 로그아웃 완료")
     return redirect(f"{kakao_service_logout_url}?client_id={kakao_rest_api_key}&logout_redirect_uri={logout_redirect_uri}&state={state}")
 
 
