@@ -15,19 +15,20 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-
 import board.views
 import users.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', board.views.home),
+    path('board/', include('board.urls')),
+
     path('accounts/', include('allauth.urls')),
-    path('', board.views.home2),
     path('login/', users.views.userlogin),
     path('logout/', users.views.userlogout),
     path('kakao_logout', users.views.kakao_logout),
     path('signup/', users.views.signup),
-    # path('costomer_service/', board.views.notice),
+
     path('mypage/', include('users.urls')),
     path('board/', include('board.urls')),
     path('cart/', include('cart.urls')),

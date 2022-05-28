@@ -1,42 +1,21 @@
 from django import forms
-from .models import Board
-
-class BoardForm(forms.ModelForm) :
-    class Meta :
-        model = Board
-        fields = ('title', 'contents','writer')
-
-
-from django import forms
-
-from board.models import Question, Answer, Comment, Notice, Answer2
+from board.models import Question, Answer, Notice, N_comment
 
 
 class QuestionForm(forms.ModelForm):
     class Meta:
-        model = Question
-        fields = ['subject', 'content']
+        model = Question  # 사용할 모델
+        fields = ['subject', 'content']  # QuestionForm에서 사용할 Question 모델의 속성
+        # widgets = {
+        #     'subject': forms.TextInput(attrs={'class': 'form-control'}),
+        #     'content': forms.Textarea(attrs={'class': 'form-control', 'rows': 10}),
+        # }
         labels = {
             'subject': '제목',
             'content': '내용',
         }
-        # widgets = {
-        #     'subject' : forms.TextInput(attrs={'class':'form-control'}),
-        #     'content' : forms.Textarea(attrs={'class':'form-control', 'rows':10}),
-        # }
 
-class NoticeForm(forms.ModelForm):
-    class Meta:
-        model = Notice
-        fields = ['subject', 'content']
-        labels = {
-            'subject': '제목',
-            'content': '내용',
-        }
-        # widgets = {
-        #     'subject' : forms.TextInput(attrs={'class':'form-control'}),
-        #     'content' : forms.Textarea(attrs={'class':'form-control', 'rows':10}),
-        # }
+# create_date 속성은 데이터 저장 시점에 생성해야 하는 값이므로 QuestionForm에 등록하여 사용하지 않는다.
 
 class AnswerForm(forms.ModelForm):
     class Meta:
@@ -46,19 +25,25 @@ class AnswerForm(forms.ModelForm):
             'content': '답변내용',
         }
 
-class AnswerForm2(forms.ModelForm):
+class NoticeForm(forms.ModelForm):
     class Meta:
-        model = Answer2
+        model = Notice  # 사용할 모델
+        fields = ['subject', 'content']  # NoticeForm에서 사용할 Notice 모델의 속성
+        # widgets = {
+        #     'subject': forms.TextInput(attrs={'class': 'form-control'}),
+        #     'content': forms.Textarea(attrs={'class': 'form-control', 'rows': 10}),
+        # }
+        labels = {
+            'subject': '제목',
+            'content': '내용',
+        }
+
+# create_date 속성은 데이터 저장 시점에 생성해야 하는 값이므로 NoticeForm에 등록하여 사용하지 않는다.
+
+class N_commentForm(forms.ModelForm):
+    class Meta:
+        model = N_comment
         fields = ['content']
         labels = {
             'content': '답변내용',
-        }
-
-
-class CommentForm(forms.ModelForm):
-    class Meta:
-        model = Comment
-        fields = ['content']
-        labels = {
-            'content': '댓글내용',
         }

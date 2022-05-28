@@ -1,0 +1,211 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block body %}
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+  </head>>
+
+<script src="{% static 'js/vue.min.js.다운로드' %}"></script>
+<script src="{% static 'js/axios.js.다운로드' %}"></script>
+<link rel="styleSheet" href="{% static 'css/normalize.css' %}">
+<link rel="styleSheet" href="{% static 'css/section1.css' %}">
+<link rel="styleSheet" href="{% static 'css/common.css' %}">
+
+<script async="" src="{% static 'js/js' %}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2K2GN0FFY0', {
+    'user_id' : 'ec612a147931c6ebd76ec8851ea9aff8'
+  });
+</script>
+
+<div class="page_aticle aticle_type2">
+<div id="snb" class="snb_cc">
+<h2 class="tit_snb">고객센터</h2>
+<div class="inner_snb">
+<ul class="list_menu">
+<li class="on">
+<a href="/board/n" onclick="KurlyTrackerLink(&#39;/shop/board/list.php?id=notice&#39;, &#39;select_service_notice_list&#39;)">공지사항</a>
+</li>
+<li>
+<a href="/board" onclick="KurlyTrackerLink(&#39;/shop/service/faq.php&#39;, &#39;select_service_frequently_qna&#39;)">1:1 문의</a>
+</li>
+<!--<li>-->
+<!--<a href="https://www.kurly.com/shop/board/list.php?id=notice#none" onclick="KurlyTrackerLink(&#39;/mypage/inquiry/list&#39;, &#39;select_service_personal_inquiry_history&#39;)">대량주문 문의</a>-->
+<!--</li>-->
+<!--<li>-->
+<!--<a href="https://www.kurly.com/shop/board/list.php?id=notice#none" onclick="KurlyTrackerLink(&#39;/shop/main/html.php?htmid=mypage/bulk_order.htm&#39;, &#39;select_service_bulk_order&#39;)">소량주문 문의</a>-->
+<!--</li>-->
+<!--<li>-->
+<!--<a href="https://www.kurly.com/shop/board/list.php?id=notice#none" onclick="KurlyTrackerLink(&#39;/shop/mypage/offer.php&#39;, &#39;select_service_product_offer&#39;)">상품 제안</a>-->
+<!--</li>-->
+<!--<li>-->
+<!-- <a href="https://www.kurly.com/shop/board/list.php?id=notice#none" onclick="KurlyTrackerLink(&#39;/shop/mypage/echo_packing.php&#39;, &#39;select_service_eco_packing_feedback&#39;)">에코포장 피드백</a>-->
+<!--</li>-->
+</ul>
+</div>
+<a href="{% url 'board:question_create' %}" class="link_inquire"><span class="emph">문의글 작성하기</span> 회원</a>
+</div>
+<div class="page_section">
+<div class="head_aticle">
+<h2 class="tit">1:1 문의/상담 <span class="tit_sub">베리마켓과 관련된 궁금증을 해결하세요.</span></h2>
+</div>
+<form name="frmList" action="https://www.kurly.com/shop/board/list.php?&amp;" onsubmit="return chkFormList(this)">
+<input type="hidden" name="id" value="notice">
+<style>
+                .notice .layout-pagination{margin: 0}
+                .eng2{color: #939393}
+                .xans-board-listheader{font-size:14px}
+            </style>
+<table width="100%" align="center" cellpadding="0" cellspacing="0">
+
+<tbody><tr>
+<td>
+<div class="xans-element- xans-myshop xans-myshop-couponserial ">
+<table width="100%" class="xans-board-listheader jh" cellpadding="0" cellspacing="0">
+<!--<thead>-->
+<!--<tr>-->
+<!--<th>번호</th>-->
+<!--<th>제목</th>-->
+<!--<th>작성자</th>-->
+<!--<th>작성일</th>-->
+<!--<th>조회</th>-->
+<!--</tr>-->
+<!--</thead>-->
+<tbody>
+
+    <tr>
+<td width="50" nowrap="" align="center">
+HOT </td>
+<td style="padding-left:10px; text-align:left; color:#999">
+
+
+<div class="container my-3">
+    <table class="table">
+        <thead>
+        <tr class="text-center table-white">
+            <th>번호</th>
+            <th style="width:78%">제목</th>
+            <th>글쓴이</th>
+            <th>작성일시</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% if question_list %}
+        {% for question in question_list %}
+        <tr class="text-center">
+        <tr>
+            <td>{{ forloop.counter }}</td>
+            <td class="text-start">
+                <a href="{% url 'board:detail' question.id %}">{{ question.subject }}</a>
+                    <!-- 답변 개수 표시-->
+                    {% if question.answer_set.count > 0 %}
+                    <span class="text-danger small mx-2">{{ question.answer_set.count }}</span>
+                    {% endif %}
+            </td>
+            <td>{{ question.author.username }}</td>  <!-- 글쓴이 추가 -->
+            <td>{{ question.create_date }}</td>
+        </tr>
+        {% endfor %}
+        {% else %}
+        <tr>
+            <td colspan="4">질문이 없습니다.</td>
+        </tr>
+        {% endif %}
+        </tbody>
+    </table>
+        <!-- 페이징처리 시작 -->
+    <ul class="pagination justify-content-center">
+        <!-- 이전페이지 -->
+        <!--이전 페이지가 있는지 체크-->
+        {% if question_list.has_previous %}
+        <li class="page-item">
+            <a class="page-link" href="?page={{ question_list.previous_page_number }}">이전</a>
+        </li>
+        {% else %}
+        <li class="page-item disabled">
+            <a class="page-link" tabindex="-1" aria-disabled="true" href="#">이전</a>
+        </li>
+        {% endif %}
+        <!-- 페이지리스트 -->
+        <!--페이지 리스트 루프-->
+        {% for page_number in question_list.paginator.page_range %}
+        <!--페이지 표시 제한 기능-->
+        {% if page_number >= question_list.number|add:-5 and page_number <= question_list.number|add:5 %}
+        <!--현재 페이지와 같은지 체크-->
+        {% if page_number == question_list.number %}
+        <li class="page-item active" aria-current="page">
+            <a class="page-link" href="?page={{ page_number }}">{{ page_number }}</a>
+        </li>
+        {% else %}
+        <li class="page-item">
+            <a class="page-link" href="?page={{ page_number }}">{{ page_number }}</a>
+        </li>
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+        <!-- 다음페이지 -->
+        {% if question_list.has_next %}
+        <li class="page-item">
+            <a class="page-link" href="?page={{ question_list.next_page_number }}">다음</a>
+        </li>
+        {% else %}
+        <li class="page-item disabled">
+            <a class="page-link" tabindex="-1" aria-disabled="true" href="#">다음</a>
+        </li>
+        {% endif %}
+    </ul>
+    <!-- 페이징처리 끝 -->
+<!--    <a href="{% url 'board:question_create' %}" class="btn btn-primary">질문 등록하기</a>-->
+</div>
+</td>
+    </tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</form>
+</div>
+</div>
+
+<!--</tbody></table>-->
+<!--<div class="layout-pagination"><div class="pagediv"><a href="https://www.kurly.com/shop/board/list.php?id=notice&amp;page=1" class="layout-pagination-button layout-pagination-first-page">맨 처음 페이지로 가기</a><a href="https://www.kurly.com/shop/board/list.php?id=notice&amp;page=1" class="layout-pagination-button layout-pagination-prev-page">이전 페이지로 가기</a><strong class="layout-pagination-button layout-pagination-number __active">1</strong><a href="https://www.kurly.com/shop/board/list.php?id=notice&amp;page=2" class="layout-pagination-button layout-pagination-number">2</a><a href="https://www.kurly.com/shop/board/list.php?id=notice&amp;page=3" class="layout-pagination-button layout-pagination-number">3</a><a href="https://www.kurly.com/shop/board/list.php?id=notice&amp;page=4" class="layout-pagination-button layout-pagination-number">4</a><a href="https://www.kurly.com/shop/board/list.php?id=notice&amp;page=5" class="layout-pagination-button layout-pagination-number">5</a><a href="https://www.kurly.com/shop/board/list.php?id=notice&amp;page=6" class="layout-pagination-button layout-pagination-number">6</a><a href="https://www.kurly.com/shop/board/list.php?id=notice&amp;page=7" class="layout-pagination-button layout-pagination-number">7</a><a href="https://www.kurly.com/shop/board/list.php?id=notice&amp;page=8" class="layout-pagination-button layout-pagination-number">8</a><a href="https://www.kurly.com/shop/board/list.php?id=notice&amp;page=9" class="layout-pagination-button layout-pagination-number">9</a><a href="https://www.kurly.com/shop/board/list.php?id=notice&amp;page=10" class="layout-pagination-button layout-pagination-number">10</a><a href="https://www.kurly.com/shop/board/list.php?id=notice&amp;page=2" class="layout-pagination-button layout-pagination-next-page">다음 페이지로 가기</a><a href="https://www.kurly.com/shop/board/list.php?id=notice&amp;page=135" class="layout-pagination-button layout-pagination-last-page">맨 끝 페이지로 가기</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--<table class="xans-board-search xans-board-search2">-->
+<!--<tbody><tr>-->
+<!--<td class="input_txt"><img src="{% static 'image/ico_function.gif' %}">검색어</td>-->
+<!--<td class="stxt">-->
+<!--<input type="checkbox" name="search[name]">이름-->
+<!--<input type="checkbox" name="search[subject]">제목-->
+<!--<input type="checkbox" name="search[contents]">내용&nbsp;-->
+<!--</td>-->
+<!--<td class="input_txt">&nbsp;</td>-->
+<!--<td>-->
+<!--<div class="search_bt">-->
+<!--<a href="javascript:document.frmList.submit()"><img src="{% static 'image/search.webp' %}" align="absmiddle"></a>-->
+<!--<input type="text" name="search[word]" value="" required="">-->
+<!--</div>-->
+<!--</td>-->
+<!--</tr>-->
+<!--</tbody></table>-->
+<!--</form>-->
+<!--</div>-->
+<!--</div>-->
+<!--<script>-->
+<!--// KM-1483 Amplitude-->
+<!--KurlyTracker.setScreenName('notice_list');-->
+<!--</script>-->
+<!--</div>-->
+
+
+{% endblock %}
