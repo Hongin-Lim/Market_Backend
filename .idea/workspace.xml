@@ -5,28 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95973899-a9b1-4430-abea-a22209cae98d" name="Changes" comment="프론트엔드, 로그인 회원가입 , 로그인 후 메인 페이지 수정">
-      <change afterPath="$PROJECT_DIR$/templates/board/answer_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/board/n_comment_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/form_errors.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/bigdata_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bigdata_project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/board/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/board/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/board/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/board/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/board/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/board/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/board/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/board/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/board/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/board/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/costomer_service/notice.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/costomer_service/notice1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/costomer_service/notice2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/board/notice_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/costomer_service/notice_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/board/notice_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/costomer_service/notice_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/board/notice_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/costomer_service/question_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/board/question_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/costomer_service/question_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/board/question_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/costomer_service/question_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/board/question_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/costomer_service/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/costomer_service/마켓컬리 __ 내일의 장보기, 마켓컬리.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/board/마켓컬리 __ 내일의 장보기, 마켓컬리.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/board/notice_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/board/notice_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/board/question_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/board/question_list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
