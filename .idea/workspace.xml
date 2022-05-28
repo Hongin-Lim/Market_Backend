@@ -5,18 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95973899-a9b1-4430-abea-a22209cae98d" name="Changes" comment="프론트엔드, 로그인 회원가입 , 로그인 후 메인 페이지 수정">
-      <change afterPath="$PROJECT_DIR$/static/js/cartput_v1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/common_filter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/board/answer_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/board/n_comment_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/form_errors.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/bigdata_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bigdata_project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/mainpage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/shop/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/shop/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/board/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/board/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/board/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/board/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/board/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/board/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/board/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/board/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/board/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/board/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/costomer_service/notice.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/costomer_service/notice1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/costomer_service/notice2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/board/notice_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/costomer_service/notice_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/board/notice_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/costomer_service/notice_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/board/notice_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/costomer_service/question_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/board/question_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/costomer_service/question_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/board/question_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/costomer_service/question_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/board/question_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/costomer_service/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/costomer_service/마켓컬리 __ 내일의 장보기, 마켓컬리.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/board/마켓컬리 __ 내일의 장보기, 마켓컬리.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +36,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -51,7 +61,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="29EdkHNXxKxdvcfgqmgSgqS0xHj" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -60,16 +72,16 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sli\Documents\GitHub\Market_Backend\templates" />
+      <recent name="C:\Users\sli\Documents\GitHub\Market_Backend\templates\board" />
       <recent name="C:\Users\slinfo\Documents\GitHub\Market_Backend\static\js" />
       <recent name="C:\Users\slinfo\Documents\GitHub\Market_Backend\static\image" />
       <recent name="C:\Users\slinfo\Documents\GitHub\Market_Backend\static\css" />
-      <recent name="C:\Users\slinfo\PycharmProjects\merge_first\static\assets" />
-      <recent name="C:\Users\slinfo\PycharmProjects\merge_first\static\image" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
