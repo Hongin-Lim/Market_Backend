@@ -21,6 +21,7 @@ import users.views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', board.views.home),
+    path('popup/popup1.html', board.views.popup),
     path('board/', include('board.urls')),
 
     path('accounts/', include('allauth.urls')),

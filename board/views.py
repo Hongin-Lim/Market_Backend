@@ -9,9 +9,14 @@ from django.core.paginator import Paginator
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 
+# 메인페이지
 def home(request):
     products = Product.objects.filter(available_display=True)
     return render(request, 'home/mainpage.html', {'products':products})
+
+# 팝업
+def popup(request):
+    return render(request, 'popup/popup1.html')
 
 # 게시판 목록 출력
 def index(request):
