@@ -8,14 +8,24 @@ from django.shortcuts import render, redirect, get_object_or_404
 from users.forms import signupForm
 from users.forms import PasswordChangeForm
 from django.contrib.auth.hashers import check_password
-
+from coupon.models import Coupon
+from users.models import User
 
 # 마이페이지 (장바구니)
 def mypage(request):
     return render(request, 'cart/detail.html')
 # 쿠폰페이지
 def coupon(request):
-    return render(request, 'mypage/coupon.html')
+    user_id = request.user.id
+    # owner = User.objects.filter(id=user_id)
+    owner = get_object_or_404(User,id=user_id)
+    my_coupon = owner.coupon_set.all()
+    # print(type(my_coupon))
+    coupon_count = len(my_coupon)
+    coupon_name = my_coupon.values('name')
+    # print(coupon_name.values().__dic__)
+
+    return render(request, 'mypage/coupon.html', {'coupon_count' : coupon_count, 'coupon_name':coupon_name,'my_coupon':my_coupon})
 
 def info_change(request):
     return render(request, 'mypage/info_change.html')
