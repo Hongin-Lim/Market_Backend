@@ -14,9 +14,19 @@ def home(request):
     products = Product.objects.filter(available_display=True)
     return render(request, 'home/mainpage.html', {'products':products})
 
-# 팝업
+# 카테고리 팝업
 def popup(request):
     return render(request, 'popup/popup1.html')
+
+# 이벤트 팝업
+def popup1(request):
+    return render(request, 'popup/event1.html')
+
+def popup2(request):
+    return render(request, 'popup/event2.html')
+
+def popup3(request):
+    return render(request, 'popup/event3.html')
 
 # 게시판 목록 출력
 def index(request):
