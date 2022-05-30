@@ -3,5 +3,4 @@
 .idea
 migrations/
 .env
-logs/
 
