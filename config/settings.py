@@ -223,7 +223,7 @@ LOGGING = {
         'file': {
             'level': 'DEBUG',
             'class': 'logging.FileHandler',
-            'filename': os.path.join(BASE_DIR, 'logs') + "/verymarket_log",
+            'filename': os.path.join(BASE_DIR, 'logs') + "/log",
             'formatter': 'verbose',
         },
     },
