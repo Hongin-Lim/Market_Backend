@@ -1306,3 +1306,16 @@ WARNING 2022-05-30 13:36:53,677 log Not Found: /common_js/common_filter.js
 WARNING 2022-05-30 13:36:53,678 basehttp "GET /common_js/common_filter.js?ver=1.70.3 HTTP/1.1" 404 4017
 INFO 2022-05-30 13:53:02,451 autoreload C:\Users\sli\Documents\GitHub\Market_Backend\config\settings.py changed, reloading.
 2022-05-30 13:53:03 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 14:14:20 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 14:14:23 [INFO] django.server: "GET / HTTP/1.1" 200 98041
+2022-05-30 14:14:24 [INFO] django.server: "GET / HTTP/1.1" 200 98041
+2022-05-30 14:14:26 [INFO] django.server: "GET /shop/20/%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B8-7kg-%EC%82%AC%EA%B3%BC12%EA%B3%BC%EB%82%B4%EC%99%B8%EB%82%98%EC%A3%BC%EB%B0%B09%EA%B3%BC%EB%82%B4%EC%99%B8/ HTTP/1.1" 200 106732
+2022-05-30 14:14:27 [INFO] django.server: "POST /cart/add/20 HTTP/1.1" 302 0
+2022-05-30 14:14:28 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 29719
+2022-05-30 14:26:59 [INFO] django.server: "GET / HTTP/1.1" 200 98041
+2022-05-30 14:27:00 [INFO] django.server: "GET /popup/popup1.html HTTP/1.1" 200 375
+2022-05-30 14:27:02 [INFO] django.server: "GET /board/ HTTP/1.1" 200 35827
+2022-05-30 14:27:03 [INFO] django.server: "GET /board/4/ HTTP/1.1" 200 28893
+2022-05-30 14:49:45 [INFO] django.server: "GET / HTTP/1.1" 200 98041
+2022-05-30 14:49:48 [INFO] django.server: "GET /shop/20/%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B8-7kg-%EC%82%AC%EA%B3%BC12%EA%B3%BC%EB%82%B4%EC%99%B8%EB%82%98%EC%A3%BC%EB%B0%B09%EA%B3%BC%EB%82%B4%EC%99%B8/ HTTP/1.1" 200 106732
+2022-05-30 15:11:49 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\config\settings.py changed, reloading.
