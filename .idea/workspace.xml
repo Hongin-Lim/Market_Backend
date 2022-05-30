@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95973899-a9b1-4430-abea-a22209cae98d" name="Changes" comment="프론트엔드, 로그인 회원가입 , 로그인 후 메인 페이지 수정">
-      <change afterPath="$PROJECT_DIR$/static/image/베리마켓오픈이벤트.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/image/베리마켓오픈이벤트2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/image/베리마켓오픈이벤트3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/popup/event1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/popup/event2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/popup/event3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/board/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/board/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/mainpage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

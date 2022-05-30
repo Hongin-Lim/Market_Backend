@@ -203,3 +203,35 @@ LOGIN_REDIRECT_URL = '/'
 IAMPORT_KEY = os.environ.get('IAMPORT_KEY')
 IAMPORT_SECRET = os.environ.get('IAMPORT_SECRET')
 
+import logging
+
+# 로그 데이터 세팅
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '{levelname} {asctime} {module} {message}',
+            'style': '{',
+        },
+        'simple': {
+            'format': '{levelname} {message}',
+            'style': '{',
+        },
+    },
+    'handlers': {
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': os.path.join(BASE_DIR, 'logs') + "/verymarket_log",
+            'formatter': 'verbose',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+    },
+}
