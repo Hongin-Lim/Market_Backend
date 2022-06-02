@@ -2851,3 +2851,13 @@ AttributeError: 'QuerySet' object has no attribute 'product'
 2022-06-02 18:29:59 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
 2022-06-02 18:29:59 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
 2022-06-02 18:29:59 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 18:31:02 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\coupon\migrations\0002_coupon_name_coupon_owner.py changed, reloading.
+2022-06-02 18:31:03 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-06-02 18:31:55 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-06-02 18:31:59 [INFO] django.server: "GET / HTTP/1.1" 200 126618
+2022-06-02 18:32:01 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 138932
+2022-06-02 18:32:01 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 18:32:01 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 18:32:01 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 18:32:01 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 18:32:12 [INFO] django.server: "GET / HTTP/1.1" 200 126618
