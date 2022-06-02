@@ -4190,3 +4190,22 @@ django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 309: '
 2022-06-02 14:41:02 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
 2022-06-02 14:41:02 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
 2022-06-02 16:12:16 [INFO] django.server: "GET / HTTP/1.1" 200 113212
+2022-06-02 18:06:08 [INFO] django.server: "GET /shop/18/%EC%B2%AD%EC%A0%95%EC%A0%9C%EC%A3%BC-%ED%95%9C%EB%9D%BC%EB%B4%89-%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B8-9%EA%B3%BC3kg/ HTTP/1.1" 200 107602
+2022-06-02 18:06:37 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 94790
+2022-06-02 18:06:37 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 18:06:37 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 18:09:26 [INFO] django.server: "POST /cart/add/5 HTTP/1.1" 302 0
+2022-06-02 18:09:26 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 31597
+2022-06-02 18:09:29 [INFO] django.server: "GET / HTTP/1.1" 200 113212
+2022-06-02 18:24:02 [INFO] django.server: - Broken pipe from ('127.0.0.1', 52210)
+
+2022-06-02 18:24:02 [INFO] django.server: - Broken pipe from ('127.0.0.1', 52211)
+
+2022-06-02 18:24:03 [INFO] django.server: - Broken pipe from ('127.0.0.1', 52215)
+
+2022-06-02 18:24:03 [INFO] django.server: - Broken pipe from ('127.0.0.1', 52217)
+
+2022-06-02 18:24:03 [INFO] django.server: "GET / HTTP/1.1" 200 113212
+2022-06-02 18:24:05 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 94790
+2022-06-02 18:24:05 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 18:24:05 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
