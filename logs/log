@@ -2926,3 +2926,14 @@ AttributeError: 'QuerySet' object has no attribute 'product'
 2022-06-02 21:33:17 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 28312
 2022-06-02 21:33:18 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 28312
 2022-06-02 21:33:19 [INFO] django.server: "GET / HTTP/1.1" 200 113212
+2022-06-02 21:37:16 [INFO] django.server: "GET / HTTP/1.1" 200 113212
+2022-06-02 21:37:17 [INFO] django.server: "GET / HTTP/1.1" 200 113212
+2022-06-02 21:37:18 [INFO] django.server: "GET / HTTP/1.1" 200 113212
+2022-06-02 21:37:21 [INFO] django.server: "POST /cart/add/19 HTTP/1.1" 302 0
+2022-06-02 21:37:22 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 29789
+2022-06-02 21:37:26 [INFO] django.server: "GET /cart/remove/19 HTTP/1.1" 302 0
+2022-06-02 21:37:26 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 28312
+2022-06-02 21:37:29 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 94790
+2022-06-02 21:37:29 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 21:37:29 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 21:38:09 [INFO] django.server: "GET / HTTP/1.1" 200 113212
