@@ -25,7 +25,7 @@ class Order(models.Model):
         ordering = ['-created']
 
     def __str__(self):
-        return 'Order {}'.format(self.id)
+        return 'Order {} {}'.format(self.id, self.email)
 
     def get_total_product(self):
         return sum(item.get_item_price() for item in self.items.all())

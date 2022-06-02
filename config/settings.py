@@ -204,7 +204,6 @@ LOGIN_REDIRECT_URL = '/'
 IAMPORT_KEY = os.environ.get('IAMPORT_KEY')
 IAMPORT_SECRET = os.environ.get('IAMPORT_SECRET')
 
-import logging
 
 # 로그 데이터 세팅
 LOGGING = {

@@ -18,13 +18,14 @@ def product_in_category(request, category_slug=None):
 
     return render(request, 'shop/list.html', {'current_category':current_category, 'categories':categories, 'products':products})
 
+
 def product_detail(request, id, product_slug=None):
     product = get_object_or_404(Product, id=id, slug=product_slug)
     products = Product.objects.filter(available_display=True)
     add_to_cart = AddProductForm(initial={'quantity':1})
     cmts = review.objects.filter(Q(product_id=id))
-    return render(request, 'shop/detail.html', {'product':product, 'add_to_cart':add_to_cart,'products':products, 'cmts':cmts})
 
+    return render(request, 'shop/detail.html', {'product':product, 'add_to_cart':add_to_cart,'products':products, 'cmts':cmts})
 
 
 @login_required(login_url='/login')
