@@ -1,5 +1,6 @@
 from django.db import models
 from django.shortcuts import resolve_url
+from config import settings
 from django.urls import reverse
 from users.models import User
 # from django.shortcuts import resolve_url
@@ -39,7 +40,7 @@ class Product(models.Model):
     available_order = models.BooleanField('Order', default=True)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateField(auto_now=True)
-    like = models.ManyToManyField(User,related_name='likes', blank=True)
+    like = models.ManyToManyField(settings.AUTH_USER_MODEL,related_name='likes', blank=True)
 
 
     class Meta:
