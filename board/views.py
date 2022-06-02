@@ -2,6 +2,7 @@ from django.http import HttpResponseNotAllowed
 from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
 
+from cart.forms import AddProductForm
 from shop.models import Product
 from .models import Question, Answer, Notice, N_comment
 from .forms import QuestionForm, AnswerForm, N_commentForm, NoticeForm
@@ -12,7 +13,8 @@ from django.contrib import messages
 # 메인페이지
 def home(request):
     products = Product.objects.filter(available_display=True)
-    return render(request, 'home/mainpage.html', {'products':products})
+    add_to_cart = AddProductForm(initial={'quantity': 1})
+    return render(request, 'home/mainpage.html', {'products':products,'add_to_cart':add_to_cart})
 
 # 카테고리 팝업
 def popup(request):

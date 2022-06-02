@@ -5,16 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95973899-a9b1-4430-abea-a22209cae98d" name="Changes" comment="프론트엔드, 로그인 회원가입 , 로그인 후 메인 페이지 수정">
-      <change afterPath="$PROJECT_DIR$/static/css/coupon.bundle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/bigdata_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bigdata_project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coupon/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/coupon/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coupon/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/coupon/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/mypage/coupon.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mypage/coupon.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/board/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/board/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/mainpage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/shop/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/shop/list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
