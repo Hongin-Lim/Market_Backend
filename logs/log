@@ -2786,3 +2786,30 @@ AttributeError: 'QuerySet' object has no attribute 'product'
 2022-05-31 16:49:17 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
 2022-06-02 10:30:18 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
 2022-06-02 10:35:08 [INFO] django.server: "GET /shop/20/%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B8-7kg-%EC%82%AC%EA%B3%BC12%EA%B3%BC%EB%82%B4%EC%99%B8%EB%82%98%EC%A3%BC%EB%B0%B09%EA%B3%BC%EB%82%B4%EC%99%B8/ HTTP/1.1" 200 128055
+2022-06-02 10:39:14 [INFO] django.server: "GET / HTTP/1.1" 200 98148
+2022-06-02 10:39:14 [WARNING] django.request: Not Found: /favicon.ico
+2022-06-02 10:39:14 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 3961
+2022-06-02 10:39:15 [INFO] django.server: "GET /shop/18/%EC%B2%AD%EC%A0%95%EC%A0%9C%EC%A3%BC-%ED%95%9C%EB%9D%BC%EB%B4%89-%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B8-9%EA%B3%BC3kg/ HTTP/1.1" 200 129955
+2022-06-02 10:39:34 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-06-02 10:39:35 [INFO] django.server: "GET / HTTP/1.1" 200 98148
+2022-06-02 10:39:35 [WARNING] django.request: Not Found: /favicon.ico
+2022-06-02 10:39:35 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 3961
+2022-06-02 10:39:38 [INFO] django.server: "GET /shop/19/%EC%83%A4%EC%9D%B8%EB%A8%B8%EC%8A%A4%EC%BA%A3-%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B87%EC%A2%85450g/ HTTP/1.1" 200 130584
+2022-06-02 10:40:16 [INFO] django.server: "GET /shop/19/%EC%83%A4%EC%9D%B8%EB%A8%B8%EC%8A%A4%EC%BA%A3-%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B87%EC%A2%85450g/ HTTP/1.1" 200 108110
+2022-06-02 10:40:20 [INFO] django.server: "POST /cart/add/19 HTTP/1.1" 302 0
+2022-06-02 10:40:20 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 31716
+2022-06-02 10:40:22 [INFO] django.server: "GET / HTTP/1.1" 200 98148
+2022-06-02 10:40:47 [INFO] django.server: "GET /shop/18/%EC%B2%AD%EC%A0%95%EC%A0%9C%EC%A3%BC-%ED%95%9C%EB%9D%BC%EB%B4%89-%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B8-9%EA%B3%BC3kg/ HTTP/1.1" 200 107795
+2022-06-02 10:40:49 [INFO] django.server: "GET / HTTP/1.1" 200 98148
+2022-06-02 10:40:50 [INFO] django.server: "GET / HTTP/1.1" 200 98148
+2022-06-02 10:40:50 [INFO] django.server: "GET /mypage/ HTTP/1.1" 200 31716
+2022-06-02 10:40:52 [INFO] django.server: "GET /mypage/coupon/ HTTP/1.1" 200 64607
+2022-06-02 10:40:52 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 10:40:52 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.3 HTTP/1.1" 404 4017
+2022-06-02 10:41:29 [INFO] django.server: "GET /admin HTTP/1.1" 301 0
+2022-06-02 10:41:29 [INFO] django.server: "GET /admin/ HTTP/1.1" 200 14567
+2022-06-02 10:41:30 [INFO] django.server: "GET /admin/ HTTP/1.1" 200 14567
+2022-06-02 10:41:32 [INFO] django.server: "GET /admin/coupon/coupon/ HTTP/1.1" 200 16905
+2022-06-02 10:41:33 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-06-02 10:41:41 [INFO] django.server: "GET /admin/coupon/coupon/2/change/ HTTP/1.1" 200 16279
+2022-06-02 10:41:41 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911

@@ -2,13 +2,13 @@
 {% load static %}
 {% block body %}
 
-<!--<body class="goods-goods_view " oncontextmenu="return false" ondragstart="return false"-->
-<!--      onselectstart="return !disableSelection" style="">-->
+<body class="goods-goods_view " oncontextmenu="return false" ondragstart="return false"
+      onselectstart="return !disableSelection" style="">
 <div id="wrap" class="">
-    <div id="pos_scroll">
-        <div id="container">
-            <div id="header">
-                <script type="text/javascript">
+    <div id="pos_scroll"></div>
+    <div id="container">
+        <div id="header">
+            <script type="text/javascript">
     $(document).ready(function(){
       $("#top-message-close").on("click",function(){
         var expires = new Date().setDate(new Date().getDate() + 1);
@@ -35,65 +35,8 @@
 
 
 
-<<<<<<< HEAD
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                </script>
-                <style>
-=======
             </script>
             <style>
->>>>>>> main
   #headerLogo{position:relative;width:1050px;height:63px;margin:0 auto}
   #headerLogo .bnr_delivery{position:absolute;left:-1px;top:-28px;margin:auto;height:22px}
   #headerLogo .logo{position:absolute;left:0;bottom:6px;width:100%;height:79px;text-align:center}
@@ -255,138 +198,13 @@
 
 
 
-<<<<<<< HEAD
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                </style>
-                <style>
-=======
             </style>
             <style>
->>>>>>> main
     #content{opacity:0}/* vue사용시 화면 깜빡임방지 */
 
 
 
 
-<<<<<<< HEAD
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                </style>
-                <div id="main">
-                    <div class="section_view">
-                        <div id="sectionView">
-                            <div class="inner_view">
-                                <div class="thumb"
-                                     style="background-image: url(&quot;https://img-cf.kurly.com/shop/data/goods/1637921874969y0.jpeg&quot;);">
-                                    <img src="{{product.image.url}}" alt="상품 대표 이미지" class="bg">
-                                </div>
-                                <p class="goods_name">
-                                    <span class="btn_share"><button id="btnShare"
-                                                                    data-goodsno="6986">공유하기</button></span>
-                                    <strong class="name">{{product.name}}</strong>
-                                    <span class="short_desc">{{product.name}}</span>
-                                </p>
-                                <p class="goods_price"><span class="position">
-=======
             </style>
             <div id="main">
                 <div class="section_view">
@@ -402,35 +220,11 @@
                                 <span class="short_desc">{{product.name}}</span>
                             </p>
                             <p class="goods_price"><span class="position">
->>>>>>> main
                                 <span class="dc">
                                 <span class="dc_price">{{product.price}}<span class="won">원</span>
                                 </span>
                         </span>
                         </span>
-<<<<<<< HEAD
-                                    </span>
-                                </p>
-                                <div class="goods_info"><!---->
-                                    <dl class="list fst">
-                                        <dt class="tit">판매단위</dt>
-                                        <dd class="desc">1 박스</dd>
-                                    </dl>
-                                    <dl class="list">
-                                        <dt class="tit">배송구분</dt> <!---->
-                                        <dd class="desc"> 샛별배송/택배배송</dd>
-                                    </dl>
-                                    <dl class="list">
-                                        <dt class="tit">포장타입</dt>
-                                        <dd class="desc"> 냉장/스티로폼 <strong class="emph"> 택배배송은 에코포장이 스티로폼으로
-                                            대체됩니다. </strong>
-                                        </dd>
-                                    </dl>
-                                    <dl class="list">
-                                        <dt class="tit">유통기한</dt>
-                                        <dd class="desc">수령일로부터 익일까지</dd>
-                                    </dl>
-=======
                                 </span>
                             </p>
                             <div class="goods_info"><!---->
@@ -478,136 +272,92 @@
                                             <input type="submit" class="base_button full" value="장바구니 넣기">
                                         </form>
                                     </div>
->>>>>>> main
                                 </div>
                             </div>
                         </div>
-                        <div id="cartPut">
-                            <div class="cart_option cartList cart_type2">
-                                <div class="inner_option"><!----> <!---->
-                                    <div class="cart_footer off">
-                                        <div class="functions">
-                                            <!--찜하기-->
-                                            <button type="button" onclick="sendLike({{ product.id }}, this)">
-                                                {% if user in product.like.all %}
-                                                <!--                                            <button type="button" class="pick_icon_button on"> 찜하기 버튼</button>-->
-                                                ♥
-                                                {% else %}
-                                                <!--                                            <button type="button" class="pick_icon_button"> 찜하기 버튼</button>-->
-                                                ♡
-                                                {% endif %}
+                        <!--찜하기 버튼-->
+                        <script>
+                function sendLike(bid, event) {
+                    var httpRequest = new XMLHttpRequest();
+			        httpRequest.onreadystatechange = function() {
+				        if (httpRequest.readyState === XMLHttpRequest.DONE && httpRequest.status === 200 ) {
+				            var json = JSON.parse(httpRequest.responseText);
+
+				            if (json['message'] == 'add' ) {
+                                event.innerText = "♥"
+                                event.nextSibling.nextSibling.innerText = json['like_cnt'];
+				            } else if (json['message'] == 'del' ) {
+                                event.innerText = "♡"
+                                event.nextSibling.nextSibling.innerText = json['like_cnt'];
+				            }
+
+				        }
+			        };
+
+			        httpRequest.open("GET", "/shop/" + bid + "/product.slug/like", true);
+			        httpRequest.send();
+                }
+            </script>
+                        <div class="cart_option cartList cart_type1">
+                            <div class="inner_option"><!----> <!---->
+                                <div class="in_option">
+                                    <div class="list_goods">
+                                        <div class="bar_open">
+                                            <button type="button" class="btn_close"><span class="ico">상품 선택</span>
                                             </button>
-                                        </div>
-                                        <div class="button_wrap">
-                                            <form action="{% url 'cart:product_add' product.id %}" method="post">
-                                                {{ add_to_cart }}
-                                                {% csrf_token %}
-                                                <input type="submit" class="base_button full" value="장바구니 넣기">
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--찜하기 버튼-->
-                            <script type="text/javascript">
-                            function sendLike(bid, event) {
-                                var httpRequest = new XMLHttpRequest();
-			                        httpRequest.onreadystatechange = function() {
-				                        if (httpRequest.readyState == XMLHttpRequest.DONE && httpRequest.status == 200 ) {
-				                            var json = JSON.parse(httpRequest.responseText);
-                                            var slug = {{product.slug}};
-				                                if (json['message'] == 'add' ) {
-                                                    event.innerText = "♥"
-                                                    event.nextSibling.nextSibling.innerText = json['like_cnt'];
-				                                    }
-                                                else if (json['message'] == 'del' ) {
-                                                    event.innerText = "♡"
-                                                    event.nextSibling.nextSibling.innerText = json['like_cnt'];
-				                                    }
-
-                                        }
-                                    };
-
-			                        httpRequest.open("GET", "/shop/" + bid +"/"+ slug+"/like", true);
-			                        httpRequest.send();
-                            }
-
-
-
-
-
-
-
-
-                            </script>
-                            <div class="cart_option cartList cart_type1">
-                                <div class="inner_option"><!----> <!---->
-                                    <div class="in_option">
-                                        <div class="list_goods">
-                                            <div class="bar_open">
-                                                <button type="button" class="btn_close"><span class="ico">상품 선택</span>
-                                                </button>
-                                            </div> <!----> <!----> <!----></div> <!----> <!----> <!----></div>
-                                    <div class="cart_footer off">
-                                        <div class="functions">
-                                            <button type="button" class="pick_icon_button"> 찜하기 버튼</button>
-                                            <button disabled="disabled" type="button" class="alarm_button"> 재입고 알림
-                                            </button>
-                                        </div>
+                                        </div> <!----> <!----> <!----></div> <!----> <!----> <!----></div>
+                                <div class="cart_footer off">
+                                    <div class="functions">
+                                        <button type="button" class="pick_icon_button"> 찜하기 버튼</button>
+                                        <button disabled="disabled" type="button" class="alarm_button"> 재입고 알림</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <!-- 추천상품 -->
-                    <div class="layout-wrapper goods-view-area">
-                        <script src="{% static 'js/autoslider.js' %}"></script>
-                        <div class="goods-add-product">
-                            <h3 class="goods-add-product-title"> 추천 상품 </h3>
-                            <div class="goods-add-product-wrapper __slide-wrapper" data-slide-item="5">
-                                <button class="goods-add-product-move goods-add-product-move-left __slide-go-left"
-                                        data-slide-item="prev">왼쪽으로
-                                    슬라이드
-                                    이동
-                                </button>
-                                <button class="goods-add-product-move goods-add-product-move-right __slide-go-right"
-                                        data-slide-item="next">
-                                    오른쪽으로
-                                    슬라이드 이동
-                                </button>
-                                <div class="goods-add-product-list-wrapper" style="height:320px">
-                                    <ul class="goods-add-product-list __slide-mover" style="left:0px;">
-                                        {% if products %}
-                                        {% for p in products %}
-                                        <li class="goods-add-product-item __slide-item">
-                                            <div class="goods-add-product-item-figure">
-                                                <a href="#">
-                                                    <img src="{{p.image.url}}"
-                                                         class="goods-add-product-item-image">
-                                                </a>
+                <!-- 추천상품 -->
+                <div class="layout-wrapper goods-view-area">
+                    <script src="{% static 'js/autoslider.js' %}"></script>
+                    <div class="goods-add-product">
+                        <h3 class="goods-add-product-title"> 추천 상품 </h3>
+                        <div class="goods-add-product-wrapper __slide-wrapper" data-slide-item="5">
+                            <button class="goods-add-product-move goods-add-product-move-left __slide-go-left"
+                                    data-slide-item="prev">왼쪽으로
+                                슬라이드
+                                이동
+                            </button>
+                            <button class="goods-add-product-move goods-add-product-move-right __slide-go-right"
+                                    data-slide-item="next">
+                                오른쪽으로
+                                슬라이드 이동
+                            </button>
+                            <div class="goods-add-product-list-wrapper" style="height:320px">
+                                <ul class="goods-add-product-list __slide-mover" style="left:0px;">
+                                    {% if products %}
+                                    {% for p in products %}
+                                    <li class="goods-add-product-item __slide-item">
+                                        <div class="goods-add-product-item-figure">
+                                            <a href="#">
+                                                <img src="{{p.image.url}}"
+                                                     class="goods-add-product-item-image">
+                                            </a>
+                                        </div>
+                                        <div class="goods-add-product-item-content">
+                                            <div class="goods-add-product-item-content-wrapper">
+                                                <p class="goods-add-product-item-name">"{{p.name}}"</p>
+                                                <p class="goods-add-product-item-price">"{{p.price}}"</p>
                                             </div>
-                                            <div class="goods-add-product-item-content">
-                                                <div class="goods-add-product-item-content-wrapper">
-                                                    <p class="goods-add-product-item-name">"{{p.name}}"</p>
-                                                    <p class="goods-add-product-item-price">"{{p.price}}"</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        {% endfor %}
-                                        {% endif %}
-                                    </ul>
-                                </div>
+                                        </div>
+                                    </li>
+                                    {% endfor %}
+                                    {% endif %}
+                                </ul>
                             </div>
                         </div>
+                    </div>
 
-<<<<<<< HEAD
-                        <div class="goods-view-infomation detail_wrap_outer" id="goods-view-infomation">
-                            <div class="goods-view-tab">
-                                <ul class="goods-view-infomation-tab-group">
-                                    <li class="goods-view-infomation-tab"><a href="#goods-description"
-                                                                             class="goods-view-infomation-tab-anchor __active">상품설명</a>
-=======
                     <div class="goods-view-infomation detail_wrap_outer" id="goods-view-infomation">
                         <div class="goods-view-tab">
                             <ul class="goods-view-infomation-tab-group">
@@ -727,293 +477,196 @@
                                     <li>
                                         <div class="tit">전화 문의 1644-1107</div>
                                         <div class="sub">오전 7시~오후 7시 (연중무휴)</div>
->>>>>>> main
                                     </li>
-                                    <li class="goods-view-infomation-tab"><a href="#goods-infomation"
-                                                                             class="goods-view-infomation-tab-anchor">상세정보</a>
+                                    <li>
+                                        <div class="tit">카카오톡 문의</div>
+                                        <div class="sub">오전 7시~오후 7시 (연중무휴)</div>
+                                        <div class="expend">
+                                            카카오톡에서 ’마켓컬리’를 검색 후<br>
+                                            대화창에 문의 및 불편사항을<br>
+                                            남겨주세요.
+                                        </div>
                                     </li>
-                                    <li class="goods-view-infomation-tab goods-view-review-tab"><a href="#goods-review"
-                                                                                                   class="goods-view-infomation-tab-anchor">후기
-                                        <span class="count_review">(0)</span></a></li>
-
-                                    <li class="goods-view-infomation-tab qna-show"><a href="#goods-qna"
-                                                                                      class="goods-view-infomation-tab-anchor">문의</a>
+                                    <li>
+                                        <div class="tit">홈페이지 문의</div>
+                                        <div class="sub">
+                                            24시간 접수 가능<br>
+                                            로그인 &gt; 마이컬리 &gt; 1:1 문의
+                                        </div>
+                                        <div class="expend">
+                                            고객센터 운영 시간에 순차적으로 답변해드리겠습니다.
+                                        </div>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="goods-view-infomation-content __active" id="goods-description">
-
-                                <div id="giftNotice"></div>
-
-
-                                <div class="goods_wrap">
-                                    <div class="goods_intro">
-                                        <div class="pic">
-                                            <img src="{{product.image.url}}">
-                                        </div>
-                                        <div class="context last">
-                                            <h3>
-                                                <small>{{product.name}}</small>
-                                            </h3>
-                                            <p class="words">{{product.description}}</p>
-                                        </div>
-                                    </div>
+                            <div class="happy_center on">
+                                <div class="happy unfold">
+                                    <h4 class="tit">교환 및 환불 안내</h4>
+                                    <p class="sub">
+                                        교환 및 환불이 필요하신 경우 고객행복센터로 문의해주세요.
+                                    </p>
+                                    <a data-child-id="refund" href="#none" class="asked">
+                                        <span class="txt" data-open="자세히 보기" data-close="닫기">닫기</span>
+                                        <img src="https://res.kurly.com/pc/ico/2001/pc_arrow_open@2x.png" alt="아이콘"
+                                             class="ico">
+                                    </a>
                                 </div>
-
-                                <div class="whykurly_area">
-                                    <div class="row">
-                                        <strong class="tit_whykurly">WHY KURLY</strong>
-                                        <div id="why_kurly" class="txt_area">
-                                            <div class="why-kurly">
-                                                <div class="col">
-                                                    <div class="icon"><img
-                                                            src="https://res.kurly.com/pc/ico/1910/01_check.svg"></div>
-                                                    <div class="info">
-                                                        <div class="title">깐깐한 상품위원회</div>
-                                                        <div class="desc"><p>나와 내 가족이 먹고 쓸 상품을 고르는<br> 마음으로 매주 상품을 직접
-                                                            먹어보고,<br> 경험해보고 성분, 맛, 안정성 등 다각도의<br> 기준을 통과한 상품만을 판매합니다.
-                                                        </p>
-                                                            <!----></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col">
-                                                    <div class="icon"><img
-                                                            src="https://res.kurly.com/pc/ico/1910/02_only.svg"></div>
-                                                    <div class="info">
-                                                        <div class="title">차별화된 Kurly Only 상품</div>
-                                                        <div class="desc"><p>전국 각지와 해외의 훌륭한 생산자가<br> 믿고 선택하는 파트너,
-                                                            마켓컬리.<br>
-                                                            3천여 개가 넘는 컬리 단독 브랜드, 스펙의<br> Kurly Only 상품을 믿고 만나보세요.</p>
-                                                            <span
-                                                                    class="etc">(온라인 기준 / 자사몰, 직구 제외)</span></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col">
-                                                    <div class="icon"><img
-                                                            src="https://res.kurly.com/pc/ico/1910/03_cold.svg"></div>
-                                                    <div class="info">
-                                                        <div class="title">신선한 풀콜드체인 배송</div>
-                                                        <div class="desc"><p>온라인 업계 최초로 산지에서 문 앞까지<br> 상온, 냉장, 냉동 상품을 분리
-                                                            포장
-                                                            후<br> 최적의 온도를 유지하는 냉장 배송 시스템,<br> 풀콜드체인으로 상품을 신선하게 전해드립니다.
-                                                        </p>
-                                                            <span class="etc">(샛별배송에 한함)</span></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col">
-                                                    <div class="icon"><img
-                                                            src="https://res.kurly.com/pc/ico/1910/04_price.svg"></div>
-                                                    <div class="info">
-                                                        <div class="title">고객, 생산자를 위한 최선의 가격</div>
-                                                        <div class="desc"><p>매주 대형 마트와 주요 온라인 마트의 가격<br> 변동 상황을 확인해
-                                                            신선식품은
-                                                            품질을<br> 타협하지 않는 선에서 최선의 가격으로,<br> 가공식품은 언제나 합리적인 가격으로<br> 정기
-                                                            조정합니다.</p> <!----></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col">
-                                                    <div class="icon"><img
-                                                            src="https://res.kurly.com/pc/ico/1910/05_eco.svg"></div>
-                                                    <div class="info">
-                                                        <div class="title">환경을 생각하는 지속 가능한 유통</div>
-                                                        <div class="desc"><p>친환경 포장재부터 생산자가 상품에만<br> 집중할 수 있는 직매입
-                                                            유통구조까지,<br> 지속 가능한 유통을 고민하며 컬리를 있게<br> 하는 모든 환경(생산자, 커뮤니티,
-                                                            직원)이<br> 더 나아질 수 있도록 노력합니다.</p> <!----></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="happy_faq fst">
+                                    <span class="item">01. 상품에 문제가 있는 경우</span>
+                                    <div id="refund1" class="questions hide"><p class="desc">받으신 상품이 표시·광고 내용 또는 계약
+                                        내용과
+                                        <span class="bar_m"></span>다른 경우에는 상품을 받은 날부터 3개월 이내, <span
+                                                class="bar_m bar_pc"></span>그 사실을 알게 된 날부터 30일 이내에 <span
+                                                class="bar_m"></span>교환 및 환불을 요청하실 수 있습니다.</p>
+                                        <p class="space"></p>
+                                        <p class="desc">상품의 정확한 상태를 확인할 수 있도록 <span class="bar_m"></span>사진을 함께
+                                            보내주시면 더
+                                            빠른 상담이 가능합니다.</p>
+                                        <p class="noti">※ 상품에 문제가 있는 것으로 확인되면 배송비는 컬리가 부담합니다.</p></div>
                                 </div>
-
-
-                                <div class="happy_center fst">
-                                    <div class="happy">
-                                        <h4 class="tit">고객행복센터</h4>
-                                        <p class="sub">
-                                            <span class="emph">궁금하신 점이나 서비스 이용에 불편한 점이 있으신가요?</span><span
-                                                class="bar"></span>
-                                            문제가 되는 부분을 사진으로 찍어<span class="bar"></span>
-                                            아래 중 편하신 방법으로 접수해 주시면<span class="bar"></span>
-                                            빠르게 도와드리겠습니다.
+                                <div class="happy_faq">
+                                    <span class="item">02. 단순 변심, 주문 착오의 경우</span>
+                                    <div id="refund2" class="questions hide"><strong class="subject no_padding">신선 /
+                                        냉장
+                                        / 냉동 식품</strong>
+                                        <p class="desc">재판매가 불가한 상품의 특성상, <span class="bar_m"></span>단순 변심, 주문 착오 시
+                                            <span class="bar_m"></span>교환 및 반품이 어려운 점 양해 부탁드립니다.</p>
+                                        <p class="space"></p>
+                                        <p class="desc">상품에 따라 조금씩 맛이 다를 수 있으며, <span class="bar_m"></span>개인의 기호에
+                                            따라 같은
+                                            상품도 다르게 <span class="bar_m"></span>느끼실 수 있습니다.</p><strong
+                                                class="subject">유통기한
+                                            30일 이상 식품 <span class="bar_m"></span>(신선 / 냉장 / 냉동 제외) &amp; 기타
+                                            상품</strong>
+                                        <p class="desc">상품을 받은 날부터 7일 이내에 <span class="bar_m"></span>고객행복센터로 문의해주세요.
                                         </p>
-                                    </div>
-                                    <ul class="list">
-                                        <li>
-                                            <div class="tit">전화 문의 1644-1107</div>
-                                            <div class="sub">오전 7시~오후 7시 (연중무휴)</div>
-                                        </li>
-                                        <li>
-<<<<<<< HEAD
-                                            <div class="tit">카카오톡 문의</div>
-                                            <div class="sub">오전 7시~오후 7시 (연중무휴)</div>
-                                            <div class="expend">
-                                                카카오톡에서 ’마켓컬리’를 검색 후<br>
-                                                대화창에 문의 및 불편사항을<br>
-                                                남겨주세요.
-                                            </div>
-=======
-                                            <strong class="emph">- [마이페이지 &gt; 주문내역 상세페이지] 에서 직접 취소하실 수
-                                                있습니다.</strong>
->>>>>>> main
-                                        </li>
-                                        <li>
-                                            <div class="tit">홈페이지 문의</div>
-                                            <div class="sub">
-                                                24시간 접수 가능<br>
-                                                로그인 &gt; 마이컬리 &gt; 1:1 문의
-                                            </div>
-                                            <div class="expend">
-                                                고객센터 운영 시간에 순차적으로 답변해드리겠습니다.
-                                            </div>
-                                        </li>
-                                    </ul>
+                                        <p class="noti">※ 단순 변심으로 인한 교환 또는 환불의 경우 <span class="bar_m"></span>고객님께서
+                                            배송비
+                                            6,000원을 부담하셔야 합니다. <span class="bar_m bar_pc"></span>(주문 건 배송비를 결제하셨을 경우
+                                            3,000원)</p></div>
                                 </div>
-                                <div class="happy_center on">
-                                    <div class="happy unfold">
-                                        <h4 class="tit">교환 및 환불 안내</h4>
-                                        <p class="sub">
-                                            교환 및 환불이 필요하신 경우 고객행복센터로 문의해주세요.
-                                        </p>
-                                        <a data-child-id="refund" href="#none" class="asked">
-                                            <span class="txt" data-open="자세히 보기" data-close="닫기">닫기</span>
-                                            <img src="https://res.kurly.com/pc/ico/2001/pc_arrow_open@2x.png" alt="아이콘"
-                                                 class="ico">
-                                        </a>
-                                    </div>
-                                    <div class="happy_faq fst">
-                                        <span class="item">01. 상품에 문제가 있는 경우</span>
-                                        <div id="refund1" class="questions hide"><p class="desc">받으신 상품이 표시·광고 내용 또는 계약
-                                            내용과
-                                            <span class="bar_m"></span>다른 경우에는 상품을 받은 날부터 3개월 이내, <span
-                                                    class="bar_m bar_pc"></span>그 사실을 알게 된 날부터 30일 이내에 <span
-                                                    class="bar_m"></span>교환 및 환불을 요청하실 수 있습니다.</p>
-                                            <p class="space"></p>
-                                            <p class="desc">상품의 정확한 상태를 확인할 수 있도록 <span class="bar_m"></span>사진을 함께
-                                                보내주시면 더
-                                                빠른 상담이 가능합니다.</p>
-                                            <p class="noti">※ 상품에 문제가 있는 것으로 확인되면 배송비는 컬리가 부담합니다.</p></div>
-                                    </div>
-                                    <div class="happy_faq">
-                                        <span class="item">02. 단순 변심, 주문 착오의 경우</span>
-                                        <div id="refund2" class="questions hide"><strong class="subject no_padding">신선 /
-                                            냉장
-                                            / 냉동 식품</strong>
-                                            <p class="desc">재판매가 불가한 상품의 특성상, <span class="bar_m"></span>단순 변심, 주문 착오 시
-                                                <span class="bar_m"></span>교환 및 반품이 어려운 점 양해 부탁드립니다.</p>
-                                            <p class="space"></p>
-                                            <p class="desc">상품에 따라 조금씩 맛이 다를 수 있으며, <span class="bar_m"></span>개인의 기호에
-                                                따라 같은
-                                                상품도 다르게 <span class="bar_m"></span>느끼실 수 있습니다.</p><strong
-                                                    class="subject">유통기한
-                                                30일 이상 식품 <span class="bar_m"></span>(신선 / 냉장 / 냉동 제외) &amp; 기타
-                                                상품</strong>
-                                            <p class="desc">상품을 받은 날부터 7일 이내에 <span class="bar_m"></span>고객행복센터로 문의해주세요.
-                                            </p>
-                                            <p class="noti">※ 단순 변심으로 인한 교환 또는 환불의 경우 <span class="bar_m"></span>고객님께서
-                                                배송비
-                                                6,000원을 부담하셔야 합니다. <span class="bar_m bar_pc"></span>(주문 건 배송비를 결제하셨을 경우
-                                                3,000원)</p></div>
-                                    </div>
-                                    <div class="happy_faq">
-                                        <span class="item">03. 교환·반품이 불가한 경우</span>
-                                        <div id="refund3" class="questions hide"><p class="desc">다음에 해당하는 교환·환불 신청은
-                                            <span
-                                                    class="bar_m"></span>처리가 어려울 수 있으니 양해 부탁드립니다.</p>
-                                            <ul class="list_questions">
-                                                <li>고객님의 책임 있는 사유로 상품이 멸실되거나 훼손된 경우 <span class="bar_m bar_pc"></span>(단,
-                                                    상품의 내용을 확인하기 위해 포장 등을 훼손한 경우는 제외)
-                                                </li>
-                                                <li>고객님의 사용 또는 일부 소비로 상품의 가치가 감소한 경우</li>
-                                                <li>시간이 지나 다시 판매하기 곤란할 정도로 상품의 가치가 감소한 경우</li>
-                                                <li>복제가 가능한 상품의 포장이 훼손된 경우</li>
-                                                <li>고객님의 주문에 따라 개별적으로 생산되는 <span class="bar_m"></span>상품의 제작이 이미 진행된 경우
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="happy_center on">
-                                    <div class="happy unfold" style="border-top:none;">
-                                        <h4 class="tit">주문 취소 안내</h4>
-                                        <ul class="sub">
-                                            <li>
-                                                <strong class="emph">- [배송준비중] 이전까지 주문 취소 가능합니다.</strong>
+                                <div class="happy_faq">
+                                    <span class="item">03. 교환·반품이 불가한 경우</span>
+                                    <div id="refund3" class="questions hide"><p class="desc">다음에 해당하는 교환·환불 신청은
+                                        <span
+                                                class="bar_m"></span>처리가 어려울 수 있으니 양해 부탁드립니다.</p>
+                                        <ul class="list_questions">
+                                            <li>고객님의 책임 있는 사유로 상품이 멸실되거나 훼손된 경우 <span class="bar_m bar_pc"></span>(단,
+                                                상품의 내용을 확인하기 위해 포장 등을 훼손한 경우는 제외)
                                             </li>
-                                            <li>
-                                                <strong class="emph">- [마이컬리 &gt; 주문내역 상세페이지] 에서 직접 취소하실 수
-                                                    있습니다.</strong>
-                                            </li>
-                                            <li>
-                                                <strong class="emph">- [예약일 배송] 주문의 경우 [입금확인] 이후 단계부터는
-                                                    고객행복센터로 문의해주세요.</strong>
+                                            <li>고객님의 사용 또는 일부 소비로 상품의 가치가 감소한 경우</li>
+                                            <li>시간이 지나 다시 판매하기 곤란할 정도로 상품의 가치가 감소한 경우</li>
+                                            <li>복제가 가능한 상품의 포장이 훼손된 경우</li>
+                                            <li>고객님의 주문에 따라 개별적으로 생산되는 <span class="bar_m"></span>상품의 제작이 이미 진행된 경우
                                             </li>
                                         </ul>
-                                        <a href="#none" class="asked">
-                                            <span class="txt" data-open="자세히 보기" data-close="닫기">닫기</span>
-                                            <img src="https://res.kurly.com/pc/ico/2001/pc_arrow_open@2x.png" alt="아이콘"
-                                                 class="ico">
-                                        </a>
-                                    </div>
-                                    <div class="happy_faq">
-                                        <span class="item">주문 취소 관련</span>
-                                        <div class="questions hide">
-                                            <p class="desc">- [배송준비중] 부터는 취소가 불가하니, 반품으로 진행해주세요. (상품에 따라 반품이 불가할 수
-                                                있습니다.)</p>
-                                            <p class="desc">- 주문마감 시간에 임박할수록 취소 가능 시간이 짧아질 수 있습니다.</p>
-                                            <p class="desc">- 비회원은 App 또는 모바일 웹사이트에서 [마이컬리 &gt; 비회원 주문조회 페이지] 에서 취소가
-                                                가능합니다.</p>
-                                            <p class="desc">- 일부 예약상품은 배송 3~4일 전에만 취소 가능합니다.</p>
-                                            <p class="desc">- 주문상품의 부분취소는 불가능합니다. 전체 주문 취소 후 다시 구매 해주세요.</p>
-                                        </div>
-                                    </div>
-                                    <div class="happy_faq">
-                                        <span class="item">결제 승인 취소 / 환불 관련</span>
-                                        <div class="questions hide">
-                                            <p class="desc">- 카드 환불은 카드사 정책에 따르며, 자세한 사항은 카드사에 문의해주세요.</p>
-                                            <p class="desc">- 결제 취소 시, 사용하신 적립금과 쿠폰도 모두 복원됩니다.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="happy_center lst">
-                                    <div class="happy unfold">
-                                        <h4 class="tit">배송관련 안내</h4>
-                                        <p class="sub">
-                                            배송 과정 중 기상 악화 및 도로교통 상황에 따라 부득이하게 지연 배송이 발생될 수 있습니다.
-                                        </p>
                                     </div>
                                 </div>
                             </div>
-
-                            <div id="contents-wrapper" class="goods_board">
-                                <div class="xans-element- xans-product xans-product-additional detail_board  ">
-                                    <div class="board">
-                                        <span class="line"></span>
-                                        <div class="title_txt">
-                                            <h2>PRODUCT REVIEW</h2>
-                                            <div class="sort-wrap">
-                                                <ul class="list_type1 old">
-                                                    <li><span class="ico"></span>
-                                                        <p class="txt">상품에 대한 문의를 남기는 공간입니다. 해당 게시판의 성격과 다른 글은 사전동의 없이
-                                                            담당 게시판으로 이동될 수 있습니다.</p></li>
-                                                    <li><span class="ico"></span>
-                                                        <p class="txt">배송관련, 주문(취소/교환/환불)관련 문의 및 요청사항은 마이컬리 내 <a
-                                                                href="#none"
-                                                                onclick="window.parent.location.href = '/mypage/inquiry/list'"
-                                                                class="emph">1:1 문의</a>에 남겨주세요.</p></li>
-                                                </ul>
-                                                <div class="sort" style="bottom:-9px">
-                                                    <select onchange="this.form.sort.value=this.value;this.form.submit()">
-                                                        <option value="1">최근등록순</option>
-                                                        <option value="2">좋아요많은순</option>
-                                                        <option value="3">조회많은순</option>
-                                                    </select>
-                                                </div>
+                            <div class="happy_center on">
+                                <div class="happy unfold" style="border-top:none;">
+                                    <h4 class="tit">주문 취소 안내</h4>
+                                    <ul class="sub">
+                                        <li>
+                                            <strong class="emph">- [배송준비중] 이전까지 주문 취소 가능합니다.</strong>
+                                        </li>
+                                        <li>
+                                            <strong class="emph">- [마이페이지 &gt; 주문내역 상세페이지] 에서 직접 취소하실 수
+                                                있습니다.</strong>
+                                        </li>
+                                        <li>
+                                            <strong class="emph">- [예약일 배송] 주문의 경우 [입금확인] 이후 단계부터는
+                                                고객행복센터로 문의해주세요.</strong>
+                                        </li>
+                                    </ul>
+                                    <a href="#none" class="asked">
+                                        <span class="txt" data-open="자세히 보기" data-close="닫기">닫기</span>
+                                        <img src="https://res.kurly.com/pc/ico/2001/pc_arrow_open@2x.png" alt="아이콘"
+                                             class="ico">
+                                    </a>
+                                </div>
+                                <div class="happy_faq">
+                                    <span class="item">주문 취소 관련</span>
+                                    <div class="questions hide">
+                                        <p class="desc">- [배송준비중] 부터는 취소가 불가하니, 반품으로 진행해주세요. (상품에 따라 반품이 불가할 수
+                                            있습니다.)</p>
+                                        <p class="desc">- 주문마감 시간에 임박할수록 취소 가능 시간이 짧아질 수 있습니다.</p>
+                                        <p class="desc">- 비회원은 App 또는 모바일 웹사이트에서 [마이컬리 &gt; 비회원 주문조회 페이지] 에서 취소가
+                                            가능합니다.</p>
+                                        <p class="desc">- 일부 예약상품은 배송 3~4일 전에만 취소 가능합니다.</p>
+                                        <p class="desc">- 주문상품의 부분취소는 불가능합니다. 전체 주문 취소 후 다시 구매 해주세요.</p>
+                                    </div>
+                                </div>
+                                <div class="happy_faq">
+                                    <span class="item">결제 승인 취소 / 환불 관련</span>
+                                    <div class="questions hide">
+                                        <p class="desc">- 카드 환불은 카드사 정책에 따르며, 자세한 사항은 카드사에 문의해주세요.</p>
+                                        <p class="desc">- 결제 취소 시, 사용하신 적립금과 쿠폰도 모두 복원됩니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="happy_center lst">
+                                <div class="happy unfold">
+                                    <h4 class="tit">배송관련 안내</h4>
+                                    <p class="sub">
+                                        배송 과정 중 기상 악화 및 도로교통 상황에 따라 부득이하게 지연 배송이 발생될 수 있습니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <body style="overflow-y: hidden;">
+                        <div id="contents-wrapper" class="goods_board">
+                            <div class="xans-element- xans-product xans-product-additional detail_board  ">
+                                <div class="board">
+                                    <span class="line"></span>
+                                    <div class="title_txt">
+                                        <h2>PRODUCT REVIEW</h2>
+                                        <div class="sort-wrap">
+                                            <ul class="list_type1 old">
+                                                <li><span class="ico"></span>
+                                                    <p class="txt">상품에 대한 문의를 남기는 공간입니다. 해당 게시판의 성격과 다른 글은 사전동의 없이
+                                                        담당 게시판으로 이동될 수 있습니다.</p></li>
+                                                <li><span class="ico"></span>
+                                                    <p class="txt">배송관련, 주문(취소/교환/환불)관련 문의 및 요청사항은 마이컬리 내 <a
+                                                            href="#none"
+                                                            onclick="window.parent.location.href = '/mypage/inquiry/list'"
+                                                            class="emph">1:1 문의</a>에 남겨주세요.</p></li>
+                                            </ul>
+                                            <div class="sort" style="bottom:-9px">
+                                                <select onchange="this.form.sort.value=this.value;this.form.submit()">
+                                                    <option value="1">최근등록순</option>
+                                                    <option value="2">좋아요많은순</option>
+                                                    <option value="3">조회많은순</option>
+                                                </select>
                                             </div>
                                         </div>
-                                        <table class="xans-board-listheader" width="100%" border="0" cellpadding="0"
-                                               cellspacing="0">
-                                            <caption style="display:none">구매후기 제목</caption>
+                                    </div>
+                                    <table class="xans-board-listheader" width="100%" border="0" cellpadding="0"
+                                           cellspacing="0">
+                                        <caption style="display:none">구매후기 제목</caption>
+                                        <colgroup>
+                                            <col style="width:70px;">
+                                            <col style="width:auto;">
+                                            <col style="width:77px;">
+                                            <col style="width:77px;">
+                                            <col style="width:100px;">
+                                        </colgroup>
+                                        <tbody>
+                                        <tr>
+                                            <th scope="col" class="input_txt">번호</th>
+                                            <th scope="col" class="input_txt">내용</th>
+                                            <th scope="col" class="input_txt">별점</th>
+                                            <th scope="col" class="input_txt" align="center">작성자</th>
+                                            <th scope="col" class="input_txt">작성일</th>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    {% for cmt in cmts %}
+                                    <div class="tr_line">
+                                        <table class="xans-board-listheaderd tbl_newtype1" width="100%"
+                                               cellpadding="0" cellspacing="0"
+                                               onclick="view_content(this,event,false)">
+                                            <caption style="display:none">구매후기 내용</caption>
                                             <colgroup>
                                                 <col style="width:70px;">
                                                 <col style="width:auto;">
@@ -1023,98 +676,75 @@
                                             </colgroup>
                                             <tbody>
                                             <tr>
-                                                <th scope="col" class="input_txt">번호</th>
-                                                <th scope="col" class="input_txt">내용</th>
-                                                <th scope="col" class="input_txt">별점</th>
-                                                <th scope="col" class="input_txt" align="center">작성자</th>
-                                                <th scope="col" class="input_txt">작성일</th>
+                                                <td align="center">
+                                                    {{cmt.id}}
+                                                </td>
+                                                <td class="contents">
+                                                    <div class="fst">{{cmt.contents}}</div>
+                                                </td>
+                                                <td class="user_id">
+                                                    {{cmt.star}}
+                                                </td>
+                                                <td class="user_id">
+                                                    {{cmt.user}}
+                                                </td>
+                                                <td class="time">{{cmt.create_date}}</td>
                                             </tr>
                                             </tbody>
                                         </table>
-                                        {% for cmt in cmts %}
-                                        <div class="tr_line">
-                                            <table class="xans-board-listheaderd tbl_newtype1" width="100%"
-                                                   cellpadding="0" cellspacing="0"
-                                                   onclick="view_content(this,event,false)">
-                                                <caption style="display:none">구매후기 내용</caption>
-                                                <colgroup>
-                                                    <col style="width:70px;">
-                                                    <col style="width:auto;">
-                                                    <col style="width:77px;">
-                                                    <col style="width:77px;">
-                                                    <col style="width:100px;">
-                                                </colgroup>
-                                                <tbody>
-                                                <tr>
-                                                    <td align="center">
-                                                        {{ forloop.counter }}
-                                                    </td>
-                                                    <td class="contents">
-                                                        <div class="fst">{{cmt.contents}}</div>
-                                                    </td>
-                                                    <td class="user_id">
-                                                        {{cmt.star}}
-                                                    </td>
-                                                    <td class="user_id">
-                                                        {{cmt.user}}
-                                                    </td>
-                                                    <td class="time">{{cmt.create_date}}</td>
-                                                </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        {% endfor %}
-                                        <p class="review_write_title type2"
-                                           style="font-size:15px; font-weight: bolder">리뷰작성</p>
-                                        <form method="post">
-                                            {% csrf_token %}
-                                            <table class="xans-board-listheader" width="100%" border="0" cellpadding="0"
-                                                   cellspacing="0">
-                                                <caption style="display:none">구매후기 제목</caption>
-                                                <colgroup>
-                                                    <col style="width:auto;">
-                                                    <col style="width:77px;">
-                                                </colgroup>
-                                                <tbody>
-                                                <tr>
-                                                    <th scope="col" class="input_txt">
-                                                        <div class="review_write_textarea">
+                                    </div>
+                                    {% endfor %}
+                                    <p class="review_write_title type2"
+                                       style="font-size:15px; font-weight: bolder">리뷰작성</p>
+                                    <form method="post">
+                                        {% csrf_token %}
+                                        <table class="xans-board-listheader" width="100%" border="0" cellpadding="0"
+                                               cellspacing="0">
+                                            <caption style="display:none">구매후기 제목</caption>
+                                            <colgroup>
+                                                <col style="width:auto;">
+                                                <col style="width:77px;">
+                                            </colgroup>
+                                            <tbody>
+                                            <tr>
+                                                <th scope="col" class="input_txt">
+                                                    <div class="review_write_textarea">
                                                 <textarea style="resize: none;" rows="10" cols="120" name='contents'
                                                           id="reviewContents" title="구매후기 작성"
                                                           maxlength="600"></textarea>
-                                                        </div>
-                                                    </th>
-                                                    <th scope="col" class="input_txt">
-                                                        <div>
-                                                            <button type="button" id="b1" value="1"
-                                                                    onclick="on(this)">
-                                                                ☆
-                                                            </button>
-                                                            <button type="button" id="b2" value="2"
-                                                                    onclick="on(this)">
-                                                                ☆
-                                                            </button>
-                                                            <button type="button" id="b3" value="3"
-                                                                    onclick="on(this)">
-                                                                ☆
-                                                            </button>
-                                                            <button type="button" id="b4" value="4"
-                                                                    onclick="on(this)">
-                                                                ☆
-                                                            </button>
-                                                            <button type="button" id="b5" value="5"
-                                                                    onclick="on(this)">
-                                                                ☆
-                                                            </button>
-                                                            <h4 id='star'>0</h4>
-                                                            <input id='star_input' type="hidden" name="star"
-                                                                   value="0">
-                                                        </div>
-                                                    </th>
-                                                </tr>
-                                                </tbody>
-                                            </table>
-                                            <script>
+                                                    </div>
+                                                </th>
+                                                <th scope="col" class="input_txt">
+                                                    <div>
+                                                        <button type="button" id="b1" value="1"
+                                                                onclick="on(this)">
+                                                            ☆
+                                                        </button>
+                                                        <button type="button" id="b2" value="2"
+                                                                onclick="on(this)">
+                                                            ☆
+                                                        </button>
+                                                        <button type="button" id="b3" value="3"
+                                                                onclick="on(this)">
+                                                            ☆
+                                                        </button>
+                                                        <button type="button" id="b4" value="4"
+                                                                onclick="on(this)">
+                                                            ☆
+                                                        </button>
+                                                        <button type="button" id="b5" value="5"
+                                                                onclick="on(this)">
+                                                            ☆
+                                                        </button>
+                                                        <h4 id='star'>0</h4>
+                                                        <input id='star_input' type="hidden" name="star"
+                                                               value="0">
+                                                    </div>
+                                                </th>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <script>
         function on(event){
             if(event.id=="b1"){
             event.innerText="★";
@@ -1166,58 +796,6 @@
 
 
 
-<<<<<<< HEAD
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                            </script>
-                                            <p class="btnArea after">
-                                                <button id="submitButton" type="submit"
-                                                        onclick="javascript: form.action='/shop/{{product.id}}/{{product.slug}}/add_comment';"/>
-                                                <span
-                                                        class="bhs_button"
-                                                        style="line-height:30px; width:130px;">후기쓰기</span></button>
-                                            </p>
-                                            </table>
-                                        </form>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="layerDSR">
-                <div class="bg_dim"></div>
-                <div class="in_layer">
-                    <div class="inner_layer layer_star">
-                        <strong class="dsr_result">샛별배송 지역입니다.</strong>
-                        <div class="ani">
-                            <img data-src="https://res.kurly.com/mobile/img/1908/img_delivery_kurly.png"
-                                 src="https://res.kurly.com/mobile/service/common/bg_1x1.png" alt="샛별배송 이미지">
-                        </div>
-                        <p class="dsr_desc">
-                            매일 아침, 문 앞까지 신선함을 전해드려요.
-                        </p>
-                        <div class="direct_courier_operation_notice">
-=======
                                         </script>
                                         <p class="btnArea after">
                                             <button id="submitButton" type="submit"
@@ -1251,51 +829,45 @@
                     매일 아침, 문 앞까지 신선함을 전해드려요.
                 </p>
                 <div class="direct_courier_operation_notice">
->>>>>>> main
 <span class="courier_message">
 <span class="startAt"></span>시~<span class="endAt"></span>시 주문은 택배로 배송되며<br>
 다음날 밤 12시 이전 도착합니다. (토요일 주문 불가)
 </span>
-                        </div>
-                    </div>
-                    <div class="inner_layer layer_normal">
-                        <strong class="dsr_result">택배배송 지역입니다.</strong>
-                        <div class="ani">
-                            <img data-src="https://res.kurly.com/mobile/img/1908/img_delivery_car.png"
-                                 src="https://res.kurly.com/mobile/service/common/bg_1x1.png" alt="택배배송 이미지">
-                        </div>
-                        <p class="dsr_desc">
-                            오늘 주문하면 다음 날 바로 도착해요.
-                        </p>
-                        <p class="dsr_notice">일요일은 배송 휴무로 토요일에는 주문 불가</p>
-                    </div>
-                    <div class="inner_layer layer_none">
-                        <strong class="dsr_result">배송 불가 지역입니다.</strong>
-                        <div class="ani">
-                            <img data-src="https://res.kurly.com/mobile/img/1908/img_delivery_none.png"
-                                 src="https://res.kurly.com/mobile/service/common/bg_1x1.png" alt="배송불가 이미지">
-                        </div>
-                        <p class="dsr_desc">
-                            더 많은 곳에 배송될 수 있게<br>
-                            최선을 다하겠습니다.
-                        </p>
-                    </div>
-                    <div class="layer_btn1">
-                        <button type="button" class="btn_close"
-                                onclick="$('#layerDSR').hide();$(this).parent().find('.inner_layer').hide();">확인
-                        </button>
-                    </div>
-                    <button type="button" class="layer_close"
-                            onclick="$('#layerDSR').hide();$(this).parent().find('.inner_layer').hide();"></button>
                 </div>
             </div>
+            <div class="inner_layer layer_normal">
+                <strong class="dsr_result">택배배송 지역입니다.</strong>
+                <div class="ani">
+                    <img data-src="https://res.kurly.com/mobile/img/1908/img_delivery_car.png"
+                         src="https://res.kurly.com/mobile/service/common/bg_1x1.png" alt="택배배송 이미지">
+                </div>
+                <p class="dsr_desc">
+                    오늘 주문하면 다음 날 바로 도착해요.
+                </p>
+                <p class="dsr_notice">일요일은 배송 휴무로 토요일에는 주문 불가</p>
+            </div>
+            <div class="inner_layer layer_none">
+                <strong class="dsr_result">배송 불가 지역입니다.</strong>
+                <div class="ani">
+                    <img data-src="https://res.kurly.com/mobile/img/1908/img_delivery_none.png"
+                         src="https://res.kurly.com/mobile/service/common/bg_1x1.png" alt="배송불가 이미지">
+                </div>
+                <p class="dsr_desc">
+                    더 많은 곳에 배송될 수 있게<br>
+                    최선을 다하겠습니다.
+                </p>
+            </div>
+            <div class="layer_btn1">
+                <button type="button" class="btn_close"
+                        onclick="$('#layerDSR').hide();$(this).parent().find('.inner_layer').hide();">확인
+                </button>
+            </div>
+            <button type="button" class="layer_close"
+                    onclick="$('#layerDSR').hide();$(this).parent().find('.inner_layer').hide();"></button>
         </div>
     </div>
 </div>
-<<<<<<< HEAD
-=======
 </body>
->>>>>>> main
 
 
 {% endblock %}
