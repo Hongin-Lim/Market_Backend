@@ -1,5 +1,7 @@
 from django.shortcuts import render, get_object_or_404
+import order.models
 from .models import *
+import shop.models
 from cart.cart import Cart
 from .forms import *
 from django.views.generic.base import View
@@ -34,10 +36,25 @@ def order_create(request):
         form = OrderCreateForm()
     return render(request, 'order/create.html', {'cart': cart, 'form': form})
 
+# setting.py에 정의된 logging을 가져옴 ex. django.server
+import logging
+logger = logging.getLogger('django.server')
 
 def order_complete(request):
     order_id = request.GET.get('order_id')
     order = Order.objects.get(id=order_id)
+    orderitems = Order.objects.prefetch_related('items').get(id=order_id).items.all().select_related('product')
+    orderitems2 = orderitems[0]
+
+    # 확인용
+    for orderitem in orderitems:
+        orderitems2 = orderitem
+        print(orderitem.product.category.name)
+        print(orderitem.product.category.meta_description)
+
+    # 아래 logger는 log정보를 출력하기 위해 사용함
+    user = request.user
+    logger.info("주문번호:"+ str(order.id) + " " + "유저번호:"+str(user.id) + " " + "품목:"+str(orderitems2.product.category.name)+ " " + "수량:"+str(orderitems2.quantity))
     return render(request, 'order/complete.html', {'order': order})
 
 

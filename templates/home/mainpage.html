@@ -87,6 +87,20 @@ img { dispLay:block; margin:auto; }
         </div>
     </section>
 
+    <!-- Modal HTML embedded directly into document -->
+<div id="ex1" class="modal">
+  <p>▶▶▶비동기통신으로 장바구니 담기는 개발중입니다◀◀◀</p><br>
+  <a href="#" rel="modal:close">닫기</a>
+</div>
+
+<!-- Link to open the modal -->
+<center><p><a href="#ex1" rel="modal:open">여기를 클릭해 주세요!</a></p></center>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
 
     <section class="event section">
         <div class="container">
@@ -99,26 +113,29 @@ img { dispLay:block; margin:auto; }
 
             <ul class="event-items">
                 <li>
-                    <a href="#" class="event-product-image image-hover"></a>
-                    <a href="#" class="event-product-detail">
+                    <a href="#" class="event-product-image image-hover" style="background-image: url(https://verymarket2022.s3.ap-northeast-2.amazonaws.com/static/image/베리마켓오픈이벤트.png
+                           );"></a>
+                    <a class="event-product-detail" href="popup/event1.html" onclick="window.open(this.href, '_blank', 'width=700, height=700'); return false;">
                         <h3 class="event-title">
-                            덴탈 간식·용품 최대 30% 할인&amp;GIFT
+                            2022년 6월 9일 Very-Market 오픈!
                         </h3>
-                        <span class="event-desc">반려동물의 치아 건강을 위한</span>
+                        <span class="event-desc"> Made by "베리마켓 개발팀"</span>
+                    </>
+                </li>
+                <li>
+                    <a href="#" class="event-product-image image-hover" style="background-image: url(https://verymarket2022.s3.ap-northeast-2.amazonaws.com/static/image/베리마켓오픈이벤트2.png
+                           );"></a>
+                    <a class="event-product-detail" href="popup/event2.html" onclick="window.open(this.href, '_blank', 'width=700, height=700'); return false;">
+                        <h3 class="event-title">베리마켓 오픈 이벤트! 최대 90% 할인</h3>
+                        <span class="event-desc">파격적인 오픈이벤트가 준비되어 있어요!</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="event-product-image image-hover"></a>
-                    <a href="#" class="event-product-detail">
-                        <h3 class="event-title">델링 최대 25% 할인</h3>
-                        <span class="event-desc">어디서나 간편히, 다양한 소스를!</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="event-product-image image-hover"></a>
-                    <a href="#" class="event-product-detail">
-                        <h3 class="event-title">우리 한우 20% 쿠폰 EVENT</h3>
-                        <span class="event-desc">봄철 기운을 돋워줄 우리 한우</span>
+                    <a href="#" class="event-product-image image-hover" style="background-image: url(https://verymarket2022.s3.ap-northeast-2.amazonaws.com/static/image/베리마켓오픈이벤트3.png
+                           );"></a>
+                    <a class="event-product-detail" href="popup/event3.html" onclick="window.open(this.href, '_blank', 'width=700, height=700'); return false;">
+                        <h3 class="event-title">"빅데이터 베리마켓" GRAND OPEN!</h3>
+                        <span class="event-desc">베리마켓 관련 빅데이터가 한눈에~</span>
                     </a>
                 </li>
             </ul>
@@ -126,310 +143,310 @@ img { dispLay:block; margin:auto; }
     </section>
 
 
-    <section class="md-recommend section">
-        <div class="container">
-            <h2 class="title">MD의 추천</h2>
+<!--    <section class="md-recommend section">-->
+<!--        <div class="container">-->
+<!--            <h2 class="title">MD의 추천</h2>-->
 
-            <div class="md-category-box">
-                <ul class="md-category-items">
-                    <li>
-                        <a class="md-vege">채소</a>
-                    </li>
-                    <li>
-                        <a class="md-fruit">과일·견과·쌀</a>
-                    </li>
-                    <li>
-                        <a class="md-fish">수산·해산·건어물</a>
-                    </li>
-                    <li>
-                        <a class="md-meat">정육·계란</a>
-                    </li>
-                    <li>
-                        <a class="md-soup">국·반찬·메인요리</a>
-                    </li>
-                    <li>
-                        <a class="md-salad">샐러드·간편식</a>
-                    </li>
-                    <li>
-                        <a class="md-sauce">면·양념·오일</a>
-                    </li>
-                    <li>
-                        <a class="md-drink">생수·음료·우유·커피</a>
-                    </li>
-                    <li>
-                        <a class="md-snack">간식·과자·떡</a>
-                    </li>
-                    <li>
-                        <a class="md-deli">베이커리·치즈·델리</a>
-                    </li>
-                    <li>
-                        <a class="md-health">건강식품</a>
-                    </li>
-                    <li>
-                        <a class="md-living">생활용품·리빙</a>
-                    </li>
-                    <li>
-                        <a class="md-beauty">뷰티·바디케어</a>
-                    </li>
-                    <li>
-                        <a class="md-kitchen">주방용품</a>
-                    </li>
-                    <li>
-                        <a class="md-appliance">가전제품</a>
-                    </li>
-                    <li>
-                        <a class="md-kids">베이비·키즈</a>
-                    </li>
-                    <li>
-                        <a class="md-pet">반려동물</a>
-                    </li>
-                </ul>
-            </div>
+<!--            <div class="md-category-box">-->
+<!--                <ul class="md-category-items">-->
+<!--                    <li>-->
+<!--                        <a class="md-vege">채소</a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a class="md-fruit">과일·견과·쌀</a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a class="md-fish">수산·해산·건어물</a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a class="md-meat">정육·계란</a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a class="md-soup">국·반찬·메인요리</a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a class="md-salad">샐러드·간편식</a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a class="md-sauce">면·양념·오일</a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a class="md-drink">생수·음료·우유·커피</a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a class="md-snack">간식·과자·떡</a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a class="md-deli">베이커리·치즈·델리</a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a class="md-health">건강식품</a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a class="md-living">생활용품·리빙</a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a class="md-beauty">뷰티·바디케어</a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a class="md-kitchen">주방용품</a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a class="md-appliance">가전제품</a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a class="md-kids">베이비·키즈</a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a class="md-pet">반려동물</a>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </div>-->
 
-            <div class="product-slide">
-                <div class="product-slide-wrap">
-                    <div class="product-box">
-                        <ul class="md-items">
-                            <li>
-                                <a href="#" class="cheap-product-image image-hover"></a>
-                                <a href="#">
-                                    <h3 class="product-name">
-                                        [셀퓨전씨] 트리악 모공 톡스 패드 60매
-                                    </h3>
-                                </a>
-                                <div class="product-price">
-                                    <strong class="discount-rate">5%</strong>
-                                    <strong class="final-price">15,675원</strong>
-                                    <span class="regular-price">16,500원</span>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#" class="cheap-product-image image-hover"></a>
-                                <a href="#">
-                                    <h3 class="product-name">
-                                        [헤드스파7] 파란눈 블랙 헤어팩 200ml
-                                    </h3>
-                                </a>
-                                <div class="product-price">
-                                    <strong class="discount-rate">20%</strong>
-                                    <strong class="final-price">10,000원</strong>
-                                    <span class="regular-price">12,500원</span>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#" class="cheap-product-image image-hover"></a>
-                                <a href="#">
-                                    <h3 class="product-name">
-                                        [미쟝센] 퍼펙트세럼 오리지널 80ml
-                                    </h3>
-                                </a>
-                                <div class="product-price">
-                                    <strong class="discount-rate">15%</strong>
-                                    <strong class="final-price">5,525원</strong>
-                                    <span class="regular-price">6,500원</span>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#" class="cheap-product-image image-hover"></a>
-                                <a href="#">
-                                    <h3 class="product-name">
-                                        [한미양행] 눈부신 비타민D 4000IU (90일분)
-                                    </h3>
-                                </a>
-                                <div class="product-price">
-                                    <strong class="discount-rate">40%</strong>
-                                    <strong class="final-price">8,940원</strong>
-                                    <span class="regular-price">14,900원</span>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#" class="cheap-product-image image-hover"></a>
-                                <a href="#">
-                                    <h3 class="product-name">[홈스타] 욕실용 세정제</h3>
-                                </a>
-                                <div class="product-price">
-                                    <strong class="final-price">4,950원</strong>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#" class="cheap-product-image image-hover"></a>
-                                <a href="#">
-                                    <h3 class="product-name">
-                                        [크리넥스] 안심 물티슈 캡 60매
-                                    </h3>
-                                </a>
-                                <div class="product-price">
-                                    <strong class="final-price">2,700원</strong>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+<!--            <div class="product-slide">-->
+<!--                <div class="product-slide-wrap">-->
+<!--                    <div class="product-box">-->
+<!--                        <ul class="md-items">-->
+<!--                            <li>-->
+<!--                                <a href="#" class="cheap-product-image image-hover"></a>-->
+<!--                                <a href="#">-->
+<!--                                    <h3 class="product-name">-->
+<!--                                        [셀퓨전씨] 트리악 모공 톡스 패드 60매-->
+<!--                                    </h3>-->
+<!--                                </a>-->
+<!--                                <div class="product-price">-->
+<!--                                    <strong class="discount-rate">5%</strong>-->
+<!--                                    <strong class="final-price">15,675원</strong>-->
+<!--                                    <span class="regular-price">16,500원</span>-->
+<!--                                </div>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <a href="#" class="cheap-product-image image-hover"></a>-->
+<!--                                <a href="#">-->
+<!--                                    <h3 class="product-name">-->
+<!--                                        [헤드스파7] 파란눈 블랙 헤어팩 200ml-->
+<!--                                    </h3>-->
+<!--                                </a>-->
+<!--                                <div class="product-price">-->
+<!--                                    <strong class="discount-rate">20%</strong>-->
+<!--                                    <strong class="final-price">10,000원</strong>-->
+<!--                                    <span class="regular-price">12,500원</span>-->
+<!--                                </div>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <a href="#" class="cheap-product-image image-hover"></a>-->
+<!--                                <a href="#">-->
+<!--                                    <h3 class="product-name">-->
+<!--                                        [미쟝센] 퍼펙트세럼 오리지널 80ml-->
+<!--                                    </h3>-->
+<!--                                </a>-->
+<!--                                <div class="product-price">-->
+<!--                                    <strong class="discount-rate">15%</strong>-->
+<!--                                    <strong class="final-price">5,525원</strong>-->
+<!--                                    <span class="regular-price">6,500원</span>-->
+<!--                                </div>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <a href="#" class="cheap-product-image image-hover"></a>-->
+<!--                                <a href="#">-->
+<!--                                    <h3 class="product-name">-->
+<!--                                        [한미양행] 눈부신 비타민D 4000IU (90일분)-->
+<!--                                    </h3>-->
+<!--                                </a>-->
+<!--                                <div class="product-price">-->
+<!--                                    <strong class="discount-rate">40%</strong>-->
+<!--                                    <strong class="final-price">8,940원</strong>-->
+<!--                                    <span class="regular-price">14,900원</span>-->
+<!--                                </div>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <a href="#" class="cheap-product-image image-hover"></a>-->
+<!--                                <a href="#">-->
+<!--                                    <h3 class="product-name">[홈스타] 욕실용 세정제</h3>-->
+<!--                                </a>-->
+<!--                                <div class="product-price">-->
+<!--                                    <strong class="final-price">4,950원</strong>-->
+<!--                                </div>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <a href="#" class="cheap-product-image image-hover"></a>-->
+<!--                                <a href="#">-->
+<!--                                    <h3 class="product-name">-->
+<!--                                        [크리넥스] 안심 물티슈 캡 60매-->
+<!--                                    </h3>-->
+<!--                                </a>-->
+<!--                                <div class="product-price">-->
+<!--                                    <strong class="final-price">2,700원</strong>-->
+<!--                                </div>-->
+<!--                            </li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
 
-            <a href="#" class="more-product-link">
-                생활용품·리빙 전체보기
-                <button type="button" class="more-arrow"></button>
-            </a>
+<!--            <a href="#" class="more-product-link">-->
+<!--                생활용품·리빙 전체보기-->
+<!--                <button type="button" class="more-arrow"></button>-->
+<!--            </a>-->
 
-            <div class="product-button-direction">
-                <button type="button" class="md-prev-button"></button>
-                <button type="button" class="md-next-button"></button>
-            </div>
-        </div>
-    </section>
+<!--            <div class="product-button-direction">-->
+<!--                <button type="button" class="md-prev-button"></button>-->
+<!--                <button type="button" class="md-next-button"></button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
 
-    <section class="banner">
-        <div class="container">
-            <a href="#" class="banner-lucky-cart">
-                <h3>장바구니 자랑하면 5천원의 행운이 매일!</h3>
-                <span>매일 20분께 드리는 적립금 혜택!</span>
-            </a>
-        </div>
-    </section>
-
-
-    <section class="popular-product section">
-        <div class="container">
-            <a href="#">
-                <h2 class="title">
-                    지금 가장 핫한 상품
-                    <button type="button" class="title-arrow"></button>
-                </h2>
-            </a>
-
-            <div class="product-slide">
-                <div class="product-slide-wrap">
-                    <div class="product-box">
-                        <ul class="popular-items">
-                            <li>
-                                <a href="#" class="popular-product-image image-hover">
-                                    <div class="coupon">20%농할쿠폰</div>
-                                </a>
-                                <a href="#">
-                                    <h3 class="product-name">
-                                        [태우한우] 1+ 한우 안심 구이용 200g(냉장)
-                                    </h3>
-                                </a>
-                                <div class="product-price">
-                                    <strong class="discount-rate">15%</strong>
-                                    <strong class="final-price">33,150원</strong>
-                                    <span class="regular-price">39,000원</span>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#" class="popular-product-image image-hover"></a>
-                                <a href="#">
-                                    <h3 class="product-name">
-                                        [EasyCook] 손질 꽃게 450~550g(냉동)
-                                    </h3>
-                                </a>
-                                <div class="product-price">
-                                    <strong class="discount-rate">5%</strong>
-                                    <strong class="final-price">15,150원</strong>
-                                    <span class="regular-price">15,900원</span>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#" class="popular-product-image image-hover"></a>
-                                <a href="#">
-                                    <h3 class="product-name">
-                                        [하림] 무항생제 닭가슴살 다짐육
-                                    </h3>
-                                </a>
-                                <div class="product-price">
-                                    <strong class="discount-rate">10%</strong>
-                                    <strong class="final-price">6,480원</strong>
-                                    <span class="regular-price">7,200원</span>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#" class="popular-product-image image-hover">
-                                    <div class="coupon">20%수산쿠폰</div>
-                                </a>
-                                <a href="#">
-                                    <h3 class="product-name">
-                                        [우주] 은빛제주통갈치(특대) 600g 내외(냉동)
-                                    </h3>
-                                </a>
-                                <div class="product-price">
-                                    <strong class="discount-rate">15%</strong>
-                                    <strong class="final-price">33,915원</strong>
-                                    <span class="regular-price">39.900원</span>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#" class="popular-product-image image-hover"> </a>
-                                <a href="#">
-                                    <h3 class="product-name">[KART] 버섯 비프 카레</h3>
-                                </a>
-                                <div class="product-price">
-                                    <strong class="final-price">3,900원</strong>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#" class="popular-product-image image-hover"> </a>
-                                <a href="#">
-                                    <h3 class="product-name">청도 미나리 2종</h3>
-                                </a>
-                                <div class="product-price">
-                                    <strong class="discount-rate">7%</strong>
-                                    <strong class="final-price">4,278원</strong>
-                                    <span class="regular-price">4,600원</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-button-direction">
-                <button type="button" class="popular-prev-button"></button>
-                <button type="button" class="popular-next-button"></button>
-            </div>
-        </div>
-    </section>
+<!--    <section class="banner">-->
+<!--        <div class="container">-->
+<!--            <a href="#" class="banner-lucky-cart">-->
+<!--                <h3>장바구니 자랑하면 5천원의 행운이 매일!</h3>-->
+<!--                <span>매일 20분께 드리는 적립금 혜택!</span>-->
+<!--            </a>-->
+<!--        </div>-->
+<!--    </section>-->
 
 
-    <section class="review section">
-        <div class="container">
-            <h2 class="title">인스타그램 고객 후기</h2>
+<!--    <section class="popular-product section">-->
+<!--        <div class="container">-->
+<!--            <a href="#">-->
+<!--                <h2 class="title">-->
+<!--                    지금 가장 핫한 상품-->
+<!--                    <button type="button" class="title-arrow"></button>-->
+<!--                </h2>-->
+<!--            </a>-->
 
-            <div class="product-box">
-                <ul class="review-items">
-                    <li>
-                        <a href="#" class="review-image"></a>
-                    </li>
-                    <li>
-                        <a href="#" class="review-image"></a>
-                    </li>
-                    <li>
-                        <a href="#" class="review-image"></a>
-                    </li>
-                    <li>
-                        <a href="#" class="review-image"></a>
-                    </li>
-                    <li>
-                        <a href="#" class="review-image"></a>
-                    </li>
-                    <li>
-                        <a href="#" class="review-image"></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+<!--            <div class="product-slide">-->
+<!--                <div class="product-slide-wrap">-->
+<!--                    <div class="product-box">-->
+<!--                        <ul class="popular-items">-->
+<!--                            <li>-->
+<!--                                <a href="#" class="popular-product-image image-hover">-->
+<!--                                    <div class="coupon">20%농할쿠폰</div>-->
+<!--                                </a>-->
+<!--                                <a href="#">-->
+<!--                                    <h3 class="product-name">-->
+<!--                                        [태우한우] 1+ 한우 안심 구이용 200g(냉장)-->
+<!--                                    </h3>-->
+<!--                                </a>-->
+<!--                                <div class="product-price">-->
+<!--                                    <strong class="discount-rate">15%</strong>-->
+<!--                                    <strong class="final-price">33,150원</strong>-->
+<!--                                    <span class="regular-price">39,000원</span>-->
+<!--                                </div>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <a href="#" class="popular-product-image image-hover"></a>-->
+<!--                                <a href="#">-->
+<!--                                    <h3 class="product-name">-->
+<!--                                        [EasyCook] 손질 꽃게 450~550g(냉동)-->
+<!--                                    </h3>-->
+<!--                                </a>-->
+<!--                                <div class="product-price">-->
+<!--                                    <strong class="discount-rate">5%</strong>-->
+<!--                                    <strong class="final-price">15,150원</strong>-->
+<!--                                    <span class="regular-price">15,900원</span>-->
+<!--                                </div>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <a href="#" class="popular-product-image image-hover"></a>-->
+<!--                                <a href="#">-->
+<!--                                    <h3 class="product-name">-->
+<!--                                        [하림] 무항생제 닭가슴살 다짐육-->
+<!--                                    </h3>-->
+<!--                                </a>-->
+<!--                                <div class="product-price">-->
+<!--                                    <strong class="discount-rate">10%</strong>-->
+<!--                                    <strong class="final-price">6,480원</strong>-->
+<!--                                    <span class="regular-price">7,200원</span>-->
+<!--                                </div>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <a href="#" class="popular-product-image image-hover">-->
+<!--                                    <div class="coupon">20%수산쿠폰</div>-->
+<!--                                </a>-->
+<!--                                <a href="#">-->
+<!--                                    <h3 class="product-name">-->
+<!--                                        [우주] 은빛제주통갈치(특대) 600g 내외(냉동)-->
+<!--                                    </h3>-->
+<!--                                </a>-->
+<!--                                <div class="product-price">-->
+<!--                                    <strong class="discount-rate">15%</strong>-->
+<!--                                    <strong class="final-price">33,915원</strong>-->
+<!--                                    <span class="regular-price">39.900원</span>-->
+<!--                                </div>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <a href="#" class="popular-product-image image-hover"> </a>-->
+<!--                                <a href="#">-->
+<!--                                    <h3 class="product-name">[KART] 버섯 비프 카레</h3>-->
+<!--                                </a>-->
+<!--                                <div class="product-price">-->
+<!--                                    <strong class="final-price">3,900원</strong>-->
+<!--                                </div>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <a href="#" class="popular-product-image image-hover"> </a>-->
+<!--                                <a href="#">-->
+<!--                                    <h3 class="product-name">청도 미나리 2종</h3>-->
+<!--                                </a>-->
+<!--                                <div class="product-price">-->
+<!--                                    <strong class="discount-rate">7%</strong>-->
+<!--                                    <strong class="final-price">4,278원</strong>-->
+<!--                                    <span class="regular-price">4,600원</span>-->
+<!--                                </div>-->
+<!--                            </li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
 
-        <div class="more-review-box">
-            <span class="more-review-desc">더 많은 고객 후기가 궁금하다면?</span>
-            <a
-                    href="https://www.instagram.com/marketkurly_regram/"
-                    target="_blank"
-                    class="more-review-link"
-            >
-                @marketkurly_regram
-            </a>
-        </div>
-    </section>
+<!--            <div class="product-button-direction">-->
+<!--                <button type="button" class="popular-prev-button"></button>-->
+<!--                <button type="button" class="popular-next-button"></button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+
+
+<!--    <section class="review section">-->
+<!--        <div class="container">-->
+<!--            <h2 class="title">인스타그램 고객 후기</h2>-->
+
+<!--            <div class="product-box">-->
+<!--                <ul class="review-items">-->
+<!--                    <li>-->
+<!--                        <a href="#" class="review-image"></a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a href="#" class="review-image"></a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a href="#" class="review-image"></a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a href="#" class="review-image"></a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a href="#" class="review-image"></a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a href="#" class="review-image"></a>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="more-review-box">-->
+<!--            <span class="more-review-desc">더 많은 고객 후기가 궁금하다면?</span>-->
+<!--            <a-->
+<!--                    href="https://www.instagram.com/marketkurly_regram/"-->
+<!--                    target="_blank"-->
+<!--                    class="more-review-link"-->
+<!--            >-->
+<!--                @marketkurly_regram-->
+<!--            </a>-->
+<!--        </div>-->
+<!--    </section>-->
 
     <section class="banner">
         <div class="container">
@@ -439,24 +456,131 @@ img { dispLay:block; margin:auto; }
 
     <section class="quick-menu">
         <div class="quick-notice-image">
-            <a href="#">
-                <img src="{% static 'assets/quick.webp' %}" alt=""/>
+            <a href="http://125.133.75.24:33183">
+                <img src="{% static 'image/빅베리마켓배너.png' %}" alt=""/>
             </a>
         </div>
 
         <ul class="quick-items">
             <li>
-                <a href="#">등급별 혜택</a>
+                <a href="http://125.133.75.24:33183">[빅데이터] "베리마켓" 바로가기</a>
             </li>
-            <li>
-                <a href="#">레시피</a>
-            </li>
-            <li>
-                <a href="#">베스트 후기</a>
-            </li>
+<!--            <li>-->
+<!--                <a href="#">가즈아!</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--                <a href="#">응!</a>-->
+<!--            </li>-->
         </ul>
     </section>
 </main>
+
+<div id="cartPut">
+    <div class="cart_option cartList cart_type3 off" style="opacity: 0;">
+        <div class="inner_option">
+            <button type="button" class="btn_close1">레이어닫기</button>
+            <strong class="tit_cart">[오뗄두스] 구움과자 2종</strong>
+            <div class="in_option">
+                <div class="list_goods"><!----> <!----> <!---->
+                    <ul class="list">
+                        <li class="on"><span class="btn_position"><button type="button" class="btn_del"><span
+                                class="txt">삭제하기</span></button></span> <span class="name"><!---->                                  [오뗄두스] 마들렌
+                            <!----></span> <!---->
+                            <div class="option"><span class="count"><button type="button"
+                                                                            class="btn down on">수량내리기</button> <input
+                                    type="number" readonly="readonly" onfocus="this.blur()" class="inp"> <button
+                                    type="button" class="btn up on">수량올리기</button></span> <span
+                                    class="price"><!----> <span class="dc_price">2,200원</span></span></div>
+                        </li>
+                        <li class="on"><span class="btn_position"><button type="button" class="btn_del"><span
+                                class="txt">삭제하기</span></button></span> <span class="name"><!---->                                  [오뗄두스] 피낭시에
+                            <!----></span> <!---->
+                            <div class="option"><span class="count"><button type="button"
+                                                                            class="btn down on">수량내리기</button> <input
+                                    type="number" readonly="readonly" onfocus="this.blur()" class="inp"> <button
+                                    type="button" class="btn up on">수량올리기</button></span> <span
+                                    class="price"><!----> <span class="dc_price">2,200원</span></span></div>
+                        </li>
+                    </ul>
+                </div> <!----> <!---->
+                <div class="total">
+                    <div class="price"><strong class="tit">합계</strong> <!----> <span class="sum"><span
+                            class="num">0</span> <span class="won">원</span></span></div>
+                    <p class="txt_point"><span class="ico">적립</span> <span
+                            class="no_login"><!----> <span>로그인 후, 적립혜택 제공</span></span> <!----></p></div>
+            </div> <!---->
+            <div class="cart_modal_footer">
+                <button type="button" class="base_button cancel half"> 취소</button>
+                <button type="button" class="base_button half"> 장바구니 담기</button> <!----></div> <!----></div>
+    </div> <!---->
+    <div class="cart_option cart_result cart_type3">
+        <div class="inner_option">
+            <button type="button" class="btn_close1">pc레이어닫기</button>
+            <p class="success">상품 구매를 위한 <span class="bar"></span>배송지를 설정해주세요</p>
+            <div class="group_btn layer_btn2"><span class="btn_type2"><button type="button" class="txt_type">취소</button></span>
+                <span class="btn_type1"><button type="button" class="txt_type"><span
+                        class="ico_search"></span>주소 검색</button></span></div>
+        </div>
+    </div>
+    <form name="frmBuyNow" method="post" action="/shop/order/order.php"><input type="hidden" name="mode"
+                                                                               value="addItem"> <input type="hidden"
+                                                                                                       name="goodsno"
+                                                                                                       value=""></form>
+    <form name="frmWishlist" method="post"></form>
+</div>
+
+
+<script src="{% static 'js/common_filter.js' %}"></script>
+<script src="{% static 'js/cartput_v1.js' %}"></script>
+<script>
+  // 클릭인경우
+  function cartLayerOpenAction(no , type){
+    var cartPutDefault = {
+      'login' : false,
+      'no' : no,
+      'type' : 'pc'
+    }
+    cartPutDefault.login = window.webStatus.isSession;
+    if(cartPutDefault.login || typeof type === 'undefined'){
+      bodyScroll.bodyFixed();
+    }
+    cartPut.userInfoGet(cartPutDefault, (typeof type !== 'undefind' && type === 'notify') ? type : false);
+  }
+</script>
+<script>
+// 클릭인인경우(푸터에 있으나, 아직공용작업은 못함) => bgLoading 이부분 처리필요
+var bodyScroll = {
+	winScrollTop : 0,
+	body : $('body'),
+	gnb : $('#gnb'),
+	bg : $('#bgLoading'),
+	bodyFixed : function(){
+		var $self = this;
+		var gnbCheck = false;
+		$self.gnb = $('#gnb');
+		if($self.gnb.hasClass('gnb_stop')){
+			gnbCheck = true;
+		}
+		$self.body = $('body');
+		$self.bg = $('#bgLoading');
+		$self.winScrollTop = $(window).scrollTop();
+		$self.bg.show();
+		$self.body.addClass('noBody').css({
+			'top' : -$self.winScrollTop
+		});
+	},
+	bodyDefault : function(type){
+		var $self = this;
+		$self.body.removeClass('noBody').removeAttr('style');
+		$self.bg.hide();
+		if(type === undefined){
+			window.scrollTo(0, $self.winScrollTop);
+		}
+	}
+}
+</script>
+
+# 상단으로 이동
 <script>
 	$(document).ready(function(){
 		var pageTop = {
@@ -536,108 +660,5 @@ img { dispLay:block; margin:auto; }
 		}
 		pageTop.action();
 	});
-
-</script>
-<div id="cartPut">
-    <div class="cart_option cartList cart_type3 off" style="opacity: 0;">
-        <div class="inner_option">
-            <button type="button" class="btn_close1">레이어닫기</button>
-            <strong class="tit_cart">[오뗄두스] 구움과자 2종</strong>
-            <div class="in_option">
-                <div class="list_goods"><!----> <!----> <!---->
-                    <ul class="list">
-                        <li class="on"><span class="btn_position"><button type="button" class="btn_del"><span
-                                class="txt">삭제하기</span></button></span> <span class="name"><!---->                                  [오뗄두스] 마들렌
-                            <!----></span> <!---->
-                            <div class="option"><span class="count"><button type="button"
-                                                                            class="btn down on">수량내리기</button> <input
-                                    type="number" readonly="readonly" onfocus="this.blur()" class="inp"> <button
-                                    type="button" class="btn up on">수량올리기</button></span> <span
-                                    class="price"><!----> <span class="dc_price">2,200원</span></span></div>
-                        </li>
-                        <li class="on"><span class="btn_position"><button type="button" class="btn_del"><span
-                                class="txt">삭제하기</span></button></span> <span class="name"><!---->                                  [오뗄두스] 피낭시에
-                            <!----></span> <!---->
-                            <div class="option"><span class="count"><button type="button"
-                                                                            class="btn down on">수량내리기</button> <input
-                                    type="number" readonly="readonly" onfocus="this.blur()" class="inp"> <button
-                                    type="button" class="btn up on">수량올리기</button></span> <span
-                                    class="price"><!----> <span class="dc_price">2,200원</span></span></div>
-                        </li>
-                    </ul>
-                </div> <!----> <!---->
-                <div class="total">
-                    <div class="price"><strong class="tit">합계</strong> <!----> <span class="sum"><span
-                            class="num">0</span> <span class="won">원</span></span></div>
-                    <p class="txt_point"><span class="ico">적립</span> <span
-                            class="no_login"><!----> <span>로그인 후, 적립혜택 제공</span></span> <!----></p></div>
-            </div> <!---->
-            <div class="cart_modal_footer">
-                <button type="button" class="base_button cancel half"> 취소</button>
-                <button type="button" class="base_button half"> 장바구니 담기</button> <!----></div> <!----></div>
-    </div> <!---->
-    <div class="cart_option cart_result cart_type3">
-        <div class="inner_option">
-            <button type="button" class="btn_close1">pc레이어닫기</button>
-            <p class="success">상품 구매를 위한 <span class="bar"></span>배송지를 설정해주세요</p>
-            <div class="group_btn layer_btn2"><span class="btn_type2"><button type="button" class="txt_type">취소</button></span>
-                <span class="btn_type1"><button type="button" class="txt_type"><span
-                        class="ico_search"></span>주소 검색</button></span></div>
-        </div>
-    </div>
-    <form name="frmBuyNow" method="post" action="/shop/order/order.php"><input type="hidden" name="mode"
-                                                                               value="addItem"> <input type="hidden"
-                                                                                                       name="goodsno"
-                                                                                                       value=""></form>
-    <form name="frmWishlist" method="post"></form>
-</div>
-<script src="{% static 'js/common_filter.js' %}"></script>
-<script src="{% static 'js/cartput_v1.js' %}"></script>
-<script>
-  // 클릭인경우
-  function cartLayerOpenAction(no , type){
-    var cartPutDefault = {
-      'login' : false,
-      'no' : no,
-      'type' : 'pc'
-    }
-    cartPutDefault.login = window.webStatus.isSession;
-    if(cartPutDefault.login || typeof type === 'undefined'){
-      bodyScroll.bodyFixed();
-    }
-    cartPut.userInfoGet(cartPutDefault, (typeof type !== 'undefind' && type === 'notify') ? type : false);
-  }
-</script>
-<script>
-// 클릭인인경우(푸터에 있으나, 아직공용작업은 못함) => bgLoading 이부분 처리필요
-var bodyScroll = {
-	winScrollTop : 0,
-	body : $('body'),
-	gnb : $('#gnb'),
-	bg : $('#bgLoading'),
-	bodyFixed : function(){
-		var $self = this;
-		var gnbCheck = false;
-		$self.gnb = $('#gnb');
-		if($self.gnb.hasClass('gnb_stop')){
-			gnbCheck = true;
-		}
-		$self.body = $('body');
-		$self.bg = $('#bgLoading');
-		$self.winScrollTop = $(window).scrollTop();
-		$self.bg.show();
-		$self.body.addClass('noBody').css({
-			'top' : -$self.winScrollTop
-		});
-	},
-	bodyDefault : function(type){
-		var $self = this;
-		$self.body.removeClass('noBody').removeAttr('style');
-		$self.bg.hide();
-		if(type === undefined){
-			window.scrollTo(0, $self.winScrollTop);
-		}
-	}
-}
-</script>
+	</script>
 {% endblock %}

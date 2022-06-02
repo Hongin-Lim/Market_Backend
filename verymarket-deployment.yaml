@@ -18,6 +18,13 @@ spec:
           ports:
             - containerPort: 8000
           imagePullPolicy: Always
+          resources:
+            requests:
+              cpu: 20m
+              memory: 64Mi
+            limits:
+              cpu: 300m
+              memory: 512Mi
           env:
             - name: DATE
               value: 'DATE_STRING'
