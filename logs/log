@@ -2830,3 +2830,17 @@ AttributeError: 'QuerySet' object has no attribute 'product'
 2022-06-02 13:54:45 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
 2022-06-02 13:54:45 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
 2022-06-02 13:54:45 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 18:21:15 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-06-02 18:21:25 [INFO] django.server: "GET / HTTP/1.1" 200 122998
+2022-06-02 18:21:26 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 136582
+2022-06-02 18:21:26 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 18:21:26 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 18:21:26 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 18:21:26 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 18:21:32 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 136582
+2022-06-02 18:21:32 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 18:21:32 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 18:21:32 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 18:21:32 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 18:21:49 [INFO] django.server: "POST /cart/add/17 HTTP/1.1" 302 0
+2022-06-02 18:21:49 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 25366
