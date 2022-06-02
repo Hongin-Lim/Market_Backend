@@ -3278,3 +3278,915 @@ ValueError: The view cart.views.add didn't return an HttpResponse object. It ret
 2022-06-02 11:43:29 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
 2022-06-02 11:43:29 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
 2022-06-02 11:43:29 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 13:46:59 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 28680
+2022-06-02 13:47:02 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 76291
+2022-06-02 13:47:02 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 13:47:02 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 13:47:02 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 13:47:02 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 13:47:07 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 76291
+2022-06-02 13:47:07 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 13:47:07 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 13:47:07 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 13:47:07 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 13:47:11 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 28680
+2022-06-02 13:47:15 [INFO] django.server: "GET / HTTP/1.1" 200 112865
+2022-06-02 13:47:19 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 76291
+2022-06-02 13:47:19 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 13:47:19 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 13:47:19 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 13:47:19 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 13:49:04 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 91008
+2022-06-02 13:49:04 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 13:49:04 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 13:49:04 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 13:49:04 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 13:49:09 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 91008
+2022-06-02 13:49:09 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 13:49:09 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 13:49:09 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 13:49:09 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 13:49:09 [INFO] django.server: - Broken pipe from ('127.0.0.1', 51626)
+
+2022-06-02 13:49:09 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 91008
+2022-06-02 13:49:09 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 13:49:09 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 13:49:09 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 13:49:09 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 13:49:15 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 77931
+2022-06-02 13:49:15 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 13:49:15 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 13:49:15 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 13:49:15 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 13:55:51 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 77871
+2022-06-02 13:55:51 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 13:55:51 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 13:55:51 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 13:55:51 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 13:55:58 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 77151
+2022-06-02 13:55:58 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 13:55:58 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 13:55:58 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 13:55:58 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 13:55:59 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 77151
+2022-06-02 13:55:59 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 13:55:59 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 13:55:59 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 13:55:59 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 13:56:15 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 77731
+2022-06-02 13:56:15 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 13:56:15 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 13:56:15 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 13:56:15 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 13:56:16 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 77731
+2022-06-02 13:56:16 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 13:56:16 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 13:56:16 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 13:56:16 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 13:57:16 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 80231
+2022-06-02 13:57:16 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 13:57:16 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 13:57:16 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 13:57:16 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 13:57:45 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 80371
+2022-06-02 13:57:45 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 13:57:45 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 13:57:45 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 13:57:45 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 13:57:47 [INFO] django.server: "GET /shop/19/%EC%83%A4%EC%9D%B8%EB%A8%B8%EC%8A%A4%EC%BA%A3-%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B87%EC%A2%85450g/ HTTP/1.1" 200 108110
+2022-06-02 13:57:52 [INFO] django.server: "GET /shop/19/%EC%83%A4%EC%9D%B8%EB%A8%B8%EC%8A%A4%EC%BA%A3-%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B87%EC%A2%85450g/ HTTP/1.1" 200 108110
+2022-06-02 13:58:09 [INFO] django.server: "GET / HTTP/1.1" 200 112865
+2022-06-02 13:58:14 [INFO] django.server: "GET / HTTP/1.1" 200 112865
+2022-06-02 13:58:15 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 80371
+2022-06-02 13:58:15 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 13:58:15 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 13:58:16 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 13:58:16 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 13:58:26 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 80271
+2022-06-02 13:58:26 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 13:58:26 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 13:58:26 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 13:58:26 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 13:58:27 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 80271
+2022-06-02 13:58:27 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 13:58:27 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 13:58:27 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 13:58:27 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 13:58:41 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 81611
+2022-06-02 13:58:41 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 13:58:41 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 13:58:41 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 13:58:41 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 13:58:48 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 81291
+2022-06-02 13:58:48 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 13:58:48 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 13:58:48 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 13:58:48 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 13:59:01 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 79711
+2022-06-02 13:59:01 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 13:59:01 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 13:59:01 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 13:59:01 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 13:59:11 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 81611
+2022-06-02 13:59:11 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 13:59:11 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 13:59:11 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 13:59:11 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 13:59:19 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 80271
+2022-06-02 13:59:19 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 13:59:19 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 13:59:19 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 13:59:19 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 13:59:20 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 80271
+2022-06-02 13:59:20 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 13:59:20 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 13:59:20 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 13:59:20 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 13:59:48 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 87157
+2022-06-02 13:59:49 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 13:59:49 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 13:59:49 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 13:59:49 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:00:11 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 81171
+2022-06-02 14:00:11 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:00:11 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:00:11 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:00:11 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:00:12 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 81171
+2022-06-02 14:00:12 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:00:12 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:00:12 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:00:12 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:00:32 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 87157
+2022-06-02 14:00:32 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:00:32 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:00:32 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:00:32 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:02:08 [INFO] django.server: "GET /shop/18/%EC%B2%AD%EC%A0%95%EC%A0%9C%EC%A3%BC-%ED%95%9C%EB%9D%BC%EB%B4%89-%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B8-9%EA%B3%BC3kg/ HTTP/1.1" 200 107795
+2022-06-02 14:02:11 [INFO] django.server: "GET /shop/19/%EC%83%A4%EC%9D%B8%EB%A8%B8%EC%8A%A4%EC%BA%A3-%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B87%EC%A2%85450g/ HTTP/1.1" 200 108110
+2022-06-02 14:02:14 [INFO] django.server: "GET /shop/16/%EC%B9%9C%ED%99%98%EA%B2%BD-%EB%AC%B4%EB%86%8D%EC%95%BD-%EC%B2%AD%EC%86%A1-%EB%B8%94%EB%A3%A8%EB%B2%A0%EB%A6%AC-%EB%83%89%EB%8F%99-1kg/ HTTP/1.1" 200 108130
+2022-06-02 14:03:25 [INFO] django.utils.autoreload: C:\Users\slinfo\Documents\GitHub\Market_Backend\shop\views.py changed, reloading.
+2022-06-02 14:03:26 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-06-02 14:03:48 [INFO] django.utils.autoreload: C:\Users\slinfo\Documents\GitHub\Market_Backend\shop\views.py changed, reloading.
+2022-06-02 14:03:49 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-06-02 14:04:03 [INFO] django.server: - Broken pipe from ('127.0.0.1', 52631)
+
+2022-06-02 14:04:03 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 87157
+2022-06-02 14:04:03 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:04:03 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:04:03 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:04:03 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:04:33 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 99954
+2022-06-02 14:04:33 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:04:33 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:04:33 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:04:33 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:04:36 [INFO] django.server: "POST /cart/add/19 HTTP/1.1" 302 0
+2022-06-02 14:04:36 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 30159
+2022-06-02 14:04:40 [INFO] django.server: "GET /mypage/ HTTP/1.1" 200 30159
+2022-06-02 14:04:44 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 99954
+2022-06-02 14:04:44 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:04:44 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:04:44 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:04:44 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:05:01 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 102140
+2022-06-02 14:05:01 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:05:01 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:05:01 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:05:01 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:05:03 [INFO] django.server: "POST /cart/add/19 HTTP/1.1" 302 0
+2022-06-02 14:05:03 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 30162
+2022-06-02 14:05:38 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 100180
+2022-06-02 14:05:38 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:05:38 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:05:38 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:05:38 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:05:41 [INFO] django.server: "POST /cart/add/19 HTTP/1.1" 302 0
+2022-06-02 14:05:42 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 30162
+2022-06-02 14:05:54 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 99960
+2022-06-02 14:05:54 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:05:54 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:05:54 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:05:54 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:05:55 [WARNING] django.security.csrf: Forbidden (CSRF token missing.): /cart/add/19
+2022-06-02 14:05:55 [WARNING] django.server: "POST /cart/add/19 HTTP/1.1" 403 2531
+2022-06-02 14:06:02 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 99000
+2022-06-02 14:06:02 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:06:02 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:06:02 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:06:02 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:06:03 [ERROR] django.request: Internal Server Error: /cart/add/19
+Traceback (most recent call last):
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view cart.views.add didn't return an HttpResponse object. It returned None instead.
+2022-06-02 14:06:03 [ERROR] django.server: "POST /cart/add/19 HTTP/1.1" 500 72000
+2022-06-02 14:06:26 [ERROR] django.request: Internal Server Error: /cart/add/19
+Traceback (most recent call last):
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view cart.views.add didn't return an HttpResponse object. It returned None instead.
+2022-06-02 14:06:26 [ERROR] django.server: "POST /cart/add/19 HTTP/1.1" 500 72000
+2022-06-02 14:06:27 [ERROR] django.request: Internal Server Error: /cart/add/19
+Traceback (most recent call last):
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view cart.views.add didn't return an HttpResponse object. It returned None instead.
+2022-06-02 14:06:27 [ERROR] django.server: "POST /cart/add/19 HTTP/1.1" 500 72000
+2022-06-02 14:06:27 [ERROR] django.request: Internal Server Error: /cart/add/19
+Traceback (most recent call last):
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view cart.views.add didn't return an HttpResponse object. It returned None instead.
+2022-06-02 14:06:27 [ERROR] django.server: "POST /cart/add/19 HTTP/1.1" 500 72000
+2022-06-02 14:06:27 [ERROR] django.request: Internal Server Error: /cart/add/19
+Traceback (most recent call last):
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view cart.views.add didn't return an HttpResponse object. It returned None instead.
+2022-06-02 14:06:27 [ERROR] django.server: "POST /cart/add/19 HTTP/1.1" 500 72000
+2022-06-02 14:06:27 [ERROR] django.request: Internal Server Error: /cart/add/19
+Traceback (most recent call last):
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view cart.views.add didn't return an HttpResponse object. It returned None instead.
+2022-06-02 14:06:27 [ERROR] django.server: "POST /cart/add/19 HTTP/1.1" 500 72000
+2022-06-02 14:06:31 [INFO] django.server: "GET / HTTP/1.1" 200 113765
+2022-06-02 14:06:33 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 100866
+2022-06-02 14:06:33 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:06:33 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:06:33 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:06:33 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:06:54 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 102292
+2022-06-02 14:06:54 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:06:54 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:06:54 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:06:54 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:06:55 [INFO] django.server: - Broken pipe from ('127.0.0.1', 52638)
+
+2022-06-02 14:06:55 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 102292
+2022-06-02 14:06:55 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:06:55 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:06:55 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:06:55 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:07:08 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 102112
+2022-06-02 14:07:08 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:07:08 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:07:08 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:07:08 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:08:13 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 102112
+2022-06-02 14:08:13 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:08:13 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:08:13 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:08:13 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:08:13 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 102112
+2022-06-02 14:08:13 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:08:13 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:08:13 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:08:13 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:09:38 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 102112
+2022-06-02 14:09:38 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:09:38 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:09:38 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:09:38 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:09:39 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 102112
+2022-06-02 14:09:39 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:09:39 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:09:39 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:09:39 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:09:42 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 102072
+2022-06-02 14:09:42 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:09:42 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:09:42 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:09:42 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:09:43 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 102072
+2022-06-02 14:09:43 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:09:43 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:09:43 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:09:43 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:09:45 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 102072
+2022-06-02 14:09:45 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:09:45 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:09:45 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:09:45 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:09:54 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 102192
+2022-06-02 14:09:54 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:09:54 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:09:54 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:09:54 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:09:55 [INFO] django.server: - Broken pipe from ('127.0.0.1', 52632)
+
+2022-06-02 14:09:55 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 102192
+2022-06-02 14:09:55 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:09:55 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:09:55 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:09:55 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:10:46 [INFO] django.server: "POST /cart/add/19 HTTP/1.1" 302 0
+2022-06-02 14:10:47 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 30162
+2022-06-02 14:11:01 [INFO] django.server: "GET / HTTP/1.1" 200 113765
+2022-06-02 14:11:03 [INFO] django.server: "POST /cart/add/19 HTTP/1.1" 302 0
+2022-06-02 14:11:03 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 30162
+2022-06-02 14:11:05 [INFO] django.server: "GET / HTTP/1.1" 200 113765
+2022-06-02 14:11:11 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 102192
+2022-06-02 14:11:11 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:11:11 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:11:11 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:11:11 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:12:09 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 96152
+2022-06-02 14:12:09 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:12:09 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:12:09 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:12:09 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:12:28 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 81387
+2022-06-02 14:12:28 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:12:28 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:12:28 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:12:28 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:12:35 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 77667
+2022-06-02 14:12:35 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:12:35 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:12:35 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:12:35 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:12:43 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 74807
+2022-06-02 14:12:43 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:12:43 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:12:43 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:12:43 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:13:09 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 97378
+2022-06-02 14:13:09 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:13:09 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:13:09 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:13:09 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:13:36 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 97958
+2022-06-02 14:13:36 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:13:36 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:13:36 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:13:36 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:13:46 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 97978
+2022-06-02 14:13:46 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:13:46 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:13:46 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:13:46 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:14:32 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 76853
+2022-06-02 14:14:32 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:14:32 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:14:32 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:14:32 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:15:30 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 72513
+2022-06-02 14:15:30 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:15:30 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:15:30 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:15:30 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:15:32 [INFO] django.server: "GET /shop/19/%EC%83%A4%EC%9D%B8%EB%A8%B8%EC%8A%A4%EC%BA%A3-%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B87%EC%A2%85450g/ HTTP/1.1" 200 108110
+2022-06-02 14:16:16 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 71439
+2022-06-02 14:16:16 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:16:16 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:16:16 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:16:16 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:16:40 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 94196
+2022-06-02 14:16:40 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:16:40 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:16:40 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:16:40 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:16:54 [INFO] django.server: "GET /shop/20/%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B8-7kg-%EC%82%AC%EA%B3%BC12%EA%B3%BC%EB%82%B4%EC%99%B8%EB%82%98%EC%A3%BC%EB%B0%B09%EA%B3%BC%EB%82%B4%EC%99%B8/ HTTP/1.1" 200 106837
+2022-06-02 14:17:01 [INFO] django.server: "GET /shop/20/%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B8-7kg-%EC%82%AC%EA%B3%BC12%EA%B3%BC%EB%82%B4%EC%99%B8%EB%82%98%EC%A3%BC%EB%B0%B09%EA%B3%BC%EB%82%B4%EC%99%B8/ HTTP/1.1" 200 106837
+2022-06-02 14:17:26 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 95076
+2022-06-02 14:17:26 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:17:26 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:17:26 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:17:26 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:22:48 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 95076
+2022-06-02 14:22:48 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:22:48 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:22:48 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:22:48 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:22:50 [INFO] django.server: - Broken pipe from ('127.0.0.1', 59613)
+
+2022-06-02 14:22:50 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 95076
+2022-06-02 14:22:50 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:22:50 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:22:50 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:22:50 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:23:03 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 95076
+2022-06-02 14:23:03 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:23:03 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:23:03 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:23:03 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:23:15 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 95076
+2022-06-02 14:23:15 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:23:15 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:23:15 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:23:15 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:25:19 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 95076
+2022-06-02 14:25:19 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:25:19 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:25:19 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:25:19 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:26:20 [INFO] django.server: "GET /admin/ HTTP/1.1" 200 14531
+2022-06-02 14:26:20 [INFO] django.server: "GET /admin/ HTTP/1.1" 200 14531
+2022-06-02 14:26:24 [INFO] django.server: "GET /admin/shop/product/ HTTP/1.1" 200 39226
+2022-06-02 14:26:24 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-06-02 14:26:28 [ERROR] django.request: Internal Server Error: /admin/shop/product/20/change/
+Traceback (most recent call last):
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\contrib\admin\options.py", line 683, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\contrib\admin\options.py", line 1888, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\contrib\admin\options.py", line 1745, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\contrib\admin\options.py", line 1854, in _changeform_view
+    "subtitle": str(obj) if obj else None,
+  File "C:\Users\slinfo\Documents\GitHub\Market_Backend\shop\models.py", line 51, in __str__
+    return self.name + ' ' + self.price
+TypeError: can only concatenate str (not "decimal.Decimal") to str
+2022-06-02 14:26:28 [ERROR] django.server: "GET /admin/shop/product/20/change/ HTTP/1.1" 500 116196
+2022-06-02 14:26:35 [INFO] django.server: "GET /admin/shop/product/ HTTP/1.1" 200 39226
+2022-06-02 14:26:51 [INFO] django.server: "GET /admin/shop/product/ HTTP/1.1" 200 39226
+2022-06-02 14:26:51 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-06-02 14:26:53 [ERROR] django.request: Internal Server Error: /admin/shop/product/20/change/
+Traceback (most recent call last):
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\contrib\admin\options.py", line 683, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\contrib\admin\options.py", line 1888, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\contrib\admin\options.py", line 1745, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\contrib\admin\options.py", line 1854, in _changeform_view
+    "subtitle": str(obj) if obj else None,
+  File "C:\Users\slinfo\Documents\GitHub\Market_Backend\shop\models.py", line 51, in __str__
+    return self.name + ' ' + self.price
+TypeError: can only concatenate str (not "decimal.Decimal") to str
+2022-06-02 14:26:53 [ERROR] django.server: "GET /admin/shop/product/20/change/ HTTP/1.1" 500 116196
+2022-06-02 14:27:51 [INFO] django.utils.autoreload: C:\Users\slinfo\Documents\GitHub\Market_Backend\shop\models.py changed, reloading.
+2022-06-02 14:27:52 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-06-02 14:27:54 [INFO] django.server: "GET /admin/shop/product/20/change/ HTTP/1.1" 200 21376
+2022-06-02 14:27:54 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-06-02 14:28:19 [INFO] django.server: "POST /admin/shop/product/20/change/ HTTP/1.1" 302 0
+2022-06-02 14:28:19 [INFO] django.server: "GET /admin/shop/product/ HTTP/1.1" 200 39374
+2022-06-02 14:28:19 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-06-02 14:28:24 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 94999
+2022-06-02 14:28:24 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:28:24 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:28:24 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:28:24 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:28:40 [INFO] django.server: "GET /admin/shop/product/12/change/ HTTP/1.1" 200 21688
+2022-06-02 14:28:40 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-06-02 14:28:51 [INFO] django.server: "POST /admin/shop/product/12/change/ HTTP/1.1" 302 0
+2022-06-02 14:28:51 [INFO] django.server: "GET /admin/shop/product/ HTTP/1.1" 200 39364
+2022-06-02 14:28:51 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-06-02 14:28:53 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 94971
+2022-06-02 14:28:53 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:28:53 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:28:53 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:28:53 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:31:37 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 94971
+2022-06-02 14:31:37 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:31:37 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:31:37 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:31:37 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:32:01 [INFO] django.server: - Broken pipe from ('127.0.0.1', 59985)
+
+2022-06-02 14:32:01 [INFO] django.server: - Broken pipe from ('127.0.0.1', 59984)
+
+2022-06-02 14:32:01 [INFO] django.server: - Broken pipe from ('127.0.0.1', 60281)
+
+2022-06-02 14:32:01 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 94971
+2022-06-02 14:32:01 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:32:01 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:32:01 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:32:01 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:32:20 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-06-02 14:32:23 [INFO] django.server: "GET / HTTP/1.1" 200 113610
+2022-06-02 14:32:24 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 94971
+2022-06-02 14:32:24 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:32:24 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:32:24 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:32:24 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:33:21 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 94971
+2022-06-02 14:33:21 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:33:21 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:33:21 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:33:21 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:33:22 [INFO] django.server: - Broken pipe from ('127.0.0.1', 60314)
+
+2022-06-02 14:33:22 [INFO] django.server: - Broken pipe from ('127.0.0.1', 60315)
+
+2022-06-02 14:33:22 [INFO] django.server: - Broken pipe from ('127.0.0.1', 60405)
+
+2022-06-02 14:33:22 [INFO] django.server: - Broken pipe from ('127.0.0.1', 60408)
+
+2022-06-02 14:33:22 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 94971
+2022-06-02 14:33:22 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:33:22 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:33:22 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:33:22 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:34:30 [INFO] django.server: "GET /admin/shop/product/11/change/ HTTP/1.1" 200 21079
+2022-06-02 14:34:30 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-06-02 14:34:39 [INFO] django.server: "POST /admin/shop/product/11/change/ HTTP/1.1" 302 0
+2022-06-02 14:34:39 [INFO] django.server: "GET /admin/shop/product/ HTTP/1.1" 200 39290
+2022-06-02 14:34:39 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-06-02 14:34:46 [INFO] django.server: "GET /admin/shop/product/4/change/ HTTP/1.1" 200 22526
+2022-06-02 14:34:46 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-06-02 14:35:01 [INFO] django.server: "POST /admin/shop/product/4/change/ HTTP/1.1" 302 0
+2022-06-02 14:35:02 [INFO] django.server: "GET /admin/shop/product/ HTTP/1.1" 200 39245
+2022-06-02 14:35:02 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-06-02 14:35:10 [INFO] django.server: "GET /admin/shop/product/7/change/ HTTP/1.1" 200 21924
+2022-06-02 14:35:10 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-06-02 14:35:16 [INFO] django.server: "POST /admin/shop/product/7/change/ HTTP/1.1" 302 0
+2022-06-02 14:35:18 [INFO] django.server: "GET /admin/shop/product/ HTTP/1.1" 200 39187
+2022-06-02 14:35:18 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-06-02 14:35:25 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 94804
+2022-06-02 14:35:25 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:35:25 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:35:25 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:35:25 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:35:38 [INFO] django.server: "GET /admin/shop/product/6/change/ HTTP/1.1" 200 20811
+2022-06-02 14:35:38 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-06-02 14:35:56 [INFO] django.server: "POST /admin/shop/product/6/change/ HTTP/1.1" 302 0
+2022-06-02 14:35:57 [INFO] django.server: "GET /admin/shop/product/ HTTP/1.1" 200 39165
+2022-06-02 14:35:57 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-06-02 14:36:00 [INFO] django.server: "GET /admin/shop/product/3/change/ HTTP/1.1" 200 21475
+2022-06-02 14:36:00 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-06-02 14:36:05 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 94775
+2022-06-02 14:36:05 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:36:05 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:36:05 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:36:05 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:36:23 [INFO] django.server: "POST /admin/shop/product/3/change/ HTTP/1.1" 302 0
+2022-06-02 14:36:24 [INFO] django.server: "GET /admin/shop/product/ HTTP/1.1" 200 39180
+2022-06-02 14:36:24 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-06-02 14:36:29 [INFO] django.server: "GET /admin/shop/product/9/change/ HTTP/1.1" 200 20726
+2022-06-02 14:36:29 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-06-02 14:36:34 [INFO] django.server: "POST /admin/shop/product/9/change/ HTTP/1.1" 302 0
+2022-06-02 14:36:34 [INFO] django.server: "GET /admin/shop/product/ HTTP/1.1" 200 39124
+2022-06-02 14:36:34 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-06-02 14:36:37 [INFO] django.server: "GET /admin/shop/product/10/change/ HTTP/1.1" 200 20973
+2022-06-02 14:36:37 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-06-02 14:36:46 [INFO] django.server: "POST /admin/shop/product/10/change/ HTTP/1.1" 302 0
+2022-06-02 14:36:47 [INFO] django.server: "GET /admin/shop/product/ HTTP/1.1" 200 39094
+2022-06-02 14:36:47 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-06-02 14:36:49 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 94715
+2022-06-02 14:36:49 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:36:49 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:36:49 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:36:49 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:37:05 [INFO] django.server: "GET /admin/shop/product/2/change/ HTTP/1.1" 200 21600
+2022-06-02 14:37:05 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-06-02 14:37:13 [INFO] django.server: "POST /admin/shop/product/2/change/ HTTP/1.1" 302 0
+2022-06-02 14:37:14 [INFO] django.server: "GET /admin/shop/product/ HTTP/1.1" 200 39080
+2022-06-02 14:37:14 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-06-02 14:37:15 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 94703
+2022-06-02 14:37:15 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:37:15 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:37:15 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:37:15 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:38:23 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 94746
+2022-06-02 14:38:23 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:38:23 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:38:23 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:38:23 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:38:43 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 94783
+2022-06-02 14:38:43 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:38:43 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:38:43 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:38:43 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:38:52 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 94906
+2022-06-02 14:38:52 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:38:52 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:38:52 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:38:52 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:38:53 [INFO] django.server: - Broken pipe from ('127.0.0.1', 60414)
+
+2022-06-02 14:38:53 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 94906
+2022-06-02 14:38:53 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:38:53 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:38:53 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:38:53 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:39:00 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 94747
+2022-06-02 14:39:00 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:39:00 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:39:00 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:39:00 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:39:00 [INFO] django.server: - Broken pipe from ('127.0.0.1', 60926)
+
+2022-06-02 14:39:00 [INFO] django.server: - Broken pipe from ('127.0.0.1', 60411)
+
+2022-06-02 14:39:01 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 94747
+2022-06-02 14:39:01 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 14:39:01 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:39:01 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 14:39:01 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 14:40:38 [ERROR] django.request: Internal Server Error: /shop/
+Traceback (most recent call last):
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\slinfo\Documents\GitHub\Market_Backend\shop\views.py", line 21, in product_in_category
+    return render(request, 'shop/list.html', {'current_category':current_category, 'categories':categories, 'products':products,'add_to_cart':add_to_cart})
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 309: 'static', expected 'endblock'. Did you forget to register or load this tag?
+2022-06-02 14:40:38 [ERROR] django.server: "GET /shop/ HTTP/1.1" 500 183710
+2022-06-02 14:40:39 [ERROR] django.request: Internal Server Error: /shop/
+Traceback (most recent call last):
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\slinfo\Documents\GitHub\Market_Backend\shop\views.py", line 21, in product_in_category
+    return render(request, 'shop/list.html', {'current_category':current_category, 'categories':categories, 'products':products,'add_to_cart':add_to_cart})
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 309: 'static', expected 'endblock'. Did you forget to register or load this tag?
+2022-06-02 14:40:39 [INFO] django.server: - Broken pipe from ('127.0.0.1', 60961)
+
+2022-06-02 14:40:39 [ERROR] django.request: Internal Server Error: /shop/
+Traceback (most recent call last):
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\slinfo\Documents\GitHub\Market_Backend\shop\views.py", line 21, in product_in_category
+    return render(request, 'shop/list.html', {'current_category':current_category, 'categories':categories, 'products':products,'add_to_cart':add_to_cart})
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 309: 'static', expected 'endblock'. Did you forget to register or load this tag?
+2022-06-02 14:40:39 [INFO] django.server: - Broken pipe from ('127.0.0.1', 60958)
+
+2022-06-02 14:40:39 [ERROR] django.request: Internal Server Error: /shop/
+Traceback (most recent call last):
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\slinfo\Documents\GitHub\Market_Backend\shop\views.py", line 21, in product_in_category
+    return render(request, 'shop/list.html', {'current_category':current_category, 'categories':categories, 'products':products,'add_to_cart':add_to_cart})
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 309: 'static', expected 'endblock'. Did you forget to register or load this tag?
+2022-06-02 14:40:39 [INFO] django.server: - Broken pipe from ('127.0.0.1', 61067)
+
+2022-06-02 14:40:39 [ERROR] django.request: Internal Server Error: /shop/
+Traceback (most recent call last):
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\slinfo\Documents\GitHub\Market_Backend\shop\views.py", line 21, in product_in_category
+    return render(request, 'shop/list.html', {'current_category':current_category, 'categories':categories, 'products':products,'add_to_cart':add_to_cart})
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\slinfo\PycharmProjects\merge_first\venv\lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 309: 'static', expected 'endblock'. Did you forget to register or load this tag?
+2022-06-02 14:40:39 [ERROR] django.server: "GET /shop/ HTTP/1.1" 500 183710
+2022-06-02 14:41:02 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 94790
+2022-06-02 14:41:02 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 14:41:02 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 16:12:16 [INFO] django.server: "GET / HTTP/1.1" 200 113212
