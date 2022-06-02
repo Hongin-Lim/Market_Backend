@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95973899-a9b1-4430-abea-a22209cae98d" name="Changes" comment="프론트엔드, 로그인 회원가입 , 로그인 후 메인 페이지 수정">
-      <change beforePath="$PROJECT_DIR$/.idea/bigdata_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bigdata_project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/mainpage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/shop/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/shop/list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

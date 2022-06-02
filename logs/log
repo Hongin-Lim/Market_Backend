@@ -2871,3 +2871,58 @@ AttributeError: 'QuerySet' object has no attribute 'product'
 2022-06-02 18:34:43 [INFO] django.server: "POST /cart/add/18 HTTP/1.1" 302 0
 2022-06-02 18:34:43 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 25366
 2022-06-02 18:34:45 [INFO] django.server: "GET / HTTP/1.1" 200 113038
+2022-06-02 18:38:47 [INFO] django.server: "GET / HTTP/1.1" 200 130698
+2022-06-02 18:38:47 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 142547
+2022-06-02 18:38:47 [WARNING] django.request: Not Found: /common_js/common_filter.js
+2022-06-02 18:38:47 [WARNING] django.server: "GET /common_js/common_filter.js?ver=1.70.8 HTTP/1.1" 404 4017
+2022-06-02 18:38:47 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 18:38:47 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 21:32:30 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-06-02 21:32:33 [INFO] django.server: "GET / HTTP/1.1" 200 113038
+2022-06-02 21:32:36 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 94616
+2022-06-02 21:32:36 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-02 21:32:36 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-02 21:32:50 [INFO] django.server: "POST /cart/add/19 HTTP/1.1" 302 0
+2022-06-02 21:32:51 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 25366
+2022-06-02 21:32:54 [INFO] django.server: "GET /login HTTP/1.1" 301 0
+2022-06-02 21:32:54 [INFO] django.server: "GET /login/ HTTP/1.1" 200 28326
+2022-06-02 21:33:02 [INFO] django.server: "POST /login/ HTTP/1.1" 302 0
+2022-06-02 21:33:02 [INFO] django.server: "GET / HTTP/1.1" 200 113212
+2022-06-02 21:33:05 [INFO] django.server: "POST /cart/add/18 HTTP/1.1" 302 0
+2022-06-02 21:33:05 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 32655
+2022-06-02 21:33:07 [INFO] django.server: "GET /cart/remove/17 HTTP/1.1" 302 0
+2022-06-02 21:33:08 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 31249
+2022-06-02 21:33:09 [INFO] django.server: "GET /cart/remove/19 HTTP/1.1" 302 0
+2022-06-02 21:33:10 [INFO] django.server: - Broken pipe from ('127.0.0.1', 63503)
+
+2022-06-02 21:33:10 [INFO] django.server: "GET /cart/remove/18 HTTP/1.1" 302 0
+2022-06-02 21:33:11 [INFO] django.server: - Broken pipe from ('127.0.0.1', 63504)
+
+2022-06-02 21:33:12 [INFO] django.server: - Broken pipe from ('127.0.0.1', 63558)
+
+2022-06-02 21:33:12 [INFO] django.server: "GET /cart/remove/18 HTTP/1.1" 302 0
+2022-06-02 21:33:13 [INFO] django.server: - Broken pipe from ('127.0.0.1', 63560)
+
+2022-06-02 21:33:14 [INFO] django.server: - Broken pipe from ('127.0.0.1', 63566)
+
+2022-06-02 21:33:14 [INFO] django.server: - Broken pipe from ('127.0.0.1', 63568)
+
+2022-06-02 21:33:14 [INFO] django.server: "GET /cart/remove/18 HTTP/1.1" 302 0
+2022-06-02 21:33:14 [INFO] django.server: - Broken pipe from ('127.0.0.1', 63564)
+
+2022-06-02 21:33:15 [INFO] django.server: - Broken pipe from ('127.0.0.1', 63570)
+
+2022-06-02 21:33:15 [INFO] django.server: - Broken pipe from ('127.0.0.1', 63573)
+
+2022-06-02 21:33:15 [INFO] django.server: - Broken pipe from ('127.0.0.1', 63575)
+
+2022-06-02 21:33:15 [INFO] django.server: - Broken pipe from ('127.0.0.1', 63577)
+
+2022-06-02 21:33:15 [INFO] django.server: - Broken pipe from ('127.0.0.1', 63581)
+
+2022-06-02 21:33:15 [INFO] django.server: "GET /cart/remove/19 HTTP/1.1" 302 0
+2022-06-02 21:33:16 [INFO] django.server: - Broken pipe from ('127.0.0.1', 63579)
+
+2022-06-02 21:33:17 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 28312
+2022-06-02 21:33:18 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 28312
+2022-06-02 21:33:19 [INFO] django.server: "GET / HTTP/1.1" 200 113212
