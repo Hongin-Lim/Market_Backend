@@ -8,14 +8,24 @@ from django.shortcuts import render, redirect, get_object_or_404
 from users.forms import signupForm
 from users.forms import PasswordChangeForm
 from django.contrib.auth.hashers import check_password
-
+from coupon.models import Coupon
+from users.models import User
 
 # 마이페이지 (장바구니)
 def mypage(request):
     return render(request, 'cart/detail.html')
 # 쿠폰페이지
 def coupon(request):
-    return render(request, 'mypage/coupon.html')
+    user_id = request.user.id
+    # owner = User.objects.filter(id=user_id)
+    owner = get_object_or_404(User,id=user_id)
+    my_coupon = owner.coupon_set.all()
+    # print(type(my_coupon))
+    coupon_count = len(my_coupon)
+    coupon_name = my_coupon.values('name')
+    # print(coupon_name.values().__dic__)
+
+    return render(request, 'mypage/coupon.html', {'coupon_count' : coupon_count, 'coupon_name':coupon_name,'my_coupon':my_coupon})
 
 def info_change(request):
     return render(request, 'mypage/info_change.html')
@@ -63,6 +73,7 @@ def userlogin(request):
 
 @login_required
 def userlogout(request):
+    print("로그아웃 완료")
     auth_logout(request)
     return redirect('/')
 
@@ -73,10 +84,10 @@ def kakao_logout(request):
     카카오톡과 함께 로그아웃 처리
     """
     kakao_rest_api_key = '9f3d88106a97581bcd1a61ba5942473b'
-    print(kakao_rest_api_key)
     logout_redirect_uri = "http://172.30.1.222:31000/logout/"
     state = "none"
     kakao_service_logout_url = "https://kauth.kakao.com/oauth/logout"
+    print("카카오 로그아웃 완료")
     return redirect(f"{kakao_service_logout_url}?client_id={kakao_rest_api_key}&logout_redirect_uri={logout_redirect_uri}&state={state}")
 
 

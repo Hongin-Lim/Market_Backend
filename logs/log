@@ -2796,3 +2796,15 @@ AttributeError: 'QuerySet' object has no attribute 'product'
 2022-05-31 16:53:47 [INFO] django.server: "POST /order/validation/ HTTP/1.1" 200 15
 2022-05-31 16:53:47 [INFO] django.server: 주문번호:29 유저번호:1 품목:블루베리 수량:1
 2022-05-31 16:53:47 [INFO] django.server: "GET /order/complete/?order_id=29 HTTP/1.1" 200 25923
+2022-06-02 13:51:54 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-06-02 13:52:05 [INFO] django.server: "GET / HTTP/1.1" 200 97974
+2022-06-02 13:52:10 [INFO] django.server: "GET /shop/19/%EC%83%A4%EC%9D%B8%EB%A8%B8%EC%8A%A4%EC%BA%A3-%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B87%EC%A2%85450g/ HTTP/1.1" 200 107936
+2022-06-02 13:52:12 [INFO] django.server: "POST /cart/add/19 HTTP/1.1" 302 0
+2022-06-02 13:52:12 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 25366
+2022-06-02 13:52:17 [INFO] django.server: "GET /shop HTTP/1.1" 301 0
+2022-06-02 13:52:17 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 74994
+2022-06-02 13:52:23 [INFO] django.server: "GET /shop/19/%EC%83%A4%EC%9D%B8%EB%A8%B8%EC%8A%A4%EC%BA%A3-%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B87%EC%A2%85450g/ HTTP/1.1" 200 107936
+2022-06-02 13:52:35 [WARNING] django.request: Not Found: /shop/8/감귤/
+2022-06-02 13:52:35 [WARNING] django.server: "GET /shop/8/%EA%B0%90%EA%B7%A4/ HTTP/1.1" 404 4631
+2022-06-02 13:52:39 [INFO] django.server: "GET /shop/20/%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B8-7kg-%EC%82%AC%EA%B3%BC12%EA%B3%BC%EB%82%B4%EC%99%B8%EB%82%98%EC%A3%BC%EB%B0%B09%EA%B3%BC%EB%82%B4%EC%99%B8/ HTTP/1.1" 200 106663
+2022-06-02 13:52:53 [INFO] django.server: "GET /shop/20/%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B8-7kg-%EC%82%AC%EA%B3%BC12%EA%B3%BC%EB%82%B4%EC%99%B8%EB%82%98%EC%A3%BC%EB%B0%B09%EA%B3%BC%EB%82%B4%EC%99%B8/ HTTP/1.1" 200 106663
