@@ -5,7 +5,7 @@ RUN apt-get update
 RUN apt-get install python3-dev default-libmysqlclient-dev gcc  -y
 COPY requirements.txt ./
 RUN apt-get install python3-pip
-RUN apt-get update
+RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 COPY . .
 EXPOSE 8000
