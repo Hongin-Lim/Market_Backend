@@ -891,7 +891,7 @@ DEBUG 2022-05-30 11:47:22,904 autoreload File C:\Users\sli\Documents\GitHub\Mark
 DEBUG 2022-05-30 11:47:22,905 autoreload File C:\Users\sli\Documents\GitHub\Market_Backend\templates\order first seen with mtime 1653443587.0081513
 DEBUG 2022-05-30 11:47:22,905 autoreload File C:\Users\sli\Documents\GitHub\Market_Backend\templates\popup first seen with mtime 1653837551.7304344
 DEBUG 2022-05-30 11:47:22,905 autoreload File C:\Users\sli\Documents\GitHub\Market_Backend\templates\shop first seen with mtime 1653837551.7314346
-DEBUG 2022-05-30 11:47:22,905 autoreload File C:\Users\sli\Documents\GitHub\Market_Backend\templates\�����ø� __ ������ �庸��, �����ø�.html first seen with mtime 1652682671.645924
+DEBUG 2022-05-30 11:47:22,905 autoreload File C:\Users\sli\Documents\GitHub\Market_Backend\templates\�����ø� __ ������ �庸��, �����ø�.html first seen with mtime 1652682671.645924
 DEBUG 2022-05-30 11:47:22,926 autoreload File C:\Users\sli\Documents\GitHub\Market_Backend\templates\board\answer_form.html first seen with mtime 1653715853.3637145
 DEBUG 2022-05-30 11:47:22,926 autoreload File C:\Users\sli\Documents\GitHub\Market_Backend\templates\board\notice_detail.html first seen with mtime 1653715853.3677242
 DEBUG 2022-05-30 11:47:22,926 autoreload File C:\Users\sli\Documents\GitHub\Market_Backend\templates\board\notice_form.html first seen with mtime 1653715853.371723
@@ -900,7 +900,7 @@ DEBUG 2022-05-30 11:47:22,926 autoreload File C:\Users\sli\Documents\GitHub\Mark
 DEBUG 2022-05-30 11:47:22,926 autoreload File C:\Users\sli\Documents\GitHub\Market_Backend\templates\board\question_detail.html first seen with mtime 1653715853.3777137
 DEBUG 2022-05-30 11:47:22,926 autoreload File C:\Users\sli\Documents\GitHub\Market_Backend\templates\board\question_form.html first seen with mtime 1653715853.3807232
 DEBUG 2022-05-30 11:47:22,927 autoreload File C:\Users\sli\Documents\GitHub\Market_Backend\templates\board\question_list.html first seen with mtime 1653736757.5493622
-DEBUG 2022-05-30 11:47:22,927 autoreload File C:\Users\sli\Documents\GitHub\Market_Backend\templates\board\�����ø� __ ������ �庸��, �����ø�.html first seen with mtime 1653715853.3857129
+DEBUG 2022-05-30 11:47:22,927 autoreload File C:\Users\sli\Documents\GitHub\Market_Backend\templates\board\�����ø� __ ������ �庸��, �����ø�.html first seen with mtime 1653715853.3857129
 DEBUG 2022-05-30 11:47:22,927 autoreload File C:\Users\sli\Documents\GitHub\Market_Backend\templates\cart\detail.html first seen with mtime 1653274499.506257
 DEBUG 2022-05-30 11:47:22,927 autoreload File C:\Users\sli\Documents\GitHub\Market_Backend\templates\home\base.html first seen with mtime 1653875811.802046
 DEBUG 2022-05-30 11:47:22,927 autoreload File C:\Users\sli\Documents\GitHub\Market_Backend\templates\home\base1.html first seen with mtime 1652682671.62877
@@ -1311,7 +1311,7 @@ INFO 2022-05-30 13:53:02,451 autoreload C:\Users\sli\Documents\GitHub\Market_Bac
 2022-05-30 14:14:24 [INFO] django.server: "GET / HTTP/1.1" 200 98041
 2022-05-30 14:14:26 [INFO] django.server: "GET /shop/20/%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B8-7kg-%EC%82%AC%EA%B3%BC12%EA%B3%BC%EB%82%B4%EC%99%B8%EB%82%98%EC%A3%BC%EB%B0%B09%EA%B3%BC%EB%82%B4%EC%99%B8/ HTTP/1.1" 200 106732
 2022-05-30 14:14:27 [INFO] django.server: "POST /cart/add/20 HTTP/1.1" 302 0
-2022-05-30 14:14:28 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 29719
+2022-05-30 14:14:28 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 29719a
 2022-05-30 14:26:59 [INFO] django.server: "GET / HTTP/1.1" 200 98041
 2022-05-30 14:27:00 [INFO] django.server: "GET /popup/popup1.html HTTP/1.1" 200 375
 2022-05-30 14:27:02 [INFO] django.server: "GET /board/ HTTP/1.1" 200 35827
@@ -1319,3 +1319,1480 @@ INFO 2022-05-30 13:53:02,451 autoreload C:\Users\sli\Documents\GitHub\Market_Bac
 2022-05-30 14:49:45 [INFO] django.server: "GET / HTTP/1.1" 200 98041
 2022-05-30 14:49:48 [INFO] django.server: "GET /shop/20/%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B8-7kg-%EC%82%AC%EA%B3%BC12%EA%B3%BC%EB%82%B4%EC%99%B8%EB%82%98%EC%A3%BC%EB%B0%B09%EA%B3%BC%EB%82%B4%EC%99%B8/ HTTP/1.1" 200 106732
 2022-05-30 15:11:49 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\config\settings.py changed, reloading.
+2022-05-30 15:59:19 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 15:59:20 [INFO] django.server: "GET / HTTP/1.1" 200 98041
+2022-05-30 15:59:22 [INFO] django.server: "GET / HTTP/1.1" 200 98041
+2022-05-30 15:59:23 [INFO] django.server: "GET /popup/popup1.html HTTP/1.1" 200 375
+2022-05-30 15:59:25 [INFO] django.server: "GET /board/ HTTP/1.1" 200 35827
+2022-05-30 15:59:30 [INFO] django.server: "GET / HTTP/1.1" 200 98041
+2022-05-30 15:59:31 [INFO] django.server: "GET /shop/19/%EC%83%A4%EC%9D%B8%EB%A8%B8%EC%8A%A4%EC%BA%A3-%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B87%EC%A2%85450g/ HTTP/1.1" 200 108005
+2022-05-30 15:59:32 [INFO] django.server: "POST /cart/add/19 HTTP/1.1" 302 0
+2022-05-30 15:59:32 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 31200
+2022-05-30 16:00:54 [INFO] django.server: "GET / HTTP/1.1" 200 98041
+2022-05-30 16:00:56 [INFO] django.server: "GET /shop/19/%EC%83%A4%EC%9D%B8%EB%A8%B8%EC%8A%A4%EC%BA%A3-%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B87%EC%A2%85450g/ HTTP/1.1" 200 108005
+2022-05-30 16:02:28 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\config\settings.py changed, reloading.
+2022-05-30 16:02:29 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 16:02:34 [INFO] django.server: "GET /shop/18/%EC%B2%AD%EC%A0%95%EC%A0%9C%EC%A3%BC-%ED%95%9C%EB%9D%BC%EB%B4%89-%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B8-9%EA%B3%BC3kg/ HTTP/1.1" 200 107690
+2022-05-30 16:02:43 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\config\settings.py changed, reloading.
+2022-05-30 16:02:44 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 16:02:46 [INFO] django.server: "GET /shop/19/%EC%83%A4%EC%9D%B8%EB%A8%B8%EC%8A%A4%EC%BA%A3-%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B87%EC%A2%85450g/ HTTP/1.1" 200 108005
+2022-05-30 16:02:52 [INFO] django.server: "GET /shop/20/%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B8-7kg-%EC%82%AC%EA%B3%BC12%EA%B3%BC%EB%82%B4%EC%99%B8%EB%82%98%EC%A3%BC%EB%B0%B09%EA%B3%BC%EB%82%B4%EC%99%B8/ HTTP/1.1" 200 106732
+2022-05-30 16:02:55 [INFO] django.server: "GET /shop/20/%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B8-7kg-%EC%82%AC%EA%B3%BC12%EA%B3%BC%EB%82%B4%EC%99%B8%EB%82%98%EC%A3%BC%EB%B0%B09%EA%B3%BC%EB%82%B4%EC%99%B8/ HTTP/1.1" 200 106732
+2022-05-30 16:05:18 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\config\settings.py changed, reloading.
+2022-05-30 16:05:19 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 16:09:13 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\config\settings.py changed, reloading.
+2022-05-30 16:09:14 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 16:09:16 [INFO] django.server: "GET / HTTP/1.1" 200 98041
+2022-05-30 16:09:17 [INFO] django.server: "GET /shop/18/%EC%B2%AD%EC%A0%95%EC%A0%9C%EC%A3%BC-%ED%95%9C%EB%9D%BC%EB%B4%89-%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B8-9%EA%B3%BC3kg/ HTTP/1.1" 200 107690
+2022-05-30 16:09:19 [INFO] django.server: "POST /cart/add/18 HTTP/1.1" 302 0
+2022-05-30 16:09:19 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 32662
+2022-05-30 16:09:21 [INFO] django.server: "GET /shop/19/%EC%83%A4%EC%9D%B8%EB%A8%B8%EC%8A%A4%EC%BA%A3-%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B87%EC%A2%85450g/ HTTP/1.1" 200 108005
+2022-05-30 16:09:21 [INFO] django.server: - Broken pipe from ('127.0.0.1', 55531)
+
+2022-05-30 16:09:22 [INFO] django.server: "POST /cart/add/19 HTTP/1.1" 302 0
+2022-05-30 16:09:22 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 32663
+2022-05-30 16:09:43 [INFO] django.server: "GET /shop/20/%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B8-7kg-%EC%82%AC%EA%B3%BC12%EA%B3%BC%EB%82%B4%EC%99%B8%EB%82%98%EC%A3%BC%EB%B0%B09%EA%B3%BC%EB%82%B4%EC%99%B8/ HTTP/1.1" 200 106732
+2022-05-30 16:09:43 [INFO] django.server: "POST /cart/add/20 HTTP/1.1" 302 0
+2022-05-30 16:09:44 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 32664
+2022-05-30 16:10:06 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\config\settings.py changed, reloading.
+2022-05-30 16:10:07 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 16:12:14 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\shop\views.py changed, reloading.
+2022-05-30 16:12:15 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 16:12:28 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\shop\views.py changed, reloading.
+2022-05-30 16:12:29 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 16:12:37 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\shop\views.py changed, reloading.
+2022-05-30 16:12:38 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 16:12:59 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\shop\views.py changed, reloading.
+2022-05-30 16:12:59 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 16:13:27 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\shop\views.py changed, reloading.
+2022-05-30 16:13:28 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 16:13:31 [INFO] django.server: "GET / HTTP/1.1" 200 98041
+2022-05-30 16:13:32 [INFO] django.server: INFO 레벨로 출력
+2022-05-30 16:13:32 [INFO] django.server: "GET /shop/19/%EC%83%A4%EC%9D%B8%EB%A8%B8%EC%8A%A4%EC%BA%A3-%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B87%EC%A2%85450g/ HTTP/1.1" 200 108005
+2022-05-30 16:13:34 [INFO] django.server: "POST /cart/add/19 HTTP/1.1" 302 0
+2022-05-30 16:13:34 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 32664
+2022-05-30 16:14:37 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\shop\views.py changed, reloading.
+2022-05-30 16:14:38 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 16:14:40 [INFO] django.server: "GET / HTTP/1.1" 200 98041
+2022-05-30 16:14:41 [INFO] django.server: 샤인머스캣 과일선물세트(7종) 450g
+2022-05-30 16:14:41 [INFO] django.server: "GET /shop/19/%EC%83%A4%EC%9D%B8%EB%A8%B8%EC%8A%A4%EC%BA%A3-%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B87%EC%A2%85450g/ HTTP/1.1" 200 108005
+2022-05-30 16:14:43 [INFO] django.server: "POST /cart/add/19 HTTP/1.1" 302 0
+2022-05-30 16:14:43 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 32664
+2022-05-30 16:15:23 [INFO] django.server: "GET / HTTP/1.1" 200 98041
+2022-05-30 16:15:25 [INFO] django.server: 태국 후레쉬 망고 9과/1.8kg
+2022-05-30 16:15:25 [INFO] django.server: "GET /shop/17/%ED%83%9C%EA%B5%AD-%ED%9B%84%EB%A0%88%EC%89%AC-%EB%A7%9D%EA%B3%A0-9%EA%B3%BC18kg/ HTTP/1.1" 200 109179
+2022-05-30 16:17:16 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\shop\views.py changed, reloading.
+2022-05-30 16:17:17 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 16:17:18 [INFO] django.server: "GET /shop/17/%ED%83%9C%EA%B5%AD-%ED%9B%84%EB%A0%88%EC%89%AC-%EB%A7%9D%EA%B3%A0-9%EA%B3%BC18kg/ HTTP/1.1" 200 109179
+2022-05-30 16:17:19 [INFO] django.server: "GET / HTTP/1.1" 200 98041
+2022-05-30 16:17:23 [INFO] django.server: "GET /shop/20/%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B8-7kg-%EC%82%AC%EA%B3%BC12%EA%B3%BC%EB%82%B4%EC%99%B8%EB%82%98%EC%A3%BC%EB%B0%B09%EA%B3%BC%EB%82%B4%EC%99%B8/ HTTP/1.1" 200 106732
+2022-05-30 16:17:34 [INFO] django.server: "GET / HTTP/1.1" 200 98041
+2022-05-30 16:17:36 [INFO] django.server: "GET /shop/18/%EC%B2%AD%EC%A0%95%EC%A0%9C%EC%A3%BC-%ED%95%9C%EB%9D%BC%EB%B4%89-%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B8-9%EA%B3%BC3kg/ HTTP/1.1" 200 107690
+2022-05-30 16:17:37 [INFO] django.server: "POST /cart/add/18 HTTP/1.1" 302 0
+2022-05-30 16:17:37 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 32665
+2022-05-30 16:18:01 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\shop\views.py changed, reloading.
+2022-05-30 16:18:02 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 16:18:02 [INFO] django.server: 과일선물세트 7kg [사과12과내외+나주배9과내외]
+2022-05-30 16:18:02 [INFO] django.server: "GET /shop/20/%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B8-7kg-%EC%82%AC%EA%B3%BC12%EA%B3%BC%EB%82%B4%EC%99%B8%EB%82%98%EC%A3%BC%EB%B0%B09%EA%B3%BC%EB%82%B4%EC%99%B8/ HTTP/1.1" 200 106732
+2022-05-30 16:18:04 [INFO] django.server: "POST /cart/add/20 HTTP/1.1" 302 0
+2022-05-30 16:18:04 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 32665
+2022-05-30 16:18:28 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\shop\views.py changed, reloading.
+2022-05-30 16:18:29 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 16:18:30 [INFO] django.server: 99.0
+2022-05-30 16:18:30 [INFO] django.server: "GET /shop/20/%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B8-7kg-%EC%82%AC%EA%B3%BC12%EA%B3%BC%EB%82%B4%EC%99%B8%EB%82%98%EC%A3%BC%EB%B0%B09%EA%B3%BC%EB%82%B4%EC%99%B8/ HTTP/1.1" 200 106732
+2022-05-30 16:18:31 [INFO] django.server: "POST /cart/add/20 HTTP/1.1" 302 0
+2022-05-30 16:18:31 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 32665
+2022-05-30 16:19:17 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\shop\views.py changed, reloading.
+2022-05-30 16:19:18 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 16:19:18 [ERROR] django.request: Internal Server Error: /shop/19/샤인머스캣-과일선물세트7종450g/
+Traceback (most recent call last):
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sli\Documents\GitHub\Market_Backend\shop\views.py", line 30, in product_detail
+    logger.info(product.price + product.name)
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+2022-05-30 16:19:18 [ERROR] django.server: "GET /shop/19/%EC%83%A4%EC%9D%B8%EB%A8%B8%EC%8A%A4%EC%BA%A3-%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B87%EC%A2%85450g/ HTTP/1.1" 500 72165
+2022-05-30 16:19:21 [ERROR] django.request: Internal Server Error: /shop/20/과일선물세트-7kg-사과12과내외나주배9과내외/
+Traceback (most recent call last):
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sli\Documents\GitHub\Market_Backend\shop\views.py", line 30, in product_detail
+    logger.info(product.price + product.name)
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+2022-05-30 16:19:21 [ERROR] django.server: "GET /shop/20/%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B8-7kg-%EC%82%AC%EA%B3%BC12%EA%B3%BC%EB%82%B4%EC%99%B8%EB%82%98%EC%A3%BC%EB%B0%B09%EA%B3%BC%EB%82%B4%EC%99%B8/ HTTP/1.1" 500 72536
+2022-05-30 16:19:30 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\shop\views.py changed, reloading.
+2022-05-30 16:19:31 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 16:19:32 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 32665
+2022-05-30 16:19:32 [INFO] django.server: "GET /shop/20/%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B8-7kg-%EC%82%AC%EA%B3%BC12%EA%B3%BC%EB%82%B4%EC%99%B8%EB%82%98%EC%A3%BC%EB%B0%B09%EA%B3%BC%EB%82%B4%EC%99%B8/ HTTP/1.1" 200 106732
+2022-05-30 16:19:33 [INFO] django.server: "POST /cart/add/20 HTTP/1.1" 302 0
+2022-05-30 16:19:33 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 32665
+2022-05-30 16:20:48 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\shop\views.py changed, reloading.
+2022-05-30 16:20:49 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 16:23:53 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\shop\views.py changed, reloading.
+2022-05-30 16:23:54 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 16:24:19 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\shop\views.py changed, reloading.
+2022-05-30 16:24:20 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 16:24:21 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 32665
+2022-05-30 16:24:22 [ERROR] django.request: Internal Server Error: /shop/20/과일선물세트-7kg-사과12과내외나주배9과내외/
+Traceback (most recent call last):
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sli\Documents\GitHub\Market_Backend\shop\views.py", line 30, in product_detail
+    logger.info(product.price + product.name)
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+2022-05-30 16:24:22 [ERROR] django.server: "GET /shop/20/%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B8-7kg-%EC%82%AC%EA%B3%BC12%EA%B3%BC%EB%82%B4%EC%99%B8%EB%82%98%EC%A3%BC%EB%B0%B09%EA%B3%BC%EB%82%B4%EC%99%B8/ HTTP/1.1" 500 72501
+2022-05-30 16:24:46 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\shop\views.py changed, reloading.
+2022-05-30 16:24:47 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 16:24:47 [INFO] django.server: 99.0과일선물세트 7kg [사과12과내외+나주배9과내외]
+2022-05-30 16:24:48 [INFO] django.server: "GET /shop/20/%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B8-7kg-%EC%82%AC%EA%B3%BC12%EA%B3%BC%EB%82%B4%EC%99%B8%EB%82%98%EC%A3%BC%EB%B0%B09%EA%B3%BC%EB%82%B4%EC%99%B8/ HTTP/1.1" 200 106732
+2022-05-30 16:24:49 [INFO] django.server: "POST /cart/add/20 HTTP/1.1" 302 0
+2022-05-30 16:24:49 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 32665
+2022-05-30 16:24:50 [INFO] django.server: 55.0샤인머스캣 과일선물세트(7종) 450g
+2022-05-30 16:24:51 [INFO] django.server: "GET /shop/19/%EC%83%A4%EC%9D%B8%EB%A8%B8%EC%8A%A4%EC%BA%A3-%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B87%EC%A2%85450g/ HTTP/1.1" 200 108005
+2022-05-30 16:24:51 [INFO] django.server: "POST /cart/add/19 HTTP/1.1" 302 0
+2022-05-30 16:24:51 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 32666
+2022-05-30 16:28:03 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\shop\views.py changed, reloading.
+2022-05-30 16:28:04 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 16:28:29 [INFO] django.server: "GET / HTTP/1.1" 200 98041
+2022-05-30 16:28:31 [INFO] django.server: 120.0태국 후레쉬 망고 9과/1.8kg
+2022-05-30 16:28:31 [INFO] django.server: "GET /shop/17/%ED%83%9C%EA%B5%AD-%ED%9B%84%EB%A0%88%EC%89%AC-%EB%A7%9D%EA%B3%A0-9%EA%B3%BC18kg/ HTTP/1.1" 200 109179
+2022-05-30 16:28:32 [INFO] django.server: "POST /cart/add/17 HTTP/1.1" 302 0
+2022-05-30 16:28:32 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 34076
+2022-05-30 16:31:27 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\shop\views.py changed, reloading.
+2022-05-30 16:31:28 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 16:31:31 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 34076
+2022-05-30 16:31:31 [INFO] django.server: "GET / HTTP/1.1" 200 98041
+2022-05-30 16:31:33 [INFO] django.server: 120.0태국 후레쉬 망고 9과/1.8kg
+2022-05-30 16:31:33 [INFO] django.requests: 1
+2022-05-30 16:31:33 [INFO] django.server: "GET /shop/17/%ED%83%9C%EA%B5%AD-%ED%9B%84%EB%A0%88%EC%89%AC-%EB%A7%9D%EA%B3%A0-9%EA%B3%BC18kg/ HTTP/1.1" 200 109179
+2022-05-30 16:31:38 [INFO] django.server: "POST /cart/add/17 HTTP/1.1" 302 0
+2022-05-30 16:31:38 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 34076
+2022-05-30 16:31:55 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\shop\views.py changed, reloading.
+2022-05-30 16:31:56 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 16:31:56 [INFO] django.server: 55.0샤인머스캣 과일선물세트(7종) 450g
+2022-05-30 16:31:56 [INFO] django.requests: admin
+2022-05-30 16:31:57 [INFO] django.server: "GET /shop/19/%EC%83%A4%EC%9D%B8%EB%A8%B8%EC%8A%A4%EC%BA%A3-%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B87%EC%A2%85450g/ HTTP/1.1" 200 108005
+2022-05-30 16:31:57 [INFO] django.server: "POST /cart/add/19 HTTP/1.1" 302 0
+2022-05-30 16:31:58 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 34076
+2022-05-30 16:35:00 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\shop\views.py changed, reloading.
+2022-05-30 16:35:01 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 16:35:29 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\shop\views.py changed, reloading.
+2022-05-30 16:35:30 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 16:35:43 [INFO] django.server: "GET / HTTP/1.1" 200 98041
+2022-05-30 16:36:09 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\shop\views.py changed, reloading.
+2022-05-30 16:36:10 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 16:36:22 [INFO] django.server: 75.0청정제주 한라봉 선물세트 9과/3kgadmin
+2022-05-30 16:36:23 [INFO] django.server: "GET /shop/18/%EC%B2%AD%EC%A0%95%EC%A0%9C%EC%A3%BC-%ED%95%9C%EB%9D%BC%EB%B4%89-%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B8-9%EA%B3%BC3kg/ HTTP/1.1" 200 107690
+2022-05-30 16:36:23 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\shop\views.py changed, reloading.
+2022-05-30 16:36:23 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 16:36:24 [INFO] django.server: "POST /cart/add/18 HTTP/1.1" 302 0
+2022-05-30 16:36:24 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 34076
+2022-05-30 16:38:06 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\shop\views.py changed, reloading.
+2022-05-30 16:38:07 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 16:38:09 [INFO] django.server: 99.0 과일선물세트 7kg [사과12과내외+나주배9과내외] admin
+2022-05-30 16:38:10 [INFO] django.server: "GET /shop/20/%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B8-7kg-%EC%82%AC%EA%B3%BC12%EA%B3%BC%EB%82%B4%EC%99%B8%EB%82%98%EC%A3%BC%EB%B0%B09%EA%B3%BC%EB%82%B4%EC%99%B8/ HTTP/1.1" 200 106732
+2022-05-30 16:38:11 [INFO] django.server: "POST /cart/add/20 HTTP/1.1" 302 0
+2022-05-30 16:38:11 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 34076
+2022-05-30 16:38:48 [INFO] django.server: 75.0 청정제주 한라봉 선물세트 9과/3kg admin
+2022-05-30 16:38:48 [INFO] django.server: "GET /shop/18/%EC%B2%AD%EC%A0%95%EC%A0%9C%EC%A3%BC-%ED%95%9C%EB%9D%BC%EB%B4%89-%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B8-9%EA%B3%BC3kg/ HTTP/1.1" 200 107690
+2022-05-30 16:38:59 [INFO] django.server: "GET / HTTP/1.1" 200 98041
+2022-05-30 16:39:01 [INFO] django.server: 75.0 청정제주 한라봉 선물세트 9과/3kg admin
+2022-05-30 16:39:01 [INFO] django.server: "GET /shop/18/%EC%B2%AD%EC%A0%95%EC%A0%9C%EC%A3%BC-%ED%95%9C%EB%9D%BC%EB%B4%89-%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B8-9%EA%B3%BC3kg/ HTTP/1.1" 200 107690
+2022-05-30 16:39:02 [INFO] django.server: "GET / HTTP/1.1" 200 98041
+2022-05-30 16:39:04 [INFO] django.server: 120.0 태국 후레쉬 망고 9과/1.8kg admin
+2022-05-30 16:39:04 [INFO] django.server: "GET /shop/17/%ED%83%9C%EA%B5%AD-%ED%9B%84%EB%A0%88%EC%89%AC-%EB%A7%9D%EA%B3%A0-9%EA%B3%BC18kg/ HTTP/1.1" 200 109179
+2022-05-30 16:39:05 [INFO] django.server: "GET / HTTP/1.1" 200 98041
+2022-05-30 16:39:08 [INFO] django.server: 55.0 미국산 냉동 타트체리 500g (팩) admin
+2022-05-30 16:39:08 [INFO] django.server: "GET /shop/13/%EB%AF%B8%EA%B5%AD%EC%82%B0-%EB%83%89%EB%8F%99-%ED%83%80%ED%8A%B8%EC%B2%B4%EB%A6%AC-500g-%ED%8C%A9/ HTTP/1.1" 200 106287
+2022-05-30 16:39:09 [INFO] django.server: "GET / HTTP/1.1" 200 98041
+2022-05-30 16:39:15 [INFO] django.server: 110.0 [바른팜] 달콤한 제주 하우스 감귤 3kg [28-35과] admin
+2022-05-30 16:39:15 [INFO] django.server: "GET /shop/14/%EB%B0%94%EB%A5%B8%ED%8C%9C-%EB%8B%AC%EC%BD%A4%ED%95%9C-%EC%A0%9C%EC%A3%BC-%ED%95%98%EC%9A%B0%EC%8A%A4-%EA%B0%90%EA%B7%A4-3kg-28-35%EA%B3%BC/ HTTP/1.1" 200 107328
+2022-05-30 16:40:13 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\shop\views.py changed, reloading.
+2022-05-30 16:40:13 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 16:40:39 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\shop\views.py changed, reloading.
+2022-05-30 16:40:39 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 16:40:56 [INFO] django.server: "GET / HTTP/1.1" 200 98041
+2022-05-30 16:42:45 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\shop\views.py changed, reloading.
+2022-05-30 16:42:46 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 16:42:48 [INFO] django.server: "GET / HTTP/1.1" 200 98041
+2022-05-30 16:42:49 [INFO] django.server: 상품가격:55.0 상품이름:샤인머스캣 과일선물세트(7종) 450g 유저이름:admin 성별:None 생년:None
+2022-05-30 16:42:49 [INFO] django.server: "GET /shop/19/%EC%83%A4%EC%9D%B8%EB%A8%B8%EC%8A%A4%EC%BA%A3-%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B87%EC%A2%85450g/ HTTP/1.1" 200 108005
+2022-05-30 16:42:52 [INFO] django.server: "GET / HTTP/1.1" 200 98041
+2022-05-30 16:42:53 [INFO] django.server: 상품가격:75.0 상품이름:청정제주 한라봉 선물세트 9과/3kg 유저이름:admin 성별:None 생년:None
+2022-05-30 16:42:53 [INFO] django.server: "GET /shop/18/%EC%B2%AD%EC%A0%95%EC%A0%9C%EC%A3%BC-%ED%95%9C%EB%9D%BC%EB%B4%89-%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B8-9%EA%B3%BC3kg/ HTTP/1.1" 200 107690
+2022-05-30 16:42:54 [INFO] django.server: "GET / HTTP/1.1" 200 98041
+2022-05-30 16:42:57 [INFO] django.server: "GET / HTTP/1.1" 200 98041
+2022-05-30 16:57:22 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\shop\views.py changed, reloading.
+2022-05-30 16:57:23 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 16:57:49 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\shop\views.py changed, reloading.
+2022-05-30 16:57:50 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 17:04:38 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\shop\views.py changed, reloading.
+2022-05-30 17:04:38 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 17:04:42 [INFO] django.server: "GET /admin/ HTTP/1.1" 200 14284
+2022-05-30 17:04:44 [INFO] django.server: "GET /admin/ HTTP/1.1" 200 14284
+2022-05-30 17:04:50 [INFO] django.server: "GET /admin/shop/product/ HTTP/1.1" 200 37820
+2022-05-30 17:04:50 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:04:53 [INFO] django.server: "GET /admin/shop/product/20/change/ HTTP/1.1" 200 20721
+2022-05-30 17:04:53 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:05:03 [INFO] django.server: "GET /admin/shop/category/ HTTP/1.1" 200 12755
+2022-05-30 17:05:03 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:05:04 [INFO] django.server: "GET /admin/shop/category/add/ HTTP/1.1" 200 13155
+2022-05-30 17:05:04 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:05:51 [INFO] django.server: "POST /admin/shop/category/add/ HTTP/1.1" 302 0
+2022-05-30 17:05:51 [INFO] django.server: "GET /admin/shop/category/ HTTP/1.1" 200 13213
+2022-05-30 17:05:51 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:05:54 [INFO] django.server: "GET /admin/shop/product/ HTTP/1.1" 200 37904
+2022-05-30 17:05:54 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:06:15 [INFO] django.server: "GET /admin/shop/product/18/change/ HTTP/1.1" 200 21719
+2022-05-30 17:06:15 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:06:20 [INFO] django.server: "POST /admin/shop/product/18/change/ HTTP/1.1" 302 0
+2022-05-30 17:06:20 [INFO] django.server: "GET /admin/shop/product/ HTTP/1.1" 200 38155
+2022-05-30 17:06:21 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:09:47 [INFO] django.server: "GET /admin/coupon/coupon/add/ HTTP/1.1" 200 14277
+2022-05-30 17:09:47 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:10:03 [INFO] django.server: "GET /admin/shop/category/ HTTP/1.1" 200 13000
+2022-05-30 17:10:03 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:10:05 [INFO] django.server: "GET /admin/shop/category/add/ HTTP/1.1" 200 13155
+2022-05-30 17:10:05 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:10:11 [INFO] django.server: "POST /admin/shop/category/add/ HTTP/1.1" 302 0
+2022-05-30 17:10:11 [INFO] django.server: "GET /admin/shop/category/ HTTP/1.1" 200 13447
+2022-05-30 17:10:11 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:10:21 [INFO] django.server: "GET /admin/shop/category/add/ HTTP/1.1" 200 13155
+2022-05-30 17:10:21 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:10:25 [INFO] django.server: "POST /admin/shop/category/add/ HTTP/1.1" 302 0
+2022-05-30 17:10:25 [INFO] django.server: "GET /admin/shop/category/ HTTP/1.1" 200 13702
+2022-05-30 17:10:25 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:10:41 [INFO] django.server: "GET /admin/shop/category/add/ HTTP/1.1" 200 13155
+2022-05-30 17:10:41 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:10:48 [INFO] django.server: "POST /admin/shop/category/add/ HTTP/1.1" 302 0
+2022-05-30 17:10:48 [INFO] django.server: "GET /admin/shop/category/ HTTP/1.1" 200 13960
+2022-05-30 17:10:48 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:10:49 [INFO] django.server: "GET /admin/shop/category/add/ HTTP/1.1" 200 13155
+2022-05-30 17:10:49 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:10:52 [INFO] django.server: "POST /admin/shop/category/add/ HTTP/1.1" 302 0
+2022-05-30 17:10:52 [INFO] django.server: "GET /admin/shop/category/ HTTP/1.1" 200 14188
+2022-05-30 17:10:52 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:10:55 [INFO] django.server: "GET /admin/shop/category/add/ HTTP/1.1" 200 13155
+2022-05-30 17:10:55 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:11:06 [INFO] django.server: "POST /admin/shop/category/add/ HTTP/1.1" 302 0
+2022-05-30 17:11:06 [INFO] django.server: "GET /admin/shop/category/ HTTP/1.1" 200 14425
+2022-05-30 17:11:06 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:11:08 [INFO] django.server: "GET /admin/shop/category/add/ HTTP/1.1" 200 13155
+2022-05-30 17:11:08 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:11:12 [INFO] django.server: "POST /admin/shop/category/add/ HTTP/1.1" 302 0
+2022-05-30 17:11:12 [INFO] django.server: "GET /admin/shop/category/ HTTP/1.1" 200 14662
+2022-05-30 17:11:12 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:11:13 [INFO] django.server: "GET /admin/shop/category/add/ HTTP/1.1" 200 13155
+2022-05-30 17:11:13 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:11:18 [INFO] django.server: "POST /admin/shop/category/add/ HTTP/1.1" 302 0
+2022-05-30 17:11:18 [INFO] django.server: "GET /admin/shop/category/ HTTP/1.1" 200 14899
+2022-05-30 17:11:18 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:11:19 [INFO] django.server: "GET /admin/shop/category/add/ HTTP/1.1" 200 13155
+2022-05-30 17:11:19 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:11:22 [INFO] django.server: "POST /admin/shop/category/add/ HTTP/1.1" 302 0
+2022-05-30 17:11:22 [INFO] django.server: "GET /admin/shop/category/ HTTP/1.1" 200 15151
+2022-05-30 17:11:22 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:11:23 [INFO] django.server: "GET /admin/shop/category/add/ HTTP/1.1" 200 13155
+2022-05-30 17:11:23 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:11:26 [INFO] django.server: "POST /admin/shop/category/add/ HTTP/1.1" 302 0
+2022-05-30 17:11:26 [INFO] django.server: "GET /admin/shop/category/ HTTP/1.1" 200 15396
+2022-05-30 17:11:26 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:11:27 [INFO] django.server: "GET /admin/shop/category/add/ HTTP/1.1" 200 13155
+2022-05-30 17:11:27 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:11:31 [INFO] django.server: "POST /admin/shop/category/add/ HTTP/1.1" 302 0
+2022-05-30 17:11:31 [INFO] django.server: "GET /admin/shop/category/ HTTP/1.1" 200 15623
+2022-05-30 17:11:31 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:11:33 [INFO] django.server: "GET /admin/shop/category/add/ HTTP/1.1" 200 13155
+2022-05-30 17:11:33 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:11:36 [INFO] django.server: "POST /admin/shop/category/add/ HTTP/1.1" 302 0
+2022-05-30 17:11:36 [INFO] django.server: "GET /admin/shop/category/ HTTP/1.1" 200 15883
+2022-05-30 17:11:36 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:11:37 [INFO] django.server: "GET /admin/shop/category/add/ HTTP/1.1" 200 13155
+2022-05-30 17:11:37 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:11:45 [INFO] django.server: "POST /admin/shop/category/add/ HTTP/1.1" 302 0
+2022-05-30 17:11:45 [INFO] django.server: "GET /admin/shop/category/ HTTP/1.1" 200 16143
+2022-05-30 17:11:45 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:11:46 [INFO] django.server: "GET /admin/shop/category/add/ HTTP/1.1" 200 13155
+2022-05-30 17:11:46 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:11:50 [INFO] django.server: "POST /admin/shop/category/add/ HTTP/1.1" 302 0
+2022-05-30 17:11:50 [INFO] django.server: "GET /admin/shop/category/ HTTP/1.1" 200 16373
+2022-05-30 17:11:50 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:11:51 [INFO] django.server: "GET /admin/shop/category/add/ HTTP/1.1" 200 13155
+2022-05-30 17:11:51 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:11:55 [INFO] django.server: "POST /admin/shop/category/add/ HTTP/1.1" 302 0
+2022-05-30 17:11:56 [INFO] django.server: "GET /admin/shop/category/ HTTP/1.1" 200 16630
+2022-05-30 17:11:56 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:11:56 [INFO] django.server: "GET /admin/shop/category/add/ HTTP/1.1" 200 13155
+2022-05-30 17:11:57 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:12:23 [INFO] django.server: "POST /admin/shop/category/add/ HTTP/1.1" 302 0
+2022-05-30 17:12:23 [INFO] django.server: "GET /admin/shop/category/ HTTP/1.1" 200 16899
+2022-05-30 17:12:23 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:12:26 [INFO] django.server: "GET /admin/shop/product/ HTTP/1.1" 200 39188
+2022-05-30 17:12:26 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:12:28 [INFO] django.server: "GET /admin/shop/product/20/change/ HTTP/1.1" 200 21375
+2022-05-30 17:12:28 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:12:34 [INFO] django.server: "POST /admin/shop/product/20/change/ HTTP/1.1" 302 0
+2022-05-30 17:12:34 [INFO] django.server: "GET /admin/shop/product/ HTTP/1.1" 200 39466
+2022-05-30 17:12:34 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:12:36 [INFO] django.server: "GET /admin/shop/product/19/change/ HTTP/1.1" 200 22637
+2022-05-30 17:12:36 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:12:40 [INFO] django.server: "POST /admin/shop/product/19/change/ HTTP/1.1" 302 0
+2022-05-30 17:12:41 [INFO] django.server: "GET /admin/shop/product/ HTTP/1.1" 200 39459
+2022-05-30 17:12:41 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:12:43 [INFO] django.server: "GET /admin/shop/product/17/change/ HTTP/1.1" 200 23818
+2022-05-30 17:12:43 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:12:46 [INFO] django.server: "POST /admin/shop/product/17/change/ HTTP/1.1" 302 0
+2022-05-30 17:12:47 [INFO] django.server: "GET /admin/shop/product/ HTTP/1.1" 200 39449
+2022-05-30 17:12:47 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:12:49 [INFO] django.server: "GET /admin/shop/product/16/change/ HTTP/1.1" 200 22670
+2022-05-30 17:12:49 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:12:53 [INFO] django.server: "POST /admin/shop/product/16/change/ HTTP/1.1" 302 0
+2022-05-30 17:12:53 [INFO] django.server: "GET /admin/shop/product/ HTTP/1.1" 200 39474
+2022-05-30 17:12:53 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:12:56 [INFO] django.server: "GET /admin/shop/product/15/change/ HTTP/1.1" 200 21625
+2022-05-30 17:12:56 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:12:59 [INFO] django.server: "POST /admin/shop/product/15/change/ HTTP/1.1" 302 0
+2022-05-30 17:12:59 [INFO] django.server: "GET /admin/shop/product/ HTTP/1.1" 200 39479
+2022-05-30 17:12:59 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:13:01 [INFO] django.server: "GET /admin/shop/product/14/change/ HTTP/1.1" 200 21999
+2022-05-30 17:13:01 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:13:06 [INFO] django.server: "POST /admin/shop/product/14/change/ HTTP/1.1" 302 0
+2022-05-30 17:13:07 [INFO] django.server: "GET /admin/shop/product/ HTTP/1.1" 200 39484
+2022-05-30 17:13:07 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:13:09 [INFO] django.server: "GET /admin/shop/product/13/change/ HTTP/1.1" 200 20932
+2022-05-30 17:13:09 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:13:14 [INFO] django.server: "POST /admin/shop/product/13/change/ HTTP/1.1" 302 0
+2022-05-30 17:13:14 [INFO] django.server: "GET /admin/shop/product/ HTTP/1.1" 200 39465
+2022-05-30 17:13:14 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:13:16 [INFO] django.server: "GET /admin/shop/product/12/change/ HTTP/1.1" 200 21687
+2022-05-30 17:13:16 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:13:21 [INFO] django.server: "POST /admin/shop/product/12/change/ HTTP/1.1" 302 0
+2022-05-30 17:13:22 [INFO] django.server: "GET /admin/shop/product/ HTTP/1.1" 200 39485
+2022-05-30 17:13:22 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:13:24 [INFO] django.server: "GET /admin/shop/product/11/change/ HTTP/1.1" 200 21078
+2022-05-30 17:13:24 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:13:28 [INFO] django.server: "POST /admin/shop/product/11/change/ HTTP/1.1" 302 0
+2022-05-30 17:13:28 [INFO] django.server: "GET /admin/shop/product/ HTTP/1.1" 200 39516
+2022-05-30 17:13:28 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:13:30 [INFO] django.server: "GET /admin/shop/product/10/change/ HTTP/1.1" 200 20972
+2022-05-30 17:13:31 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:13:35 [INFO] django.server: "POST /admin/shop/product/10/change/ HTTP/1.1" 302 0
+2022-05-30 17:13:35 [INFO] django.server: "GET /admin/shop/product/ HTTP/1.1" 200 39485
+2022-05-30 17:13:35 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:13:38 [INFO] django.server: "GET /admin/shop/product/9/change/ HTTP/1.1" 200 20725
+2022-05-30 17:13:38 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:13:47 [INFO] django.server: "POST /admin/shop/product/9/change/ HTTP/1.1" 302 0
+2022-05-30 17:13:47 [INFO] django.server: "GET /admin/shop/product/ HTTP/1.1" 200 39478
+2022-05-30 17:13:47 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:13:50 [INFO] django.server: "GET /admin/shop/product/8/change/ HTTP/1.1" 200 21103
+2022-05-30 17:13:50 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:13:58 [INFO] django.server: "POST /admin/shop/product/8/change/ HTTP/1.1" 302 0
+2022-05-30 17:13:58 [INFO] django.server: "GET /admin/shop/product/ HTTP/1.1" 200 39488
+2022-05-30 17:13:59 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:14:02 [INFO] django.server: "GET /admin/shop/product/7/change/ HTTP/1.1" 200 21923
+2022-05-30 17:14:02 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:14:06 [INFO] django.server: "POST /admin/shop/product/7/change/ HTTP/1.1" 302 0
+2022-05-30 17:14:07 [INFO] django.server: "GET /admin/shop/product/ HTTP/1.1" 200 39507
+2022-05-30 17:14:07 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:14:10 [INFO] django.server: "GET /admin/shop/product/6/change/ HTTP/1.1" 200 20810
+2022-05-30 17:14:10 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:14:14 [INFO] django.server: "POST /admin/shop/product/6/change/ HTTP/1.1" 302 0
+2022-05-30 17:14:15 [INFO] django.server: "GET /admin/shop/product/ HTTP/1.1" 200 39507
+2022-05-30 17:14:15 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:14:19 [INFO] django.server: "GET /admin/shop/product/5/change/ HTTP/1.1" 200 20709
+2022-05-30 17:14:19 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:14:22 [INFO] django.server: "POST /admin/shop/product/5/change/ HTTP/1.1" 302 0
+2022-05-30 17:14:22 [INFO] django.server: "GET /admin/shop/product/ HTTP/1.1" 200 39499
+2022-05-30 17:14:23 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:14:26 [INFO] django.server: "GET /admin/shop/product/4/change/ HTTP/1.1" 200 22525
+2022-05-30 17:14:26 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:14:29 [INFO] django.server: "POST /admin/shop/product/4/change/ HTTP/1.1" 302 0
+2022-05-30 17:14:29 [INFO] django.server: "GET /admin/shop/product/ HTTP/1.1" 200 39535
+2022-05-30 17:14:29 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:14:33 [INFO] django.server: "GET /admin/shop/product/3/change/ HTTP/1.1" 200 21474
+2022-05-30 17:14:33 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:14:38 [INFO] django.server: "POST /admin/shop/product/3/change/ HTTP/1.1" 302 0
+2022-05-30 17:14:38 [INFO] django.server: "GET /admin/shop/product/ HTTP/1.1" 200 39541
+2022-05-30 17:14:38 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:14:41 [INFO] django.server: "GET /admin/shop/product/2/change/ HTTP/1.1" 200 21599
+2022-05-30 17:14:41 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:14:45 [INFO] django.server: "POST /admin/shop/product/2/change/ HTTP/1.1" 302 0
+2022-05-30 17:14:46 [INFO] django.server: "GET /admin/shop/product/ HTTP/1.1" 200 39532
+2022-05-30 17:14:46 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:14:49 [INFO] django.server: "GET /admin/shop/product/1/change/ HTTP/1.1" 200 21603
+2022-05-30 17:14:49 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:14:55 [INFO] django.server: "POST /admin/shop/product/1/change/ HTTP/1.1" 302 0
+2022-05-30 17:14:55 [INFO] django.server: "GET /admin/shop/product/ HTTP/1.1" 200 39553
+2022-05-30 17:14:56 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:15:32 [INFO] django.server: "POST /admin/shop/product/ HTTP/1.1" 302 0
+2022-05-30 17:15:32 [INFO] django.server: "GET /admin/shop/product/ HTTP/1.1" 200 39455
+2022-05-30 17:15:32 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 8911
+2022-05-30 17:18:04 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\shop\models.py changed, reloading.
+2022-05-30 17:18:05 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 17:18:13 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\shop\models.py changed, reloading.
+2022-05-30 17:18:14 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 17:19:45 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 17:19:46 [INFO] django.server: "GET / HTTP/1.1" 200 98001
+2022-05-30 17:21:09 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-30 17:21:10 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 17:24:45 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-30 17:24:46 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 17:24:50 [INFO] django.server: "GET / HTTP/1.1" 200 98001
+2022-05-30 17:24:54 [INFO] django.server: "GET /shop/19/%EC%83%A4%EC%9D%B8%EB%A8%B8%EC%8A%A4%EC%BA%A3-%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B87%EC%A2%85450g/ HTTP/1.1" 200 107963
+2022-05-30 17:24:57 [INFO] django.server: "POST /cart/add/19 HTTP/1.1" 302 0
+2022-05-30 17:24:57 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 34076
+2022-05-30 17:25:01 [INFO] django.server: "GET /cart/remove/20 HTTP/1.1" 302 0
+2022-05-30 17:25:02 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 32521
+2022-05-30 17:25:04 [INFO] django.server: "GET /cart/remove/18 HTTP/1.1" 302 0
+2022-05-30 17:25:04 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 31058
+2022-05-30 17:25:04 [INFO] django.server: "GET /cart/remove/17 HTTP/1.1" 302 0
+2022-05-30 17:25:04 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 29648
+2022-05-30 17:25:05 [INFO] django.server: "POST /cart/add/19 HTTP/1.1" 302 0
+2022-05-30 17:25:05 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 29648
+2022-05-30 17:25:06 [INFO] django.server: "POST /cart/add/19 HTTP/1.1" 302 0
+2022-05-30 17:25:06 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 29648
+2022-05-30 17:25:07 [INFO] django.server: "POST /cart/add/19 HTTP/1.1" 302 0
+2022-05-30 17:25:07 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 29648
+2022-05-30 17:25:07 [INFO] django.server: "POST /cart/add/19 HTTP/1.1" 302 0
+2022-05-30 17:25:07 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 29648
+2022-05-30 17:25:07 [INFO] django.server: "POST /cart/add/19 HTTP/1.1" 302 0
+2022-05-30 17:25:07 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 29648
+2022-05-30 17:25:07 [INFO] django.server: "POST /cart/add/19 HTTP/1.1" 302 0
+2022-05-30 17:25:07 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 29648
+2022-05-30 17:25:07 [INFO] django.server: "POST /cart/add/19 HTTP/1.1" 302 0
+2022-05-30 17:25:08 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 29648
+2022-05-30 17:25:10 [INFO] django.server: "POST /cart/add/19 HTTP/1.1" 302 0
+2022-05-30 17:25:11 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 29646
+2022-05-30 17:25:40 [INFO] django.server: "GET /order/create/ HTTP/1.1" 200 4355
+2022-05-30 17:26:31 [INFO] django.server: "POST /order/create_ajax/ HTTP/1.1" 200 15
+2022-05-30 17:26:31 [INFO] django.server: "POST /order/checkout/ HTTP/1.1" 200 44
+2022-05-30 17:28:12 [INFO] django.server: "POST /order/validation/ HTTP/1.1" 200 15
+2022-05-30 17:28:12 [ERROR] django.request: Internal Server Error: /order/complete/
+Traceback (most recent call last):
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py", line 47, in order_complete
+    product = request.product
+AttributeError: 'WSGIRequest' object has no attribute 'product'
+2022-05-30 17:28:12 [ERROR] django.server: "GET /order/complete/?order_id=2 HTTP/1.1" 500 69571
+2022-05-30 17:30:43 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-30 17:30:44 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 17:32:35 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-30 17:32:36 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 17:32:45 [INFO] django.server: "GET / HTTP/1.1" 200 98001
+2022-05-30 17:32:48 [INFO] django.server: "GET /shop/18/%EC%B2%AD%EC%A0%95%EC%A0%9C%EC%A3%BC-%ED%95%9C%EB%9D%BC%EB%B4%89-%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B8-9%EA%B3%BC3kg/ HTTP/1.1" 200 107648
+2022-05-30 17:32:52 [INFO] django.server: "GET /shop/14/%EB%B0%94%EB%A5%B8%ED%8C%9C-%EB%8B%AC%EC%BD%A4%ED%95%9C-%EC%A0%9C%EC%A3%BC-%ED%95%98%EC%9A%B0%EC%8A%A4-%EA%B0%90%EA%B7%A4-3kg-28-35%EA%B3%BC/ HTTP/1.1" 200 107286
+2022-05-30 17:32:54 [INFO] django.server: "POST /cart/add/14 HTTP/1.1" 302 0
+2022-05-30 17:32:54 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 29650
+2022-05-30 17:32:57 [INFO] django.server: "GET /order/create/ HTTP/1.1" 200 4369
+2022-05-30 17:33:33 [INFO] django.server: "POST /order/create_ajax/ HTTP/1.1" 200 15
+2022-05-30 17:33:33 [INFO] django.server: "POST /order/checkout/ HTTP/1.1" 200 44
+2022-05-30 17:33:48 [INFO] django.server: "POST /order/create_ajax/ HTTP/1.1" 200 15
+2022-05-30 17:33:48 [INFO] django.server: "POST /order/checkout/ HTTP/1.1" 200 44
+2022-05-30 17:34:19 [INFO] django.server: "POST /order/validation/ HTTP/1.1" 200 15
+2022-05-30 17:34:19 [ERROR] django.request: Internal Server Error: /order/complete/
+Traceback (most recent call last):
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py", line 47, in order_complete
+    product = order.orderitem.product
+AttributeError: 'Order' object has no attribute 'orderitem'
+2022-05-30 17:34:19 [ERROR] django.server: "GET /order/complete/?order_id=4 HTTP/1.1" 500 69571
+2022-05-30 17:36:15 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-30 17:36:15 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 17:36:17 [INFO] django.server: "GET / HTTP/1.1" 200 98001
+2022-05-30 17:36:26 [INFO] django.server: "GET /shop/11/%EC%9E%90%EC%97%B0%EB%A7%9B%EB%82%A8-gap%EC%9D%B8%EC%A6%9D-%ED%8F%AC%ED%95%AD-%EB%B3%B4%EA%B2%BD-%EC%83%88%EC%BD%A4%EB%8B%AC%EC%BD%A4-%ED%96%87-%EC%82%B0%EB%94%B8%EA%B8%B0-2504%ED%8C%A9-%EC%B4%9D1kg/ HTTP/1.1" 200 106354
+2022-05-30 17:36:56 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-30 17:36:57 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 17:36:57 [INFO] django.server: "POST /cart/add/11 HTTP/1.1" 302 0
+2022-05-30 17:36:58 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 29749
+2022-05-30 17:36:59 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 75021
+2022-05-30 17:37:02 [INFO] django.server: "GET /order/create/ HTTP/1.1" 200 4392
+2022-05-30 17:37:25 [INFO] django.server: "POST /order/create_ajax/ HTTP/1.1" 200 15
+2022-05-30 17:37:25 [INFO] django.server: "POST /order/checkout/ HTTP/1.1" 200 44
+2022-05-30 17:38:53 [INFO] django.server: "POST /order/validation/ HTTP/1.1" 200 15
+2022-05-30 17:38:53 [ERROR] django.request: Internal Server Error: /order/complete/
+Traceback (most recent call last):
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py", line 49, in order_complete
+    product = order.models.OrderItem.product
+AttributeError: 'Order' object has no attribute 'models'
+2022-05-30 17:38:53 [ERROR] django.server: "GET /order/complete/?order_id=5 HTTP/1.1" 500 69591
+2022-05-30 17:40:43 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-30 17:40:44 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 17:40:48 [INFO] django.server: "GET / HTTP/1.1" 200 98001
+2022-05-30 17:41:04 [INFO] django.server: "GET /shop/11/%EC%9E%90%EC%97%B0%EB%A7%9B%EB%82%A8-gap%EC%9D%B8%EC%A6%9D-%ED%8F%AC%ED%95%AD-%EB%B3%B4%EA%B2%BD-%EC%83%88%EC%BD%A4%EB%8B%AC%EC%BD%A4-%ED%96%87-%EC%82%B0%EB%94%B8%EA%B8%B0-2504%ED%8C%A9-%EC%B4%9D1kg/ HTTP/1.1" 200 106354
+2022-05-30 17:41:14 [INFO] django.server: "GET /shop/1/%EC%B2%9C%EC%95%88%EB%B0%B0-%EC%B6%A9%EC%A3%BC%EC%82%AC%EA%B3%BC-%ED%94%84%EB%A6%AC%EB%AF%B8%EC%97%84-%EA%B3%BC%EC%9D%BC%EC%84%B8%ED%8A%B8/ HTTP/1.1" 200 106926
+2022-05-30 17:41:16 [INFO] django.server: "POST /cart/add/1 HTTP/1.1" 302 0
+2022-05-30 17:41:16 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 29679
+2022-05-30 17:41:18 [INFO] django.server: "GET /order/create/ HTTP/1.1" 200 4357
+2022-05-30 17:42:23 [INFO] django.server: "POST /order/create_ajax/ HTTP/1.1" 200 15
+2022-05-30 17:42:24 [INFO] django.server: "POST /order/checkout/ HTTP/1.1" 200 44
+2022-05-30 17:42:50 [INFO] django.server: "POST /order/validation/ HTTP/1.1" 200 15
+2022-05-30 17:42:50 [ERROR] django.request: Internal Server Error: /order/complete/
+Traceback (most recent call last):
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py", line 51, in order_complete
+    logger.info("주문번호:"+ str(order.id) + " " + "유저번호:"+str(user.id)+" " + "품목:"+str(product.category))
+AttributeError: 'function' object has no attribute 'category'
+2022-05-30 17:42:50 [ERROR] django.server: "GET /order/complete/?order_id=6 HTTP/1.1" 500 70054
+2022-05-30 17:45:50 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-30 17:45:50 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 17:45:52 [INFO] django.server: "GET / HTTP/1.1" 200 98001
+2022-05-30 17:46:06 [INFO] django.server: "GET /shop/6/%EA%B3%A0%EB%8B%B9%EB%8F%84-%EB%A8%B8%EC%8A%A4%ED%81%AC-%EB%A9%94%EB%A1%A0-%EA%B3%BC%EC%9D%BC-%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B8-%EB%8C%80%EA%B3%BC-2%EC%88%98/ HTTP/1.1" 200 106105
+2022-05-30 17:46:08 [INFO] django.server: "POST /cart/add/6 HTTP/1.1" 302 0
+2022-05-30 17:46:08 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 29671
+2022-05-30 17:46:09 [INFO] django.server: "GET /order/create/ HTTP/1.1" 200 4362
+2022-05-30 17:46:51 [INFO] django.server: "POST /order/create_ajax/ HTTP/1.1" 200 15
+2022-05-30 17:46:51 [INFO] django.server: "POST /order/checkout/ HTTP/1.1" 200 44
+2022-05-30 17:47:22 [INFO] django.server: "POST /order/validation/ HTTP/1.1" 200 15
+2022-05-30 17:47:22 [ERROR] django.request: Internal Server Error: /order/complete/
+Traceback (most recent call last):
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py", line 51, in order_complete
+    logger.info("주문번호:"+ str(order.id) + " " + "유저번호:"+str(user.id)+" " + "품목:"+str(product.category.name))
+AttributeError: 'function' object has no attribute 'category'
+2022-05-30 17:47:22 [ERROR] django.server: "GET /order/complete/?order_id=7 HTTP/1.1" 500 70064
+2022-05-30 17:56:37 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-30 17:56:38 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 18:08:14 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-30 18:08:15 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 18:14:33 [INFO] django.server: "GET / HTTP/1.1" 200 98001
+2022-05-30 18:14:33 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-30 18:14:34 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 18:14:42 [INFO] django.server: "GET /shop/17/%ED%83%9C%EA%B5%AD-%ED%9B%84%EB%A0%88%EC%89%AC-%EB%A7%9D%EA%B3%A0-9%EA%B3%BC18kg/ HTTP/1.1" 200 109137
+2022-05-30 18:14:43 [INFO] django.server: "POST /cart/add/17 HTTP/1.1" 302 0
+2022-05-30 18:14:43 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 29573
+2022-05-30 18:14:44 [INFO] django.server: "GET /order/create/ HTTP/1.1" 200 4343
+2022-05-30 18:15:09 [INFO] django.server: "POST /order/create_ajax/ HTTP/1.1" 200 15
+2022-05-30 18:15:10 [INFO] django.server: "POST /order/checkout/ HTTP/1.1" 200 44
+2022-05-30 18:15:40 [INFO] django.server: "POST /order/validation/ HTTP/1.1" 200 15
+2022-05-30 18:15:40 [ERROR] django.request: Internal Server Error: /order/complete/
+Traceback (most recent call last):
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py", line 54, in order_complete
+    logger.info("주문번호:"+ str(order.id) + " " + "유저번호:"+str(user.id)+" " + "품목:"+str(category.name))
+AttributeError: 'QuerySet' object has no attribute 'name'
+2022-05-30 18:15:40 [ERROR] django.server: "GET /order/complete/?order_id=8 HTTP/1.1" 500 70168
+2022-05-30 18:16:02 [INFO] django.server: "GET / HTTP/1.1" 200 98001
+2022-05-30 18:21:15 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-30 18:21:16 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 18:21:23 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-30 18:21:24 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 18:28:06 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-30 18:28:07 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 18:28:16 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-30 18:28:17 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 18:28:17 [INFO] django.server: "GET / HTTP/1.1" 200 98001
+2022-05-30 18:28:23 [INFO] django.server: "GET /shop/9/%EA%B8%B0%EA%B0%84%ED%95%9C%EC%A0%95-premium-%EB%B0%B0%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B89%EA%B0%9C%EC%9E%85/ HTTP/1.1" 200 106025
+2022-05-30 18:28:25 [INFO] django.server: "POST /cart/add/9 HTTP/1.1" 302 0
+2022-05-30 18:28:25 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 29603
+2022-05-30 18:28:26 [INFO] django.server: "GET /order/create/ HTTP/1.1" 200 4356
+2022-05-30 18:28:46 [INFO] django.server: "POST /order/create_ajax/ HTTP/1.1" 200 15
+2022-05-30 18:28:46 [INFO] django.server: "POST /order/checkout/ HTTP/1.1" 200 44
+2022-05-30 18:29:24 [INFO] django.server: "POST /order/validation/ HTTP/1.1" 200 15
+2022-05-30 18:29:24 [ERROR] django.request: Internal Server Error: /order/complete/
+Traceback (most recent call last):
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py", line 48, in order_complete
+    order = Order.objects.prefetch_related.get(id=order_id)
+AttributeError: 'function' object has no attribute 'get'
+2022-05-30 18:29:24 [ERROR] django.server: "GET /order/complete/?order_id=9 HTTP/1.1" 500 69125
+2022-05-30 18:29:36 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-30 18:29:37 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 18:29:45 [INFO] django.server: "GET / HTTP/1.1" 200 98001
+2022-05-30 18:29:48 [INFO] django.server: "GET /shop/18/%EC%B2%AD%EC%A0%95%EC%A0%9C%EC%A3%BC-%ED%95%9C%EB%9D%BC%EB%B4%89-%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B8-9%EA%B3%BC3kg/ HTTP/1.1" 200 107648
+2022-05-30 18:29:50 [INFO] django.server: "POST /cart/add/18 HTTP/1.1" 302 0
+2022-05-30 18:29:50 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 29624
+2022-05-30 18:29:52 [INFO] django.server: "GET /order/create/ HTTP/1.1" 200 4348
+2022-05-30 18:30:01 [INFO] django.server: "POST /order/create_ajax/ HTTP/1.1" 200 16
+2022-05-30 18:30:01 [INFO] django.server: "POST /order/checkout/ HTTP/1.1" 200 44
+2022-05-30 18:30:29 [INFO] django.server: "POST /order/validation/ HTTP/1.1" 200 15
+2022-05-30 18:30:29 [ERROR] django.request: Internal Server Error: /order/complete/
+Traceback (most recent call last):
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py", line 51, in order_complete
+    category = orderitem.product.category
+AttributeError: 'QuerySet' object has no attribute 'product'
+2022-05-30 18:30:29 [ERROR] django.server: "GET /order/complete/?order_id=10 HTTP/1.1" 500 69933
+2022-05-30 23:55:05 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 23:55:07 [INFO] django.server: "GET / HTTP/1.1" 200 98001
+2022-05-30 23:55:16 [ERROR] django.request: Internal Server Error: /shop/19/샤인머스캣-과일선물세트7종450g/
+Traceback (most recent call last):
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sli\Documents\GitHub\Market_Backend\shop\views.py", line 35, in product_detail
+    category = orderitem.product.category
+AttributeError: 'function' object has no attribute 'product'
+2022-05-30 23:55:16 [ERROR] django.server: "GET /shop/19/%EC%83%A4%EC%9D%B8%EB%A8%B8%EC%8A%A4%EC%BA%A3-%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B87%EC%A2%85450g/ HTTP/1.1" 500 72642
+2022-05-30 23:55:52 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\shop\views.py changed, reloading.
+2022-05-30 23:55:53 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 23:55:55 [INFO] django.server: "GET / HTTP/1.1" 200 98001
+2022-05-30 23:55:56 [ERROR] django.request: Internal Server Error: /shop/19/샤인머스캣-과일선물세트7종450g/
+Traceback (most recent call last):
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sli\Documents\GitHub\Market_Backend\shop\views.py", line 38, in product_detail
+    print(category.name)
+AttributeError: 'ForwardManyToOneDescriptor' object has no attribute 'name'
+2022-05-30 23:55:56 [ERROR] django.server: "GET /shop/19/%EC%83%A4%EC%9D%B8%EB%A8%B8%EC%8A%A4%EC%BA%A3-%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B87%EC%A2%85450g/ HTTP/1.1" 500 73049
+2022-05-30 23:56:05 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\shop\views.py changed, reloading.
+2022-05-30 23:56:05 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 23:56:07 [INFO] django.server: "GET / HTTP/1.1" 200 98001
+2022-05-30 23:56:07 [ERROR] django.request: Internal Server Error: /shop/19/샤인머스캣-과일선물세트7종450g/
+Traceback (most recent call last):
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sli\Documents\GitHub\Market_Backend\shop\views.py", line 39, in product_detail
+    logger.info("주문번호:"+ str(order.id) + " " + "유저번호:"+str(user.id)+" " + "품목:"+str(category.name))
+AttributeError: module 'order' has no attribute 'id'
+2022-05-30 23:56:07 [ERROR] django.server: "GET /shop/19/%EC%83%A4%EC%9D%B8%EB%A8%B8%EC%8A%A4%EC%BA%A3-%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B87%EC%A2%85450g/ HTTP/1.1" 500 73097
+2022-05-30 23:58:31 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\shop\views.py changed, reloading.
+2022-05-30 23:58:32 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-30 23:58:35 [INFO] django.server: "GET / HTTP/1.1" 200 98001
+2022-05-30 23:58:36 [INFO] django.server: "GET /shop/19/%EC%83%A4%EC%9D%B8%EB%A8%B8%EC%8A%A4%EC%BA%A3-%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B87%EC%A2%85450g/ HTTP/1.1" 200 107963
+2022-05-30 23:58:38 [INFO] django.server: "POST /cart/add/19 HTTP/1.1" 302 0
+2022-05-30 23:58:38 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 29642
+2022-05-31 00:07:44 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-31 00:07:45 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 00:07:58 [INFO] django.server: "GET / HTTP/1.1" 200 98001
+2022-05-31 00:08:07 [INFO] django.server: "GET /shop/17/%ED%83%9C%EA%B5%AD-%ED%9B%84%EB%A0%88%EC%89%AC-%EB%A7%9D%EA%B3%A0-9%EA%B3%BC18kg/ HTTP/1.1" 200 109137
+2022-05-31 00:08:13 [INFO] django.server: "POST /cart/add/17 HTTP/1.1" 302 0
+2022-05-31 00:08:14 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 31049
+2022-05-31 00:08:17 [INFO] django.server: "GET /cart/remove/19 HTTP/1.1" 302 0
+2022-05-31 00:08:17 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 29573
+2022-05-31 00:08:42 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-31 00:08:43 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 00:26:03 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-31 00:26:04 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 00:26:05 [INFO] django.server: "GET / HTTP/1.1" 200 98001
+2022-05-31 00:26:06 [INFO] django.server: "GET / HTTP/1.1" 200 98001
+2022-05-31 00:26:09 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-31 00:26:09 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 00:26:20 [INFO] django.server: "GET /shop/20/%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B8-7kg-%EC%82%AC%EA%B3%BC12%EA%B3%BC%EB%82%B4%EC%99%B8%EB%82%98%EC%A3%BC%EB%B0%B09%EA%B3%BC%EB%82%B4%EC%99%B8/ HTTP/1.1" 200 106690
+2022-05-31 00:26:21 [INFO] django.server: "POST /cart/add/20 HTTP/1.1" 302 0
+2022-05-31 00:26:22 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 31122
+2022-05-31 00:26:24 [INFO] django.server: "GET /cart/remove/17 HTTP/1.1" 302 0
+2022-05-31 00:26:24 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 29715
+2022-05-31 00:26:26 [INFO] django.server: "GET /order/create/ HTTP/1.1" 200 4366
+2022-05-31 00:26:41 [INFO] django.server: "POST /order/create_ajax/ HTTP/1.1" 200 16
+2022-05-31 00:26:41 [INFO] django.server: "POST /order/checkout/ HTTP/1.1" 200 44
+2022-05-31 00:27:59 [INFO] django.server: "POST /order/validation/ HTTP/1.1" 200 15
+2022-05-31 00:27:59 [ERROR] django.request: Internal Server Error: /order/complete/
+Traceback (most recent call last):
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py", line 48, in order_complete
+    orderitem = OrderItem.objects.get(id=orderitem_id)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 439, in get
+    raise self.model.DoesNotExist(
+order.models.OrderItem.DoesNotExist: OrderItem matching query does not exist.
+2022-05-31 00:27:59 [ERROR] django.server: "GET /order/complete/?order_id=11 HTTP/1.1" 500 78439
+2022-05-31 14:02:31 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 14:02:42 [INFO] django.server: "GET / HTTP/1.1" 200 98001
+2022-05-31 14:02:47 [INFO] django.server: "GET /shop/19/%EC%83%A4%EC%9D%B8%EB%A8%B8%EC%8A%A4%EC%BA%A3-%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B87%EC%A2%85450g/ HTTP/1.1" 200 107963
+2022-05-31 14:02:49 [INFO] django.server: "POST /cart/add/19 HTTP/1.1" 302 0
+2022-05-31 14:02:49 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 29642
+2022-05-31 14:02:50 [INFO] django.server: "GET /order/create/ HTTP/1.1" 200 4349
+2022-05-31 14:03:38 [INFO] django.server: "POST /order/create_ajax/ HTTP/1.1" 200 16
+2022-05-31 14:03:38 [INFO] django.server: "POST /order/checkout/ HTTP/1.1" 200 44
+2022-05-31 14:04:07 [INFO] django.server: "POST /order/validation/ HTTP/1.1" 200 15
+2022-05-31 14:04:08 [ERROR] django.request: Internal Server Error: /order/complete/
+Traceback (most recent call last):
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py", line 52, in order_complete
+    print(category)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 256, in __repr__
+    data = list(self[:REPR_OUTPUT_SIZE + 1])
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 262, in __len__
+    self._fetch_all()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1354, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 1189, in execute_sql
+    sql, params = self.as_sql()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 531, in as_sql
+    extra_select, order_by, group_by = self.pre_sql_setup()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 59, in pre_sql_setup
+    self.setup_query()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 50, in setup_query
+    self.select, self.klass_info, self.annotation_col_map = self.get_select()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 253, in get_select
+    related_klass_infos = self.get_related_selections(select)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 1012, in get_related_selections
+    raise FieldError(
+django.core.exceptions.FieldError: Invalid field name(s) given in select_related: 'products'. Choices are: order, product
+2022-05-31 14:04:08 [ERROR] django.server: "GET /order/complete/?order_id=12 HTTP/1.1" 500 115966
+2022-05-31 14:12:15 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-31 14:12:15 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 14:15:42 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-31 14:15:42 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 14:21:28 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-31 14:21:28 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 14:24:22 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-31 14:24:23 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 14:28:26 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-31 14:28:27 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 14:28:39 [INFO] django.server: "GET /order/create/ HTTP/1.1" 200 4165
+2022-05-31 14:28:40 [INFO] django.server: "GET /order/create/ HTTP/1.1" 200 4165
+2022-05-31 14:28:41 [INFO] django.server: "GET / HTTP/1.1" 200 98001
+2022-05-31 14:28:42 [INFO] django.server: "GET / HTTP/1.1" 200 98001
+2022-05-31 14:28:45 [INFO] django.server: "GET /shop/18/%EC%B2%AD%EC%A0%95%EC%A0%9C%EC%A3%BC-%ED%95%9C%EB%9D%BC%EB%B4%89-%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B8-9%EA%B3%BC3kg/ HTTP/1.1" 200 107648
+2022-05-31 14:28:46 [INFO] django.server: "POST /cart/add/18 HTTP/1.1" 302 0
+2022-05-31 14:28:46 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 29624
+2022-05-31 14:28:47 [INFO] django.server: "GET /order/create/ HTTP/1.1" 200 4348
+2022-05-31 14:28:56 [INFO] django.server: "POST /order/create_ajax/ HTTP/1.1" 200 16
+2022-05-31 14:28:56 [INFO] django.server: "POST /order/checkout/ HTTP/1.1" 200 44
+2022-05-31 14:29:19 [INFO] django.server: "POST /order/validation/ HTTP/1.1" 200 15
+2022-05-31 14:29:19 [ERROR] django.request: Internal Server Error: /order/complete/
+Traceback (most recent call last):
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py", line 49, in order_complete
+    for p in category:
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 280, in __iter__
+    self._fetch_all()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1354, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 1189, in execute_sql
+    sql, params = self.as_sql()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 531, in as_sql
+    extra_select, order_by, group_by = self.pre_sql_setup()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 59, in pre_sql_setup
+    self.setup_query()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 50, in setup_query
+    self.select, self.klass_info, self.annotation_col_map = self.get_select()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 253, in get_select
+    related_klass_infos = self.get_related_selections(select)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 1012, in get_related_selections
+    raise FieldError(
+django.core.exceptions.FieldError: Invalid field name(s) given in select_related: 'order_products'. Choices are: category
+2022-05-31 14:29:19 [ERROR] django.server: "GET /order/complete/?order_id=13 HTTP/1.1" 500 113238
+2022-05-31 14:31:43 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-31 14:31:43 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 14:31:57 [INFO] django.server: "GET /order/create/ HTTP/1.1" 200 4165
+2022-05-31 14:31:58 [INFO] django.server: "GET / HTTP/1.1" 200 98001
+2022-05-31 14:32:01 [INFO] django.server: "GET /shop/19/%EC%83%A4%EC%9D%B8%EB%A8%B8%EC%8A%A4%EC%BA%A3-%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B87%EC%A2%85450g/ HTTP/1.1" 200 107963
+2022-05-31 14:32:02 [INFO] django.server: "POST /cart/add/19 HTTP/1.1" 302 0
+2022-05-31 14:32:02 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 29642
+2022-05-31 14:32:04 [INFO] django.server: "GET /order/create/ HTTP/1.1" 200 4349
+2022-05-31 14:32:12 [INFO] django.server: "POST /order/create_ajax/ HTTP/1.1" 200 16
+2022-05-31 14:32:12 [INFO] django.server: "POST /order/checkout/ HTTP/1.1" 200 44
+2022-05-31 14:32:50 [INFO] django.server: "POST /order/validation/ HTTP/1.1" 200 15
+2022-05-31 14:32:50 [ERROR] django.request: Internal Server Error: /order/complete/
+Traceback (most recent call last):
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py", line 53, in order_complete
+    logger.info("주문번호:"+ str(order.id) + " " + "유저번호:"+str(user.id)+" " + "품목:"+str(category.name))
+AttributeError: 'QuerySet' object has no attribute 'name'
+2022-05-31 14:32:50 [ERROR] django.server: "GET /order/complete/?order_id=14 HTTP/1.1" 500 71374
+2022-05-31 14:39:30 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\shop\models.py changed, reloading.
+2022-05-31 14:39:31 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 14:39:47 [INFO] django.server: "GET /order/create/ HTTP/1.1" 200 4165
+2022-05-31 14:39:48 [INFO] django.server: "GET / HTTP/1.1" 200 98001
+2022-05-31 14:39:49 [INFO] django.server: "GET /shop/19/%EC%83%A4%EC%9D%B8%EB%A8%B8%EC%8A%A4%EC%BA%A3-%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B87%EC%A2%85450g/ HTTP/1.1" 200 107963
+2022-05-31 14:39:51 [INFO] django.server: "POST /cart/add/19 HTTP/1.1" 302 0
+2022-05-31 14:39:51 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 29642
+2022-05-31 14:39:52 [INFO] django.server: "GET /order/create/ HTTP/1.1" 200 4349
+2022-05-31 14:40:02 [INFO] django.server: "POST /order/create_ajax/ HTTP/1.1" 200 16
+2022-05-31 14:40:02 [INFO] django.server: "POST /order/checkout/ HTTP/1.1" 200 44
+2022-05-31 14:40:24 [INFO] django.server: "POST /order/validation/ HTTP/1.1" 200 15
+2022-05-31 14:40:24 [ERROR] django.request: Internal Server Error: /order/complete/
+Traceback (most recent call last):
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py", line 52, in order_complete
+    print(category)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 256, in __repr__
+    data = list(self[:REPR_OUTPUT_SIZE + 1])
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 262, in __len__
+    self._fetch_all()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1354, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 1189, in execute_sql
+    sql, params = self.as_sql()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 531, in as_sql
+    extra_select, order_by, group_by = self.pre_sql_setup()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 59, in pre_sql_setup
+    self.setup_query()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 50, in setup_query
+    self.select, self.klass_info, self.annotation_col_map = self.get_select()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 253, in get_select
+    related_klass_infos = self.get_related_selections(select)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 1012, in get_related_selections
+    raise FieldError(
+django.core.exceptions.FieldError: Invalid field name(s) given in select_related: 'category'. Choices are: order, product
+2022-05-31 14:40:24 [ERROR] django.server: "GET /order/complete/?order_id=15 HTTP/1.1" 500 120622
+2022-05-31 14:43:00 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-31 14:43:01 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 14:43:05 [INFO] django.server: "GET /order/create/ HTTP/1.1" 200 4165
+2022-05-31 14:43:06 [INFO] django.server: "GET / HTTP/1.1" 200 98001
+2022-05-31 14:43:07 [INFO] django.server: "GET /shop/19/%EC%83%A4%EC%9D%B8%EB%A8%B8%EC%8A%A4%EC%BA%A3-%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B87%EC%A2%85450g/ HTTP/1.1" 200 107963
+2022-05-31 14:43:08 [INFO] django.server: "POST /cart/add/19 HTTP/1.1" 302 0
+2022-05-31 14:43:08 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 29642
+2022-05-31 14:43:10 [ERROR] django.request: Internal Server Error: /shop/
+Traceback (most recent call last):
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\mysql\base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'shop_category.parent_category_id' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sli\Documents\GitHub\Market_Backend\shop\views.py", line 19, in product_in_category
+    return render(request, 'shop/list.html', {'current_category':current_category, 'categories':categories, 'products':products})
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 176, in render
+    return self._render(context)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 977, in render
+    return SafeString(''.join([
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 938, in render_annotated
+    return self.render(context)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 977, in render
+    return SafeString(''.join([
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 938, in render_annotated
+    return self.render(context)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 977, in render
+    return SafeString(''.join([
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 938, in render_annotated
+    return self.render(context)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\defaulttags.py", line 171, in render
+    len_values = len(values)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 262, in __len__
+    self._fetch_all()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1354, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 1202, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\mysql\base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.OperationalError: (1054, "Unknown column 'shop_category.parent_category_id' in 'field list'")
+2022-05-31 14:43:10 [ERROR] django.server: "GET /shop/ HTTP/1.1" 500 283013
+2022-05-31 14:43:18 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 29642
+2022-05-31 14:43:19 [INFO] django.server: "GET / HTTP/1.1" 200 98001
+2022-05-31 14:43:19 [INFO] django.server: "GET / HTTP/1.1" 200 98001
+2022-05-31 14:43:21 [INFO] django.server: "GET /shop/18/%EC%B2%AD%EC%A0%95%EC%A0%9C%EC%A3%BC-%ED%95%9C%EB%9D%BC%EB%B4%89-%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B8-9%EA%B3%BC3kg/ HTTP/1.1" 200 107648
+2022-05-31 14:43:22 [INFO] django.server: "POST /cart/add/18 HTTP/1.1" 302 0
+2022-05-31 14:43:22 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 31101
+2022-05-31 14:43:24 [INFO] django.server: "GET /cart/remove/19 HTTP/1.1" 302 0
+2022-05-31 14:43:24 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 29624
+2022-05-31 14:43:25 [INFO] django.server: "GET /order/create/ HTTP/1.1" 200 4348
+2022-05-31 14:43:36 [INFO] django.server: "POST /order/create_ajax/ HTTP/1.1" 200 16
+2022-05-31 14:43:36 [INFO] django.server: "POST /order/checkout/ HTTP/1.1" 200 44
+2022-05-31 14:44:01 [INFO] django.server: "POST /order/validation/ HTTP/1.1" 200 15
+2022-05-31 14:44:01 [ERROR] django.request: Internal Server Error: /order/complete/
+Traceback (most recent call last):
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py", line 52, in order_complete
+    print(category)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 256, in __repr__
+    data = list(self[:REPR_OUTPUT_SIZE + 1])
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 262, in __len__
+    self._fetch_all()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1356, in _fetch_all
+    self._prefetch_related_objects()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 841, in _prefetch_related_objects
+    prefetch_related_objects(self._result_cache, *self._prefetch_related_lookups)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1743, in prefetch_related_objects
+    raise AttributeError("Cannot find '%s' on %s object, '%s' is an invalid "
+AttributeError: Cannot find 'products' on OrderItem object, 'products' is an invalid parameter to prefetch_related()
+2022-05-31 14:44:01 [ERROR] django.server: "GET /order/complete/?order_id=16 HTTP/1.1" 500 94500
+2022-05-31 14:49:25 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-31 14:49:25 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 14:50:32 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-31 14:50:32 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 14:51:59 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-31 14:52:00 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 14:53:07 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-31 14:53:08 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 14:54:07 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-31 14:54:07 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 14:55:38 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-31 14:55:39 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 14:56:03 [INFO] django.server: "GET / HTTP/1.1" 200 98001
+2022-05-31 14:56:09 [INFO] django.server: "GET /shop/19/%EC%83%A4%EC%9D%B8%EB%A8%B8%EC%8A%A4%EC%BA%A3-%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B87%EC%A2%85450g/ HTTP/1.1" 200 107963
+2022-05-31 14:56:10 [INFO] django.server: "POST /cart/add/19 HTTP/1.1" 302 0
+2022-05-31 14:56:11 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 29642
+2022-05-31 14:56:13 [INFO] django.server: "GET /order/create/ HTTP/1.1" 200 4349
+2022-05-31 14:56:22 [INFO] django.server: "POST /order/create_ajax/ HTTP/1.1" 200 16
+2022-05-31 14:56:22 [INFO] django.server: "POST /order/checkout/ HTTP/1.1" 200 44
+2022-05-31 14:57:33 [INFO] django.server: "POST /order/validation/ HTTP/1.1" 200 15
+2022-05-31 14:57:33 [ERROR] django.request: Internal Server Error: /order/complete/
+Traceback (most recent call last):
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py", line 48, in order_complete
+    category = OrderItem.objects.get(order_id=order_id).select_related('product','category')
+AttributeError: 'OrderItem' object has no attribute 'select_related'
+2022-05-31 14:57:33 [ERROR] django.server: "GET /order/complete/?order_id=17 HTTP/1.1" 500 69650
+2022-05-31 14:58:13 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-31 14:58:13 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 14:58:30 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-31 14:58:31 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 14:58:32 [INFO] django.server: "GET / HTTP/1.1" 200 98001
+2022-05-31 14:58:37 [INFO] django.server: "GET /shop/19/%EC%83%A4%EC%9D%B8%EB%A8%B8%EC%8A%A4%EC%BA%A3-%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B87%EC%A2%85450g/ HTTP/1.1" 200 107963
+2022-05-31 14:58:39 [INFO] django.server: "POST /cart/add/19 HTTP/1.1" 302 0
+2022-05-31 14:58:39 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 29642
+2022-05-31 14:58:43 [INFO] django.server: "GET /order/create/ HTTP/1.1" 200 4349
+2022-05-31 14:58:52 [INFO] django.server: "POST /order/create_ajax/ HTTP/1.1" 200 16
+2022-05-31 14:58:52 [INFO] django.server: "POST /order/checkout/ HTTP/1.1" 200 44
+2022-05-31 14:59:11 [INFO] django.server: "POST /order/validation/ HTTP/1.1" 200 15
+2022-05-31 14:59:11 [ERROR] django.request: Internal Server Error: /order/complete/
+Traceback (most recent call last):
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py", line 52, in order_complete
+    print(category)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 256, in __repr__
+    data = list(self[:REPR_OUTPUT_SIZE + 1])
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 262, in __len__
+    self._fetch_all()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1354, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 1189, in execute_sql
+    sql, params = self.as_sql()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 531, in as_sql
+    extra_select, order_by, group_by = self.pre_sql_setup()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 59, in pre_sql_setup
+    self.setup_query()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 50, in setup_query
+    self.select, self.klass_info, self.annotation_col_map = self.get_select()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 253, in get_select
+    related_klass_infos = self.get_related_selections(select)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 1012, in get_related_selections
+    raise FieldError(
+django.core.exceptions.FieldError: Invalid field name(s) given in select_related: 'category'. Choices are: order, product
+2022-05-31 14:59:11 [ERROR] django.server: "GET /order/complete/?order_id=18 HTTP/1.1" 500 120612
+2022-05-31 15:02:14 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-31 15:02:14 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 15:02:27 [INFO] django.server: "GET / HTTP/1.1" 200 98001
+2022-05-31 15:02:35 [INFO] django.server: "GET /shop/19/%EC%83%A4%EC%9D%B8%EB%A8%B8%EC%8A%A4%EC%BA%A3-%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B87%EC%A2%85450g/ HTTP/1.1" 200 107963
+2022-05-31 15:02:36 [INFO] django.server: "POST /cart/add/19 HTTP/1.1" 302 0
+2022-05-31 15:02:36 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 29642
+2022-05-31 15:02:38 [INFO] django.server: "GET /order/create/ HTTP/1.1" 200 4349
+2022-05-31 15:02:47 [INFO] django.server: "POST /order/create_ajax/ HTTP/1.1" 200 16
+2022-05-31 15:02:48 [INFO] django.server: "POST /order/checkout/ HTTP/1.1" 200 44
+2022-05-31 15:03:20 [INFO] django.server: "POST /order/validation/ HTTP/1.1" 200 15
+2022-05-31 15:03:21 [ERROR] django.request: Internal Server Error: /order/complete/
+Traceback (most recent call last):
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\mysql\base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'shop_category.parent_category_id' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py", line 52, in order_complete
+    print(category)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 256, in __repr__
+    data = list(self[:REPR_OUTPUT_SIZE + 1])
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 262, in __len__
+    self._fetch_all()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1354, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 1202, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\mysql\base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.OperationalError: (1054, "Unknown column 'shop_category.parent_category_id' in 'field list'")
+2022-05-31 15:03:21 [ERROR] django.server: "GET /order/complete/?order_id=19 HTTP/1.1" 500 210206
+2022-05-31 15:06:55 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-31 15:06:56 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 15:07:59 [INFO] django.server: "GET / HTTP/1.1" 200 98001
+2022-05-31 15:08:01 [INFO] django.server: "GET /shop/19/%EC%83%A4%EC%9D%B8%EB%A8%B8%EC%8A%A4%EC%BA%A3-%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B87%EC%A2%85450g/ HTTP/1.1" 200 107963
+2022-05-31 15:08:02 [INFO] django.server: "POST /cart/add/19 HTTP/1.1" 302 0
+2022-05-31 15:08:02 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 29642
+2022-05-31 15:08:04 [INFO] django.server: "GET /order/create/ HTTP/1.1" 200 4349
+2022-05-31 15:08:13 [INFO] django.server: "POST /order/create_ajax/ HTTP/1.1" 200 16
+2022-05-31 15:08:13 [INFO] django.server: "POST /order/checkout/ HTTP/1.1" 200 44
+2022-05-31 15:08:45 [INFO] django.server: "POST /order/validation/ HTTP/1.1" 200 15
+2022-05-31 15:08:45 [ERROR] django.request: Internal Server Error: /order/complete/
+Traceback (most recent call last):
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\mysql\base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'shop_category.parent_category_id' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py", line 48, in order_complete
+    category = OrderItem.objects.select_related('product__category').get(order_id=order_id)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 435, in get
+    num = len(clone)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 262, in __len__
+    self._fetch_all()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1354, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 1202, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\mysql\base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.OperationalError: (1054, "Unknown column 'shop_category.parent_category_id' in 'field list'")
+2022-05-31 15:08:45 [ERROR] django.server: "GET /order/complete/?order_id=20 HTTP/1.1" 500 211418
+2022-05-31 15:09:40 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\shop\models.py changed, reloading.
+2022-05-31 15:09:40 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 15:10:47 [INFO] django.server: "GET / HTTP/1.1" 200 98001
+2022-05-31 15:10:49 [INFO] django.server: "GET /shop/19/%EC%83%A4%EC%9D%B8%EB%A8%B8%EC%8A%A4%EC%BA%A3-%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B87%EC%A2%85450g/ HTTP/1.1" 200 107963
+2022-05-31 15:10:50 [INFO] django.server: "POST /cart/add/19 HTTP/1.1" 302 0
+2022-05-31 15:10:50 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 29642
+2022-05-31 15:10:51 [INFO] django.server: "GET /order/create/ HTTP/1.1" 200 4349
+2022-05-31 15:11:01 [INFO] django.server: "POST /order/create_ajax/ HTTP/1.1" 200 16
+2022-05-31 15:11:01 [INFO] django.server: "POST /order/checkout/ HTTP/1.1" 200 44
+2022-05-31 15:11:30 [INFO] django.server: "POST /order/validation/ HTTP/1.1" 200 15
+2022-05-31 15:11:30 [ERROR] django.request: Internal Server Error: /order/complete/
+Traceback (most recent call last):
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py", line 53, in order_complete
+    logger.info("주문번호:"+ str(order.id) + " " + "유저번호:"+str(user.id)+" " + "품목:"+str(category.name))
+AttributeError: 'OrderItem' object has no attribute 'name'
+2022-05-31 15:11:30 [ERROR] django.server: "GET /order/complete/?order_id=21 HTTP/1.1" 500 69977
+2022-05-31 15:13:30 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-31 15:13:31 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 15:14:56 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-31 15:14:57 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 15:15:01 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-31 15:15:02 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 15:17:38 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-31 15:17:39 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 15:20:03 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 15:20:08 [INFO] django.server: "GET / HTTP/1.1" 200 98001
+2022-05-31 15:20:10 [INFO] django.server: "GET /shop/19/%EC%83%A4%EC%9D%B8%EB%A8%B8%EC%8A%A4%EC%BA%A3-%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B87%EC%A2%85450g/ HTTP/1.1" 200 107963
+2022-05-31 15:20:11 [INFO] django.server: "POST /cart/add/19 HTTP/1.1" 302 0
+2022-05-31 15:20:11 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 29642
+2022-05-31 15:20:12 [INFO] django.server: "GET /order/create/ HTTP/1.1" 200 4349
+2022-05-31 15:20:20 [INFO] django.server: "POST /order/create_ajax/ HTTP/1.1" 200 16
+2022-05-31 15:20:20 [INFO] django.server: "POST /order/checkout/ HTTP/1.1" 200 44
+2022-05-31 15:20:51 [INFO] django.server: "POST /order/validation/ HTTP/1.1" 200 15
+2022-05-31 15:20:51 [ERROR] django.request: Internal Server Error: /order/complete/
+Traceback (most recent call last):
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py", line 49, in order_complete
+    category = shop.Category.objects.get(id=category_id)
+AttributeError: module 'shop' has no attribute 'Category'
+2022-05-31 15:20:51 [ERROR] django.server: "GET /order/complete/?order_id=22 HTTP/1.1" 500 69662
+2022-05-31 15:22:52 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-31 15:22:53 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 15:23:26 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-31 15:23:26 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 15:24:12 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-31 15:24:13 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 15:24:14 [INFO] django.server: "GET / HTTP/1.1" 200 98001
+2022-05-31 15:24:16 [INFO] django.server: "GET /shop/19/%EC%83%A4%EC%9D%B8%EB%A8%B8%EC%8A%A4%EC%BA%A3-%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B87%EC%A2%85450g/ HTTP/1.1" 200 107963
+2022-05-31 15:24:17 [INFO] django.server: "POST /cart/add/19 HTTP/1.1" 302 0
+2022-05-31 15:24:17 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 29642
+2022-05-31 15:24:19 [INFO] django.server: "GET /order/create/ HTTP/1.1" 200 4349
+2022-05-31 15:24:35 [INFO] django.server: "POST /order/create_ajax/ HTTP/1.1" 200 16
+2022-05-31 15:24:35 [INFO] django.server: "POST /order/checkout/ HTTP/1.1" 200 44
+2022-05-31 15:25:00 [INFO] django.server: "POST /order/validation/ HTTP/1.1" 200 15
+2022-05-31 15:25:01 [ERROR] django.request: Internal Server Error: /order/complete/
+Traceback (most recent call last):
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py", line 54, in order_complete
+    logger.info("주문번호:"+ str(order.id) + " " + "유저번호:"+str(user.id)+" " + "품목:"+str(product.name))
+AttributeError: 'QuerySet' object has no attribute 'name'
+2022-05-31 15:25:01 [ERROR] django.server: "GET /order/complete/?order_id=23 HTTP/1.1" 500 70659
+2022-05-31 15:27:04 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-31 15:27:05 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 15:28:46 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-31 15:28:47 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 15:28:49 [INFO] django.server: "GET /order/create/ HTTP/1.1" 200 4165
+2022-05-31 15:28:49 [INFO] django.server: "GET / HTTP/1.1" 200 98001
+2022-05-31 15:28:51 [INFO] django.server: "GET /shop/19/%EC%83%A4%EC%9D%B8%EB%A8%B8%EC%8A%A4%EC%BA%A3-%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B87%EC%A2%85450g/ HTTP/1.1" 200 107963
+2022-05-31 15:28:52 [INFO] django.server: "POST /cart/add/19 HTTP/1.1" 302 0
+2022-05-31 15:28:52 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 29642
+2022-05-31 15:28:53 [INFO] django.server: "GET /order/create/ HTTP/1.1" 200 4349
+2022-05-31 15:29:01 [INFO] django.server: "POST /order/create_ajax/ HTTP/1.1" 200 16
+2022-05-31 15:29:02 [INFO] django.server: "POST /order/checkout/ HTTP/1.1" 200 44
+2022-05-31 15:29:26 [INFO] django.server: "POST /order/validation/ HTTP/1.1" 200 15
+2022-05-31 15:29:26 [INFO] django.server: 주문번호:24 유저번호:1
+2022-05-31 15:29:26 [INFO] django.server: "GET /order/complete/?order_id=24 HTTP/1.1" 200 25893
+2022-05-31 15:41:52 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-31 15:41:52 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 15:42:09 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-31 15:42:10 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 15:42:35 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-31 15:42:36 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 15:42:38 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-31 15:42:39 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 15:43:43 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-31 15:43:44 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 15:44:10 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-31 15:44:11 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 15:44:32 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-31 15:44:33 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 15:44:56 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-31 15:44:57 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 15:45:17 [INFO] django.server: "GET / HTTP/1.1" 200 98001
+2022-05-31 15:45:19 [INFO] django.server: "GET /shop/19/%EC%83%A4%EC%9D%B8%EB%A8%B8%EC%8A%A4%EC%BA%A3-%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B87%EC%A2%85450g/ HTTP/1.1" 200 107963
+2022-05-31 15:45:20 [INFO] django.server: "POST /cart/add/19 HTTP/1.1" 302 0
+2022-05-31 15:45:20 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 29642
+2022-05-31 15:45:21 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 75021
+2022-05-31 15:45:24 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 75021
+2022-05-31 15:45:26 [INFO] django.server: "GET / HTTP/1.1" 200 98001
+2022-05-31 15:45:28 [INFO] django.server: "GET / HTTP/1.1" 200 98001
+2022-05-31 15:45:29 [INFO] django.server: "GET /shop/18/%EC%B2%AD%EC%A0%95%EC%A0%9C%EC%A3%BC-%ED%95%9C%EB%9D%BC%EB%B4%89-%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B8-9%EA%B3%BC3kg/ HTTP/1.1" 200 107648
+2022-05-31 15:45:30 [INFO] django.server: "POST /cart/add/18 HTTP/1.1" 302 0
+2022-05-31 15:45:30 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 31101
+2022-05-31 15:45:33 [INFO] django.server: "GET /cart/remove/18 HTTP/1.1" 302 0
+2022-05-31 15:45:33 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 29642
+2022-05-31 15:45:34 [INFO] django.server: "GET /order/create/ HTTP/1.1" 200 4349
+2022-05-31 15:45:40 [INFO] django.server: "POST /order/create_ajax/ HTTP/1.1" 200 16
+2022-05-31 15:45:40 [INFO] django.server: "POST /order/checkout/ HTTP/1.1" 200 44
+2022-05-31 15:46:06 [INFO] django.server: "POST /order/validation/ HTTP/1.1" 200 15
+2022-05-31 15:46:07 [ERROR] django.request: Internal Server Error: /order/complete/
+Traceback (most recent call last):
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py", line 45, in order_complete
+    order = Order.objects.prefetch_related('items').select_related('product').select_related('category').get(id=order_id)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 435, in get
+    num = len(clone)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 262, in __len__
+    self._fetch_all()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1354, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 1189, in execute_sql
+    sql, params = self.as_sql()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 531, in as_sql
+    extra_select, order_by, group_by = self.pre_sql_setup()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 59, in pre_sql_setup
+    self.setup_query()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 50, in setup_query
+    self.select, self.klass_info, self.annotation_col_map = self.get_select()
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 253, in get_select
+    related_klass_infos = self.get_related_selections(select)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 1012, in get_related_selections
+    raise FieldError(
+django.core.exceptions.FieldError: Invalid field name(s) given in select_related: 'product', 'category'. Choices are: coupon
+2022-05-31 15:46:07 [ERROR] django.server: "GET /order/complete/?order_id=25 HTTP/1.1" 500 117513
+2022-05-31 16:18:21 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 16:18:36 [INFO] django.server: "GET / HTTP/1.1" 200 98001
+2022-05-31 16:18:40 [INFO] django.server: "GET /shop/18/%EC%B2%AD%EC%A0%95%EC%A0%9C%EC%A3%BC-%ED%95%9C%EB%9D%BC%EB%B4%89-%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B8-9%EA%B3%BC3kg/ HTTP/1.1" 200 107648
+2022-05-31 16:18:41 [INFO] django.server: "POST /cart/add/18 HTTP/1.1" 302 0
+2022-05-31 16:18:41 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 29624
+2022-05-31 16:18:43 [INFO] django.server: "GET /order/create/ HTTP/1.1" 200 4348
+2022-05-31 16:18:56 [INFO] django.server: "POST /order/create_ajax/ HTTP/1.1" 200 16
+2022-05-31 16:18:57 [INFO] django.server: "POST /order/checkout/ HTTP/1.1" 200 44
+2022-05-31 16:19:21 [INFO] django.server: "POST /order/validation/ HTTP/1.1" 200 15
+2022-05-31 16:19:21 [ERROR] django.request: Internal Server Error: /order/complete/
+Traceback (most recent call last):
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py", line 57, in order_complete
+    logger.info("주문번호:"+ str(order.id) + " " + "유저번호:"+str(user.id))
+AttributeError: 'QuerySet' object has no attribute 'id'
+2022-05-31 16:19:21 [ERROR] django.server: "GET /order/complete/?order_id=26 HTTP/1.1" 500 70057
+2022-05-31 16:22:19 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-31 16:22:20 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 16:24:55 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-31 16:24:55 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 16:36:14 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 16:36:15 [INFO] django.server: "GET / HTTP/1.1" 200 98001
+2022-05-31 16:36:15 [INFO] django.server: "GET / HTTP/1.1" 200 98001
+2022-05-31 16:36:20 [INFO] django.server: "GET /shop/18/%EC%B2%AD%EC%A0%95%EC%A0%9C%EC%A3%BC-%ED%95%9C%EB%9D%BC%EB%B4%89-%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B8-9%EA%B3%BC3kg/ HTTP/1.1" 200 107648
+2022-05-31 16:36:22 [INFO] django.server: "GET /shop/19/%EC%83%A4%EC%9D%B8%EB%A8%B8%EC%8A%A4%EC%BA%A3-%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B87%EC%A2%85450g/ HTTP/1.1" 200 107963
+2022-05-31 16:36:24 [INFO] django.server: "POST /cart/add/19 HTTP/1.1" 302 0
+2022-05-31 16:36:24 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 29642
+2022-05-31 16:36:25 [INFO] django.server: "GET /order/create/ HTTP/1.1" 200 4349
+2022-05-31 16:36:35 [INFO] django.server: "POST /order/create_ajax/ HTTP/1.1" 200 16
+2022-05-31 16:36:35 [INFO] django.server: "POST /order/checkout/ HTTP/1.1" 200 44
+2022-05-31 16:37:07 [INFO] django.server: "POST /order/validation/ HTTP/1.1" 200 15
+2022-05-31 16:37:07 [ERROR] django.request: Internal Server Error: /order/complete/
+Traceback (most recent call last):
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\sli\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py", line 59, in order_complete
+    logger.info("주문번호:"+ str(order.id) + " " + "유저번호:"+str(user.id) + " " + "품목:"+str(orderitems.product.category.name))
+AttributeError: 'QuerySet' object has no attribute 'product'
+2022-05-31 16:37:07 [ERROR] django.server: "GET /order/complete/?order_id=27 HTTP/1.1" 500 70268
+2022-05-31 16:40:02 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-31 16:40:02 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 16:43:24 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 16:43:30 [INFO] django.server: "GET / HTTP/1.1" 200 98001
+2022-05-31 16:43:35 [INFO] django.server: "GET /shop/20/%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B8-7kg-%EC%82%AC%EA%B3%BC12%EA%B3%BC%EB%82%B4%EC%99%B8%EB%82%98%EC%A3%BC%EB%B0%B09%EA%B3%BC%EB%82%B4%EC%99%B8/ HTTP/1.1" 200 106690
+2022-05-31 16:43:37 [INFO] django.server: "POST /cart/add/20 HTTP/1.1" 302 0
+2022-05-31 16:43:37 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 29715
+2022-05-31 16:43:38 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 75021
+2022-05-31 16:43:41 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 75021
+2022-05-31 16:43:45 [INFO] django.server: "GET / HTTP/1.1" 200 98001
+2022-05-31 16:43:47 [INFO] django.server: "GET /shop/20/%EA%B3%BC%EC%9D%BC%EC%84%A0%EB%AC%BC%EC%84%B8%ED%8A%B8-7kg-%EC%82%AC%EA%B3%BC12%EA%B3%BC%EB%82%B4%EC%99%B8%EB%82%98%EC%A3%BC%EB%B0%B09%EA%B3%BC%EB%82%B4%EC%99%B8/ HTTP/1.1" 200 106690
+2022-05-31 16:43:48 [INFO] django.server: "POST /cart/add/20 HTTP/1.1" 302 0
+2022-05-31 16:43:48 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 29717
+2022-05-31 16:43:54 [INFO] django.server: "POST /cart/add/20 HTTP/1.1" 302 0
+2022-05-31 16:43:54 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 29715
+2022-05-31 16:43:55 [INFO] django.server: "GET /order/create/ HTTP/1.1" 200 4366
+2022-05-31 16:44:31 [INFO] django.server: "POST /order/create_ajax/ HTTP/1.1" 200 16
+2022-05-31 16:44:31 [INFO] django.server: "POST /order/checkout/ HTTP/1.1" 200 44
+2022-05-31 16:45:20 [INFO] django.server: "POST /order/validation/ HTTP/1.1" 200 15
+2022-05-31 16:45:20 [INFO] django.server: 주문번호:28 유저번호:1 품목:과일선물세트
+2022-05-31 16:45:20 [INFO] django.server: "GET /order/complete/?order_id=28 HTTP/1.1" 200 25923
+2022-05-31 16:47:50 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-31 16:47:51 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 16:49:16 [INFO] django.utils.autoreload: C:\Users\sli\Documents\GitHub\Market_Backend\order\views.py changed, reloading.
+2022-05-31 16:49:17 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 16:52:48 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-05-31 16:52:49 [INFO] django.server: "GET / HTTP/1.1" 200 98001
+2022-05-31 16:52:50 [INFO] django.server: "GET / HTTP/1.1" 200 98001
+2022-05-31 16:52:55 [INFO] django.server: "GET /shop/16/%EC%B9%9C%ED%99%98%EA%B2%BD-%EB%AC%B4%EB%86%8D%EC%95%BD-%EC%B2%AD%EC%86%A1-%EB%B8%94%EB%A3%A8%EB%B2%A0%EB%A6%AC-%EB%83%89%EB%8F%99-1kg/ HTTP/1.1" 200 107983
+2022-05-31 16:52:56 [INFO] django.server: "POST /cart/add/16 HTTP/1.1" 302 0
+2022-05-31 16:52:56 [INFO] django.server: "GET /cart/ HTTP/1.1" 200 29660
+2022-05-31 16:52:57 [INFO] django.server: "GET /order/create/ HTTP/1.1" 200 4356
+2022-05-31 16:53:25 [INFO] django.server: "POST /order/create_ajax/ HTTP/1.1" 200 16
+2022-05-31 16:53:25 [INFO] django.server: "POST /order/checkout/ HTTP/1.1" 200 44
+2022-05-31 16:53:47 [INFO] django.server: "POST /order/validation/ HTTP/1.1" 200 15
+2022-05-31 16:53:47 [INFO] django.server: 주문번호:29 유저번호:1 품목:블루베리 수량:1
+2022-05-31 16:53:47 [INFO] django.server: "GET /order/complete/?order_id=29 HTTP/1.1" 200 25923
