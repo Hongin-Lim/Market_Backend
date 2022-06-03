@@ -53,7 +53,7 @@ def signup(request):
             print("양식 오류")
             return render(request, 'login/fail.html')
 
-
+@csrf_exempt
 def userlogin(request):
     if request.method == "GET":
         print('get 방식 이동')
