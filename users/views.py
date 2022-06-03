@@ -85,7 +85,7 @@ def kakao_logout(request):
     카카오톡과 함께 로그아웃 처리
     """
     kakao_rest_api_key = '9f3d88106a97581bcd1a61ba5942473b'
-    logout_redirect_uri = "http://172.30.1.222:31000/logout/"
+    logout_redirect_uri = "http://verymarket.kro.kr/logout"
     state = "none"
     kakao_service_logout_url = "https://kauth.kakao.com/oauth/logout"
     print("카카오 로그아웃 완료")
