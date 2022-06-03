@@ -10,6 +10,7 @@ from users.forms import PasswordChangeForm
 from django.contrib.auth.hashers import check_password
 from coupon.models import Coupon
 from users.models import User
+from django.views.decorators.csrf import csrf_exempt
 
 # 마이페이지 (장바구니)
 def mypage(request):
