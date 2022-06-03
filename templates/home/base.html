@@ -51,10 +51,13 @@
         <ul class="customers-items">
             {% if request.user.is_authenticated %}
             <div type="text" >{{ user.username }} 님 welcome !</div>
-            &ensp;&ensp;&ensp;
-<!--            <li ><a href="/logout">로그아웃</a></li>-->
+            {% if user.u_id != NULL %}&ensp;&ensp;&ensp;
+            <li ><a href="/logout">로그아웃</a></li>
+            {% endif %}
+            {% if user.u_id == NULL %}&ensp;&ensp;&ensp;
             <li ><a href="/kakao_logout">로그아웃</a></li>
-            &ensp;&ensp;&ensp;
+            {% endif %}
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <li ><a href="/mypage">마이페이지</a></li>
             &ensp;
             {% else %}
