@@ -37,7 +37,7 @@ environ.Env.read_env(
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 # # SECURITY WARNING: keep the secret key used in production secret!
 # SECRET_KEY = 'django-insecure-_hs%lvdiu=bkz!-4$559794)3w++5m1(_f(70zro%vm*=bx3d7'
