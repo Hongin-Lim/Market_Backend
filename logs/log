@@ -1,2 +1,12 @@
 2022-05-31 16:53:47 [INFO] django.server: 주문번호:29 유저번호:1 품목:블루베리 수량:1
 2022-05-31 16:55:30 [INFO] django.server: 주문번호:30 유저번호:1 품목:블루베리 수량:1
+2022-06-05 22:38:27 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-06-05 22:38:33 [INFO] django.server: "GET / HTTP/1.1" 200 113043
+2022-06-05 22:38:37 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 94616
+2022-06-05 22:38:38 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-05 22:38:38 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+2022-06-05 22:38:39 [INFO] django.server: "GET /board HTTP/1.1" 301 0
+2022-06-05 22:38:40 [INFO] django.server: "GET /board/ HTTP/1.1" 200 35800
+2022-06-05 22:38:41 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 94616
+2022-06-05 22:38:41 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
+2022-06-05 22:38:41 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
