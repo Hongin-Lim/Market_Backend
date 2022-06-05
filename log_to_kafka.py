@@ -33,6 +33,6 @@ while True:
             'item': item,
             'item_ea': item_ea,
         }
-        producer.send('final_logdata', value=data)
+        producer.send('logdata_test2', value=data)
         producer.flush()
         origin = last
