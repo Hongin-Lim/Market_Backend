@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="95973899-a9b1-4430-abea-a22209cae98d" name="Changes" comment="프론트엔드, 로그인 회원가입 , 로그인 후 메인 페이지 수정">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/mypage/coupon.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mypage/coupon.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/mypage/info_change.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mypage/info_change.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/mypage/orderlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mypage/orderlist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/board/question_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/board/question_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/cart/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cart/detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
