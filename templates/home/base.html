@@ -51,10 +51,13 @@
         <ul class="customers-items">
             {% if request.user.is_authenticated %}
             <div type="text" >{{ user.username }} 님 welcome !</div>
-            &ensp;&ensp;&ensp;
-<!--            <li ><a href="/logout">로그아웃</a></li>-->
+            {% if user.u_id != NULL %}&ensp;&ensp;&ensp;
+            <li ><a href="/logout">로그아웃</a></li>
+            {% endif %}
+            {% if user.u_id == NULL %}&ensp;&ensp;&ensp;
             <li ><a href="/kakao_logout">로그아웃</a></li>
-            &ensp;&ensp;&ensp;
+            {% endif %}
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <li ><a href="/mypage">마이페이지</a></li>
             &ensp;
             {% else %}
@@ -109,37 +112,37 @@
                         <a class="vegetable">과일상품</a>
                         <ul class="sub-category-menu sub-vegetable">
                             <li>
-                                <a href="#">
+                                <a href="/shop/">
                                     <span class="sub-title">사과·배·오렌지</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="/shop/">
                                     <span class="sub-title">한라봉·망고·딸기</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="/shop/">
                                     <span class="sub-title">감귤·샤인머스켓·키위</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="/shop/">
                                     <span class="sub-title">토마토·아보카도·메론</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="/shop/">
                                     <span class="sub-title">오이·호박·고추</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="/shop/">
                                     <span class="sub-title">체리·냉동</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="/shop/">
                                     <span class="sub-title">과일 선물세트</span>
                                 </a>
                             </li>
@@ -149,12 +152,12 @@
                         <a class="fruit"> 고객센터 </a>
                         <ul class="sub-category-menu sub-fruit">
                             <li>
-                                <a href="#">
+                                <a href="/board/n/">
                                     <span class="sub-title">공지사항</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="/board/">
                                     <span class="sub-title">1:1문의</span>
                                 </a>
                             </li>
@@ -167,80 +170,30 @@
                         </ul>
                     </li>
                     <li>
-                        <a class="fish"> 베스트상품 </a>
-                        <ul class="sub-category-menu sub-fish">
-                            <li>
-                                <a href="#">
-                                    <span class="sub-title">제철수산</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="sub-title">생선류</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="sub-title">굴비·반건류</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="sub-title">오징어·낙지·문어</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="sub-title">새우·게·랍스터</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="sub-title">해산물·조개류</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="sub-title">수산가공품</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="sub-title">김·미역·해조류</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="sub-title">건어물·다시팩</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
                         <a class="meat"> 회원관리 </a>
                         <ul class="sub-category-menu sub-meat">
                             <li>
-                                <a href="#">
+                                <a href="/mypage/">
                                     <span class="sub-title">마이페이지</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
-                                    <span class="sub-title">주문내역</span>
+                                <a href="/cart/">
+                                    <span class="sub-title">장바구니</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="/mypage/update/">
                                     <span class="sub-title">비밀번호 찾기</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
-                                    <span class="sub-title">아이디 찾기</span>
+                                <a href="/mypage/update/">
+                                    <span class="sub-title">회원 탈퇴</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="/mypage/coupon/">
                                     <span class="sub-title">내 쿠폰</span>
                                 </a>
                             </li>
