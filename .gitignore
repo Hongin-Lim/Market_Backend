@@ -4,3 +4,4 @@
 migrations/
 .env
 logs/
+log
