@@ -10,6 +10,7 @@ from users.forms import PasswordChangeForm
 from django.contrib.auth.hashers import check_password
 from coupon.models import Coupon
 from users.models import User
+from django.views.decorators.csrf import csrf_exempt
 
 # 마이페이지 (장바구니)
 def mypage(request):
@@ -53,7 +54,7 @@ def signup(request):
             print("양식 오류")
             return render(request, 'login/fail.html')
 
-
+@csrf_exempt
 def userlogin(request):
     if request.method == "GET":
         print('get 방식 이동')
@@ -84,7 +85,7 @@ def kakao_logout(request):
     카카오톡과 함께 로그아웃 처리
     """
     kakao_rest_api_key = '9f3d88106a97581bcd1a61ba5942473b'
-    logout_redirect_uri = "http://172.30.1.222:31000/logout/"
+    logout_redirect_uri = "http://verymarket.kro.kr/logout"
     state = "none"
     kakao_service_logout_url = "https://kauth.kakao.com/oauth/logout"
     print("카카오 로그아웃 완료")
