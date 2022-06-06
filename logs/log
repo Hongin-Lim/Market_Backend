@@ -57,8 +57,13 @@
 2022-06-05 22:47:14 [INFO] django.server: "GET / HTTP/1.1" 200 110981
 2022-06-05 22:47:50 [INFO] django.server: "GET /popup/popup1.html HTTP/1.1" 200 375
 2022-06-05 22:47:52 [INFO] django.server: "GET /popup/popup1.html HTTP/1.1" 200 375
+<<<<<<< HEAD
 2022-06-05 22:54:54 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
 2022-06-05 22:54:57 [INFO] django.server: "GET / HTTP/1.1" 200 110981
 2022-06-05 22:55:01 [INFO] django.server: "GET /shop/ HTTP/1.1" 200 92554
 2022-06-05 22:55:01 [WARNING] django.request: Not Found: /common_js/goodslist_v1.js
 2022-06-05 22:55:01 [WARNING] django.server: "GET /common_js/goodslist_v1.js?ver=1.70.8 HTTP/1.1" 404 4014
+=======
+2022-06-06 00:06:35 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-06-06 00:06:37 [INFO] django.server: "GET / HTTP/1.1" 200 110821
+>>>>>>> main
