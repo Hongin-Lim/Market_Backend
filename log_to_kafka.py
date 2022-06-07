@@ -18,24 +18,21 @@ while True:
     inout_lines = inout_f.readlines()
     last = inout_lines[-1]
     if last != origin:
-        try:
-            data = last.strip().split(' ')
-            print(data)
-            time = data[1]
-            order_num = data[4].split(':')[1]
-            user_num = data[5].split(':')[1]
-            item = data[6].split(':')[1]
-            item_ea = data[7].split(':')[1]
-            print(time, order_num, user_num, item, item_ea)
-        except:
-            pass
-            data = {
-                'time' : time,
-                'order_num': order_num,
-                'user_num': user_num,
-                'item': item,
-                'item_ea': item_ea,
-            }
-            producer.send('final_logdata2', value=data)
-            producer.flush()
-            origin = last
+        data = last.strip().split(' ')
+        print(data)
+        time = data[1]
+        order_num = data[4].split(':')[1]
+        user_num = data[5].split(':')[1]
+        item = data[6].split(':')[1]
+        item_ea = data[7].split(':')[1]
+        print(time, order_num, user_num, item, item_ea)
+        data = {
+            'time' : time,
+            'order_num': order_num,
+            'user_num': user_num,
+            'item': item,
+            'item_ea': item_ea,
+        }
+        producer.send('final_logdata2', value=data)
+        producer.flush()
+        origin = last
