@@ -1,1 +1,19 @@
 2022-05-31 16:53:47 [INFO] django.server: 주문번호:29 유저번호:1 품목:블루베리 수량:1
+2022-06-07 14:16:16 [INFO] django.server: "GET / HTTP/1.1" 200 111146
+2022-06-07 14:16:18 [INFO] django.server: "GET /logout/ HTTP/1.1" 302 0
+2022-06-07 14:16:18 [INFO] django.server: "GET / HTTP/1.1" 200 110986
+2022-06-07 14:16:19 [INFO] django.server: "GET /login/ HTTP/1.1" 200 26262
+2022-06-07 14:16:20 [INFO] django.server: "GET /accounts/kakao/login/ HTTP/1.1" 200 634
+2022-06-07 14:16:21 [INFO] django.server: "POST /accounts/kakao/login/ HTTP/1.1" 302 0
+2022-06-07 14:16:22 [INFO] django.server: "GET /accounts/kakao/login/callback/?code=ElfcpTgJTwRIJYcOcdKnBg5rqjdsqKpYE_IZZzAkPMSIe04g_67Jyrgv-IwuQh6vMdNHoAopb1UAAAGBPJeqeQ&state=MIDFaTY4KoNO HTTP/1.1" 302 0
+2022-06-07 14:16:22 [INFO] django.server: "GET / HTTP/1.1" 200 111150
+2022-06-07 14:16:27 [INFO] django.server: "GET /logout/ HTTP/1.1" 302 0
+2022-06-07 14:16:27 [INFO] django.server: "GET / HTTP/1.1" 200 110986
+2022-06-07 14:16:38 [INFO] django.server: "GET /login/ HTTP/1.1" 200 26262
+2022-06-07 14:16:39 [INFO] django.server: "GET /accounts/kakao/login/ HTTP/1.1" 200 795
+2022-06-07 14:16:41 [INFO] django.server: "POST /accounts/kakao/login/ HTTP/1.1" 302 0
+2022-06-07 14:16:53 [INFO] django.server: "GET /accounts/kakao/login/callback/?code=OEv0DtQItT4hgWMKTJ_l0KkNiNBuHEE7-2ZsM-Wx0zMPdKF4TkmKLAamQpu2BSIM6_vyGgopb1UAAAGBPJgjmg&state=i9TdeqCUwJ6H HTTP/1.1" 302 0
+2022-06-07 14:16:53 [INFO] django.server: "GET / HTTP/1.1" 200 111150
+2022-06-07 14:17:00 [INFO] django.server: "GET /logout/ HTTP/1.1" 302 0
+2022-06-07 14:17:01 [INFO] django.server: "GET / HTTP/1.1" 200 110986
+2022-06-07 14:18:03 [INFO] django.server: "GET /popup/popup1.html HTTP/1.1" 200 375
