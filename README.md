@@ -1,4 +1,10 @@
-# :apple: 빅데이터 활용 과일 구매 쇼핑몰 개발 프로젝트(VeryMarket) 
+# :apple: 빅데이터 활용 과일 구매 쇼핑몰 개발 프로젝트(VeryMarket) :apple:
+<br>
+
+## :clipboard: 시연영상
+
+### :link: 소비자를 위한 쇼핑몰 서비스 '베리마켓' 시연영상(GIF)
+![베리마켓시연영상](https://user-images.githubusercontent.com/96184680/173600061-9a35bb92-5e83-4b5a-a019-f7d1687f6663.gif)
 
 ## :clipboard: 부모 깃
 * Verymarket_BackEnd_Git =  https://github.com/Hongin-Lim/VeryMarket
