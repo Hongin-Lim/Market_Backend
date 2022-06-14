@@ -97,8 +97,8 @@
 ![CI__CD_v2_1](https://user-images.githubusercontent.com/96184680/173300690-e17e9f76-8695-4a82-b183-057e16170f83.png)
 
 ## :link: 소비자, 판매자 입장 전체 흐름도
-#### 소비자 서비스(VeryMarket)
-#### 판매자 서비스(Big VeryMarket)
+#### └ 소비자 서비스(VeryMarket)
+#### └ 판매자 서비스(Big VeryMarket)
 ![Data_PipeLine](https://user-images.githubusercontent.com/96184680/173300693-c8b17182-ad15-4569-820b-5899cf92a0ac.png)
 ## :link: 소비자 입장 흐름도
 ![Data_PipeLine_API_1](https://user-images.githubusercontent.com/96184680/173300700-4db5be24-4547-46bb-a0d4-8d85200394de.png)
