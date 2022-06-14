@@ -7,7 +7,7 @@
 * Ubuntu
 * PyCharm
 * Django
-* AWS
+* AWS(EC2 RDS S3)
 * Kubernetes
 * Jenkins
 * GitHub
@@ -16,8 +16,8 @@
 ![프로그램 로고](https://user-images.githubusercontent.com/97941148/172524936-14e8577f-ce69-46b7-abfd-834afb5aca57.png)
 * * * 
 ### 백엔드
-* Django
 * Python
+* Django
 * Django ORM
 
 ### DB
@@ -61,6 +61,8 @@
 * REST API
 * AJAX
 * CI/CD
+* Real-Time Storage
+* Real-Time Processing
 * Realtime LogData 분석 및 시각화
 * Realtime 공공API 분석 및 시각화
 * AWS 클라우드 서비스
